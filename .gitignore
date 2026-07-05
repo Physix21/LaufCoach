@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.agents/
+.codex/
+
+# Garmin exports may contain GPS tracks and device metadata.
+data/raw/garmin/csv/*
+data/raw/garmin/fit/*
+data/raw/garmin/tcx/*

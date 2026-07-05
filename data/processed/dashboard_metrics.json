@@ -1,0 +1,30 @@
+{
+  "goal": {
+    "current_5k": "18:49",
+    "current_5k_date": "2026-06-17",
+    "previous_pb": "17:35",
+    "target_5k": "16:59",
+    "current_pace": "3:46/km",
+    "target_pace": "3:24/km",
+    "gap_to_goal": "1:50 min",
+    "target_400m": "81,5 s (3:24 min/km)",
+    "progress_percent": 0
+  },
+  "current_week": {
+    "week_start": "2026-07-06",
+    "week_end": "2026-07-12",
+    "week_label": "KW 28",
+    "run_km": 0,
+    "bike_hours": 0.0,
+    "run_sessions": 0,
+    "bike_sessions": 0,
+    "strength_sessions": 0,
+    "hard_endurance_sessions": 0,
+    "lit_sessions": 0,
+    "moderate_sessions": 0,
+    "hard_sessions": 0,
+    "total_duration_min": 0
+  },
+  "warning_count": 0,
+  "activities_total": 2
+}

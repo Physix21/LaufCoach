@@ -1,0 +1,471 @@
+#!/usr/bin/env python3
+"""Baut das lokale Laufcoach-Dashboard vollständig aus Quelldaten neu."""
+
+from __future__ import annotations
+
+import csv
+import json
+import sys
+from collections import Counter
+from datetime import date, datetime, timedelta
+from pathlib import Path
+from typing import Any
+
+from import_garmin_csv import import_all
+
+
+ROOT = Path(__file__).resolve().parents[1]
+PROCESSED = ROOT / "data" / "processed"
+DASHBOARD = ROOT / "dashboard"
+ACTIVITIES_FILE = PROCESSED / "activities.csv"
+WEEKLY_FILE = PROCESSED / "weekly_summary.csv"
+METRICS_FILE = PROCESSED / "dashboard_metrics.json"
+DATA_FILE = DASHBOARD / "dashboard_data.json"
+INDEX_FILE = DASHBOARD / "index.html"
+PLAN_FILE = ROOT / "plans" / "current_week.json"
+UPCOMING_FILE = ROOT / "plans" / "upcoming_plan.json"
+
+WEEKLY_FIELDS = [
+    "week_start", "week_end", "run_km", "bike_hours", "run_sessions",
+    "bike_sessions", "strength_sessions", "hard_endurance_sessions",
+    "lit_sessions", "moderate_sessions", "hard_sessions", "total_duration_min",
+]
+HARD_WORDS = ("400", "800", "1000", "interval", "schwelle", "tempo", "bergsprint", "hiit", "30/30", "over/under", "wettkampf")
+MODERATE_WORDS = ("zügig", "steady", "progressiv", "kraft")
+COMPLAINT_WORDS = ("schmerz", "achilles", "knie", "schienbein", "hüfte", "beschwerden")
+
+
+def ensure_structure() -> None:
+    for directory in (DASHBOARD, PROCESSED, ROOT / "data" / "raw" / "garmin" / "csv", ROOT / "plans"):
+        directory.mkdir(parents=True, exist_ok=True)
+    if not PLAN_FILE.exists():
+        monday = week_start_for(date.today())
+        write_json(PLAN_FILE, {
+            "week_start": monday.isoformat(),
+            "week_end": (monday + timedelta(days=6)).isoformat(),
+            "phase": "Noch nicht geplant",
+            "focus": "Wochenplan in plans/current_week.json ergänzen",
+            "next_milestone": "5-km-Formcheck im Frühjahr 2027",
+            "planned_sessions": [],
+        })
+        print("Hinweis: Fehlenden Plan plans/current_week.json als Vorlage angelegt.")
+    if not UPCOMING_FILE.exists():
+        write_json(UPCOMING_FILE, {"schema_version": 1, "weeks": []})
+        print("Hinweis: Fehlenden Plan plans/upcoming_plan.json als Vorlage angelegt.")
+
+
+def load_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"WARNUNG: {path.relative_to(ROOT)} nicht lesbar: {exc}")
+        return default
+
+
+def load_plan(path: Path) -> dict[str, Any]:
+    plan = load_json(path, {"planned_sessions": []})
+    if not isinstance(plan, dict):
+        print(f"WARNUNG: {path.relative_to(ROOT)} muss ein JSON-Objekt enthalten; leerer Plan verwendet.")
+        return {"planned_sessions": []}
+    if not isinstance(plan.get("planned_sessions", []), list):
+        print(f"WARNUNG: planned_sessions in {path.relative_to(ROOT)} muss eine Liste sein; leere Liste verwendet.")
+        plan["planned_sessions"] = []
+    plan.setdefault("planned_sessions", [])
+    return plan
+
+
+def write_json(path: Path, data: Any) -> None:
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+def read_activities() -> list[dict[str, Any]]:
+    if not ACTIVITIES_FILE.exists():
+        return []
+    numeric = {
+        "duration_min", "distance_km", "avg_pace_sec_per_km", "avg_speed_kmh",
+        "avg_hr", "max_hr", "avg_power", "max_power", "elevation_gain_m",
+        "training_effect", "rpe",
+    }
+    with ACTIVITIES_FILE.open("r", encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for row in rows:
+        for field in numeric:
+            try:
+                row[field] = float(row[field]) if row.get(field, "").strip() else None
+            except (ValueError, AttributeError):
+                row[field] = None
+        row["completed"] = str(row.get("completed", "")).lower() in {"true", "1", "yes", "ja"}
+    return rows
+
+
+def parse_iso(value: str) -> date | None:
+    try:
+        return date.fromisoformat(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def week_start_for(value: date) -> date:
+    return value - timedelta(days=value.weekday())
+
+
+def classify_intensity(activity: dict[str, Any]) -> str:
+    rpe = activity.get("rpe")
+    text = f"{activity.get('session_name', '')} {activity.get('notes', '')}".lower()
+    sport = activity.get("sport", "")
+    if rpe is not None:
+        if rpe >= 8:
+            return "hard"
+        if rpe >= 6:
+            return "moderate"
+        return "LIT"
+    if "hiit" in text or (sport == "bike" and any(word in text for word in HARD_WORDS)):
+        return "hard"
+    if any(word in text for word in HARD_WORDS):
+        return "hard"
+    if any(word in text for word in MODERATE_WORDS):
+        return "moderate"
+    # Ohne belastbare RPE-/Namensinformation bewusst konservativ als locker einstufen.
+    return "LIT"
+
+
+def summarize_weeks(activities: list[dict[str, Any]], plan: dict[str, Any]) -> list[dict[str, Any]]:
+    starts = {week_start_for(d) for item in activities if (d := parse_iso(item.get("date", "")))}
+    plan_start = parse_iso(plan.get("week_start", ""))
+    if plan_start:
+        starts.add(week_start_for(plan_start))
+    if starts:
+        newest = max(starts)
+        starts.update(newest - timedelta(weeks=i) for i in range(8))
+    summaries = []
+    for start in sorted(starts):
+        end = start + timedelta(days=6)
+        week_items = [item for item in activities if (d := parse_iso(item.get("date", ""))) and start <= d <= end]
+        run_items = [item for item in week_items if item.get("sport") == "run"]
+        intensity = Counter(classify_intensity(item) for item in run_items)
+        summaries.append({
+            "week_start": start.isoformat(),
+            "week_end": end.isoformat(),
+            "week_label": f"KW {start.isocalendar().week}",
+            "run_km": round(sum(item.get("distance_km") or 0 for item in week_items if item.get("sport") == "run"), 2),
+            "bike_hours": round(sum(item.get("duration_min") or 0 for item in week_items if item.get("sport") == "bike") / 60, 2),
+            "run_sessions": sum(item.get("sport") == "run" for item in week_items),
+            "bike_sessions": sum(item.get("sport") == "bike" for item in week_items),
+            "strength_sessions": sum(item.get("sport") == "strength" for item in week_items),
+            "hard_endurance_sessions": sum(classify_intensity(item) == "hard" for item in run_items),
+            "lit_sessions": intensity["LIT"],
+            "moderate_sessions": intensity["moderate"],
+            "hard_sessions": intensity["hard"],
+            "total_duration_min": round(sum(item.get("duration_min") or 0 for item in run_items), 1),
+        })
+    return summaries
+
+
+def write_weekly(rows: list[dict[str, Any]]) -> None:
+    temporary = WEEKLY_FILE.with_suffix(WEEKLY_FILE.suffix + ".tmp")
+    with temporary.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=WEEKLY_FIELDS, extrasaction="ignore", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+    temporary.replace(WEEKLY_FILE)
+
+
+def comparable_sport(value: str) -> str:
+    text = (value or "").lower()
+    if text in {"running", "laufen", "run"}:
+        return "run"
+    if text in {"cycling", "rad", "bike", "virtual_cycling"}:
+        return "bike"
+    if text in {"strength", "kraft", "strength_training"}:
+        return "strength"
+    return text
+
+
+def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    start = parse_iso(plan.get("week_start", ""))
+    end = parse_iso(plan.get("week_end", ""))
+    week_items = [item for item in activities if item.get("sport") == "run" and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
+    used: set[str] = set()
+    sessions = sorted((dict(item) for item in plan.get("planned_sessions", [])), key=lambda item: item.get("priority", 99))
+    for session in sessions:
+        # Nur Laufeinheiten werden über Garmin-Exporte ausgewertet. Rad und Kraft
+        # bleiben reine Planinformation und erhalten bewusst keinen Erledigt-Status.
+        if comparable_sport(session.get("type", "")) != "run":
+            session["display_status"] = "info"
+            continue
+        candidates = []
+        for activity in week_items:
+            if activity.get("activity_id") in used or comparable_sport(activity.get("sport", "")) != comparable_sport(session.get("type", "")):
+                continue
+            score = 3.0
+            title = session.get("title", "").lower()
+            actual = activity.get("session_name", "").lower()
+            score += sum(1.5 for token in HARD_WORDS if token in title and token in actual)
+            target_distance = session.get("target_distance_km")
+            actual_distance = activity.get("distance_km")
+            if target_distance and actual_distance:
+                difference = abs(actual_distance - target_distance) / target_distance
+                score += 2 if difference <= 0.2 else (1 if difference <= 0.35 else 0)
+            target_duration = session.get("target_duration_min")
+            actual_duration = activity.get("duration_min")
+            if target_duration and actual_duration:
+                difference = abs(actual_duration - target_duration) / target_duration
+                score += 1.5 if difference <= 0.25 else (0.5 if difference <= 0.4 else 0)
+            scheduled = parse_iso(session.get("scheduled_date", ""))
+            actual_date = parse_iso(activity.get("date", ""))
+            if scheduled and actual_date and abs((scheduled - actual_date).days) <= 1:
+                score += 1
+            candidates.append((score, activity))
+        if candidates and max(candidates, key=lambda item: item[0])[0] >= 4:
+            score, activity = max(candidates, key=lambda item: item[0])
+            session["display_status"] = "erledigt"
+            session["matched_activity_id"] = activity["activity_id"]
+            session["match_reason"] = f"Sportart/Woche passend; Heuristik-Score {score:.1f}"
+            used.add(activity["activity_id"])
+        elif session.get("status") == "optional":
+            session["display_status"] = "optional"
+        else:
+            session["display_status"] = "offen"
+    unmatched = [item for item in week_items if item.get("activity_id") not in used]
+    return sessions, unmatched
+
+
+def detect_performances(activities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    results = []
+    for item in activities:
+        distance = item.get("distance_km")
+        duration = item.get("duration_min")
+        name = item.get("session_name", "").lower()
+        if distance and duration and 4.9 <= distance <= 5.2 and any(word in name for word in ("5-km", "5 km", "wettkampf", "race", "parkrun", "test")):
+            results.append({"date": item.get("date"), "seconds": round(duration * 60), "activity_id": item.get("activity_id")})
+    return sorted(results, key=lambda item: item["date"] or "")
+
+
+def format_time(seconds: int | float) -> str:
+    seconds = int(round(seconds))
+    return f"{seconds // 60}:{seconds % 60:02d}"
+
+
+def goal_metrics(activities: list[dict[str, Any]]) -> dict[str, Any]:
+    performances = detect_performances(activities)
+    latest = performances[-1] if performances else {"date": "2026-06-17", "seconds": 18 * 60 + 49}
+    current_seconds = latest["seconds"]
+    goal_seconds = 16 * 60 + 59
+    return {
+        "current_5k": format_time(current_seconds),
+        "current_5k_date": latest.get("date"),
+        "previous_pb": "17:35",
+        "target_5k": "16:59",
+        "current_pace": format_time(current_seconds / 5) + "/km",
+        "target_pace": format_time(goal_seconds / 5) + "/km",
+        "gap_to_goal": format_time(max(0, current_seconds - goal_seconds)) + " min",
+        "target_400m": "81,5 s (3:24 min/km)",
+        "progress_percent": round(max(0, min(100, (1129 - current_seconds) / (1129 - goal_seconds) * 100)), 1),
+    }
+
+
+def create_warnings(plan: dict[str, Any], sessions: list[dict[str, Any]], activities: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> list[dict[str, str]]:
+    start = parse_iso(plan.get("week_start", ""))
+    end = parse_iso(plan.get("week_end", ""))
+    current = next((item for item in weekly if item["week_start"] == (start.isoformat() if start else "")), None)
+    previous = next((item for item in weekly if start and item["week_start"] == (start - timedelta(days=7)).isoformat()), None)
+    week_activities = [item for item in activities if item.get("sport") == "run" and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
+    warnings: list[dict[str, str]] = []
+    if current and current["hard_endurance_sessions"] > 2:
+        warnings.append({"level": "warning", "text": "Diese Woche enthält mehr als 2 harte Laufeinheiten. Keine weitere Laufintensität ergänzen."})
+    planned_hard = sum(item.get("target_intensity", "").lower() == "hard" and item.get("type") == "run" for item in sessions if item.get("display_status") != "optional")
+    if planned_hard > 2:
+        warnings.append({"level": "warning", "text": f"Der Plan enthält {planned_hard} harte Laufeinheiten; auf maximal 2 reduzieren."})
+    hard_dates = sorted(
+        (d, item.get("title", ""))
+        for item in sessions
+        if item.get("target_intensity", "").lower() == "hard"
+        and item.get("type") == "run"
+        and (d := parse_iso(item.get("scheduled_date", "")))
+    )
+    for (first_date, first_title), (second_date, second_title) in zip(hard_dates, hard_dates[1:]):
+        if (second_date - first_date).days <= 1:
+            warnings.append({
+                "level": "warning",
+                "text": f"Harte Einheiten liegen zu eng: {first_title} und {second_title}. Mindestens einen lockeren Tag dazwischen lassen.",
+            })
+    if current and previous and previous["run_km"] > 0 and current["run_km"] > previous["run_km"] * 1.2:
+        increase = round((current["run_km"] / previous["run_km"] - 1) * 100)
+        warnings.append({"level": "warning", "text": f"Der Laufumfang ist gegenüber der Vorwoche um {increase} % gestiegen."})
+    if sum((item.get("rpe") or 0) >= 9 for item in week_activities) >= 2:
+        warnings.append({"level": "warning", "text": "RPE ≥ 9 in mehreren Einheiten – nächste Einheit locker halten."})
+    complaint_hits = [item for item in week_activities if any(word in (item.get("notes") or "").lower() for word in COMPLAINT_WORDS)]
+    if complaint_hits:
+        warnings.append({"level": "critical", "text": "Beschwerden dokumentiert – Laufimpact reduzieren und Verlauf prüfen."})
+    today = date.today()
+    if start and today >= start and current and current["run_sessions"] == 0:
+        warnings.append({"level": "info", "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."})
+    priority = next((item for item in sessions if item.get("priority") == 1), None)
+    if priority and priority.get("display_status") != "erledigt":
+        prefix = "Geplante" if start and today < start else "Wichtigste"
+        warnings.append({"level": "info", "text": f"{prefix} Prioritätseinheit noch offen: {priority.get('title', '')}."})
+    if not warnings:
+        warnings.append({"level": "ok", "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."})
+    return warnings
+
+
+def next_session(sessions: list[dict[str, Any]]) -> dict[str, Any] | None:
+    today = date.today()
+    candidates = [item for item in sessions if item.get("display_status") in {"offen", "info"}]
+    future = [item for item in candidates if (d := parse_iso(item.get("scheduled_date", ""))) and d >= today]
+    if future:
+        return min(future, key=lambda item: (item.get("scheduled_date", "9999-12-31"), item.get("priority", 99)))
+    open_runs = [item for item in candidates if item.get("display_status") == "offen"]
+    return min(open_runs, key=lambda item: (item.get("priority", 99), item.get("scheduled_date", "9999-12-31"))) if open_runs else None
+
+
+def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> dict[str, Any]:
+    running_activities = [item for item in activities if item.get("sport") == "run"]
+    sessions, unmatched = match_plan(plan, running_activities)
+    warnings = create_warnings(plan, sessions, running_activities, weekly)
+    recent = sorted(running_activities, key=lambda item: (item.get("date", ""), item.get("activity_id", "")), reverse=True)[:10]
+    for item in recent:
+        item["intensity"] = classify_intensity(item)
+    plan_start = plan.get("week_start", "")
+    current_summary = next((item for item in weekly if item["week_start"] == plan_start), {})
+    metrics = {
+        "goal": goal_metrics(running_activities),
+        "current_week": current_summary,
+        "warning_count": sum(item["level"] in {"warning", "critical"} for item in warnings),
+        "activities_total": len(running_activities),
+    }
+    return {
+        "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "today": date.today().isoformat(),
+        "header": {
+            "title": "Laufcoach Dashboard",
+            "goal": "5 km sub 17 im Juni 2027",
+            "phase": plan.get("phase", "Keine Phase hinterlegt"),
+            "focus": plan.get("focus", ""),
+            "next_milestone": plan.get("next_milestone", "5-km-Formcheck im Frühjahr 2027"),
+        },
+        "plan": {**plan, "planned_sessions": sessions},
+        "next_session": next_session(sessions),
+        "recent_activities": recent,
+        "unmatched_activities": unmatched,
+        "weekly_summary": weekly[-10:],
+        "intensity": {
+            "LIT": current_summary.get("lit_sessions", 0),
+            "moderate": current_summary.get("moderate_sessions", 0),
+            "hard": current_summary.get("hard_sessions", 0),
+        },
+        "warnings": warnings,
+        "metrics": metrics,
+        "upcoming": upcoming.get("weeks", [])[:3] if isinstance(upcoming, dict) else [],
+    }
+
+
+def render_html(data: dict[str, Any]) -> str:
+    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    return f'''<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Laufcoach Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div><p class="eyebrow">LOKAL · OFFLINE · AKTUELL</p><h1>Laufcoach Dashboard</h1><p class="hero-goal">5 km sub 17 im Juni 2027</p></div>
+    <div class="hero-meta" id="hero-meta"></div>
+  </header>
+  <main>
+    <section id="next-session"></section>
+    <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">PLAN</p><h2>Aktuelle Woche</h2></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
+    <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div></div><div id="intensity"></div></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">VERLAUF</p><h2>Wochenumfang</h2></div><span class="muted">Laufkilometer · letzte 10 Wochen</span></div><div class="chart" id="weekly-chart"></div><div class="summary-row" id="weekly-summary"></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">HISTORIE</p><h2>Letzte Aktivitäten</h2></div></div><div class="table-wrap"><table><thead><tr><th>Datum</th><th>Sport</th><th>Einheit</th><th>Dauer</th><th>Distanz</th><th>Pace / Leistung</th><th>Puls</th><th>RPE</th><th>Notizen</th></tr></thead><tbody id="activities"></tbody></table></div><div id="unmatched"></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">AUSBLICK</p><h2>Nächste Wochen</h2></div></div><div class="upcoming-grid" id="upcoming"></div></section>
+  </main>
+  <footer>Generiert <span id="generated"></span> · Quelle: lokale Plan- und Garmin-Daten</footer>
+  <script>window.DASHBOARD_DATA = {payload};</script>
+  <script>
+  (() => {{
+    const d = window.DASHBOARD_DATA;
+    const $ = id => document.getElementById(id);
+    const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
+    const num = (value, digits=1) => value == null || value === '' ? '–' : Number(value).toLocaleString('de-DE', {{maximumFractionDigits:digits}});
+    const pace = sec => sec ? `${{Math.floor(sec/60)}}:${{String(Math.round(sec%60)).padStart(2,'0')}}/km` : '–';
+    const sport = value => ({{run:'Lauf',bike:'Rad',strength:'Kraft'}}[value] || value || '–');
+    const fmtDate = value => value ? new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium'}}).format(new Date(value+'T12:00:00')) : '–';
+    const statusClass = value => ({{erledigt:'done',offen:'open',optional:'optional',info:'info'}}[value] || 'open');
+    $('hero-meta').innerHTML = `<div><span>Stand</span><strong>${{fmtDate(d.today)}}</strong></div><div><span>Phase</span><strong>${{esc(d.header.phase)}}</strong></div><div><span>Nächste Marke</span><strong>${{esc(d.header.next_milestone)}}</strong></div>`;
+    const g = d.metrics.goal;
+    const cards = [['Aktuelle 5-km-Zeit',g.current_5k],['Frühere Bestzeit',g.previous_pb],['Zielzeit',g.target_5k],['Aktuelle Pace',g.current_pace],['Zielpace',g.target_pace],['Differenz zum Ziel',g.gap_to_goal],['400-m-Zielpace',g.target_400m]];
+    $('goal-metrics').innerHTML = cards.map(([label,value],i) => `<article class="metric ${{i===2?'accent':''}}"><span>${{esc(label)}}</span><strong>${{esc(value)}}</strong>${{i===0?`<small>${{fmtDate(g.current_5k_date)}}</small>`:''}}</article>`).join('');
+    $('progress-label').innerHTML = `<span class="progress-value">${{num(g.progress_percent)}} %</span><span class="muted">vom Startanker zum Ziel</span>`;
+    $('week-focus').textContent = `${{fmtDate(d.plan.week_start)}}–${{fmtDate(d.plan.week_end)}} · ${{d.plan.focus || ''}}`;
+    $('sessions').innerHTML = d.plan.planned_sessions.map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl><div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
+    if (d.next_session) {{ const s=d.next_session; $('next-session').innerHTML=`<article class="next-card"><div><p class="eyebrow">NÄCHSTE EMPFOHLENE EINHEIT · ${{fmtDate(s.scheduled_date)}}</p><h2>${{esc(s.title)}}</h2><p>${{esc(s.description)}}</p></div><div class="next-target"><span>${{esc(s.target_pace || 'Ziel gemäß Plan')}}</span><strong>RPE ${{esc(s.rpe_target || '–')}}</strong><small>Priorität ${{esc(s.priority)}} · ${{esc(s.target_intensity)}}</small></div></article>`; }}
+    $('warnings').innerHTML = d.warnings.map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');
+    const total = Math.max(1, Object.values(d.intensity).reduce((a,b)=>a+b,0));
+    $('intensity').innerHTML = ['LIT','moderate','hard'].map(key => `<div class="intensity-row"><div><span class="dot ${{key}}"></span><strong>${{key==='moderate'?'Moderat':key}}</strong><b>${{d.intensity[key]}}</b></div><div class="track"><i class="${{key}}" style="width:${{d.intensity[key]/total*100}}%"></i></div></div>`).join('');
+    const weeks=d.weekly_summary, max=Math.max(1,...weeks.map(w=>w.run_km));
+    $('weekly-chart').innerHTML=weeks.map(w=>`<div class="bar-column"><span>${{num(w.run_km)}} km</span><div class="bar-track"><i style="height:${{Math.max(2,w.run_km/max*100)}}%"></i></div><small>${{esc(w.week_label)}}</small></div>`).join('');
+    const cw=d.metrics.current_week||{{}}; $('weekly-summary').innerHTML=`<div><strong>${{num(cw.run_km)}} km</strong><span>Laufumfang</span></div><div><strong>${{cw.run_sessions||0}}</strong><span>Läufe</span></div><div><strong>${{cw.hard_endurance_sessions||0}}</strong><span>harte Läufe</span></div>`;
+    $('activities').innerHTML=d.recent_activities.length?d.recent_activities.map(a=>`<tr><td>${{fmtDate(a.date)}}</td><td><span class="badge neutral">${{esc(sport(a.sport))}}</span></td><td><strong>${{esc(a.session_name)}}</strong><small>${{esc(a.intensity)}}</small></td><td>${{num(a.duration_min)}} min</td><td>${{a.distance_km!=null?num(a.distance_km,2)+' km':'–'}}</td><td>${{a.avg_pace_sec_per_km?pace(a.avg_pace_sec_per_km):(a.avg_power?num(a.avg_power,0)+' W':'–')}}</td><td>${{a.avg_hr?num(a.avg_hr,0)+' / '+num(a.max_hr,0):'–'}}</td><td>${{num(a.rpe)}}</td><td>${{esc(a.notes||'–')}}</td></tr>`).join(''):'<tr><td colspan="9" class="empty">Noch keine Aktivitäten importiert.</td></tr>';
+    const activityLabels = ['Datum','Sport','Einheit','Dauer','Distanz','Pace / Leistung','Puls','RPE','Notizen'];
+    $('activities').querySelectorAll('tr').forEach(row => row.querySelectorAll('td:not(.empty)').forEach((cell, index) => cell.dataset.label = activityLabels[index]));
+    if(d.unmatched_activities.length) $('unmatched').innerHTML=`<p class="unmatched"><strong>${{d.unmatched_activities.length}} nicht zugeordnet:</strong> ${{d.unmatched_activities.map(a=>esc(a.session_name)).join(', ')}}</p>`;
+    $('upcoming').innerHTML=d.upcoming.map(w=>`<article><p class="eyebrow">${{fmtDate(w.week_start)}} – ${{fmtDate(w.week_end)}}</p><h3>${{esc(w.focus)}}</h3><ul>${{(w.planned_sessions||[]).map(s=>`<li><span>${{esc(sport(s.type))}}</span>${{esc(s.title)}}</li>`).join('')}}</ul></article>`).join('');
+    $('generated').textContent = new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium',timeStyle:'short'}}).format(new Date(d.generated_at));
+  }})();
+  </script>
+</body>
+</html>'''
+
+
+def main() -> int:
+    ensure_structure()
+    print("Laufcoach Dashboard Build")
+    print("-------------------------")
+    imported = import_all()
+    for warning in imported["warnings"]:
+        print(f"WARNUNG: {warning}")
+    plan = load_plan(PLAN_FILE)
+    upcoming = load_json(UPCOMING_FILE, {"weeks": []})
+    if not isinstance(upcoming, dict):
+        print(f"WARNUNG: {UPCOMING_FILE.relative_to(ROOT)} muss ein JSON-Objekt enthalten; leerer Ausblick verwendet.")
+        upcoming = {"weeks": []}
+    activities = read_activities()
+    weekly = summarize_weeks(activities, plan)
+    write_weekly(weekly)
+    data = build_data(plan, upcoming, activities, weekly)
+    write_json(DATA_FILE, data)
+    write_json(METRICS_FILE, data["metrics"])
+    temporary_index = INDEX_FILE.with_suffix(INDEX_FILE.suffix + ".tmp")
+    temporary_index.write_text(render_html(data), encoding="utf-8")
+    temporary_index.replace(INDEX_FILE)
+    completed = sum(item.get("display_status") == "erledigt" for item in data["plan"].get("planned_sessions", []))
+    week_date = parse_iso(plan.get("week_start", ""))
+    week_label = f"{week_date.isocalendar().year}-W{week_date.isocalendar().week:02d}" if week_date else "nicht gesetzt"
+    print(f"Neue Garmin-Dateien importiert: {imported['imported']}")
+    print(f"Laufaktivitäten gesamt: {sum(item.get('sport') == 'run' for item in activities)}")
+    print(f"Aktuelle Woche: {week_label}")
+    print(f"Geplante Einheiten: {len(data['plan'].get('planned_sessions', []))}")
+    print(f"Erledigte Einheiten: {completed}")
+    print(f"Warnungen: {data['metrics']['warning_count']}")
+    print("Dashboard aktualisiert: dashboard/index.html")
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except KeyboardInterrupt:
+        raise SystemExit("Abgebrochen.")
+    except Exception as exc:
+        print(f"FEHLER: Dashboard konnte nicht gebaut werden: {exc}", file=sys.stderr)
+        raise SystemExit(1)

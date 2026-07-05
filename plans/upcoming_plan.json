@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "weeks": [
+    {
+      "week_start": "2026-07-13",
+      "week_end": "2026-07-19",
+      "phase": "Block 01 – Einstieg Juli 2026",
+      "focus": "Schwelle und lockeren Laufumfang etablieren",
+      "planned_sessions": [
+        {"id": "2026-W29-run-threshold", "type": "run", "title": "3 × 8 min Schwelle", "priority": 1, "target_intensity": "hard", "target_distance_km": 8},
+        {"id": "2026-W29-run-easy", "type": "run", "title": "45 min locker + 4 Steigerungen", "priority": 2, "target_intensity": "LIT", "target_duration_min": 45},
+        {"id": "2026-W29-bike-3030", "type": "bike", "title": "Kickr 3 × 10 × 30/30", "priority": 3, "target_intensity": "hard", "target_duration_min": 60},
+        {"id": "2026-W29-strength", "type": "strength", "title": "Krafttraining", "priority": 4, "target_intensity": "moderate", "target_duration_min": 50}
+      ]
+    },
+    {
+      "week_start": "2026-07-20",
+      "week_end": "2026-07-26",
+      "phase": "Block 01 – Einstieg Juli 2026",
+      "focus": "Laufspezifische Ausdauer und Hügeltechnik",
+      "planned_sessions": [
+        {"id": "2026-W30-run-1000", "type": "run", "title": "4 × 1000 m kontrolliert", "priority": 1, "target_intensity": "hard", "target_distance_km": 9},
+        {"id": "2026-W30-run-hills", "type": "run", "title": "Locker + 8 × 12 s Bergsprint", "priority": 2, "target_intensity": "LIT", "target_distance_km": 7},
+        {"id": "2026-W30-bike-over-under", "type": "bike", "title": "Kickr Over/Unders", "priority": 3, "target_intensity": "hard", "target_duration_min": 75}
+      ]
+    },
+    {
+      "week_start": "2026-07-27",
+      "week_end": "2026-08-02",
+      "phase": "Block 01 – Entlastung",
+      "focus": "Belastung aufnehmen und frisch werden",
+      "planned_sessions": [
+        {"id": "2026-W31-run-400", "type": "run", "title": "6 × 400 m frisch", "priority": 1, "target_intensity": "moderate", "target_distance_km": 7, "target_pace": "ca. 3:38–3:45 min/km (400 m in 87–90 s)"},
+        {"id": "2026-W31-run-easy", "type": "run", "title": "35–45 min locker", "priority": 2, "target_intensity": "LIT", "target_duration_min": 40},
+        {"id": "2026-W31-bike-reduced", "type": "bike", "title": "Kickr 6 × 2 min reduziert", "priority": 3, "target_intensity": "moderate", "target_duration_min": 50}
+      ]
+    }
+  ]
+}

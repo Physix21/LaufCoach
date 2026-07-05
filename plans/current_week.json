@@ -1,0 +1,79 @@
+{
+  "week_start": "2026-07-06",
+  "week_end": "2026-07-12",
+  "phase": "Block 01 – Einstieg Juli 2026",
+  "focus": "Laufrobustheit, kontrollierte Schnelligkeit und Rad-HIIT integrieren",
+  "next_milestone": "5-km-Formcheck im März/April 2027: unter 18:00",
+  "planned_sessions": [
+    {
+      "id": "2026-W28-run-intervals",
+      "scheduled_date": "2026-07-07",
+      "type": "run",
+      "title": "8 × 400 m kontrolliert",
+      "priority": 1,
+      "status": "planned",
+      "target_duration_min": 50,
+      "target_distance_km": 8,
+      "target_intensity": "hard",
+      "description": "15 min locker einlaufen, 4 × 80 m Steigerung, 8 × 400 m in 88–90 s (3:40–3:45 min/km), 200 m Trabpause, 10–15 min auslaufen.",
+      "target_pace": "3:40–3:45 min/km (400 m in 88–90 s)",
+      "rpe_target": "7–8"
+    },
+    {
+      "id": "2026-W28-run-hills",
+      "scheduled_date": "2026-07-10",
+      "type": "run",
+      "title": "Lockerer Lauf + Bergsprints",
+      "priority": 2,
+      "status": "planned",
+      "target_duration_min": 45,
+      "target_distance_km": 7,
+      "target_intensity": "LIT",
+      "description": "35–45 min locker laufen, danach 6 × 10 s Bergsprint mit vollständiger Gehpause.",
+      "target_pace": "5:00–5:40 min/km; Bergsprints technisch sauber",
+      "rpe_target": "3–4 (Sprints kurz 8–9)"
+    },
+    {
+      "id": "2026-W28-bike-hiit",
+      "scheduled_date": "2026-07-09",
+      "type": "bike",
+      "title": "Kickr Core 5 × 4 min",
+      "priority": 3,
+      "status": "planned",
+      "target_duration_min": 65,
+      "target_distance_km": null,
+      "target_intensity": "hard",
+      "description": "15 min Warm-up, 5 × 4 min bei 110–115 % FTP mit 4 min locker, anschließend ausfahren.",
+      "target_pace": "315–328 W bei FTP 285 W",
+      "rpe_target": "8"
+    },
+    {
+      "id": "2026-W28-strength",
+      "scheduled_date": "2026-07-11",
+      "type": "strength",
+      "title": "Laufspezifisches Krafttraining",
+      "priority": 4,
+      "status": "planned",
+      "target_duration_min": 50,
+      "target_distance_km": null,
+      "target_intensity": "moderate",
+      "description": "Kreuzheben, Bulgarian Split Squat, Wadenheben, Klimmzüge, Bankdrücken und Rückenstrecker; kein Muskelversagen.",
+      "target_pace": "Kontrolliert schwer, 1–3 Wiederholungen in Reserve",
+      "rpe_target": "6–7"
+    },
+    {
+      "id": "2026-W28-optional-endurance",
+      "scheduled_date": "2026-07-12",
+      "type": "bike",
+      "title": "Optionale lockere Ausdauer",
+      "priority": 5,
+      "status": "optional",
+      "target_duration_min": 120,
+      "target_distance_km": null,
+      "target_intensity": "LIT",
+      "description": "Nur bei guter Frische: lockere Radausfahrt oder kurze zusätzliche LIT-Einheit.",
+      "target_pace": "Durchgehend locker",
+      "rpe_target": "2–3"
+    }
+  ]
+}
