@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T11:39:33+02:00",
+  "generated_at": "2026-07-05T11:43:21+02:00",
   "today": "2026-07-05",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -25,7 +25,7 @@
         "target_duration_min": 50,
         "target_distance_km": 8,
         "target_intensity": "hard",
-        "description": "15 min locker einlaufen, 4 × 80 m Steigerung, 8 × 400 m in 88–90 s (3:40–3:45 min/km), 200 m Trabpause, 10–15 min auslaufen.",
+        "description": "Nur bei im Alltag und beim Einlaufen unauffälliger Wade: 15 min locker einlaufen, 4 × 80 m Steigerung, 8 × 400 m in 88–90 s (3:40–3:45 min/km), 200 m Trabpause, 10–15 min auslaufen. Bei verbleibender Wadenmüdigkeit stattdessen 35–45 min locker ohne Steigerungen.",
         "target_pace": "3:40–3:45 min/km (400 m in 88–90 s)",
         "rpe_target": "7–8",
         "display_status": "offen"
@@ -40,7 +40,7 @@
         "target_duration_min": 45,
         "target_distance_km": 7,
         "target_intensity": "LIT",
-        "description": "35–45 min locker laufen, danach 6 × 10 s Bergsprint mit vollständiger Gehpause.",
+        "description": "35–45 min locker laufen; nur bei vollständig unauffälliger Wade danach 6 × 10 s Bergsprint mit vollständiger Gehpause, sonst ohne Zusatzintensität beenden.",
         "target_pace": "5:00–5:40 min/km; Bergsprints technisch sauber",
         "rpe_target": "3–4 (Sprints kurz 8–9)",
         "display_status": "offen"
@@ -102,7 +102,7 @@
     "target_duration_min": 50,
     "target_distance_km": 8,
     "target_intensity": "hard",
-    "description": "15 min locker einlaufen, 4 × 80 m Steigerung, 8 × 400 m in 88–90 s (3:40–3:45 min/km), 200 m Trabpause, 10–15 min auslaufen.",
+    "description": "Nur bei im Alltag und beim Einlaufen unauffälliger Wade: 15 min locker einlaufen, 4 × 80 m Steigerung, 8 × 400 m in 88–90 s (3:40–3:45 min/km), 200 m Trabpause, 10–15 min auslaufen. Bei verbleibender Wadenmüdigkeit stattdessen 35–45 min locker ohne Steigerungen.",
     "target_pace": "3:40–3:45 min/km (400 m in 88–90 s)",
     "rpe_target": "7–8",
     "display_status": "offen"

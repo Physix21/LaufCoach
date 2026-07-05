@@ -55,10 +55,11 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Kontinuierlicher Laufabschnitt: 9,43 km in 48:40 min; Ø 5:10 min/km, Ø 138 bpm
 - Kilometersplits des kontinuierlichen Abschnitts: 5:12 / 5:06 / 5:10 / 5:13 / 5:05 / 5:00 / 4:57 / 5:07 / 5:13 min/km
 - Danach sechs kurze schnelle Abschnitte über aufgezeichnete 0,09–0,11 km in 16,3–20,6 s; dazwischen jeweils 0,13–0,14 km sehr lockere Erholung
-- RPE, Gefühl und Beschwerden: nicht angegeben
+- Freiwillige Athletenangabe: Im letzten Kilometer des lockeren Laufabschnitts war die untere Wadenmuskulatur deutlich muskulär erschöpft. Schmerz oder Beschwerden wurden nicht berichtet.
 
 ### Coaching-Einschätzung
 
 - Der kontinuierliche Teil lag im vorgesehenen lockeren Bereich von ca. 5:00–5:50 min/km. Herzfrequenz und Tempo zeigen trotz 89 Höhenmetern keinen auffälligen Leistungseinbruch; eine formale Herzfrequenzdrift ist aus den Rundenwerten wegen des wechselnden Profils nicht belastbar ableitbar.
 - Die kurzen Beschleunigungen setzen einen kleinen neuromuskulären Reiz, ohne die Einheit zu einem zweiten harten Ausdauertraining zu machen. Die GPS-basierten Paces dieser sehr kurzen Abschnitte sind nur eingeschränkt präzise.
 - Für die Kalenderwoche 29.06.–05.07. sind damit zwei Läufe über insgesamt 18,96 km dokumentiert: eine harte Intervalleinheit und dieser lockere Lauf. Das entspricht der aktuellen Aufbaupriorität, ohne eine zusätzliche Plansteigerung zu begründen.
+- Die lokale Wadenerschöpfung passt als mögliche Belastungsreaktion zum deutlich gestiegenen Laufumfang, belegt aber für sich allein keine Verletzung. Die nächste schnelle Laufeinheit erfolgt nur bei im Alltag und beim Einlaufen unauffälliger Wade; bei verbleibender Ermüdung wird sie durch einen lockeren Lauf ersetzt.
