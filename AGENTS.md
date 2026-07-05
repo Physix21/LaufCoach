@@ -24,6 +24,23 @@ Write Markdown in UTF-8 and preserve the repository's German terminology. Use on
 
 Before coaching, read `athlete_profile.md`, `coach_instructions.md`, `annual_plan_2026_2027.md`, `current_status.md`, and recent entries in `logs/training_diary_2026.md`. After receiving an activity, update both persistent status files. Separate measurements, athlete reports, and interpretations; mark missing data rather than estimating it. Do not require or routinely request RPE, feelings, or complaints. Confirm dates, distances, units, planned versus completed sessions, and plan consistency. Never edit raw Garmin exports in place. Future scripts need focused tests with anonymized fixtures; do not use personal exports as test data.
 
+## Dashboard Publication
+
+After every completed project change, rebuild and publish the dashboard without waiting for a separate request:
+
+```powershell
+python scripts/build_dashboard.py
+rg --files
+rg "^#" -g "*.md" .
+git diff --check
+git add .
+git commit -m "<concise imperative message>"
+git push origin main
+```
+
+Review `git status` and the diff before staging. Do not commit Garmin raw exports, secrets, local agent files, or unrelated user changes; the existing `.gitignore` must remain effective. A successful push to `main` triggers `.github/workflows/pages.yml` and updates the public dashboard at `https://physix21.github.io/LaufCoach/`. If the build, validation, authentication, push, or Pages deployment fails, report the exact blocker instead of claiming that the dashboard is current.
+
 ## Commit & Pull Request Guidelines
 
 No Git history is available in the current workspace, so no established commit convention can be inferred. Use concise, imperative messages such as `docs: update July training block` or `data: add weekly summary schema`. Pull requests should explain the coaching or data change, list affected files, note manual validation, and link an issue when applicable. Include screenshots only when rendered Markdown or charts change. Keep athlete health and identifiable training data out of public discussions and fixtures.
+
