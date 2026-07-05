@@ -1,5 +1,7 @@
 # Laufcoach – Projekt sub 17 auf 5 km
 
+Die dauerhafte sportwissenschaftliche Evidenzbasis mit Quellen, Grenzen und konkreten Coachingregeln liegt in [`wissenschaftliche_grundlagen_5km.md`](wissenschaftliche_grundlagen_5km.md). Sie wird vor neuen mehrmonatigen Trainingsblöcken und bei relevanter neuer Evidenz überprüft.
+
 Ziel: Im Juni 2027 5 km auf der Straße unter 17:00 Minuten laufen.
 
 Dieses Projekt dient als lokales Trainingstagebuch und Planungsordner.  
