@@ -78,7 +78,8 @@ def load_plan(path: Path) -> dict[str, Any]:
 
 def write_json(path: Path, data: Any) -> None:
     temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    with temporary.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     temporary.replace(path)
 
 
@@ -446,7 +447,8 @@ def main() -> int:
     write_json(DATA_FILE, data)
     write_json(METRICS_FILE, data["metrics"])
     temporary_index = INDEX_FILE.with_suffix(INDEX_FILE.suffix + ".tmp")
-    temporary_index.write_text(render_html(data), encoding="utf-8")
+    with temporary_index.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(render_html(data))
     temporary_index.replace(INDEX_FILE)
     completed = sum(item.get("display_status") == "erledigt" for item in data["plan"].get("planned_sessions", []))
     week_date = parse_iso(plan.get("week_start", ""))

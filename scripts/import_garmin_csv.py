@@ -394,7 +394,8 @@ def write_table(path: Path, rows: list[dict[str, Any]], fields: list[str]) -> No
 
 def write_json(path: Path, data: Any) -> None:
     temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    with temporary.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     temporary.replace(path)
 
 

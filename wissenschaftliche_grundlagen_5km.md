@@ -1,6 +1,6 @@
 # Wissenschaftliche Grundlagen für das 5-km-Training
 
-**Recherchestand:** 05.07.2026  
+**Recherchestand:** 05.07.2026
 **Geltungsbereich:** erwachsener, gesunder Läufer mit Ziel sub 17:00 min im Juni 2027 und dem in `athlete_profile.md` beschriebenen Trainingsrahmen
 
 Dieses Dokument ist die dauerhafte Evidenzbasis für Trainingsentscheidungen im Repository. Es ersetzt weder individuelle Diagnostik noch medizinische Beratung. Konkrete Belastungen werden immer mit dem Trainingsverlauf, den Messdaten und freiwillig berichteten Beschwerden abgeglichen.
