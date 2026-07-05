@@ -42,11 +42,11 @@ ALIASES = {
     "distance": ("distance", "distanz", "distance km", "distanz km"),
     "pace": ("average pace", "avg pace", "durchschnittspace", "pace", "o pace min km"),
     "speed": ("average speed", "avg speed", "durchschnittsgeschwindigkeit", "geschwindigkeit"),
-    "avg_hr": ("average heart rate", "avg heart rate", "avg hr", "durchschnittliche herzfrequenz", "o herzfrequenz bpm"),
-    "max_hr": ("maximum heart rate", "max heart rate", "max hr", "maximale herzfrequenz bpm"),
-    "avg_power": ("average power", "avg power", "durchschnittliche leistung", "o leistung w"),
-    "max_power": ("maximum power", "max power", "max leistung w"),
-    "elevation": ("elevation gain", "total ascent", "anstieg gesamt m", "hoehenmeter"),
+    "avg_hr": ("average heart rate", "avg heart rate", "avg hr", "durchschnittliche herzfrequenz", "o herzfrequenz", "o herzfrequenz bpm"),
+    "max_hr": ("maximum heart rate", "max heart rate", "max hr", "maximale herzfrequenz", "maximale herzfrequenz bpm"),
+    "avg_power": ("average power", "avg power", "durchschnittliche leistung", "o leistung", "o leistung w"),
+    "max_power": ("maximum power", "max power", "max leistung", "max leistung w"),
+    "elevation": ("elevation gain", "total ascent", "anstieg gesamt", "anstieg gesamt m", "hoehenmeter"),
     "training_effect": ("training effect", "trainingseffekt", "aerobic te"),
     "rpe": ("rpe", "perceived exertion", "belastungsempfinden"),
     "notes": ("notes", "notizen", "comments", "kommentare"),
@@ -345,9 +345,14 @@ def parse_file(path: Path, hints: dict[str, dict[str, str]]) -> tuple[list[dict[
         return [], [], [f"{path.name}: Weder Dauer- noch Distanzspalte erkannt; Datei übersprungen."]
 
     lap_column = columns["lap"]
-    summary_rows = []
-    if lap_column:
-        summary_rows = [row for row in rows if normalize(row.get(lap_column, "")) in {"ubersicht", "uebersicht", "summary", "total", "gesamt"}]
+    summary_markers = {"ubersicht", "uebersicht", "summary", "total", "gesamt"}
+    # Garmin platziert "Übersicht" je nach Exportvariante nicht zwingend in
+    # der Rundenspalte. Die komplette Zeile prüfen, damit die Summenzeile nicht
+    # als zusätzliche Runde in die selbst berechnete Gesamtsumme eingeht.
+    summary_rows = [
+        row for row in rows
+        if any(normalize(value) in summary_markers for value in row.values())
+    ]
 
     activities: list[dict[str, str]] = []
     splits: list[dict[str, str]] = []

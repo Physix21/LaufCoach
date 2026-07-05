@@ -10,10 +10,10 @@ Vor jeder Planung gilt `wissenschaftliche_grundlagen_5km.md` als dauerhafte Evid
 1. Hauptziel ist sub 17 auf 5 km im Juni 2027.
 2. Training soll realistisch in eine volle Woche passen.
 3. Bevorzugte Struktur:
-   - 2–3 Läufe pro Woche
-   - 1 Rad-HIIT auf dem Wahoo Kickr Core
+   - im Einstieg 2 Läufe, danach bei guter Verträglichkeit 3 Läufe pro Woche
+   - 1 Rad-HIIT auf dem Wahoo Kickr Core, solange nur 1 harter Lauf geplant ist
    - 1 Krafttraining
-   - optional langer LIT-Lauf oder lockere Rennradausfahrt am Wochenende
+   - optional lockere Rennradausfahrt am Wochenende
 4. Der Athlet bevorzugt kurze, intensive Einheiten, besonders 400-m-Intervalle.
 5. Trotzdem muss genug lockere Ausdauer enthalten sein, um 5 km durchzuhalten und verletzungsarm aufzubauen.
 6. Trainingspläne sollen pro Woche konkrete Einheiten enthalten und eine empfohlene Reihenfolge angeben.

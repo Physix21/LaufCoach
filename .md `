@@ -1,0 +1,13 @@
+warning: in the working copy of 'annual_plan_2026_2027.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'coach_instructions.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'current_status.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/processed/activities.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/processed/dashboard_metrics.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/processed/imported_files.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/processed/splits.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/processed/weekly_summary.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'logs/training_diary_2026.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'plans/block_01_juli_2026.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'plans/upcoming_plan.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'plans/weekly_planning_prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/import_garmin_csv.py', LF will be replaced by CRLF the next time Git touches it

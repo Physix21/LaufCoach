@@ -3,10 +3,13 @@
 Ziel dieses Blocks:
 
 - Laufumfang kontrolliert erhöhen
+- einen kurzen dritten lockeren Lauf progressiv vorbereiten
 - schnelle Beine behalten
 - keine Verletzungsrisiken eingehen
 - Rad-HIIT integrieren
 - Krafttraining laufrelevant gestalten
+
+Leitplanke: Woche 1 bleibt bei zwei Läufen. In Woche 2 kann bei unauffälliger Verträglichkeit ein sehr kurzer dritter Lauf erprobt werden. In Woche 3 wird dieser Lauf zum Aufbauziel. Woche 4 reduziert die Laufbelastung wieder. Rad-HIIT zählt immer als harter Ausdauerreiz.
 
 ## Woche 1
 
@@ -95,15 +98,18 @@ Gesamt: ca. 7–8 km
 
 RPE: 3–4/10
 
-### Optional Lauf 3 oder Rad-LIT
+### Optionaler kurzer Lauf 3 oder Rad-LIT
+
+Nur ergänzen, wenn Woche 1 und die ersten beiden Läufe dieser Woche ohne Beschwerden und ohne auffälligen Leistungseinbruch absolviert wurden.
 
 Variante A:
 
-- 55–65 min locker laufen bei ca. 5:10–5:50/km
+- 20–25 min sehr locker laufen bei ca. 5:10–5:50/km
+- keine Steigerungen und keine Bergsprints
 
 Variante B:
 
-- 2–3 h Rennrad locker, wirklich LIT
+- 45–90 min Rennrad locker, wirklich LIT
 
 ### Rad HIIT – 30/30er
 
@@ -145,13 +151,15 @@ Gesamt: ca. 7 km
 - volle Pause zurückgehen
 - Fokus: hoher Körperschwerpunkt, kurze Bodenkontaktzeit, sauberer Abdruck
 
-### Lauf 3 oder Rad-LIT
+### Lauf 3 – kurzer lockerer Aufbau
 
-- 60–70 min locker laufen
+- 25–35 min locker bei ca. 5:10–5:50/km
+- keine Zusatzintensität
+- Aufbauziel dieser Woche, sofern die bisherigen Läufe verträglich waren
 
-oder
+Bei fehlender Laufverträglichkeit ersatzweise:
 
-- 2–4 h lockeres Rad
+- 60–120 min lockeres Rad
 
 ### Rad HIIT – Over/Unders
 
@@ -197,3 +205,5 @@ Dauer: 45–60 min
 
 - 2 Sätze pro Übung
 - keine schweren Maximalversuche
+
+Nach dem Block: Wurde der kurze dritte Lauf in Woche 2 oder 3 verträglich absolviert, werden drei Läufe pro Woche im nächsten Block zur Standardstruktur. Andernfalls wird die Zwei-Lauf-Struktur wiederholt und der dritte Lauf später erneut mit 20–25 lockeren Minuten erprobt.

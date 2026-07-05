@@ -12,10 +12,10 @@
 
 Ziel:
 
-- von ca. 10 km/Woche auf ca. 18–22 km/Woche
-- 2–3 Läufe pro Woche stabilisieren
+- von ca. 10 km/Woche kontrolliert in Richtung 18–22 km/Woche entwickeln; die Spanne ist Orientierung, keine Pflicht zu einem festen Datum
+- zunächst 2 Läufe verträglich absolvieren und den dritten Lauf über 20–35 lockere Minuten zum Standard entwickeln
 - kurze Intervalle kontrolliert einbauen
-- lockere Läufe akzeptieren und nutzen
+- zusätzlichen Umfang zuerst über lockere Laufminuten aufbauen
 - Krafttraining etablieren
 - Rad-HIIT integrieren, aber nicht mit Lauf-HIIT überladen
 
@@ -24,17 +24,19 @@ Typische Einheiten:
 - 8 x 400 m kontrolliert
 - 3 x 8 min Schwelle
 - lockerer Lauf + kurze Bergsprints
-- optional 60 min LIT-Lauf oder lockere Radausfahrt
+- kurzer dritter LIT-Lauf; bei fehlender Laufverträglichkeit ersatzweise lockeres Rad
 
 ## Phase 2: September–November 2026 – Aerobe Basis und Schwelle
 
 Ziel:
 
-- ca. 22–30 km/Woche
+- ca. 22–30 km/Woche als anpassbare Orientierung
+- drei Läufe pro Woche stabilisieren: ein Qualitätslauf, ein lockerer Lauf mit Steigerungen und ein längerer lockerer Lauf
 - Schwellenleistung verbessern
 - lockere Laufumfänge erhöhen
 - 400er/kurze Intervalle zur Laufökonomie behalten
 - lange LIT-Reize über Lauf oder Rad
+- Rad-HIIT nur zusätzlich, wenn in der Woche höchstens ein harter Lauf vorgesehen ist
 
 Typische Einheiten:
 
@@ -53,6 +55,7 @@ Ziel:
 - kurze intensive Reize
 - Krafttraining spezifischer
 - keine zu frühe 5-km-Schärfe
+- 400er, Hügel und längere Intervalle von etwa 2–5 min blockweise abwechseln
 
 Typische Einheiten:
 
@@ -69,6 +72,7 @@ Ziel:
 - aktuelle 5-km-Leistung deutlich verbessern
 - Einheiten in Richtung 17:xx stabilisieren
 - Formcheck vorbereiten
+- bei zwei harten Laufeinheiten das Radtraining locker halten
 
 Typische Einheiten:
 
@@ -91,7 +95,7 @@ Ziel:
 - Zielpace 3:24/km zunehmend integrieren
 - Tempohärte aufbauen
 - Umfang nicht maximal, sondern spezifisch
-- Rad-HIIT eher erhalten als ausbauen
+- Rad überwiegend locker fahren; Rad-HIIT ersetzt bei Bedarf einen harten Lauf, kommt aber nicht als dritter harter Ausdauerreiz hinzu
 
 Typische Einheiten:
 
@@ -120,11 +124,11 @@ Typische Einheiten:
 
 ## Langfristige Zielstruktur
 
-In den wichtigsten Phasen möglichst:
+Standardstruktur nach stabilem Aufbau:
 
-- 3 Läufe/Woche
-- 1 Rad-HIIT/Woche
+- 3 Läufe/Woche: 1 Qualitätslauf, 1 lockerer Lauf mit Steigerungen und 1 längerer lockerer Lauf
+- 1 Rad-HIIT/Woche, solange nur 1 harter Lauf geplant ist; bei 2 harten Läufen nur lockeres Rad
 - 1 Krafttraining/Woche
 - optional lockere Radausfahrt
 
-Dauerhaft nur 2 Läufe/Woche macht sub 17 deutlich schwieriger, ist aber in Belastungswochen besser als erzwungene Überlastung.
+Dauerhaft nur 2 Läufe/Woche macht sub 17 deutlich schwieriger, ist aber in Belastungswochen besser als erzwungene Überlastung. Laufumfang wird zuerst über lockere Minuten gesteigert. Umfang, Intensität und Häufigkeit werden nicht gleichzeitig deutlich erhöht.

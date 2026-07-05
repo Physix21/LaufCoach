@@ -10,13 +10,16 @@ Bitte werte die folgende Trainingswoche aus und erstelle den Plan für die näch
 Berücksichtige:
 - Hauptziel sub 17
 - aktuelle Phase laut annual_plan_2026_2027.md
-- maximal 2–3 Läufe pro Woche
-- 1 Rad-HIIT auf dem Kickr Core
+- nach dem Einstieg möglichst 3 verträgliche Läufe pro Woche; Alternativplan mit 2 Läufen
+- dritten Lauf zunächst über kurze lockere Laufzeit aufbauen
+- maximal 2 harte Ausdauerreize pro Woche
+- Rad-HIIT auf dem Kickr Core nur, wenn höchstens 1 harter Lauf geplant ist; sonst Rad locker
 - 1 Krafttraining
 - Alltag stressig, daher effiziente Einheiten
 - keine unnötige Verletzungsgefahr
 - Rad-HIIT zählt als harte Einheit
 - ich bevorzuge Pace-Vorgaben
+- Trainingspaces aus aktuellen Leistungsankern ableiten, nicht automatisch aus der Zielpace
 
 Hier ist meine Woche:
 

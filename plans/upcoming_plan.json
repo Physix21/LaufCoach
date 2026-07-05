@@ -9,8 +9,9 @@
       "planned_sessions": [
         {"id": "2026-W29-run-threshold", "type": "run", "title": "3 × 8 min Schwelle", "priority": 1, "target_intensity": "hard", "target_distance_km": 8},
         {"id": "2026-W29-run-easy", "type": "run", "title": "45 min locker + 4 Steigerungen", "priority": 2, "target_intensity": "LIT", "target_duration_min": 45},
-        {"id": "2026-W29-bike-3030", "type": "bike", "title": "Kickr 3 × 10 × 30/30", "priority": 3, "target_intensity": "hard", "target_duration_min": 60},
-        {"id": "2026-W29-strength", "type": "strength", "title": "Krafttraining", "priority": 4, "target_intensity": "moderate", "target_duration_min": 50}
+        {"id": "2026-W29-run-easy-short", "type": "run", "title": "Optional 20–25 min sehr locker", "priority": 3, "status": "optional", "target_intensity": "LIT", "target_duration_min": 25, "target_pace": "5:10–5:50 min/km; nur bei unauffälliger Verträglichkeit"},
+        {"id": "2026-W29-bike-3030", "type": "bike", "title": "Kickr 3 × 10 × 30/30", "priority": 4, "target_intensity": "hard", "target_duration_min": 60},
+        {"id": "2026-W29-strength", "type": "strength", "title": "Krafttraining", "priority": 5, "target_intensity": "moderate", "target_duration_min": 50}
       ]
     },
     {
@@ -21,7 +22,8 @@
       "planned_sessions": [
         {"id": "2026-W30-run-1000", "type": "run", "title": "4 × 1000 m kontrolliert", "priority": 1, "target_intensity": "hard", "target_distance_km": 9},
         {"id": "2026-W30-run-hills", "type": "run", "title": "Locker + 8 × 12 s Bergsprint", "priority": 2, "target_intensity": "LIT", "target_distance_km": 7},
-        {"id": "2026-W30-bike-over-under", "type": "bike", "title": "Kickr Over/Unders", "priority": 3, "target_intensity": "hard", "target_duration_min": 75}
+        {"id": "2026-W30-run-easy-short", "type": "run", "title": "25–35 min locker", "priority": 3, "target_intensity": "LIT", "target_duration_min": 30, "target_pace": "5:10–5:50 min/km; ohne Zusatzintensität"},
+        {"id": "2026-W30-bike-over-under", "type": "bike", "title": "Kickr Over/Unders", "priority": 4, "target_intensity": "hard", "target_duration_min": 75}
       ]
     },
     {

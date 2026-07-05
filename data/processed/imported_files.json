@@ -3,7 +3,7 @@
     "17062026.csv": {
       "sha256": "04bd3cac9439e7eeeda1b4c96696802f316e7a595416175ba8b5100c2ef836cd",
       "status": "imported",
-      "imported_at": "2026-07-04T13:58:50+02:00",
+      "imported_at": "2026-07-05T11:36:57+02:00",
       "activity_ids": [
         "17062026"
       ],
@@ -14,13 +14,22 @@
     "29062026.csv": {
       "sha256": "d2b677b7a3abe842304f981edf7d50e8560ecce0bb9271e7f9d5f4c79feafb4a",
       "status": "imported",
-      "imported_at": "2026-07-04T13:58:50+02:00",
+      "imported_at": "2026-07-05T11:36:57+02:00",
       "activity_ids": [
         "29062026"
       ],
       "warnings": [
         "29062026.csv: Keine Sportart erkannt; 'run' angenommen. Für Rad/Kraft einen Zusatz wie '_kickr' oder '_kraft' verwenden."
       ]
+    },
+    "05072026.csv": {
+      "sha256": "5655587b32a306cb54a32abef372ce5318aeb16b6ee4dece2a99e386ae34c59f",
+      "status": "imported",
+      "imported_at": "2026-07-05T11:36:57+02:00",
+      "activity_ids": [
+        "05072026"
+      ],
+      "warnings": []
     }
   }
 }

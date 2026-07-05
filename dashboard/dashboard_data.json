@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T09:28:28+02:00",
+  "generated_at": "2026-07-05T11:39:33+02:00",
   "today": "2026-07-05",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -108,6 +108,27 @@
     "display_status": "offen"
   },
   "recent_activities": [
+    {
+      "activity_id": "05072026",
+      "source_file": "05072026.csv",
+      "date": "2026-07-05",
+      "sport": "run",
+      "session_name": "Lockerer Lauf + 6 kurze Steigerungen",
+      "duration_min": 57.72,
+      "distance_km": 10.78,
+      "avg_pace_sec_per_km": 321.2,
+      "avg_speed_kmh": 11.21,
+      "avg_hr": 136.0,
+      "max_hr": 158.0,
+      "avg_power": 353.0,
+      "max_power": 721.0,
+      "elevation_gain_m": 89.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
     {
       "activity_id": "29062026",
       "source_file": "29062026.csv",
@@ -247,16 +268,16 @@
       "week_start": "2026-06-29",
       "week_end": "2026-07-05",
       "week_label": "KW 27",
-      "run_km": 8.18,
+      "run_km": 18.96,
       "bike_hours": 0.0,
-      "run_sessions": 1,
+      "run_sessions": 2,
       "bike_sessions": 0,
       "strength_sessions": 0,
       "hard_endurance_sessions": 1,
-      "lit_sessions": 0,
+      "lit_sessions": 1,
       "moderate_sessions": 0,
       "hard_sessions": 1,
-      "total_duration_min": 42.5
+      "total_duration_min": 100.2
     },
     {
       "week_start": "2026-07-06",
@@ -313,7 +334,7 @@
       "total_duration_min": 0
     },
     "warning_count": 0,
-    "activities_total": 2
+    "activities_total": 3
   },
   "upcoming": [
     {
@@ -339,10 +360,20 @@
           "target_duration_min": 45
         },
         {
+          "id": "2026-W29-run-easy-short",
+          "type": "run",
+          "title": "Optional 20–25 min sehr locker",
+          "priority": 3,
+          "status": "optional",
+          "target_intensity": "LIT",
+          "target_duration_min": 25,
+          "target_pace": "5:10–5:50 min/km; nur bei unauffälliger Verträglichkeit"
+        },
+        {
           "id": "2026-W29-bike-3030",
           "type": "bike",
           "title": "Kickr 3 × 10 × 30/30",
-          "priority": 3,
+          "priority": 4,
           "target_intensity": "hard",
           "target_duration_min": 60
         },
@@ -350,7 +381,7 @@
           "id": "2026-W29-strength",
           "type": "strength",
           "title": "Krafttraining",
-          "priority": 4,
+          "priority": 5,
           "target_intensity": "moderate",
           "target_duration_min": 50
         }
@@ -379,10 +410,19 @@
           "target_distance_km": 7
         },
         {
+          "id": "2026-W30-run-easy-short",
+          "type": "run",
+          "title": "25–35 min locker",
+          "priority": 3,
+          "target_intensity": "LIT",
+          "target_duration_min": 30,
+          "target_pace": "5:10–5:50 min/km; ohne Zusatzintensität"
+        },
+        {
           "id": "2026-W30-bike-over-under",
           "type": "bike",
           "title": "Kickr Over/Unders",
-          "priority": 3,
+          "priority": 4,
           "target_intensity": "hard",
           "target_duration_min": 75
         }
