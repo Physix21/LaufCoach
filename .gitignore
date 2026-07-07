@@ -7,3 +7,4 @@ __pycache__/
 data/raw/garmin/csv/*
 data/raw/garmin/fit/*
 data/raw/garmin/tcx/*
+data/raw/ictrainer/*

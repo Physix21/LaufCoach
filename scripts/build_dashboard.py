@@ -147,6 +147,7 @@ def summarize_weeks(activities: list[dict[str, Any]], plan: dict[str, Any]) -> l
         end = start + timedelta(days=6)
         week_items = [item for item in activities if (d := parse_iso(item.get("date", ""))) and start <= d <= end]
         run_items = [item for item in week_items if item.get("sport") == "run"]
+        endurance_items = [item for item in week_items if item.get("sport") in {"run", "bike"}]
         intensity = Counter(classify_intensity(item) for item in run_items)
         summaries.append({
             "week_start": start.isoformat(),
@@ -157,7 +158,7 @@ def summarize_weeks(activities: list[dict[str, Any]], plan: dict[str, Any]) -> l
             "run_sessions": sum(item.get("sport") == "run" for item in week_items),
             "bike_sessions": sum(item.get("sport") == "bike" for item in week_items),
             "strength_sessions": sum(item.get("sport") == "strength" for item in week_items),
-            "hard_endurance_sessions": sum(classify_intensity(item) == "hard" for item in run_items),
+            "hard_endurance_sessions": sum(classify_intensity(item) == "hard" for item in endurance_items),
             "lit_sessions": intensity["LIT"],
             "moderate_sessions": intensity["moderate"],
             "hard_sessions": intensity["hard"],
@@ -189,13 +190,13 @@ def comparable_sport(value: str) -> str:
 def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[dict[str, Any]]:
     start = parse_iso(plan.get("week_start", ""))
     end = parse_iso(plan.get("week_end", ""))
-    week_items = [item for item in activities if item.get("sport") == "run" and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
+    week_items = [item for item in activities if item.get("sport") in {"run", "bike"} and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
     used: set[str] = set()
     sessions = sorted((dict(item) for item in plan.get("planned_sessions", [])), key=lambda item: item.get("priority", 99))
     for session in sessions:
-        # Nur Laufeinheiten werden über Garmin-Exporte ausgewertet. Rad und Kraft
-        # bleiben reine Planinformation und erhalten bewusst keinen Erledigt-Status.
-        if comparable_sport(session.get("type", "")) != "run":
+        # Kraft bleibt reine Planinformation; Ausdauereinheiten werden über
+        # importierte Aktivitätsdaten abgeglichen.
+        if comparable_sport(session.get("type", "")) not in {"run", "bike"}:
             session["display_status"] = "info"
             continue
         candidates = []
@@ -274,18 +275,18 @@ def create_warnings(plan: dict[str, Any], sessions: list[dict[str, Any]], activi
     end = parse_iso(plan.get("week_end", ""))
     current = next((item for item in weekly if item["week_start"] == (start.isoformat() if start else "")), None)
     previous = next((item for item in weekly if start and item["week_start"] == (start - timedelta(days=7)).isoformat()), None)
-    week_activities = [item for item in activities if item.get("sport") == "run" and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
+    week_activities = [item for item in activities if item.get("sport") in {"run", "bike"} and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
     warnings: list[dict[str, str]] = []
     if current and current["hard_endurance_sessions"] > 2:
-        warnings.append({"level": "warning", "text": "Diese Woche enthält mehr als 2 harte Laufeinheiten. Keine weitere Laufintensität ergänzen."})
-    planned_hard = sum(item.get("target_intensity", "").lower() == "hard" and item.get("type") == "run" for item in sessions if item.get("display_status") != "optional")
+        warnings.append({"level": "warning", "text": "Diese Woche enthält mehr als 2 harte Ausdauerreize. Keine weitere Intensität ergänzen."})
+    planned_hard = sum(item.get("target_intensity", "").lower() == "hard" and item.get("type") in {"run", "bike"} for item in sessions if item.get("display_status") != "optional")
     if planned_hard > 2:
-        warnings.append({"level": "warning", "text": f"Der Plan enthält {planned_hard} harte Laufeinheiten; auf maximal 2 reduzieren."})
+        warnings.append({"level": "warning", "text": f"Der Plan enthält {planned_hard} harte Ausdauerreize; auf maximal 2 reduzieren."})
     hard_dates = sorted(
         (d, item.get("title", ""))
         for item in sessions
         if item.get("target_intensity", "").lower() == "hard"
-        and item.get("type") == "run"
+        and item.get("type") in {"run", "bike"}
         and (d := parse_iso(item.get("scheduled_date", "")))
     )
     for (first_date, first_title), (second_date, second_title) in zip(hard_dates, hard_dates[1:]):
@@ -326,9 +327,9 @@ def next_session(sessions: list[dict[str, Any]]) -> dict[str, Any] | None:
 
 def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> dict[str, Any]:
     running_activities = [item for item in activities if item.get("sport") == "run"]
-    sessions, unmatched = match_plan(plan, running_activities)
-    warnings = create_warnings(plan, sessions, running_activities, weekly)
-    recent = sorted(running_activities, key=lambda item: (item.get("date", ""), item.get("activity_id", "")), reverse=True)[:10]
+    sessions, unmatched = match_plan(plan, activities)
+    warnings = create_warnings(plan, sessions, activities, weekly)
+    recent = sorted(activities, key=lambda item: (item.get("date", ""), item.get("activity_id", "")), reverse=True)[:10]
     for item in recent:
         item["intensity"] = classify_intensity(item)
     plan_start = plan.get("week_start", "")
@@ -415,7 +416,7 @@ def render_html(data: dict[str, Any]) -> str:
     $('intensity').innerHTML = ['LIT','moderate','hard'].map(key => `<div class="intensity-row"><div><span class="dot ${{key}}"></span><strong>${{key==='moderate'?'Moderat':key}}</strong><b>${{d.intensity[key]}}</b></div><div class="track"><i class="${{key}}" style="width:${{d.intensity[key]/total*100}}%"></i></div></div>`).join('');
     const weeks=d.weekly_summary, max=Math.max(1,...weeks.map(w=>w.run_km));
     $('weekly-chart').innerHTML=weeks.map(w=>`<div class="bar-column"><span>${{num(w.run_km)}} km</span><div class="bar-track"><i style="height:${{Math.max(2,w.run_km/max*100)}}%"></i></div><small>${{esc(w.week_label)}}</small></div>`).join('');
-    const cw=d.metrics.current_week||{{}}; $('weekly-summary').innerHTML=`<div><strong>${{num(cw.run_km)}} km</strong><span>Laufumfang</span></div><div><strong>${{cw.run_sessions||0}}</strong><span>Läufe</span></div><div><strong>${{cw.hard_endurance_sessions||0}}</strong><span>harte Läufe</span></div>`;
+    const cw=d.metrics.current_week||{{}}; $('weekly-summary').innerHTML=`<div><strong>${{num(cw.run_km)}} km</strong><span>Laufumfang</span></div><div><strong>${{cw.run_sessions||0}}</strong><span>Läufe</span></div><div><strong>${{cw.hard_endurance_sessions||0}}</strong><span>harte Ausdauer</span></div>`;
     $('activities').innerHTML=d.recent_activities.length?d.recent_activities.map(a=>`<tr><td>${{fmtDate(a.date)}}</td><td><span class="badge neutral">${{esc(sport(a.sport))}}</span></td><td><strong>${{esc(a.session_name)}}</strong><small>${{esc(a.intensity)}}</small></td><td>${{num(a.duration_min)}} min</td><td>${{a.distance_km!=null?num(a.distance_km,2)+' km':'–'}}</td><td>${{a.avg_pace_sec_per_km?pace(a.avg_pace_sec_per_km):(a.avg_power?num(a.avg_power,0)+' W':'–')}}</td><td>${{a.avg_hr?num(a.avg_hr,0)+' / '+num(a.max_hr,0):'–'}}</td><td>${{num(a.rpe)}}</td><td>${{esc(a.notes||'–')}}</td></tr>`).join(''):'<tr><td colspan="9" class="empty">Noch keine Aktivitäten importiert.</td></tr>';
     const activityLabels = ['Datum','Sport','Einheit','Dauer','Distanz','Pace / Leistung','Puls','RPE','Notizen'];
     $('activities').querySelectorAll('tr').forEach(row => row.querySelectorAll('td:not(.empty)').forEach((cell, index) => cell.dataset.label = activityLabels[index]));

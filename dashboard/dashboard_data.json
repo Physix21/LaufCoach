@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-05T11:43:21+02:00",
-  "today": "2026-07-05",
+  "generated_at": "2026-07-07T14:45:38+02:00",
+  "today": "2026-07-07",
   "header": {
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
@@ -58,7 +58,9 @@
         "description": "15 min Warm-up, 5 × 4 min bei 110–115 % FTP mit 4 min locker, anschließend ausfahren.",
         "target_pace": "315–328 W bei FTP 285 W",
         "rpe_target": "8",
-        "display_status": "info"
+        "display_status": "erledigt",
+        "matched_activity_id": "20260707_ictrainer",
+        "match_reason": "Sportart/Woche passend; Heuristik-Score 4.5"
       },
       {
         "id": "2026-W28-strength",
@@ -88,7 +90,7 @@
         "description": "Nur bei guter Frische: lockere Radausfahrt oder kurze zusätzliche LIT-Einheit.",
         "target_pace": "Durchgehend locker",
         "rpe_target": "2–3",
-        "display_status": "info"
+        "display_status": "optional"
       }
     ]
   },
@@ -108,6 +110,27 @@
     "display_status": "offen"
   },
   "recent_activities": [
+    {
+      "activity_id": "20260707_ictrainer",
+      "source_file": "Konstantin_20260707_1244_Woche_8__Workout_1__5x4min_5x4min_mit_110_FTP_Training_td.tcx",
+      "date": "2026-07-07",
+      "sport": "bike",
+      "session_name": "Rad-HIIT Kickr Core 5 x 4 min",
+      "duration_min": 55.22,
+      "distance_km": 29.66,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 32.23,
+      "avg_hr": 133.0,
+      "max_hr": 166.0,
+      "avg_power": 199.0,
+      "max_power": 311.0,
+      "elevation_gain_m": 0.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "5 x 4 min bei ca. 305 W; Rohdaten aus ictrainer-TCX",
+      "intensity": "hard"
+    },
     {
       "activity_id": "05072026",
       "source_file": "05072026.csv",
@@ -284,11 +307,11 @@
       "week_end": "2026-07-12",
       "week_label": "KW 28",
       "run_km": 0,
-      "bike_hours": 0.0,
+      "bike_hours": 0.92,
       "run_sessions": 0,
-      "bike_sessions": 0,
+      "bike_sessions": 1,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 0,
+      "hard_endurance_sessions": 1,
       "lit_sessions": 0,
       "moderate_sessions": 0,
       "hard_sessions": 0,
@@ -303,7 +326,11 @@
   "warnings": [
     {
       "level": "info",
-      "text": "Geplante Prioritätseinheit noch offen: 8 × 400 m kontrolliert."
+      "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
+    },
+    {
+      "level": "info",
+      "text": "Wichtigste Prioritätseinheit noch offen: 8 × 400 m kontrolliert."
     }
   ],
   "metrics": {
@@ -323,11 +350,11 @@
       "week_end": "2026-07-12",
       "week_label": "KW 28",
       "run_km": 0,
-      "bike_hours": 0.0,
+      "bike_hours": 0.92,
       "run_sessions": 0,
-      "bike_sessions": 0,
+      "bike_sessions": 1,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 0,
+      "hard_endurance_sessions": 1,
       "lit_sessions": 0,
       "moderate_sessions": 0,
       "hard_sessions": 0,

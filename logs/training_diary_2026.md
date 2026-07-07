@@ -63,3 +63,31 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die kurzen Beschleunigungen setzen einen kleinen neuromuskulären Reiz, ohne die Einheit zu einem zweiten harten Ausdauertraining zu machen. Die GPS-basierten Paces dieser sehr kurzen Abschnitte sind nur eingeschränkt präzise.
 - Für die Kalenderwoche 29.06.–05.07. sind damit zwei Läufe über insgesamt 18,96 km dokumentiert: eine harte Intervalleinheit und dieser lockere Lauf. Das entspricht der aktuellen Aufbaupriorität, ohne eine zusätzliche Plansteigerung zu begründen.
 - Die lokale Wadenerschöpfung passt als mögliche Belastungsreaktion zum deutlich gestiegenen Laufumfang, belegt aber für sich allein keine Verletzung. Die nächste schnelle Laufeinheit erfolgt nur bei im Alltag und beim Einlaufen unauffälliger Wade; bei verbleibender Ermüdung wird sie durch einen lockeren Lauf ersetzt.
+
+## 07.07.2026 - Kickr Core 5 x 4 min
+
+**Quellen:** `data/raw/ictrainer/Konstantin_20260707_1244_Woche_8__Workout_1__5x4min_5x4min_mit_110_FTP_Training.fit`, `data/raw/ictrainer/Konstantin_20260707_1244_Woche_8__Workout_1__5x4min_5x4min_mit_110_FTP_Training_td.tcx`
+
+### Messdaten
+
+- Sportart: Indoor-Radtraining
+- Gesamt: 29,66 km in 55:13 min; Ø 32,23 km/h
+- Leistung: Ø 199 W, maximal 311 W
+- Herzfrequenz: Ø 133 bpm, maximal 166 bpm
+- Kadenz: Ø 88 rpm, maximal 107 rpm
+- Energie laut TCX: 624 kcal
+- Hauptteil: 5 x 4 min bei ca. 305-306 W; die 4-min-Erholungen lagen bei ca. 135-136 W
+- Arbeitsintervalle:
+  - 4:00 min, Ø 306 W, Ø 153 bpm, max. 158 bpm
+  - 4:00 min, Ø 305 W, Ø 154 bpm, max. 162 bpm
+  - 4:00 min, Ø 305 W, Ø 156 bpm, max. 164 bpm
+  - 4:00 min, Ø 305 W, Ø 157 bpm, max. 164 bpm
+  - 4:00 min, Ø 305 W, Ø 158 bpm, max. 166 bpm
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die fünf Arbeitsintervalle waren sehr gleichmäßig und damit als kontrollierter Rad-HIIT-Reiz verwertbar.
+- Bezogen auf die im Profil genannte FTP-Spanne von ca. 280-290 W entsprechen 305-306 W ungefähr 105-109 % FTP. Das liegt nahe am geplanten 110-%-Reiz, aber unter der konkreten Planvorgabe von 315-328 W bei angenommener FTP 285 W.
+- Die Herzfrequenz stieg über die Arbeitsintervalle progressiv bis 166 bpm, ohne dass die Leistung einbrach. Das spricht für eine solide zentrale Belastung bei guter Leistungsstabilität.
+- Diese Einheit zählt als harter Ausdauerreiz. In der Kalenderwoche 06.07.-12.07. ist damit bereits ein harter Reiz gesetzt; eine harte Laufeinheit bleibt möglich, sollte aber nicht am selben Tag und idealerweise mit mindestens 48 h Abstand erfolgen.
