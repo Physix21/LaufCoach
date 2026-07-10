@@ -7,24 +7,24 @@
     "current_pace": "3:46/km",
     "target_pace": "3:24/km",
     "gap_to_goal": "1:50 min",
-    "target_400m": "81,5 s (3:24 min/km)",
+    "target_400m": "81,5 s (5-km-Renntempo)",
     "progress_percent": 0
   },
   "current_week": {
     "week_start": "2026-07-06",
     "week_end": "2026-07-12",
     "week_label": "KW 28",
-    "run_km": 0,
+    "run_km": 6.63,
     "bike_hours": 0.92,
-    "run_sessions": 0,
+    "run_sessions": 1,
     "bike_sessions": 1,
     "strength_sessions": 0,
-    "hard_endurance_sessions": 1,
+    "hard_endurance_sessions": 2,
     "lit_sessions": 0,
     "moderate_sessions": 0,
-    "hard_sessions": 0,
-    "total_duration_min": 0
+    "hard_sessions": 2,
+    "total_duration_min": 35.5
   },
   "warning_count": 0,
-  "activities_total": 3
+  "activities_total": 4
 }

@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROCESSED = ROOT / "data" / "processed"
 DASHBOARD = ROOT / "dashboard"
 ACTIVITIES_FILE = PROCESSED / "activities.csv"
+SPLITS_FILE = PROCESSED / "splits.csv"
 WEEKLY_FILE = PROCESSED / "weekly_summary.csv"
 METRICS_FILE = PROCESSED / "dashboard_metrics.json"
 DATA_FILE = DASHBOARD / "dashboard_data.json"
@@ -103,6 +104,24 @@ def read_activities() -> list[dict[str, Any]]:
     return rows
 
 
+def read_splits() -> list[dict[str, Any]]:
+    if not SPLITS_FILE.exists():
+        return []
+    numeric = {
+        "split_index", "distance_km", "duration_sec", "pace_sec_per_km",
+        "avg_hr", "max_hr", "avg_power", "elevation_gain_m",
+    }
+    with SPLITS_FILE.open("r", encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for row in rows:
+        for field in numeric:
+            try:
+                row[field] = float(row[field]) if row.get(field, "").strip() else None
+            except (ValueError, AttributeError):
+                row[field] = None
+    return rows
+
+
 def parse_iso(value: str) -> date | None:
     try:
         return date.fromisoformat(value)
@@ -148,7 +167,7 @@ def summarize_weeks(activities: list[dict[str, Any]], plan: dict[str, Any]) -> l
         week_items = [item for item in activities if (d := parse_iso(item.get("date", ""))) and start <= d <= end]
         run_items = [item for item in week_items if item.get("sport") == "run"]
         endurance_items = [item for item in week_items if item.get("sport") in {"run", "bike"}]
-        intensity = Counter(classify_intensity(item) for item in run_items)
+        intensity = Counter(classify_intensity(item) for item in endurance_items)
         summaries.append({
             "week_start": start.isoformat(),
             "week_end": end.isoformat(),
@@ -252,6 +271,20 @@ def format_time(seconds: int | float) -> str:
     return f"{seconds // 60}:{seconds % 60:02d}"
 
 
+def format_split(seconds: int | float) -> str:
+    seconds = int(round(seconds))
+    if seconds < 100:
+        return f"{seconds} s"
+    minutes = int(seconds // 60)
+    remainder = seconds % 60
+    return f"{minutes}:{remainder:02d}"
+
+
+def format_pace(seconds_per_km: int | float) -> str:
+    seconds = int(round(seconds_per_km))
+    return f"{seconds // 60}:{seconds % 60:02d} min/km"
+
+
 def goal_metrics(activities: list[dict[str, Any]]) -> dict[str, Any]:
     performances = detect_performances(activities)
     latest = performances[-1] if performances else {"date": "2026-06-17", "seconds": 18 * 60 + 49}
@@ -265,8 +298,99 @@ def goal_metrics(activities: list[dict[str, Any]]) -> dict[str, Any]:
         "current_pace": format_time(current_seconds / 5) + "/km",
         "target_pace": format_time(goal_seconds / 5) + "/km",
         "gap_to_goal": format_time(max(0, current_seconds - goal_seconds)) + " min",
-        "target_400m": "81,5 s (3:24 min/km)",
+        "target_400m": "81,5 s (5-km-Renntempo)",
         "progress_percent": round(max(0, min(100, (1129 - current_seconds) / (1129 - goal_seconds) * 100)), 1),
+    }
+
+
+def interval_signal(
+    activities: list[dict[str, Any]],
+    splits: list[dict[str, Any]],
+    distance_km: float,
+    minimum_repetitions: int,
+    max_pace_sec_per_km: float,
+) -> dict[str, Any] | None:
+    running_by_id = {item.get("activity_id"): item for item in activities if item.get("sport") == "run"}
+    candidates: list[dict[str, Any]] = []
+    for activity_id, activity in running_by_id.items():
+        name = f"{activity.get('session_name', '')} {activity.get('notes', '')}".lower()
+        if not any(word in name for word in ("interval", "400", "800", "1000", "tempo")):
+            continue
+        repetitions = [
+            split for split in splits
+            if split.get("activity_id") == activity_id
+            and distance_km * 0.95 <= (split.get("distance_km") or 0) <= distance_km * 1.05
+            and (split.get("pace_sec_per_km") or 9999) <= max_pace_sec_per_km
+        ]
+        if len(repetitions) >= minimum_repetitions:
+            avg_seconds = sum(split["duration_sec"] for split in repetitions) / len(repetitions)
+            best_seconds = min(split["duration_sec"] for split in repetitions)
+            candidates.append({
+                "date": activity.get("date"),
+                "activity_id": activity_id,
+                "label": activity.get("session_name", f"{int(distance_km * 1000)}-m-Intervalle"),
+                "repetitions": len(repetitions),
+                "avg_seconds": round(avg_seconds, 1),
+                "best_seconds": round(best_seconds, 1),
+            })
+    return sorted(candidates, key=lambda item: item.get("date") or "")[-1] if candidates else None
+
+
+def repetition_targets(activities: list[dict[str, Any]], splits: list[dict[str, Any]]) -> dict[str, Any]:
+    targets = [
+        {
+            "distance_km": 0.4,
+            "target_seconds": 72.0,
+            "minimum_repetitions": 6,
+            "max_pace_sec_per_km": 260,
+            "marker": "8 x 400 m",
+        },
+        {
+            "distance_km": 0.8,
+            "target_seconds": 152.0,
+            "minimum_repetitions": 3,
+            "max_pace_sec_per_km": 250,
+            "marker": "5 x 800 m",
+        },
+        {
+            "distance_km": 1.0,
+            "target_seconds": 195.0,
+            "minimum_repetitions": 3,
+            "max_pace_sec_per_km": 245,
+            "marker": "4 x 1000 m",
+        },
+    ]
+    rows = []
+    for target in targets:
+        distance_km = target["distance_km"]
+        target_seconds = target["target_seconds"]
+        signal = interval_signal(
+            activities,
+            splits,
+            distance_km,
+            target["minimum_repetitions"],
+            target["max_pace_sec_per_km"],
+        )
+        current_seconds = signal["avg_seconds"] if signal else None
+        gap_seconds = current_seconds - target_seconds if current_seconds is not None else None
+        rows.append({
+            "distance_m": int(distance_km * 1000),
+            "target_seconds": round(target_seconds, 1),
+            "target_label": format_split(target_seconds),
+            "target_pace_label": format_pace(target_seconds / distance_km),
+            "marker": target["marker"],
+            "current_seconds": round(current_seconds, 1) if current_seconds is not None else None,
+            "current_label": format_split(current_seconds) if current_seconds is not None else "keine Serie",
+            "gap_seconds": round(gap_seconds, 1) if gap_seconds is not None else None,
+            "gap_label": f"{gap_seconds:+.1f} s" if gap_seconds is not None else "noch keine Daten",
+            "progress_percent": round(max(0, min(100, target_seconds / current_seconds * 100)), 1) if current_seconds else 0,
+            "source": signal,
+        })
+    return {
+        "race_target": "16:59",
+        "pace": "3:24 min/km Renntempo",
+        "note": "Balken zeigen den Abstand aktueller Intervall-Serien zum Sub-17-Marker; fehlende Distanzen bleiben leer.",
+        "rows": rows,
     }
 
 
@@ -325,7 +449,7 @@ def next_session(sessions: list[dict[str, Any]]) -> dict[str, Any] | None:
     return min(open_runs, key=lambda item: (item.get("priority", 99), item.get("scheduled_date", "9999-12-31"))) if open_runs else None
 
 
-def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> dict[str, Any]:
+def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[dict[str, Any]], splits: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> dict[str, Any]:
     running_activities = [item for item in activities if item.get("sport") == "run"]
     sessions, unmatched = match_plan(plan, activities)
     warnings = create_warnings(plan, sessions, activities, weekly)
@@ -360,6 +484,7 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
             "moderate": current_summary.get("moderate_sessions", 0),
             "hard": current_summary.get("hard_sessions", 0),
         },
+        "repetition_targets": repetition_targets(activities, splits),
         "warnings": warnings,
         "metrics": metrics,
         "upcoming": upcoming.get("weeks", [])[:3] if isinstance(upcoming, dict) else [],
@@ -385,8 +510,9 @@ def render_html(data: dict[str, Any]) -> str:
   <main>
     <section id="next-session"></section>
     <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">ZIELSPLITS</p><h2>Sub-17 Intervallmarker</h2></div><span class="muted" id="rep-target-note"></span></div><div class="target-grid" id="rep-targets"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">PLAN</p><h2>Aktuelle Woche</h2></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
-    <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div></div><div id="intensity"></div></div></section>
+    <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div><span class="muted">Lauf + Rad</span></div><div id="intensity"></div></div></section>
     <section><div class="section-head"><div><p class="eyebrow">VERLAUF</p><h2>Wochenumfang</h2></div><span class="muted">Laufkilometer · letzte 10 Wochen</span></div><div class="chart" id="weekly-chart"></div><div class="summary-row" id="weekly-summary"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">HISTORIE</p><h2>Letzte Aktivitäten</h2></div></div><div class="table-wrap"><table><thead><tr><th>Datum</th><th>Sport</th><th>Einheit</th><th>Dauer</th><th>Distanz</th><th>Pace / Leistung</th><th>Puls</th><th>RPE</th><th>Notizen</th></tr></thead><tbody id="activities"></tbody></table></div><div id="unmatched"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">AUSBLICK</p><h2>Nächste Wochen</h2></div></div><div class="upcoming-grid" id="upcoming"></div></section>
@@ -405,9 +531,18 @@ def render_html(data: dict[str, Any]) -> str:
     const statusClass = value => ({{erledigt:'done',offen:'open',optional:'optional',info:'info'}}[value] || 'open');
     $('hero-meta').innerHTML = `<div><span>Stand</span><strong>${{fmtDate(d.today)}}</strong></div><div><span>Phase</span><strong>${{esc(d.header.phase)}}</strong></div><div><span>Nächste Marke</span><strong>${{esc(d.header.next_milestone)}}</strong></div>`;
     const g = d.metrics.goal;
-    const cards = [['Aktuelle 5-km-Zeit',g.current_5k],['Frühere Bestzeit',g.previous_pb],['Zielzeit',g.target_5k],['Aktuelle Pace',g.current_pace],['Zielpace',g.target_pace],['Differenz zum Ziel',g.gap_to_goal],['400-m-Zielpace',g.target_400m]];
+    const cards = [['Aktuelle 5-km-Zeit',g.current_5k],['Frühere Bestzeit',g.previous_pb],['Zielzeit',g.target_5k],['Aktuelle Pace',g.current_pace],['Zielpace',g.target_pace],['Differenz zum Ziel',g.gap_to_goal],['400 m im 5-km-Tempo',g.target_400m]];
     $('goal-metrics').innerHTML = cards.map(([label,value],i) => `<article class="metric ${{i===2?'accent':''}}"><span>${{esc(label)}}</span><strong>${{esc(value)}}</strong>${{i===0?`<small>${{fmtDate(g.current_5k_date)}}</small>`:''}}</article>`).join('');
     $('progress-label').innerHTML = `<span class="progress-value">${{num(g.progress_percent)}} %</span><span class="muted">vom Startanker zum Ziel</span>`;
+    const rt = d.repetition_targets;
+    $('rep-target-note').textContent = rt.note;
+    $('rep-targets').innerHTML = rt.rows.map(row => {{
+      const source = row.source;
+      const gapClass = row.gap_seconds == null ? 'missing' : (row.gap_seconds <= 0 ? 'ready' : 'gap');
+      const gapText = row.gap_seconds == null ? 'noch keine Daten' : `${{row.gap_seconds > 0 ? '+' : ''}}${{Math.round(row.gap_seconds)}} s`;
+      const targetText = `${{row.target_label}} · ${{row.target_pace_label}} · ${{row.marker}}`;
+      return `<article class="target-card ${{gapClass}}"><div class="target-head"><span>${{row.distance_m}} m</span><strong>${{esc(gapText)}}</strong></div><div class="target-bar" title="${{num(row.progress_percent)}} %"><i style="width:${{row.progress_percent}}%"></i><b></b></div><dl><div><dt>Aktuell</dt><dd>${{esc(row.current_label)}}${{source ? ` Ø aus ${{source.repetitions}} Wdh.` : ''}}</dd></div><div><dt>Ziel</dt><dd>${{esc(targetText)}}</dd></div><div><dt>Quelle</dt><dd>${{source ? `${{esc(source.label)}} · ${{fmtDate(source.date)}}` : 'keine passende Intervallserie'}}</dd></div></dl></article>`;
+    }}).join('');
     $('week-focus').textContent = `${{fmtDate(d.plan.week_start)}}–${{fmtDate(d.plan.week_end)}} · ${{d.plan.focus || ''}}`;
     $('sessions').innerHTML = d.plan.planned_sessions.map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl><div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
     if (d.next_session) {{ const s=d.next_session; $('next-session').innerHTML=`<article class="next-card"><div><p class="eyebrow">NÄCHSTE EMPFOHLENE EINHEIT · ${{fmtDate(s.scheduled_date)}}</p><h2>${{esc(s.title)}}</h2><p>${{esc(s.description)}}</p></div><div class="next-target"><span>${{esc(s.target_pace || 'Ziel gemäß Plan')}}</span><strong>RPE ${{esc(s.rpe_target || '–')}}</strong><small>Priorität ${{esc(s.priority)}} · ${{esc(s.target_intensity)}}</small></div></article>`; }}
@@ -421,7 +556,21 @@ def render_html(data: dict[str, Any]) -> str:
     const activityLabels = ['Datum','Sport','Einheit','Dauer','Distanz','Pace / Leistung','Puls','RPE','Notizen'];
     $('activities').querySelectorAll('tr').forEach(row => row.querySelectorAll('td:not(.empty)').forEach((cell, index) => cell.dataset.label = activityLabels[index]));
     if(d.unmatched_activities.length) $('unmatched').innerHTML=`<p class="unmatched"><strong>${{d.unmatched_activities.length}} nicht zugeordnet:</strong> ${{d.unmatched_activities.map(a=>esc(a.session_name)).join(', ')}}</p>`;
-    $('upcoming').innerHTML=d.upcoming.map(w=>`<article><p class="eyebrow">${{fmtDate(w.week_start)}} – ${{fmtDate(w.week_end)}}</p><h3>${{esc(w.focus)}}</h3><ul>${{(w.planned_sessions||[]).map(s=>`<li><span>${{esc(sport(s.type))}}</span>${{esc(s.title)}}</li>`).join('')}}</ul></article>`).join('');
+    const sessionDetails = s => [
+      ['Priorität', s.priority],
+      ['Intensität', s.target_intensity],
+      ['Dauer', s.target_duration_min ? `${{s.target_duration_min}} min` : ''],
+      ['Distanz', s.target_distance_km ? `${{num(s.target_distance_km)}} km` : ''],
+      ['Warm-up', s.warmup],
+      ['Hauptteil', s.main_set],
+      ['Pause', s.recovery],
+      ['Cool-down', s.cooldown],
+      ['Pace / Leistung', s.target_pace],
+      ['RPE', s.rpe_target],
+      ['Status', s.status],
+      ['Details', s.description]
+    ].filter(([,value]) => value != null && value !== '').map(([label,value]) => `<div><dt>${{esc(label)}}</dt><dd>${{esc(value)}}</dd></div>`).join('');
+    $('upcoming').innerHTML=d.upcoming.map(w=>`<article><p class="eyebrow">${{fmtDate(w.week_start)}} – ${{fmtDate(w.week_end)}}</p><h3>${{esc(w.focus)}}</h3><ul>${{(w.planned_sessions||[]).map(s=>`<li class="upcoming-session" tabindex="0"><span>${{esc(sport(s.type))}}</span><strong>${{esc(s.title)}}</strong><div class="session-popover"><p>${{esc(s.title)}}</p><dl>${{sessionDetails(s)}}</dl></div></li>`).join('')}}</ul></article>`).join('');
     $('generated').textContent = new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium',timeStyle:'short'}}).format(new Date(d.generated_at));
   }})();
   </script>
@@ -442,9 +591,10 @@ def main() -> int:
         print(f"WARNUNG: {UPCOMING_FILE.relative_to(ROOT)} muss ein JSON-Objekt enthalten; leerer Ausblick verwendet.")
         upcoming = {"weeks": []}
     activities = read_activities()
+    splits = read_splits()
     weekly = summarize_weeks(activities, plan)
     write_weekly(weekly)
-    data = build_data(plan, upcoming, activities, weekly)
+    data = build_data(plan, upcoming, activities, splits, weekly)
     write_json(DATA_FILE, data)
     write_json(METRICS_FILE, data["metrics"])
     temporary_index = INDEX_FILE.with_suffix(INDEX_FILE.suffix + ".tmp")

@@ -49,6 +49,18 @@ section { margin: 2.5rem 0; }
 .metric small { color: var(--muted); }
 .metric.accent { border-color: #9fcbb6; background: var(--green-light); }
 .progress-value { display: block; color: var(--green); font-size: 1.25rem; font-weight: 800; text-align: right; }
+.target-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.target-card { padding: 1.05rem; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); box-shadow: 0 4px 20px rgba(25,48,35,.035); }
+.target-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.target-head span { color: var(--green); font-size: .8rem; font-weight: 800; text-transform: uppercase; }
+.target-head strong { font-size: clamp(1.7rem, 3vw, 2.35rem); letter-spacing: -.035em; }
+.target-bar { position: relative; height: 13px; margin: .9rem 0 1rem; overflow: hidden; border-radius: 999px; background: var(--surface-2); }
+.target-bar i { display: block; height: 100%; border-radius: inherit; background: var(--green); }
+.target-bar b { position: absolute; top: -3px; right: 0; width: 3px; height: 19px; border-radius: 999px; background: var(--orange); }
+.target-card.gap .target-head strong { color: var(--orange); }
+.target-card.ready .target-head strong { color: var(--green); }
+.target-card.missing .target-head strong { color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.35rem); }
+.target-card.missing .target-bar i { background: transparent; }
 .session-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .session-card, .panel, .upcoming-grid article { padding: 1.05rem; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); box-shadow: 0 4px 20px rgba(25,48,35,.035); }
 .session-card { border-left: 4px solid var(--orange); }
@@ -103,8 +115,16 @@ td small { color: var(--muted); }
 .upcoming-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .upcoming-grid h3 { min-height: 2.5em; }
 .upcoming-grid ul { margin: 1rem 0 0; padding: 0; list-style: none; }
-.upcoming-grid li { display: grid; grid-template-columns: 55px 1fr; gap: .5rem; padding: .4rem 0; border-top: 1px solid var(--line); font-size: .8rem; }
+.upcoming-grid li { position: relative; display: grid; grid-template-columns: 55px 1fr; gap: .5rem; padding: .4rem 0; border-top: 1px solid var(--line); font-size: .8rem; outline: none; }
 .upcoming-grid li span { color: var(--muted); }
+.upcoming-grid li strong { font-weight: 650; }
+.upcoming-grid li:focus-visible { color: var(--green); }
+.session-popover { position: absolute; z-index: 20; left: 55px; bottom: calc(100% - .2rem); width: min(310px, 78vw); padding: .85rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity .14s ease, transform .14s ease; }
+.upcoming-grid article:nth-child(3n) .session-popover { right: 0; left: auto; }
+.upcoming-session:hover .session-popover, .upcoming-session:focus .session-popover, .upcoming-session:focus-within .session-popover { opacity: 1; transform: translateY(0); }
+.session-popover p { margin-bottom: .45rem; font-weight: 800; }
+.session-popover dl { margin: 0; }
+.session-popover dl > div { grid-template-columns: 92px 1fr; padding: .3rem 0; font-size: .78rem; }
 footer { padding: 2rem; color: var(--muted); font-size: .78rem; text-align: center; }
 
 @media (max-width: 1000px) {
@@ -129,6 +149,7 @@ footer { padding: 2rem; color: var(--muted); font-size: .78rem; text-align: cent
   .chart { justify-content: flex-start; gap: .35rem; padding-inline: .5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .bar-column { min-width: 46px; flex: 1 0 46px; }
   .bar-column > span { font-size: .62rem; }
+  .session-popover { right: 0; left: 0; width: min(330px, calc(100vw - 2.5rem)); }
   .table-wrap { overflow: visible; border: 0; border-radius: 0; background: transparent; }
   table, tbody, tr, td { display: block; width: 100%; }
   thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
