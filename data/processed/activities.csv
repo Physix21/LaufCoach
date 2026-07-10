@@ -3,3 +3,4 @@ activity_id,source_file,date,sport,session_name,duration_min,distance_km,avg_pac
 29062026,29062026.csv,2026-06-29,run,8 × 400 m Intervalle,42.48,8.18,312.0,11.54,140.0,179.0,351.0,591.0,31.0,,,true,
 05072026,05072026.csv,2026-07-05,run,Lockerer Lauf + 6 kurze Steigerungen,57.72,10.78,321.2,11.21,136.0,158.0,353.0,721.0,89.0,,,true,
 20260707_ictrainer,Konstantin_20260707_1244_Woche_8__Workout_1__5x4min_5x4min_mit_110_FTP_Training_td.tcx,2026-07-07,bike,Rad-HIIT Kickr Core 5 x 4 min,55.22,29.66,,32.23,133.0,166.0,199.0,311.0,0.0,,,true,5 x 4 min bei ca. 305 W; Rohdaten aus ictrainer-TCX
+09072026,09072026.csv,2026-07-09,run,8 × 400 m Intervalle,35.45,6.63,321.0,11.21,141.0,180.0,374.0,664.0,31.0,,,true,

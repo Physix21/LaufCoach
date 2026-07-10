@@ -91,3 +91,26 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Bezogen auf die im Profil genannte FTP-Spanne von ca. 280-290 W entsprechen 305-306 W ungefähr 105-109 % FTP. Das liegt nahe am geplanten 110-%-Reiz, aber unter der konkreten Planvorgabe von 315-328 W bei angenommener FTP 285 W.
 - Die Herzfrequenz stieg über die Arbeitsintervalle progressiv bis 166 bpm, ohne dass die Leistung einbrach. Das spricht für eine solide zentrale Belastung bei guter Leistungsstabilität.
 - Diese Einheit zählt als harter Ausdauerreiz. In der Kalenderwoche 06.07.-12.07. ist damit bereits ein harter Reiz gesetzt; eine harte Laufeinheit bleibt möglich, sollte aber nicht am selben Tag und idealerweise mit mindestens 48 h Abstand erfolgen.
+
+## 09.07.2026 - 8 x 400 m
+
+**Quelle:** `data/raw/garmin/csv/09072026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 6,63 km in 35:27 min; Ø 5:21 min/km
+- Herzfrequenz: Ø 141 bpm, maximal 180 bpm
+- Laufleistung: Ø 374 W, maximal 664 W
+- Höhenmeter: 31 m Anstieg
+- Acht 400-m-Wiederholungen: 82,1 / 84,7 / 84,0 / 82,8 / 82,4 / 83,2 / 81,6 / 78,3 s; entsprechend ca. 3:25 / 3:32 / 3:30 / 3:27 / 3:26 / 3:28 / 3:24 / 3:16 min/km
+- Mittelwert: 82,4 s je 400 m (ca. 3:26 min/km)
+- Erholungen zwischen den Wiederholungen: 0,18-0,24 km locker in ca. 6:20-7:13 min/km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit wurde 48 h nach dem Rad-HIIT absolviert und ist damit der zweite harte Ausdauerreiz in der Kalenderwoche 06.07.-12.07.
+- Die Wiederholungen lagen deutlich schneller als die Planvorgabe von 88-90 s (3:40-3:45 min/km). Die Streuung war bis zur siebten Wiederholung relativ gering; die letzte Wiederholung in 78,3 s war erneut ein sehr schneller Abschluss.
+- Die Daten zeigen klare Geschwindigkeitsreserve und gute Wiederholbarkeit im kurzen Intervallbereich. Für den aktuellen Aufbau ist das aber kein neuer Zielpace-Anker, weil Phase 1 primär Laufrobustheit, kontrollierte Qualität und Umfangsstabilisierung priorisiert.
+- Für den Rest der Woche keine weitere intensive Ausdauereinheit ergänzen. Der geplante lockere Lauf bleibt nur locker; Bergsprints nur bei vollständig unauffälliger Wade und frischer Gesamtbelastung, sonst auslassen.

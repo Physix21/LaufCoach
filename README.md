@@ -124,15 +124,15 @@ werden nie verändert.
 
 ### Automatische Coach-Hinweise
 
-Ausgewertet und mit dem Wochenplan abgeglichen werden ausschließlich Laufeinheiten.
-Rad- und Krafteinheiten bleiben im Plan sichtbar, erhalten aber keinen Status und
-fließen nicht in Umfang, Intensitätsverteilung oder Coach-Hinweise ein. Dafür müssen
-keine Garmin-Dateien exportiert werden.
+Ausgewertet und mit dem Wochenplan abgeglichen werden Lauf- und Rad-Ausdauereinheiten.
+Der Laufumfang bleibt separat als Laufkilometer sichtbar; die Intensitätsverteilung
+und die harte-Ausdauer-Zählung umfassen Lauf plus Rad. Krafteinheiten bleiben im Plan
+sichtbar, erhalten aber keinen automatischen Aktivitätsstatus.
 
 Die Warnregeln sind bewusst einfach und im Build-Skript zentral definiert:
 
-- mehr als zwei absolvierte oder geplante harte Laufeinheiten pro Woche
-- harte Laufeinheiten an direkt aufeinanderfolgenden Tagen
+- mehr als zwei absolvierte oder geplante harte Ausdauereinheiten pro Woche
+- harte Ausdauereinheiten an direkt aufeinanderfolgenden Tagen
 - mehr als 20 % Laufumfangssteigerung gegenüber einer nicht leeren Vorwoche
 - mindestens zwei Einheiten mit RPE 9 oder höher
 - Beschwerdebegriffe in den freiwilligen Notizen

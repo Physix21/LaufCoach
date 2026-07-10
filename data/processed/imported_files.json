@@ -30,6 +30,17 @@
         "05072026"
       ],
       "warnings": []
+    },
+    "09072026.csv": {
+      "sha256": "0235d879ae1e2ac5e062f09cca14801e247c5f33e6108159d7e5470680a726ef",
+      "status": "imported",
+      "imported_at": "2026-07-09T18:25:12+02:00",
+      "activity_ids": [
+        "09072026"
+      ],
+      "warnings": [
+        "09072026.csv: Keine Sportart erkannt; 'run' angenommen. Für Rad/Kraft einen Zusatz wie '_kickr' oder '_kraft' verwenden."
+      ]
     }
   }
 }
