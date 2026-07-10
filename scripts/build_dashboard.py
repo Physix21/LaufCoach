@@ -415,24 +415,24 @@ def repetition_targets(activities: list[dict[str, Any]], splits: list[dict[str, 
     targets = [
         {
             "distance_km": 0.4,
-            "target_seconds": 72.0,
+            "target_seconds": (16 * 60 + 59) / 5 * 0.4,
             "minimum_repetitions": 6,
             "max_pace_sec_per_km": 260,
-            "marker": "8 x 400 m",
+            "marker": "8-10 x 400 m zielnah",
         },
         {
             "distance_km": 0.8,
-            "target_seconds": 152.0,
+            "target_seconds": (16 * 60 + 59) / 5 * 0.8,
             "minimum_repetitions": 3,
             "max_pace_sec_per_km": 250,
-            "marker": "5 x 800 m",
+            "marker": "5-6 x 800 m zielnah",
         },
         {
             "distance_km": 1.0,
-            "target_seconds": 195.0,
+            "target_seconds": (16 * 60 + 59) / 5,
             "minimum_repetitions": 3,
             "max_pace_sec_per_km": 245,
-            "marker": "4 x 1000 m",
+            "marker": "5 x 1000 m zielnah",
         },
     ]
     rows = []
@@ -464,7 +464,7 @@ def repetition_targets(activities: list[dict[str, Any]], splits: list[dict[str, 
     return {
         "race_target": "16:59",
         "pace": "3:24 min/km Renntempo",
-        "note": "Balken zeigen den Abstand aktueller Intervall-Serien zum Sub-17-Marker; fehlende Distanzen bleiben leer.",
+        "note": "Balken zeigen den Abstand aktueller Intervall-Serien zum sub-17-Renntempo; 72-s-400er sind Speedreserve, keine Pflicht fuer sub 17.",
         "rows": rows,
     }
 
