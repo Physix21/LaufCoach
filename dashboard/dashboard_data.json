@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:39:51+02:00",
+  "generated_at": "2026-07-10T11:49:40+02:00",
   "today": "2026-07-10",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -402,6 +402,225 @@
         "gap_label": "noch keine Daten",
         "progress_percent": 0,
         "source": null
+      }
+    ]
+  },
+  "progression_roadmap": {
+    "note": "Orientierungsfenster aus dem langfristigen Plan; konkrete Wochenpaces bleiben vom aktuellen Leistungsanker und der Belastbarkeit abhaengig.",
+    "rows": [
+      {
+        "period": "Juli-August 2026",
+        "start": "2026-07-01",
+        "end": "2026-08-31",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "markers": [
+          {
+            "distance": "400 m",
+            "time": "87-90 s",
+            "pace": "3:38-3:45 min/km",
+            "set": "6-8 x 400 m"
+          },
+          {
+            "distance": "1000 m",
+            "time": "3:42-3:48",
+            "pace": "3:42-3:48 min/km",
+            "set": "4 x 1000 m"
+          }
+        ],
+        "units": [
+          "8 x 400 m kontrolliert",
+          "4 x 1000 m kontrolliert",
+          "Schwelle statt Zielpace"
+        ],
+        "index": 1,
+        "status": "aktuell"
+      },
+      {
+        "period": "September-November 2026",
+        "start": "2026-09-01",
+        "end": "2026-11-30",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "markers": [
+          {
+            "distance": "400 m",
+            "time": "84-88 s",
+            "pace": "3:30-3:40 min/km",
+            "set": "10 x 400 m"
+          },
+          {
+            "distance": "1000 m",
+            "time": "3:38-3:48",
+            "pace": "3:38-3:48 min/km",
+            "set": "4-5 x 1000 m"
+          }
+        ],
+        "units": [
+          "4-5 x 1000 m",
+          "10 x 400 m",
+          "20-30 min Tempo/Cruise"
+        ],
+        "index": 2,
+        "status": "geplant"
+      },
+      {
+        "period": "Dezember 2026-Januar 2027",
+        "start": "2026-12-01",
+        "end": "2027-01-31",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "markers": [
+          {
+            "distance": "400 m",
+            "time": "82-87 s",
+            "pace": "3:25-3:38 min/km",
+            "set": "12 x 400 m"
+          },
+          {
+            "distance": "800 m",
+            "time": "2:48-2:56",
+            "pace": "3:30-3:40 min/km",
+            "set": "6 x 800 m"
+          }
+        ],
+        "units": [
+          "6 x 800 m",
+          "12 x 400 m",
+          "45-75 s bergauf"
+        ],
+        "index": 3,
+        "status": "geplant"
+      },
+      {
+        "period": "Februar-Maerz 2027",
+        "start": "2027-02-01",
+        "end": "2027-03-31",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "markers": [
+          {
+            "distance": "400 m",
+            "time": "82-85 s",
+            "pace": "3:25-3:33 min/km",
+            "set": "8-10 x 400 m"
+          },
+          {
+            "distance": "1000 m",
+            "time": "3:30-3:38",
+            "pace": "3:30-3:38 min/km",
+            "set": "5-6 x 1000 m"
+          }
+        ],
+        "units": [
+          "5-6 x 1000 m",
+          "4 x 1200 m",
+          "3 x 1600 m",
+          "8-10 x 400 m"
+        ],
+        "index": 4,
+        "status": "geplant"
+      },
+      {
+        "period": "April-Mai 2027",
+        "start": "2027-04-01",
+        "end": "2027-05-31",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "markers": [
+          {
+            "distance": "400 m",
+            "time": "82-85 s",
+            "pace": "3:25-3:33 min/km",
+            "set": "10 x 400 m"
+          },
+          {
+            "distance": "800 m",
+            "time": "2:44-2:50",
+            "pace": "3:25-3:33 min/km",
+            "set": "6 x 800 m"
+          },
+          {
+            "distance": "1000 m",
+            "time": "3:24-3:32",
+            "pace": "3:24-3:32 min/km",
+            "set": "5 x 1000 m"
+          }
+        ],
+        "units": [
+          "10 x 400 m",
+          "6 x 800 m",
+          "5 x 1000 m",
+          "3 x 1600 m"
+        ],
+        "index": 5,
+        "status": "geplant"
+      },
+      {
+        "period": "Juni 2027",
+        "start": "2027-06-01",
+        "end": "2027-06-30",
+        "phase": "Peak und Taper",
+        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+        "markers": [
+          {
+            "distance": "400 m",
+            "time": "81-82 s",
+            "pace": "3:24 min/km",
+            "set": "5 x 400 m"
+          },
+          {
+            "distance": "1000 m",
+            "time": "3:24-3:30",
+            "pace": "3:24-3:30 min/km",
+            "set": "3 x 1000 m"
+          }
+        ],
+        "units": [
+          "5 x 400 m in Zielpace",
+          "3 x 1000 m kontrolliert",
+          "kurze Aktivierung"
+        ],
+        "index": 6,
+        "status": "geplant"
+      }
+    ],
+    "scheduled_units": [
+      {
+        "date": "2026-07-07",
+        "week_start": "2026-07-06",
+        "week_end": "2026-07-12",
+        "title": "8 × 400 m kontrolliert",
+        "main_set": "8 × 400 m kontrolliert",
+        "target": "3:40–3:45 min/km (400 m in 88–90 s)",
+        "status": "erledigt",
+        "distances": [
+          "400"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "week_start": "2026-07-20",
+        "week_end": "2026-07-26",
+        "title": "4 × 1000 m kontrolliert",
+        "main_set": "4 × 1000 m",
+        "target": "3:42–3:48 min/km je 1000 m",
+        "status": "planned",
+        "distances": [
+          "1000"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "week_start": "2026-07-27",
+        "week_end": "2026-08-02",
+        "title": "6 × 400 m frisch",
+        "main_set": "6 × 400 m frisch, aber kontrolliert",
+        "target": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
+        "status": "planned",
+        "distances": [
+          "400"
+        ]
       }
     ]
   },

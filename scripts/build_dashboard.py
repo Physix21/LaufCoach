@@ -34,6 +34,81 @@ WEEKLY_FIELDS = [
 HARD_WORDS = ("400", "800", "1000", "interval", "schwelle", "tempo", "bergsprint", "hiit", "30/30", "over/under", "wettkampf")
 MODERATE_WORDS = ("zügig", "steady", "progressiv", "kraft")
 COMPLAINT_WORDS = ("schmerz", "achilles", "knie", "schienbein", "hüfte", "beschwerden")
+PROGRESSION_PHASES = [
+    {
+        "period": "Juli-August 2026",
+        "start": "2026-07-01",
+        "end": "2026-08-31",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "markers": [
+            {"distance": "400 m", "time": "87-90 s", "pace": "3:38-3:45 min/km", "set": "6-8 x 400 m"},
+            {"distance": "1000 m", "time": "3:42-3:48", "pace": "3:42-3:48 min/km", "set": "4 x 1000 m"},
+        ],
+        "units": ["8 x 400 m kontrolliert", "4 x 1000 m kontrolliert", "Schwelle statt Zielpace"],
+    },
+    {
+        "period": "September-November 2026",
+        "start": "2026-09-01",
+        "end": "2026-11-30",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "markers": [
+            {"distance": "400 m", "time": "84-88 s", "pace": "3:30-3:40 min/km", "set": "10 x 400 m"},
+            {"distance": "1000 m", "time": "3:38-3:48", "pace": "3:38-3:48 min/km", "set": "4-5 x 1000 m"},
+        ],
+        "units": ["4-5 x 1000 m", "10 x 400 m", "20-30 min Tempo/Cruise"],
+    },
+    {
+        "period": "Dezember 2026-Januar 2027",
+        "start": "2026-12-01",
+        "end": "2027-01-31",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "markers": [
+            {"distance": "400 m", "time": "82-87 s", "pace": "3:25-3:38 min/km", "set": "12 x 400 m"},
+            {"distance": "800 m", "time": "2:48-2:56", "pace": "3:30-3:40 min/km", "set": "6 x 800 m"},
+        ],
+        "units": ["6 x 800 m", "12 x 400 m", "45-75 s bergauf"],
+    },
+    {
+        "period": "Februar-Maerz 2027",
+        "start": "2027-02-01",
+        "end": "2027-03-31",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "markers": [
+            {"distance": "400 m", "time": "82-85 s", "pace": "3:25-3:33 min/km", "set": "8-10 x 400 m"},
+            {"distance": "1000 m", "time": "3:30-3:38", "pace": "3:30-3:38 min/km", "set": "5-6 x 1000 m"},
+        ],
+        "units": ["5-6 x 1000 m", "4 x 1200 m", "3 x 1600 m", "8-10 x 400 m"],
+    },
+    {
+        "period": "April-Mai 2027",
+        "start": "2027-04-01",
+        "end": "2027-05-31",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "markers": [
+            {"distance": "400 m", "time": "82-85 s", "pace": "3:25-3:33 min/km", "set": "10 x 400 m"},
+            {"distance": "800 m", "time": "2:44-2:50", "pace": "3:25-3:33 min/km", "set": "6 x 800 m"},
+            {"distance": "1000 m", "time": "3:24-3:32", "pace": "3:24-3:32 min/km", "set": "5 x 1000 m"},
+        ],
+        "units": ["10 x 400 m", "6 x 800 m", "5 x 1000 m", "3 x 1600 m"],
+    },
+    {
+        "period": "Juni 2027",
+        "start": "2027-06-01",
+        "end": "2027-06-30",
+        "phase": "Peak und Taper",
+        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+        "markers": [
+            {"distance": "400 m", "time": "81-82 s", "pace": "3:24 min/km", "set": "5 x 400 m"},
+            {"distance": "1000 m", "time": "3:24-3:30", "pace": "3:24-3:30 min/km", "set": "3 x 1000 m"},
+        ],
+        "units": ["5 x 400 m in Zielpace", "3 x 1000 m kontrolliert", "kurze Aktivierung"],
+    },
+]
 
 
 def ensure_structure() -> None:
@@ -394,6 +469,65 @@ def repetition_targets(activities: list[dict[str, Any]], splits: list[dict[str, 
     }
 
 
+def interval_keywords(session: dict[str, Any]) -> list[str]:
+    text = " ".join(str(session.get(field, "")) for field in ("title", "main_set", "description", "target_pace")).lower()
+    return [keyword for keyword in ("400", "800", "1000") if keyword in text]
+
+
+def scheduled_interval_units(plan: dict[str, Any], upcoming: dict[str, Any]) -> list[dict[str, Any]]:
+    entries: list[dict[str, Any]] = []
+    sources = [
+        {
+            "week_start": plan.get("week_start"),
+            "week_end": plan.get("week_end"),
+            "planned_sessions": plan.get("planned_sessions", []),
+        }
+    ]
+    if isinstance(upcoming, dict):
+        sources.extend(upcoming.get("weeks", []))
+    for week in sources:
+        for session in week.get("planned_sessions", []):
+            keywords = interval_keywords(session)
+            if not keywords:
+                continue
+            scheduled = session.get("scheduled_date") or week.get("week_start")
+            entries.append({
+                "date": scheduled,
+                "week_start": week.get("week_start"),
+                "week_end": week.get("week_end"),
+                "title": session.get("title", ""),
+                "main_set": session.get("main_set") or session.get("title", ""),
+                "target": session.get("target_pace") or "noch keine Zielzeit hinterlegt",
+                "status": session.get("display_status") or session.get("status") or "planned",
+                "distances": keywords,
+            })
+    return sorted(entries, key=lambda item: item.get("date") or "")[:8]
+
+
+def progression_roadmap(plan: dict[str, Any], upcoming: dict[str, Any]) -> dict[str, Any]:
+    today = date.today()
+    rows = []
+    for index, phase in enumerate(PROGRESSION_PHASES):
+        start = parse_iso(phase["start"])
+        end = parse_iso(phase["end"])
+        if start and end and start <= today <= end:
+            status = "aktuell"
+        elif start and today < start:
+            status = "geplant"
+        else:
+            status = "abgeschlossen"
+        rows.append({
+            **phase,
+            "index": index + 1,
+            "status": status,
+        })
+    return {
+        "note": "Orientierungsfenster aus dem langfristigen Plan; konkrete Wochenpaces bleiben vom aktuellen Leistungsanker und der Belastbarkeit abhaengig.",
+        "rows": rows,
+        "scheduled_units": scheduled_interval_units(plan, upcoming),
+    }
+
+
 def create_warnings(plan: dict[str, Any], sessions: list[dict[str, Any]], activities: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> list[dict[str, str]]:
     start = parse_iso(plan.get("week_start", ""))
     end = parse_iso(plan.get("week_end", ""))
@@ -458,6 +592,7 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
         item["intensity"] = classify_intensity(item)
     plan_start = plan.get("week_start", "")
     current_summary = next((item for item in weekly if item["week_start"] == plan_start), {})
+    plan_with_sessions = {**plan, "planned_sessions": sessions}
     metrics = {
         "goal": goal_metrics(running_activities),
         "current_week": current_summary,
@@ -474,7 +609,7 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
             "focus": plan.get("focus", ""),
             "next_milestone": plan.get("next_milestone", "5-km-Formcheck im Frühjahr 2027"),
         },
-        "plan": {**plan, "planned_sessions": sessions},
+        "plan": plan_with_sessions,
         "next_session": next_session(sessions),
         "recent_activities": recent,
         "unmatched_activities": unmatched,
@@ -485,6 +620,7 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
             "hard": current_summary.get("hard_sessions", 0),
         },
         "repetition_targets": repetition_targets(activities, splits),
+        "progression_roadmap": progression_roadmap(plan_with_sessions, upcoming),
         "warnings": warnings,
         "metrics": metrics,
         "upcoming": upcoming.get("weeks", [])[:3] if isinstance(upcoming, dict) else [],
@@ -511,6 +647,7 @@ def render_html(data: dict[str, Any]) -> str:
     <section id="next-session"></section>
     <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">ZIELSPLITS</p><h2>Sub-17 Intervallmarker</h2></div><span class="muted" id="rep-target-note"></span></div><div class="target-grid" id="rep-targets"></div></section>
+    <section><div class="section-head"><div><p class="eyebrow">ROADMAP</p><h2>Wann welche Marker relevant werden</h2></div><span class="muted" id="roadmap-note"></span></div><div class="roadmap" id="roadmap"></div><div class="scheduled-strip" id="scheduled-units"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">PLAN</p><h2>Aktuelle Woche</h2></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
     <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div><span class="muted">Lauf + Rad</span></div><div id="intensity"></div></div></section>
     <section><div class="section-head"><div><p class="eyebrow">VERLAUF</p><h2>Wochenumfang</h2></div><span class="muted">Laufkilometer · letzte 10 Wochen</span></div><div class="chart" id="weekly-chart"></div><div class="summary-row" id="weekly-summary"></div></section>
@@ -543,6 +680,10 @@ def render_html(data: dict[str, Any]) -> str:
       const targetText = `${{row.target_label}} · ${{row.target_pace_label}} · ${{row.marker}}`;
       return `<article class="target-card ${{gapClass}}"><div class="target-head"><span>${{row.distance_m}} m</span><strong>${{esc(gapText)}}</strong></div><div class="target-bar" title="${{num(row.progress_percent)}} %"><i style="width:${{row.progress_percent}}%"></i><b></b></div><dl><div><dt>Aktuell</dt><dd>${{esc(row.current_label)}}${{source ? ` Ø aus ${{source.repetitions}} Wdh.` : ''}}</dd></div><div><dt>Ziel</dt><dd>${{esc(targetText)}}</dd></div><div><dt>Quelle</dt><dd>${{source ? `${{esc(source.label)}} · ${{fmtDate(source.date)}}` : 'keine passende Intervallserie'}}</dd></div></dl></article>`;
     }}).join('');
+    const pr = d.progression_roadmap;
+    $('roadmap-note').textContent = pr.note;
+    $('roadmap').innerHTML = pr.rows.map(row => `<article class="roadmap-card ${{esc(row.status)}}"><div class="roadmap-top"><span>${{esc(row.period)}}</span><b>${{esc(row.status)}}</b></div><h3>${{esc(row.phase)}}</h3><p>${{esc(row.focus)}}</p><div class="marker-list">${{row.markers.map(m => `<div><strong>${{esc(m.distance)}}</strong><span>${{esc(m.time)}} · ${{esc(m.pace)}}</span><small>${{esc(m.set)}}</small></div>`).join('')}}</div><ul>${{row.units.map(unit => `<li>${{esc(unit)}}</li>`).join('')}}</ul></article>`).join('');
+    $('scheduled-units').innerHTML = pr.scheduled_units.length ? `<div><strong>Konkret im Plan</strong><span>${{pr.scheduled_units.map(unit => `${{fmtDate(unit.date)}}: ${{esc(unit.main_set)}} (${{esc(unit.target)}})`).join(' · ')}}</span></div>` : '';
     $('week-focus').textContent = `${{fmtDate(d.plan.week_start)}}–${{fmtDate(d.plan.week_end)}} · ${{d.plan.focus || ''}}`;
     $('sessions').innerHTML = d.plan.planned_sessions.map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl><div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
     if (d.next_session) {{ const s=d.next_session; $('next-session').innerHTML=`<article class="next-card"><div><p class="eyebrow">NÄCHSTE EMPFOHLENE EINHEIT · ${{fmtDate(s.scheduled_date)}}</p><h2>${{esc(s.title)}}</h2><p>${{esc(s.description)}}</p></div><div class="next-target"><span>${{esc(s.target_pace || 'Ziel gemäß Plan')}}</span><strong>RPE ${{esc(s.rpe_target || '–')}}</strong><small>Priorität ${{esc(s.priority)}} · ${{esc(s.target_intensity)}}</small></div></article>`; }}
