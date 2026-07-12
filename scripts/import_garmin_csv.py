@@ -152,6 +152,26 @@ def sport_is_explicit(value: Any, session_name: str) -> bool:
     ))
 
 
+def infer_sport_from_headers(headers: Iterable[str], columns: dict[str, str | None]) -> str | None:
+    header_text = " ".join(normalize(header) for header in headers)
+    running_markers = (
+        "pace min km", "schrittfrequenz laufen", "bodenkontaktzeit",
+        "schrittlange", "vertikale bewegung",
+    )
+    cycling_markers = (
+        "normalized power", "trittfrequenz", "gesamtzeit im stehen",
+        "gesamtzeit im sitzen", "power phase", "pco durchschnitt",
+        "verhaltnis links", "verhaltnis rechts",
+    )
+    if any(marker in header_text for marker in running_markers):
+        return "run"
+    if any(marker in header_text for marker in cycling_markers):
+        return "bike"
+    if columns.get("speed") and not columns.get("pace"):
+        return "bike"
+    return None
+
+
 def title_from_filename(path: Path) -> str:
     title = re.sub(r"(?:20\d{2}[-_]?\d{2}[-_]?\d{2}|\d{2}[-_]?\d{2}[-_]?20\d{2})", "", path.stem)
     title = re.sub(r"^(?:activity|aktivitaet)[_-]*\d*", "", title, flags=re.IGNORECASE)
@@ -186,9 +206,9 @@ def diary_hints() -> dict[str, dict[str, str]]:
         return {}
     text = DIARY_FILE.read_text(encoding="utf-8")
     hints: dict[str, dict[str, str]] = {}
-    sections = re.split(r"(?=^## \d{2}\.\d{2}\.\d{4} – )", text, flags=re.MULTILINE)
+    sections = re.split(r"(?=^## \d{2}\.\d{2}\.\d{4} [–-] )", text, flags=re.MULTILINE)
     for section in sections:
-        heading = re.match(r"## (\d{2}\.\d{2}\.\d{4}) – (.+)", section)
+        heading = re.match(r"## (\d{2}\.\d{2}\.\d{4}) [–-] (.+)", section)
         if not heading:
             continue
         date = datetime.strptime(heading.group(1), "%d.%m.%Y").date().isoformat()
@@ -343,6 +363,7 @@ def parse_file(path: Path, hints: dict[str, dict[str, str]]) -> tuple[list[dict[
     columns = {field: find_column(headers, field) for field in ALIASES}
     if not columns["duration"] and not columns["distance"]:
         return [], [], [f"{path.name}: Weder Dauer- noch Distanzspalte erkannt; Datei übersprungen."]
+    inferred_header_sport = infer_sport_from_headers(headers, columns)
 
     lap_column = columns["lap"]
     summary_markers = {"ubersicht", "uebersicht", "summary", "total", "gesamt"}
@@ -375,8 +396,19 @@ def parse_file(path: Path, hints: dict[str, dict[str, str]]) -> tuple[list[dict[
                 activities[0]["session_name"] = infer_session_name(activities[0], splits)
 
     for activity in activities:
+        if inferred_header_sport:
+            activity["sport"] = inferred_header_sport
+        if activity["sport"] != "run":
+            activity["avg_pace_sec_per_km"] = ""
+        if activity["sport"] == "bike" and activity.get("session_name") in {"", "Laufaktivität", "LaufaktivitÃ¤t"}:
+            activity["session_name"] = "Radausfahrt"
         if not activity["duration_min"] or not activity["distance_km"]:
             warnings.append(f"{path.name}: Dauer oder Distanz fehlt; unvollständige Aktivität wurde dennoch importiert.")
+    if inferred_header_sport:
+        warnings = [
+            warning for warning in warnings
+            if not warning.startswith(f"{path.name}: Keine Sportart erkannt;")
+        ]
     return activities, splits, warnings
 
 

@@ -92,7 +92,7 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die Herzfrequenz stieg über die Arbeitsintervalle progressiv bis 166 bpm, ohne dass die Leistung einbrach. Das spricht für eine solide zentrale Belastung bei guter Leistungsstabilität.
 - Diese Einheit zählt als harter Ausdauerreiz. In der Kalenderwoche 06.07.-12.07. ist damit bereits ein harter Reiz gesetzt; eine harte Laufeinheit bleibt möglich, sollte aber nicht am selben Tag und idealerweise mit mindestens 48 h Abstand erfolgen.
 
-## 09.07.2026 - 8 x 400 m
+## 09.07.2026 - 8 x 400 m Intervalle
 
 **Quelle:** `data/raw/garmin/csv/09072026.csv`
 
@@ -114,3 +114,26 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die Wiederholungen lagen deutlich schneller als die Planvorgabe von 88-90 s (3:40-3:45 min/km). Die Streuung war bis zur siebten Wiederholung relativ gering; die letzte Wiederholung in 78,3 s war erneut ein sehr schneller Abschluss.
 - Die Daten zeigen klare Geschwindigkeitsreserve und gute Wiederholbarkeit im kurzen Intervallbereich. Für den aktuellen Aufbau ist das aber kein neuer Zielpace-Anker, weil Phase 1 primär Laufrobustheit, kontrollierte Qualität und Umfangsstabilisierung priorisiert.
 - Für den Rest der Woche keine weitere intensive Ausdauereinheit ergänzen. Der geplante lockere Lauf bleibt nur locker; Bergsprints nur bei vollständig unauffälliger Wade und frischer Gesamtbelastung, sonst auslassen.
+
+## 10.07.2026 - Radausfahrt
+
+**Quellen:** `data/raw/garmin/csv/10072026.csv`, ergänzend `data/raw/garmin/tcx/10072026.tcx`
+
+### Messdaten
+
+- Sportart: Radfahren
+- Gesamt: 87,60 km in 2:58:06 h; Ø 29,5 km/h
+- Herzfrequenz: Ø 127 bpm, maximal 166 bpm
+- Leistung: Ø 179 W, normalisierte Leistung 215 W, maximal 843 W
+- Höhenmeter: 514 m Anstieg, 509 m Abstieg
+- Kadenz: Ø 81 rpm, maximal 111 rpm
+- Energie laut CSV: 2.169 kcal
+- 10-km-Abschnitte: 18:46 / 18:06 / 20:48 / 21:34 / 21:32 / 23:04 / 21:32 / 18:53 min; letzter Abschnitt 7,60 km in 13:51 min
+- Leistungsabschnitte über die 10-km-Runden: Ø 191 / 222 / 182 / 154 / 141 / 153 / 162 / 197 W; letzter Abschnitt Ø 244 W
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit zählt als lange lockere bis wellige Radausdauer, nicht als zusätzlicher harter Ausdauerreiz. Der hohe Maximalleistungswert ist bei einer langen Outdoor-Ausfahrt als kurzer Peak zu werten und verändert die Einordnung nicht.
+- Die Herzfrequenz blieb im Mittel klar moderat; der Anstieg im letzten Abschnitt bis Ø 151 bpm und maximal 166 bpm spricht für eine zügigere Schlussphase oder äußere Belastung, aber nicht für eine durchgehend intensive Einheit.
+- Zusammen mit Rad-HIIT am 07.07. und 8 x 400 m am 09.07. ist die zentrale Wochenbelastung hoch. Für den verbleibenden Teil der Kalenderwoche 06.07.-12.07. keine weitere intensive Ausdauereinheit ergänzen; ein zusätzlicher Lauf wäre nur locker sinnvoll.
