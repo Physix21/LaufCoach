@@ -67,7 +67,8 @@ Dauer: 45–60 min
 - Warm-up: 5–8 min allgemein, dann 2–3 leichte Ramp-up-Sätze mit der Langhantel
 - Kreuzheben 3 x 3–5 moderat schwer; Langhantel mit Scheiben
 - Bulgarian Split Squat 2–3 x 6–8 je Seite; Kurzhanteln oder zunächst Körpergewicht
-- Wadenheben stehend 3 x 8–12; Langhantel, Kurzhanteln oder einzelne Scheibe
+- Wadenheben stehend 3 x 8–12; Standard einbeinig mit Kurzhantel, Fußballen auf stabiler Erhöhung oder flacher Scheibe, eine Hand leicht am Half Rack, andere Hand hält die Kurzhantel, Ferse langsam tief ablassen und kontrolliert hochdrücken
+- Wadenheben-Alternativen: beidbeinig mit Langhantel aus dem Half Rack auf dem Rücken oder mit Gewichtsscheibe in Goblet-Position; nur mit sicherer Hantelposition
 - Klimmzüge 3 Sätze; Klimmzugstange am Half Rack, bei Bedarf mit Gymnastikband unterstützt
 - Bankdrücken 3 x 5–8; Half Rack, Langhantel und verstellbare Hantelbank, alternativ Langhantel-Floor-Press oder Liegestütz mit Gymnastikband
 - Rückenstrecker 2–3 x 8–12; Hyperextension-Bank, alternativ Gymnastikball-Plank oder Dead Bug
