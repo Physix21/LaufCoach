@@ -29,7 +29,7 @@ Vor jeder Planung gilt `wissenschaftliche_grundlagen_5km.md` als dauerhafte Evid
   - entweder 1 harte Laufeinheit + 1 Rad-HIIT
   - oder 2 harte Laufeinheiten + lockeres Rad
 - Krafttraining soll schwer genug sein, um Laufökonomie/Robustheit zu verbessern, aber nicht die Laufeinheiten zerstören.
-- Krafttrainingspläne müssen mit dem vorhandenen Kraftkeller-Setup ausführbar sein: Half Rack mit Klimmzugstange, Langhantel, Kurzhanteln, Gewichtsscheiben 1,25-20 kg, Gymnastikbänder, Hyperextension-Bank und Gymnastikball. Jede Krafteinheit soll übersichtlich nach Übung, Sätzen/Wiederholungen, Intensität und Setup-Hinweis beschrieben werden. Wenn eine Übung mit diesem Setup nicht sinnvoll machbar ist, eine passende Alternative nennen.
+- Krafttrainingspläne müssen mit dem vorhandenen Kraftkeller-Setup ausführbar sein: Half Rack mit Klimmzugstange, Langhantel, Kurzhanteln, Gewichtsscheiben 1,25-20 kg, verstellbare Hantelbank, Gymnastikbänder, Hyperextension-Bank und Gymnastikball. Jede Krafteinheit soll übersichtlich nach Übung, Sätzen/Wiederholungen, Intensität und Setup-Hinweis beschrieben werden. Wenn eine Übung mit diesem Setup nicht sinnvoll machbar ist, eine passende Alternative nennen.
 - Drei verträgliche Läufe pro Woche haben für die laufspezifische Entwicklung mittelfristig Vorrang; Radtraining ergänzt, ersetzt sie aber nicht vollständig.
 - Keine starre 10-%-Regel verwenden. Umfang zuerst über lockere Minuten oder eine kurze dritte Laufeinheit steigern und die Reaktion beobachten.
 - 400-m-Intervalle nicht als einzigen Qualitätsreiz verwenden. Je nach Phase kontrollierte Schwelle und längere aerobe Intervalle von etwa 2–5 min einplanen.

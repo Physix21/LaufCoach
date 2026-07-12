@@ -70,11 +70,12 @@ Ausstattung:
 - Langhantel
 - Kurzhanteln
 - Gewichtsscheiben von 1,25 kg bis 20 kg
+- verstellbare Hantelbank
 - Gymnastikbänder
 - Rückenstrecker-Bank
 - Gymnastikball
 
-Alle Kraftübungen müssen mit diesem Setup abbildbar sein. Wenn eine Übung spezielles Studiogerät voraussetzen würde, wird eine passende Alternative mit Langhantel, Kurzhanteln, Bändern, Half Rack, Klimmzugstange, Hyperextension-Bank oder Gymnastikball geplant.
+Alle Kraftübungen müssen mit diesem Setup abbildbar sein. Wenn eine Übung spezielles Studiogerät voraussetzen würde, wird eine passende Alternative mit Langhantel, Kurzhanteln, Bändern, Half Rack, Klimmzugstange, verstellbarer Hantelbank, Hyperextension-Bank oder Gymnastikball geplant.
 
 Erfahrung:
 

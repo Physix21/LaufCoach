@@ -69,11 +69,11 @@ Dauer: 45–60 min
 - Bulgarian Split Squat 2–3 x 6–8 je Seite; Kurzhanteln oder zunächst Körpergewicht
 - Wadenheben stehend 3 x 8–12; Langhantel, Kurzhanteln oder einzelne Scheibe
 - Klimmzüge 3 Sätze; Klimmzugstange am Half Rack, bei Bedarf mit Gymnastikband unterstützt
-- Langhantel-Floor-Press 3 x 5–8; alternativ Kurzhantel-Floor-Press oder Liegestütz mit Gymnastikband
+- Bankdrücken 3 x 5–8; Half Rack, Langhantel und verstellbare Hantelbank, alternativ Langhantel-Floor-Press oder Liegestütz mit Gymnastikband
 - Rückenstrecker 2–3 x 8–12; Hyperextension-Bank, alternativ Gymnastikball-Plank oder Dead Bug
 - optional Seitstütz 2 x 30–45 s je Seite
 
-Kein Muskelversagen. Alle Übungen müssen mit Half Rack, Klimmzugstange, Langhantel, Kurzhanteln, Scheiben, Gymnastikbändern, Hyperextension-Bank oder Gymnastikball ausführbar sein.
+Kein Muskelversagen. Alle Übungen müssen mit Half Rack, Klimmzugstange, Langhantel, Kurzhanteln, Scheiben, verstellbarer Hantelbank, Gymnastikbändern, Hyperextension-Bank oder Gymnastikball ausführbar sein.
 
 ---
 

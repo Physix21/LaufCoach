@@ -75,12 +75,12 @@
           "priority": 5,
           "target_intensity": "moderate",
           "target_duration_min": 50,
-          "warmup": "5-8 min allgemein aufwärmen, dann 2-3 leichte Ramp-up-Sätze für Kreuzheben und Floor Press.",
-          "main_set": "Kreuzheben 3 x 3-5; Bulgarian Split Squat 2 x 6-8 je Seite; Wadenheben 3 x 8-12; Klimmzüge 3 x 4-8; Langhantel-Floor-Press 3 x 5-8; Rückenstrecker oder Core 2 x 8-12.",
+          "warmup": "5-8 min allgemein aufwärmen, dann 2-3 leichte Ramp-up-Sätze für Kreuzheben und Bankdrücken.",
+          "main_set": "Kreuzheben 3 x 3-5; Bulgarian Split Squat 2 x 6-8 je Seite; Wadenheben 3 x 8-12; Klimmzüge 3 x 4-8; Bankdrücken 3 x 5-8; Rückenstrecker oder Core 2 x 8-12.",
           "recovery": "90-180 s Satzpause; Qualität vor Last, kein Satz bis zum Muskelversagen.",
           "cooldown": "5 min locker mobilisieren, besonders Hüfte, Waden und Brustwirbelsäule.",
-          "setup": "Half Rack und Klimmzugstange für Klimmzüge; Langhantel mit Scheiben für Kreuzheben und Floor Press vom Boden; Kurzhanteln für Bulgarian Split Squats; Langhantel, Kurzhanteln oder Scheiben für Wadenheben; Hyperextension-Bank oder Gymnastikball für Rückenstrecker/Core.",
-          "alternatives": "Bei müden Beinen Bulgarian Split Squat durch Split Squat ohne Zusatzgewicht oder Kurzhantel-Step-up ersetzen. Klimmzüge bei Bedarf mit Gymnastikband unterstützen. Floor Press alternativ als Liegestütz mit Gymnastikband oder Kurzhantel-Floor-Press. Rückenstrecker alternativ als Gymnastikball-Plank oder Dead Bug.",
+          "setup": "Half Rack und Klimmzugstange für Klimmzüge; Langhantel mit Scheiben für Kreuzheben und Bankdrücken; verstellbare Hantelbank für Bankdrücken; Kurzhanteln für Bulgarian Split Squats; Langhantel, Kurzhanteln oder Scheiben für Wadenheben; Hyperextension-Bank oder Gymnastikball für Rückenstrecker/Core.",
+          "alternatives": "Bei müden Beinen Bulgarian Split Squat durch Split Squat ohne Zusatzgewicht oder Kurzhantel-Step-up ersetzen. Klimmzüge bei Bedarf mit Gymnastikband unterstützen. Bankdrücken alternativ als Langhantel-Floor-Press, Kurzhantel-Floor-Press oder Liegestütz mit Gymnastikband. Rückenstrecker alternativ als Gymnastikball-Plank oder Dead Bug.",
           "target_pace": "kontrolliert schwer, 1-3 Wiederholungen in Reserve",
           "rpe_target": "6–7/10"
         }
