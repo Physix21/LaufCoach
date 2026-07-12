@@ -291,7 +291,12 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
         # Kraft bleibt reine Planinformation; Ausdauereinheiten werden über
         # importierte Aktivitätsdaten abgeglichen.
         if comparable_sport(session.get("type", "")) not in {"run", "bike"}:
-            session["display_status"] = "info"
+            if session.get("status") == "completed":
+                session["display_status"] = "erledigt"
+            elif session.get("status") == "optional":
+                session["display_status"] = "optional"
+            else:
+                session["display_status"] = "info"
             continue
         candidates = []
         for activity in week_items:
@@ -583,16 +588,62 @@ def next_session(sessions: list[dict[str, Any]]) -> dict[str, Any] | None:
     return min(open_runs, key=lambda item: (item.get("priority", 99), item.get("scheduled_date", "9999-12-31"))) if open_runs else None
 
 
+def next_session_from_weeks(plan_weeks: list[dict[str, Any]]) -> dict[str, Any] | None:
+    today = date.today()
+    candidates: list[dict[str, Any]] = []
+    for week in plan_weeks:
+        plan = week.get("plan", {})
+        week_start = plan.get("week_start", "")
+        for session in plan.get("planned_sessions", []):
+            if session.get("display_status") not in {"offen", "info"}:
+                continue
+            session_date = session.get("scheduled_date") or week_start
+            parsed = parse_iso(session_date)
+            if parsed and parsed >= today:
+                candidates.append({**session, "scheduled_date": session_date})
+    if candidates:
+        return min(candidates, key=lambda item: (item.get("scheduled_date", "9999-12-31"), item.get("priority", 99)))
+    return next_session(plan_weeks[0]["plan"].get("planned_sessions", [])) if plan_weeks else None
+
+
+def plan_week_payload(
+    plan: dict[str, Any],
+    activities: list[dict[str, Any]],
+    weekly: list[dict[str, Any]],
+    key: str,
+    label: str,
+) -> dict[str, Any]:
+    sessions, unmatched = match_plan(plan, activities)
+    summary = next((item for item in weekly if item["week_start"] == plan.get("week_start", "")), {})
+    return {
+        "key": key,
+        "label": label,
+        "plan": {**plan, "planned_sessions": sessions},
+        "warnings": create_warnings(plan, sessions, activities, weekly),
+        "unmatched_activities": unmatched,
+        "week_summary": summary,
+        "intensity": {
+            "LIT": summary.get("lit_sessions", 0),
+            "moderate": summary.get("moderate_sessions", 0),
+            "hard": summary.get("hard_sessions", 0),
+        },
+    }
+
+
 def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[dict[str, Any]], splits: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> dict[str, Any]:
     running_activities = [item for item in activities if item.get("sport") == "run"]
-    sessions, unmatched = match_plan(plan, activities)
-    warnings = create_warnings(plan, sessions, activities, weekly)
+    next_week = upcoming.get("weeks", [])[0] if isinstance(upcoming, dict) and upcoming.get("weeks") else None
+    plan_weeks = [plan_week_payload(plan, activities, weekly, "current", "Aktuelle Woche")]
+    if isinstance(next_week, dict):
+        plan_weeks.append(plan_week_payload(next_week, activities, weekly, "next", "Nächste Woche"))
+    active_week = plan_weeks[0]
+    plan_with_sessions = active_week["plan"]
+    warnings = active_week["warnings"]
     recent = sorted(activities, key=lambda item: (item.get("date", ""), item.get("activity_id", "")), reverse=True)[:10]
     for item in recent:
         item["intensity"] = classify_intensity(item)
     plan_start = plan.get("week_start", "")
-    current_summary = next((item for item in weekly if item["week_start"] == plan_start), {})
-    plan_with_sessions = {**plan, "planned_sessions": sessions}
+    current_summary = active_week["week_summary"]
     metrics = {
         "goal": goal_metrics(running_activities),
         "current_week": current_summary,
@@ -610,15 +661,13 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
             "next_milestone": plan.get("next_milestone", "5-km-Formcheck im Frühjahr 2027"),
         },
         "plan": plan_with_sessions,
-        "next_session": next_session(sessions),
+        "plan_weeks": plan_weeks,
+        "selected_plan_key": active_week["key"],
+        "next_session": next_session_from_weeks(plan_weeks),
         "recent_activities": recent,
-        "unmatched_activities": unmatched,
+        "unmatched_activities": active_week["unmatched_activities"],
         "weekly_summary": weekly[-10:],
-        "intensity": {
-            "LIT": current_summary.get("lit_sessions", 0),
-            "moderate": current_summary.get("moderate_sessions", 0),
-            "hard": current_summary.get("hard_sessions", 0),
-        },
+        "intensity": active_week["intensity"],
         "repetition_targets": repetition_targets(activities, splits),
         "progression_roadmap": progression_roadmap(plan_with_sessions, upcoming),
         "warnings": warnings,
@@ -648,7 +697,7 @@ def render_html(data: dict[str, Any]) -> str:
     <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">ZIELSPLITS</p><h2>Sub-17 Intervallmarker</h2></div><span class="muted" id="rep-target-note"></span></div><div class="target-grid" id="rep-targets"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">ROADMAP</p><h2>Wann welche Marker relevant werden</h2></div><span class="muted" id="roadmap-note"></span></div><div class="roadmap" id="roadmap"></div><div class="scheduled-strip" id="scheduled-units"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">PLAN</p><h2>Aktuelle Woche</h2></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
+    <section><div class="section-head plan-head"><div><p class="eyebrow">PLAN</p><h2 id="plan-title">Aktuelle Woche</h2></div><div class="plan-controls" id="plan-switcher" aria-label="Planwoche wählen"></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
     <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div><span class="muted">Lauf + Rad</span></div><div id="intensity"></div></div></section>
     <section><div class="section-head"><div><p class="eyebrow">VERLAUF</p><h2>Wochenumfang</h2></div><span class="muted">Laufkilometer · letzte 10 Wochen</span></div><div class="chart" id="weekly-chart"></div><div class="summary-row" id="weekly-summary"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">HISTORIE</p><h2>Letzte Aktivitäten</h2></div></div><div class="table-wrap"><table><thead><tr><th>Datum</th><th>Sport</th><th>Einheit</th><th>Dauer</th><th>Distanz</th><th>Pace / Leistung</th><th>Puls</th><th>RPE</th><th>Notizen</th></tr></thead><tbody id="activities"></tbody></table></div><div id="unmatched"></div></section>
@@ -666,6 +715,9 @@ def render_html(data: dict[str, Any]) -> str:
     const sport = value => ({{run:'Lauf',bike:'Rad',strength:'Kraft'}}[value] || value || '–');
     const fmtDate = value => value ? new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium'}}).format(new Date(value+'T12:00:00')) : '–';
     const statusClass = value => ({{erledigt:'done',offen:'open',optional:'optional',info:'info'}}[value] || 'open');
+    let selectedPlanKey = d.selected_plan_key || 'current';
+    const planWeeks = d.plan_weeks && d.plan_weeks.length ? d.plan_weeks : [{{key:'current', label:'Aktuelle Woche', plan:d.plan, warnings:d.warnings, unmatched_activities:d.unmatched_activities, week_summary:d.metrics.current_week, intensity:d.intensity}}];
+    const activePlanWeek = () => planWeeks.find(week => week.key === selectedPlanKey) || planWeeks[0];
     $('hero-meta').innerHTML = `<div><span>Stand</span><strong>${{fmtDate(d.today)}}</strong></div><div><span>Phase</span><strong>${{esc(d.header.phase)}}</strong></div><div><span>Nächste Marke</span><strong>${{esc(d.header.next_milestone)}}</strong></div>`;
     const g = d.metrics.goal;
     const cards = [['Aktuelle 5-km-Zeit',g.current_5k],['Frühere Bestzeit',g.previous_pb],['Zielzeit',g.target_5k],['Aktuelle Pace',g.current_pace],['Zielpace',g.target_pace],['Differenz zum Ziel',g.gap_to_goal],['400 m im 5-km-Tempo',g.target_400m]];
@@ -684,7 +736,6 @@ def render_html(data: dict[str, Any]) -> str:
     $('roadmap-note').textContent = pr.note;
     $('roadmap').innerHTML = pr.rows.map(row => `<article class="roadmap-card ${{esc(row.status)}}"><div class="roadmap-top"><span>${{esc(row.period)}}</span><b>${{esc(row.status)}}</b></div><h3>${{esc(row.phase)}}</h3><p>${{esc(row.focus)}}</p><div class="marker-list">${{row.markers.map(m => `<div><strong>${{esc(m.distance)}}</strong><span>${{esc(m.time)}} · ${{esc(m.pace)}}</span><small>${{esc(m.set)}}</small></div>`).join('')}}</div><ul>${{row.units.map(unit => `<li>${{esc(unit)}}</li>`).join('')}}</ul></article>`).join('');
     $('scheduled-units').innerHTML = pr.scheduled_units.length ? `<div><strong>Konkret im Plan</strong><span>${{pr.scheduled_units.map(unit => `${{fmtDate(unit.date)}}: ${{esc(unit.main_set)}} (${{esc(unit.target)}})`).join(' · ')}}</span></div>` : '';
-    $('week-focus').textContent = `${{fmtDate(d.plan.week_start)}}–${{fmtDate(d.plan.week_end)}} · ${{d.plan.focus || ''}}`;
     const planDetails = s => [
       ['Warm-up', s.warmup],
       ['Hauptteil', s.main_set],
@@ -693,18 +744,35 @@ def render_html(data: dict[str, Any]) -> str:
       ['Setup', s.setup],
       ['Alternativen', s.alternatives]
     ].filter(([,value]) => value != null && value !== '').map(([label,value]) => `<div><dt>${{esc(label)}}</dt><dd>${{esc(value)}}</dd></div>`).join('');
-    $('sessions').innerHTML = d.plan.planned_sessions.map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl>${{planDetails(s)}}<div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
     if (d.next_session) {{ const s=d.next_session; $('next-session').innerHTML=`<article class="next-card"><div><p class="eyebrow">NÄCHSTE EMPFOHLENE EINHEIT · ${{fmtDate(s.scheduled_date)}}</p><h2>${{esc(s.title)}}</h2><p>${{esc(s.description)}}</p></div><div class="next-target"><span>${{esc(s.target_pace || 'Ziel gemäß Plan')}}</span><strong>RPE ${{esc(s.rpe_target || '–')}}</strong><small>Priorität ${{esc(s.priority)}} · ${{esc(s.target_intensity)}}</small></div></article>`; }}
-    $('warnings').innerHTML = d.warnings.map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');
-    const total = Math.max(1, Object.values(d.intensity).reduce((a,b)=>a+b,0));
-    $('intensity').innerHTML = ['LIT','moderate','hard'].map(key => `<div class="intensity-row"><div><span class="dot ${{key}}"></span><strong>${{key==='moderate'?'Moderat':key}}</strong><b>${{d.intensity[key]}}</b></div><div class="track"><i class="${{key}}" style="width:${{d.intensity[key]/total*100}}%"></i></div></div>`).join('');
     const weeks=d.weekly_summary, max=Math.max(1,...weeks.map(w=>w.run_km));
     $('weekly-chart').innerHTML=weeks.map(w=>`<div class="bar-column"><span>${{num(w.run_km)}} km</span><div class="bar-track"><i style="height:${{Math.max(2,w.run_km/max*100)}}%"></i></div><small>${{esc(w.week_label)}}</small></div>`).join('');
-    const cw=d.metrics.current_week||{{}}; $('weekly-summary').innerHTML=`<div><strong>${{num(cw.run_km)}} km</strong><span>Laufumfang</span></div><div><strong>${{cw.run_sessions||0}}</strong><span>Läufe</span></div><div><strong>${{cw.hard_endurance_sessions||0}}</strong><span>harte Ausdauer</span></div>`;
+    const renderPlanSwitcher = () => {{
+      $('plan-switcher').innerHTML = planWeeks.map(week => `<button type="button" class="${{week.key === selectedPlanKey ? 'active' : ''}}" data-plan-key="${{esc(week.key)}}">${{esc(week.label)}}</button>`).join('');
+      $('plan-switcher').querySelectorAll('button').forEach(button => button.addEventListener('click', () => {{
+        selectedPlanKey = button.dataset.planKey;
+        renderPlanPanel();
+      }}));
+    }};
+    const renderPlanPanel = () => {{
+      const week = activePlanWeek();
+      const plan = week.plan || {{}};
+      const intensity = week.intensity || {{LIT:0, moderate:0, hard:0}};
+      const summary = week.week_summary || {{}};
+      $('plan-title').textContent = week.label || 'Planwoche';
+      $('week-focus').textContent = `${{fmtDate(plan.week_start)}}–${{fmtDate(plan.week_end)}} · ${{plan.focus || ''}}`;
+      $('sessions').innerHTML = (plan.planned_sessions || []).map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date || plan.week_start)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl>${{planDetails(s)}}<div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
+      $('warnings').innerHTML = (week.warnings || []).map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');
+      const total = Math.max(1, Object.values(intensity).reduce((a,b)=>a+b,0));
+      $('intensity').innerHTML = ['LIT','moderate','hard'].map(key => `<div class="intensity-row"><div><span class="dot ${{key}}"></span><strong>${{key==='moderate'?'Moderat':key}}</strong><b>${{intensity[key] || 0}}</b></div><div class="track"><i class="${{key}}" style="width:${{(intensity[key] || 0)/total*100}}%"></i></div></div>`).join('');
+      $('weekly-summary').innerHTML=`<div><strong>${{num(summary.run_km)}} km</strong><span>Laufumfang</span></div><div><strong>${{summary.run_sessions||0}}</strong><span>Läufe</span></div><div><strong>${{summary.hard_endurance_sessions||0}}</strong><span>harte Ausdauer</span></div>`;
+      const unmatched = week.unmatched_activities || [];
+      $('unmatched').innerHTML = unmatched.length ? `<p class="unmatched"><strong>${{unmatched.length}} nicht zugeordnet:</strong> ${{unmatched.map(a=>esc(a.session_name)).join(', ')}}</p>` : '';
+      renderPlanSwitcher();
+    }};
     $('activities').innerHTML=d.recent_activities.length?d.recent_activities.map(a=>`<tr><td>${{fmtDate(a.date)}}</td><td><span class="badge neutral">${{esc(sport(a.sport))}}</span></td><td><strong>${{esc(a.session_name)}}</strong><small>${{esc(a.intensity)}}</small></td><td>${{num(a.duration_min)}} min</td><td>${{a.distance_km!=null?num(a.distance_km,2)+' km':'–'}}</td><td>${{a.avg_pace_sec_per_km?pace(a.avg_pace_sec_per_km):(a.avg_power?num(a.avg_power,0)+' W':'–')}}</td><td>${{a.avg_hr?num(a.avg_hr,0)+' / '+num(a.max_hr,0):'–'}}</td><td>${{num(a.rpe)}}</td><td>${{esc(a.notes||'–')}}</td></tr>`).join(''):'<tr><td colspan="9" class="empty">Noch keine Aktivitäten importiert.</td></tr>';
     const activityLabels = ['Datum','Sport','Einheit','Dauer','Distanz','Pace / Leistung','Puls','RPE','Notizen'];
     $('activities').querySelectorAll('tr').forEach(row => row.querySelectorAll('td:not(.empty)').forEach((cell, index) => cell.dataset.label = activityLabels[index]));
-    if(d.unmatched_activities.length) $('unmatched').innerHTML=`<p class="unmatched"><strong>${{d.unmatched_activities.length}} nicht zugeordnet:</strong> ${{d.unmatched_activities.map(a=>esc(a.session_name)).join(', ')}}</p>`;
     const sessionDetails = s => [
       ['Priorität', s.priority],
       ['Intensität', s.target_intensity],
@@ -722,6 +790,7 @@ def render_html(data: dict[str, Any]) -> str:
       ['Details', s.description]
     ].filter(([,value]) => value != null && value !== '').map(([label,value]) => `<div><dt>${{esc(label)}}</dt><dd>${{esc(value)}}</dd></div>`).join('');
     $('upcoming').innerHTML=d.upcoming.map(w=>`<article><p class="eyebrow">${{fmtDate(w.week_start)}} – ${{fmtDate(w.week_end)}}</p><h3>${{esc(w.focus)}}</h3><ul>${{(w.planned_sessions||[]).map(s=>`<li class="upcoming-session" tabindex="0"><span>${{esc(sport(s.type))}}</span><strong>${{esc(s.title)}}</strong><div class="session-popover"><p>${{esc(s.title)}}</p><dl>${{sessionDetails(s)}}</dl></div></li>`).join('')}}</ul></article>`).join('');
+    renderPlanPanel();
     $('generated').textContent = new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium',timeStyle:'short'}}).format(new Date(d.generated_at));
   }})();
   </script>

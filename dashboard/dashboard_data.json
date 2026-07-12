@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T19:05:39+02:00",
+  "generated_at": "2026-07-12T19:12:08+02:00",
   "today": "2026-07-12",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -92,7 +92,7 @@
         "description": "35-45 min Kraft, kein Muskelversagen, keine brutale Beinzerstörung. Keine Sprünge/Plyos und keine schweren Exzentrik-Experimente.",
         "target_pace": "1-3 Wiederholungen in Reserve; nächste Laufeinheit nicht blockieren",
         "rpe_target": "6–7",
-        "display_status": "info"
+        "display_status": "erledigt"
       },
       {
         "id": "2026-W28-optional-endurance",
@@ -116,29 +116,272 @@
       }
     ]
   },
+  "plan_weeks": [
+    {
+      "key": "current",
+      "label": "Aktuelle Woche",
+      "plan": {
+        "week_start": "2026-07-06",
+        "week_end": "2026-07-12",
+        "phase": "Block 01 – Einstieg Juli 2026",
+        "focus": "Laufrobustheit, kontrollierte Schnelligkeit und Rad-HIIT integrieren",
+        "next_milestone": "5-km-Formcheck im März/April 2027: unter 18:00",
+        "planned_sessions": [
+          {
+            "id": "2026-W28-run-intervals",
+            "scheduled_date": "2026-07-07",
+            "type": "run",
+            "title": "8 × 400 m kontrolliert",
+            "priority": 1,
+            "status": "completed",
+            "completed_date": "2026-07-09",
+            "completed_activity_id": "09072026",
+            "completed_summary": "6,63 km in 35:27 min; 8 x 400 m in Ø 82,4 s (ca. 3:26 min/km), Ø 141 bpm, max. 180 bpm",
+            "target_duration_min": 50,
+            "target_distance_km": 8,
+            "target_intensity": "hard",
+            "description": "Nur bei im Alltag und beim Einlaufen unauffälliger Wade: 15 min locker einlaufen, 4 × 80 m Steigerung, 8 × 400 m in 88–90 s (3:40–3:45 min/km), 200 m Trabpause, 10–15 min auslaufen. Bei verbleibender Wadenmüdigkeit stattdessen 35–45 min locker ohne Steigerungen.",
+            "target_pace": "3:40–3:45 min/km (400 m in 88–90 s)",
+            "rpe_target": "7–8",
+            "display_status": "erledigt",
+            "matched_activity_id": "09072026",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 7.0"
+          },
+          {
+            "id": "2026-W28-run-hills",
+            "scheduled_date": "2026-07-10",
+            "type": "run",
+            "title": "Lockerer Lauf + Bergsprints",
+            "priority": 2,
+            "status": "planned",
+            "target_duration_min": 45,
+            "target_distance_km": 7,
+            "target_intensity": "LIT",
+            "description": "35–45 min locker laufen; nur bei vollständig unauffälliger Wade danach 6 × 10 s Bergsprint mit vollständiger Gehpause, sonst ohne Zusatzintensität beenden.",
+            "target_pace": "5:00–5:40 min/km; Bergsprints technisch sauber",
+            "rpe_target": "3–4 (Sprints kurz 8–9)",
+            "display_status": "offen"
+          },
+          {
+            "id": "2026-W28-bike-hiit",
+            "scheduled_date": "2026-07-09",
+            "type": "bike",
+            "title": "Kickr Core 5 × 4 min",
+            "priority": 3,
+            "status": "completed",
+            "completed_date": "2026-07-07",
+            "completed_activity_id": "20260707_ictrainer",
+            "completed_summary": "29,66 km in 55:13 min; 5 x 4 min bei ca. 305-306 W, Ø 133 bpm, max. 166 bpm",
+            "target_duration_min": 65,
+            "target_distance_km": null,
+            "target_intensity": "hard",
+            "description": "15 min Warm-up, 5 × 4 min bei 110–115 % FTP mit 4 min locker, anschließend ausfahren.",
+            "target_pace": "315–328 W bei FTP 285 W",
+            "rpe_target": "8",
+            "display_status": "erledigt",
+            "matched_activity_id": "20260707_ictrainer",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 4.5"
+          },
+          {
+            "id": "2026-W28-strength",
+            "scheduled_date": "2026-07-12",
+            "type": "strength",
+            "title": "Dosiertes Krafttraining",
+            "priority": 4,
+            "status": "completed",
+            "completed_date": "2026-07-12",
+            "completed_activity_id": "2026-07-12_strength",
+            "completed_summary": "Geplantes dosiertes Krafttraining absolviert; Dauer, Übungen, Lasten, Wiederholungen und RPE nicht angegeben",
+            "target_duration_min": 45,
+            "target_distance_km": null,
+            "target_intensity": "moderate",
+            "warmup": "5-8 min allgemeines Aufwärmen, dann 2-3 leichte Ramp-up-Sätze Kreuzheben mit leerer Langhantel und kleinen Scheiben.",
+            "main_set": "Kreuzheben 3 x 3-5; Bulgarian Split Squat 2 x 6-8 je Seite; Wadenheben 3 x 8-12; Klimmzüge 3 x 4-8; Bankdrücken 3 x 5-8; Rückenstrecker oder Core 2 x 8-12.",
+            "recovery": "90-180 s Satzpause, bei Kreuzheben und Bankdrücken eher länger; alle Wiederholungen technisch sauber.",
+            "cooldown": "5 min locker mobilisieren, besonders Hüfte, Waden und Brustwirbelsäule.",
+            "setup": "Half Rack und Klimmzugstange für Klimmzüge; Langhantel mit Scheiben für Kreuzheben und Bankdrücken; verstellbare Hantelbank für Bankdrücken; Kurzhanteln für Bulgarian Split Squats. Wadenheben als Standard einbeinig mit Kurzhantel: Fußballen auf stabile Erhöhung oder flache Scheibe, eine Hand leicht am Half Rack, andere Hand hält die Kurzhantel, Ferse langsam tief ablassen und kontrolliert hochdrücken. Hyperextension-Bank oder Gymnastikball für Rückenstrecker/Core.",
+            "alternatives": "Wenn Bulgarian Split Squats heute zu stark ermüden: Kurzhantel-Step-ups oder Split Squat ohne Zusatzgewicht. Wenn Klimmzüge nicht in sauberer Wiederholungszahl gehen: Bandunterstützung an der Klimmzugstange. Wadenheben alternativ beidbeinig mit Langhantel aus dem Half Rack auf dem Rücken oder mit Gewichtsscheibe in Goblet-Position; nur mit sicherer Hantelposition. Wenn Bankdrücken nicht passt: Langhantel-Floor-Press, Kurzhantel-Floor-Press oder Liegestütze mit Gymnastikband. Wenn Rückenstrecker müde machen: Dead Bug oder Gymnastikball-Plank.",
+            "description": "35-45 min Kraft, kein Muskelversagen, keine brutale Beinzerstörung. Keine Sprünge/Plyos und keine schweren Exzentrik-Experimente.",
+            "target_pace": "1-3 Wiederholungen in Reserve; nächste Laufeinheit nicht blockieren",
+            "rpe_target": "6–7",
+            "display_status": "erledigt"
+          },
+          {
+            "id": "2026-W28-optional-endurance",
+            "scheduled_date": "2026-07-10",
+            "type": "bike",
+            "title": "Optionale lockere Ausdauer",
+            "priority": 5,
+            "status": "completed",
+            "completed_date": "2026-07-10",
+            "completed_activity_id": "10072026",
+            "completed_summary": "87,60 km in 2:58:06 h; Ø 29,5 km/h, Ø 127 bpm, max. 166 bpm, Ø 179 W, 514 hm",
+            "target_duration_min": 120,
+            "target_distance_km": null,
+            "target_intensity": "LIT",
+            "description": "Nur bei guter Frische: lockere Radausfahrt oder kurze zusätzliche LIT-Einheit.",
+            "target_pace": "Durchgehend locker",
+            "rpe_target": "2–3",
+            "display_status": "erledigt",
+            "matched_activity_id": "10072026",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 4.0"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "ok",
+          "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {
+        "week_start": "2026-07-06",
+        "week_end": "2026-07-12",
+        "week_label": "KW 28",
+        "run_km": 6.63,
+        "bike_hours": 3.89,
+        "run_sessions": 1,
+        "bike_sessions": 2,
+        "strength_sessions": 0,
+        "hard_endurance_sessions": 2,
+        "lit_sessions": 1,
+        "moderate_sessions": 0,
+        "hard_sessions": 2,
+        "total_duration_min": 35.5
+      },
+      "intensity": {
+        "LIT": 1,
+        "moderate": 0,
+        "hard": 2
+      }
+    },
+    {
+      "key": "next",
+      "label": "Nächste Woche",
+      "plan": {
+        "week_start": "2026-07-13",
+        "week_end": "2026-07-19",
+        "phase": "Block 01 – Einstieg Juli 2026",
+        "focus": "Schwelle und lockeren Laufumfang etablieren",
+        "planned_sessions": [
+          {
+            "id": "2026-W29-run-threshold",
+            "type": "run",
+            "title": "3 × 8 min Schwelle",
+            "priority": 1,
+            "target_intensity": "hard",
+            "target_duration_min": 50,
+            "target_distance_km": 8,
+            "warmup": "15 min locker einlaufen",
+            "main_set": "3 × 8 min Schwelle",
+            "recovery": "3 min locker traben zwischen den 8-min-Abschnitten",
+            "cooldown": "10 min auslaufen",
+            "target_pace": "3:58–4:08 min/km in den 8-min-Abschnitten",
+            "rpe_target": "7/10",
+            "description": "Kontrollierter Schwellenreiz; nicht als 5-km-Intervall laufen.",
+            "display_status": "offen"
+          },
+          {
+            "id": "2026-W29-run-easy",
+            "type": "run",
+            "title": "45 min locker + 4 Steigerungen",
+            "priority": 2,
+            "target_intensity": "LIT",
+            "target_duration_min": 45,
+            "target_distance_km": 7.5,
+            "warmup": "direkt locker anlaufen",
+            "main_set": "45 min lockerer Dauerlauf, danach 4 × 100 m Steigerung",
+            "recovery": "vollständig locker zurückgehen oder traben zwischen den Steigerungen",
+            "cooldown": "nach den Steigerungen locker beenden",
+            "target_pace": "5:00–5:50 min/km; Steigerungen nicht sprinten",
+            "rpe_target": "3–4/10",
+            "display_status": "offen"
+          },
+          {
+            "id": "2026-W29-run-easy-short",
+            "type": "run",
+            "title": "Optional 20–25 min sehr locker",
+            "priority": 3,
+            "status": "optional",
+            "target_intensity": "LIT",
+            "target_duration_min": 25,
+            "warmup": "sehr locker starten",
+            "main_set": "20–25 min sehr locker laufen",
+            "recovery": "keine Pausen geplant",
+            "cooldown": "locker auslaufen lassen",
+            "target_pace": "5:10–5:50 min/km; nur bei unauffälliger Verträglichkeit",
+            "rpe_target": "2–3/10",
+            "description": "Keine Steigerungen und keine Bergsprints. Nur ergänzen, wenn die bisherigen Läufe verträglich waren.",
+            "display_status": "optional"
+          },
+          {
+            "id": "2026-W29-bike-3030",
+            "type": "bike",
+            "title": "Kickr 3 × 10 × 30/30",
+            "priority": 4,
+            "target_intensity": "hard",
+            "target_duration_min": 60,
+            "warmup": "15 min Warm-up",
+            "main_set": "3 Serien à 10 × 30 s hart / 30 s locker",
+            "recovery": "5 min locker zwischen den Serien",
+            "cooldown": "ausfahren",
+            "target_pace": "harte 30 s bei ca. 125–135 % FTP; bei FTP 285 W ca. 355–385 W",
+            "rpe_target": "8/10",
+            "display_status": "offen"
+          },
+          {
+            "id": "2026-W29-strength",
+            "type": "strength",
+            "title": "Laufspezifisches Krafttraining",
+            "priority": 5,
+            "target_intensity": "moderate",
+            "target_duration_min": 50,
+            "warmup": "5-8 min allgemein aufwärmen, dann 2-3 leichte Ramp-up-Sätze für Kreuzheben und Bankdrücken.",
+            "main_set": "Kreuzheben 3 x 3-5; Bulgarian Split Squat 2 x 6-8 je Seite; Wadenheben 3 x 8-12; Klimmzüge 3 x 4-8; Bankdrücken 3 x 5-8; Rückenstrecker oder Core 2 x 8-12.",
+            "recovery": "90-180 s Satzpause; Qualität vor Last, kein Satz bis zum Muskelversagen.",
+            "cooldown": "5 min locker mobilisieren, besonders Hüfte, Waden und Brustwirbelsäule.",
+            "setup": "Half Rack und Klimmzugstange für Klimmzüge; Langhantel mit Scheiben für Kreuzheben und Bankdrücken; verstellbare Hantelbank für Bankdrücken; Kurzhanteln für Bulgarian Split Squats. Wadenheben als Standard einbeinig mit Kurzhantel: Fußballen auf stabile Erhöhung oder flache Scheibe, eine Hand leicht am Half Rack, andere Hand hält die Kurzhantel, Ferse langsam tief ablassen und kontrolliert hochdrücken. Hyperextension-Bank oder Gymnastikball für Rückenstrecker/Core.",
+            "alternatives": "Bei müden Beinen Bulgarian Split Squat durch Split Squat ohne Zusatzgewicht oder Kurzhantel-Step-up ersetzen. Klimmzüge bei Bedarf mit Gymnastikband unterstützen. Wadenheben alternativ beidbeinig mit Langhantel aus dem Half Rack auf dem Rücken oder mit Gewichtsscheibe in Goblet-Position; nur mit sicherer Hantelposition. Bankdrücken alternativ als Langhantel-Floor-Press, Kurzhantel-Floor-Press oder Liegestütz mit Gymnastikband. Rückenstrecker alternativ als Gymnastikball-Plank oder Dead Bug.",
+            "target_pace": "kontrolliert schwer, 1-3 Wiederholungen in Reserve",
+            "rpe_target": "6–7/10",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Geplante Prioritätseinheit noch offen: 3 × 8 min Schwelle."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    }
+  ],
+  "selected_plan_key": "current",
   "next_session": {
-    "id": "2026-W28-strength",
-    "scheduled_date": "2026-07-12",
-    "type": "strength",
-    "title": "Dosiertes Krafttraining",
-    "priority": 4,
-    "status": "completed",
-    "completed_date": "2026-07-12",
-    "completed_activity_id": "2026-07-12_strength",
-    "completed_summary": "Geplantes dosiertes Krafttraining absolviert; Dauer, Übungen, Lasten, Wiederholungen und RPE nicht angegeben",
-    "target_duration_min": 45,
-    "target_distance_km": null,
-    "target_intensity": "moderate",
-    "warmup": "5-8 min allgemeines Aufwärmen, dann 2-3 leichte Ramp-up-Sätze Kreuzheben mit leerer Langhantel und kleinen Scheiben.",
-    "main_set": "Kreuzheben 3 x 3-5; Bulgarian Split Squat 2 x 6-8 je Seite; Wadenheben 3 x 8-12; Klimmzüge 3 x 4-8; Bankdrücken 3 x 5-8; Rückenstrecker oder Core 2 x 8-12.",
-    "recovery": "90-180 s Satzpause, bei Kreuzheben und Bankdrücken eher länger; alle Wiederholungen technisch sauber.",
-    "cooldown": "5 min locker mobilisieren, besonders Hüfte, Waden und Brustwirbelsäule.",
-    "setup": "Half Rack und Klimmzugstange für Klimmzüge; Langhantel mit Scheiben für Kreuzheben und Bankdrücken; verstellbare Hantelbank für Bankdrücken; Kurzhanteln für Bulgarian Split Squats. Wadenheben als Standard einbeinig mit Kurzhantel: Fußballen auf stabile Erhöhung oder flache Scheibe, eine Hand leicht am Half Rack, andere Hand hält die Kurzhantel, Ferse langsam tief ablassen und kontrolliert hochdrücken. Hyperextension-Bank oder Gymnastikball für Rückenstrecker/Core.",
-    "alternatives": "Wenn Bulgarian Split Squats heute zu stark ermüden: Kurzhantel-Step-ups oder Split Squat ohne Zusatzgewicht. Wenn Klimmzüge nicht in sauberer Wiederholungszahl gehen: Bandunterstützung an der Klimmzugstange. Wadenheben alternativ beidbeinig mit Langhantel aus dem Half Rack auf dem Rücken oder mit Gewichtsscheibe in Goblet-Position; nur mit sicherer Hantelposition. Wenn Bankdrücken nicht passt: Langhantel-Floor-Press, Kurzhantel-Floor-Press oder Liegestütze mit Gymnastikband. Wenn Rückenstrecker müde machen: Dead Bug oder Gymnastikball-Plank.",
-    "description": "35-45 min Kraft, kein Muskelversagen, keine brutale Beinzerstörung. Keine Sprünge/Plyos und keine schweren Exzentrik-Experimente.",
-    "target_pace": "1-3 Wiederholungen in Reserve; nächste Laufeinheit nicht blockieren",
-    "rpe_target": "6–7",
-    "display_status": "info"
+    "id": "2026-W29-run-threshold",
+    "type": "run",
+    "title": "3 × 8 min Schwelle",
+    "priority": 1,
+    "target_intensity": "hard",
+    "target_duration_min": 50,
+    "target_distance_km": 8,
+    "warmup": "15 min locker einlaufen",
+    "main_set": "3 × 8 min Schwelle",
+    "recovery": "3 min locker traben zwischen den 8-min-Abschnitten",
+    "cooldown": "10 min auslaufen",
+    "target_pace": "3:58–4:08 min/km in den 8-min-Abschnitten",
+    "rpe_target": "7/10",
+    "description": "Kontrollierter Schwellenreiz; nicht als 5-km-Intervall laufen.",
+    "display_status": "offen",
+    "scheduled_date": "2026-07-13"
   },
   "recent_activities": [
     {
