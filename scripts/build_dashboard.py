@@ -685,7 +685,15 @@ def render_html(data: dict[str, Any]) -> str:
     $('roadmap').innerHTML = pr.rows.map(row => `<article class="roadmap-card ${{esc(row.status)}}"><div class="roadmap-top"><span>${{esc(row.period)}}</span><b>${{esc(row.status)}}</b></div><h3>${{esc(row.phase)}}</h3><p>${{esc(row.focus)}}</p><div class="marker-list">${{row.markers.map(m => `<div><strong>${{esc(m.distance)}}</strong><span>${{esc(m.time)}} · ${{esc(m.pace)}}</span><small>${{esc(m.set)}}</small></div>`).join('')}}</div><ul>${{row.units.map(unit => `<li>${{esc(unit)}}</li>`).join('')}}</ul></article>`).join('');
     $('scheduled-units').innerHTML = pr.scheduled_units.length ? `<div><strong>Konkret im Plan</strong><span>${{pr.scheduled_units.map(unit => `${{fmtDate(unit.date)}}: ${{esc(unit.main_set)}} (${{esc(unit.target)}})`).join(' · ')}}</span></div>` : '';
     $('week-focus').textContent = `${{fmtDate(d.plan.week_start)}}–${{fmtDate(d.plan.week_end)}} · ${{d.plan.focus || ''}}`;
-    $('sessions').innerHTML = d.plan.planned_sessions.map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl><div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
+    const planDetails = s => [
+      ['Warm-up', s.warmup],
+      ['Hauptteil', s.main_set],
+      ['Pause', s.recovery],
+      ['Cool-down', s.cooldown],
+      ['Setup', s.setup],
+      ['Alternativen', s.alternatives]
+    ].filter(([,value]) => value != null && value !== '').map(([label,value]) => `<div><dt>${{esc(label)}}</dt><dd>${{esc(value)}}</dd></div>`).join('');
+    $('sessions').innerHTML = d.plan.planned_sessions.map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl>${{planDetails(s)}}<div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
     if (d.next_session) {{ const s=d.next_session; $('next-session').innerHTML=`<article class="next-card"><div><p class="eyebrow">NÄCHSTE EMPFOHLENE EINHEIT · ${{fmtDate(s.scheduled_date)}}</p><h2>${{esc(s.title)}}</h2><p>${{esc(s.description)}}</p></div><div class="next-target"><span>${{esc(s.target_pace || 'Ziel gemäß Plan')}}</span><strong>RPE ${{esc(s.rpe_target || '–')}}</strong><small>Priorität ${{esc(s.priority)}} · ${{esc(s.target_intensity)}}</small></div></article>`; }}
     $('warnings').innerHTML = d.warnings.map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');
     const total = Math.max(1, Object.values(d.intensity).reduce((a,b)=>a+b,0));
@@ -706,6 +714,8 @@ def render_html(data: dict[str, Any]) -> str:
       ['Hauptteil', s.main_set],
       ['Pause', s.recovery],
       ['Cool-down', s.cooldown],
+      ['Setup', s.setup],
+      ['Alternativen', s.alternatives],
       ['Pace / Leistung', s.target_pace],
       ['RPE', s.rpe_target],
       ['Status', s.status],

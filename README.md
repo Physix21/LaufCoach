@@ -108,6 +108,13 @@ Die aktuelle Woche wird in `plans/current_week.json` gepflegt; weitere Wochen st
 in `plans/upcoming_plan.json`. Diese JSON-Dateien sind die einzige Planquelle des
 Dashboards.
 
+Krafteinheiten sollen in diesen Plan-Dateien übersichtlich strukturiert werden:
+`warmup`, `main_set`, `recovery`, `cooldown`, `setup`, `alternatives`,
+`target_pace` und `rpe_target`. Das Feld `setup` beschreibt konkret, wie die Übung
+mit dem vorhandenen Kraftkeller ausgeführt wird. Das Feld `alternatives` nennt
+passende Ersatzübungen, falls eine Übung wegen Ermüdung, Schmerzen oder fehlender
+Machbarkeit angepasst werden muss.
+
 Der Import erkennt deutsche und englische Varianten für Datum, Sportart, Titel,
 Dauer/Zeit, Distanz, Pace, Geschwindigkeit, Herzfrequenz, Leistung, Höhenmeter,
 Training Effect, RPE und Notizen. Garmin-Rundenexporte mit `Runden`/`Lap` und einer

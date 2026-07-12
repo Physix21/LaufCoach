@@ -66,16 +66,20 @@ Realistisch pro Woche:
 
 Ausstattung:
 
-- Halfrack
+- Half Rack inklusive Klimmzugstange
 - Langhantel
 - Kurzhanteln
-- Bank
+- Gewichtsscheiben von 1,25 kg bis 20 kg
+- Gymnastikbänder
 - Rückenstrecker-Bank
+- Gymnastikball
+
+Alle Kraftübungen müssen mit diesem Setup abbildbar sein. Wenn eine Übung spezielles Studiogerät voraussetzen würde, wird eine passende Alternative mit Langhantel, Kurzhanteln, Bändern, Half Rack, Klimmzugstange, Hyperextension-Bank oder Gymnastikball geplant.
 
 Erfahrung:
 
 - Kreuzheben
-- Bankdrücken
+- horizontales Drücken mit Langhantel/Kurzhanteln
 - Klimmzüge
 - Grundübungen vorhanden
 

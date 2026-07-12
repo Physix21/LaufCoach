@@ -64,15 +64,16 @@ RPE: 8/10
 
 Dauer: 45–60 min
 
-- Kreuzheben 3 x 3–5 moderat schwer
-- Bulgarian Split Squat 3 x 6 je Seite
-- Wadenheben stehend 3 x 8–12
-- Klimmzüge 3 Sätze
-- Bankdrücken 3 x 5–8
-- Rückenstrecker 2–3 x 8–12
+- Warm-up: 5–8 min allgemein, dann 2–3 leichte Ramp-up-Sätze mit der Langhantel
+- Kreuzheben 3 x 3–5 moderat schwer; Langhantel mit Scheiben
+- Bulgarian Split Squat 2–3 x 6–8 je Seite; Kurzhanteln oder zunächst Körpergewicht
+- Wadenheben stehend 3 x 8–12; Langhantel, Kurzhanteln oder einzelne Scheibe
+- Klimmzüge 3 Sätze; Klimmzugstange am Half Rack, bei Bedarf mit Gymnastikband unterstützt
+- Langhantel-Floor-Press 3 x 5–8; alternativ Kurzhantel-Floor-Press oder Liegestütz mit Gymnastikband
+- Rückenstrecker 2–3 x 8–12; Hyperextension-Bank, alternativ Gymnastikball-Plank oder Dead Bug
 - optional Seitstütz 2 x 30–45 s je Seite
 
-Kein Muskelversagen.
+Kein Muskelversagen. Alle Übungen müssen mit Half Rack, Klimmzugstange, Langhantel, Kurzhanteln, Scheiben, Gymnastikbändern, Hyperextension-Bank oder Gymnastikball ausführbar sein.
 
 ---
 
