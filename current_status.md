@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 10.07.2026
+**Stand:** 12.07.2026
 
 ## Ziel und Phase
 
@@ -30,10 +30,9 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 10.07.2026: Radausfahrt; 87,60 km in 2:58:06 h, Ø 29,5 km/h, Ø 127 bpm, maximal 166 bpm, Ø 179 W, NP 215 W, 514 hm
-- 10-km-Abschnitte überwiegend locker bis wellig; letzter Abschnitt 7,60 km in 13:51 min mit Ø 244 W und Ø 151 bpm
-- Einordnung: lange lockere bis wellige Radausdauer, kein zusätzlicher harter Ausdauerreiz; nach Rad-HIIT und 400-m-Intervallen dennoch relevante zentrale Zusatzbelastung
-- RPE, Gefühl und Beschwerden: nicht angegeben
+- 12.07.2026: Krafttraining; geplantes dosiertes Krafttraining aus KW 28 absolviert
+- Dauer, Übungen, Lasten, Wiederholungen, Herzfrequenz, RPE, Gefühl und Beschwerden: nicht angegeben
+- Einordnung: geplantes Krafttraining erledigt; ohne Detaildaten keine zusätzliche Leistungs- oder Belastungsdiagnose
 
 ## Belastbarkeit
 
@@ -42,7 +41,8 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Lokale Wadenerschöpfung am Ende des 10,78-km-Laufs vom 05.07. spricht dafür, den aktuellen Laufumfang zunächst nicht weiter zu steigern
 - In der Kalenderwoche 06.07.-12.07. sind mit Rad-HIIT am 07.07. und 8 x 400 m am 09.07. bereits zwei harte Ausdauerreize dokumentiert
 - Zusätzlich ist am 10.07. eine lange Radausfahrt über 87,60 km in 2:58:06 h dokumentiert; sie zählt als LIT/wellig, erhöht aber die Gesamtbelastung deutlich
-- Dokumentierter Laufumfang in KW 28 bisher: 6,63 km in einer Laufeinheit; dazu 3:53 h Radtraining in zwei Einheiten
+- Das geplante Krafttraining der KW 28 wurde am 12.07. absolviert; Detaildaten wurden nicht angegeben
+- Dokumentierter Laufumfang in KW 28: 6,63 km in einer Laufeinheit; dazu 3:53 h Radtraining in zwei Einheiten und ein Krafttraining
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
@@ -50,7 +50,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 - Den Laufumfang nach dem Sprung auf 18,96 km zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - In KW 28 keine weitere harte Ausdauereinheit ergänzen; Rad-HIIT und 400-m-Lauf erfüllen bereits das Wochenlimit, die lange Radausfahrt erhöht die Gesamtbelastung zusätzlich.
-- Der nächste Lauf bleibt locker. Bergsprints nach der langen Radausfahrt eher auslassen, außer die Beine sind vollständig frisch und die Wade ist unauffällig.
-- Lockere Läufe weiter im aktuellen Bereich absolvieren; ein kurzer dritter Lauf bleibt erst nach bestätigter Verträglichkeit der ersten beiden Juli-Wochen optional.
+- In KW 29 die geplante Schwelle kontrolliert laufen, nicht als 5-km-Intervall; wegen der hohen Vorwochenbelastung bei schweren Beinen eher am oberen Ende der Pace-Spanne bleiben oder den Umfang reduzieren.
+- Lockere Läufe weiter im aktuellen Bereich absolvieren; der kurze dritte Lauf bleibt optional und nur bei unauffälliger Verträglichkeit sinnvoll.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.

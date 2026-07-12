@@ -137,3 +137,20 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die Einheit zählt als lange lockere bis wellige Radausdauer, nicht als zusätzlicher harter Ausdauerreiz. Der hohe Maximalleistungswert ist bei einer langen Outdoor-Ausfahrt als kurzer Peak zu werten und verändert die Einordnung nicht.
 - Die Herzfrequenz blieb im Mittel klar moderat; der Anstieg im letzten Abschnitt bis Ø 151 bpm und maximal 166 bpm spricht für eine zügigere Schlussphase oder äußere Belastung, aber nicht für eine durchgehend intensive Einheit.
 - Zusammen mit Rad-HIIT am 07.07. und 8 x 400 m am 09.07. ist die zentrale Wochenbelastung hoch. Für den verbleibenden Teil der Kalenderwoche 06.07.-12.07. keine weitere intensive Ausdauereinheit ergänzen; ein zusätzlicher Lauf wäre nur locker sinnvoll.
+
+## 12.07.2026 - Krafttraining
+
+**Quelle:** Athletenmeldung im Chat
+
+### Messdaten
+
+- Sportart: Krafttraining
+- Einheit: geplantes dosiertes Krafttraining aus KW 28
+- Status: absolviert
+- Dauer, Übungen, Lasten, Wiederholungen, Herzfrequenz, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die geplante Krafteinheit ist damit als erledigt dokumentiert.
+- Ohne Angaben zu Lasten, Umfang oder Beschwerden wird daraus keine zusätzliche Leistungs- oder Belastungsdiagnose abgeleitet.
+- Für die nächste Woche bleibt der Fokus auf kontrollierter Schwellenarbeit und verträglichem Laufumfang; das Krafttraining weiter so dosieren, dass die zentrale Laufeinheit nicht blockiert wird.
