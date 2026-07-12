@@ -53,7 +53,8 @@ Laufcoach/
 1. Jede Trainingswoche wird dokumentiert.
 2. Nach jeder Woche wird eine kurze Auswertung erstellt.
 3. Der nächste Wochenplan wird auf Basis von Belastung, Gefühl, Schlaf, Stress, Beschwerden und Leistungsdaten angepasst.
-4. Priorität hat das Ziel sub 17 im Juni 2027, aber ohne unnötiges Verletzungsrisiko.
+4. Nach jeder neuen Aktivitätsanalyse prüft der Laufcoach aktiv, ob die kommenden Einheiten angepasst werden müssen, zum Beispiel wegen bereits absolvierter harter Reize, hoher Gesamtbelastung, Beschwerden, verpasster Einheiten oder veränderter Prioritäten.
+5. Priorität hat das Ziel sub 17 im Juni 2027, aber ohne unnötiges Verletzungsrisiko.
 
 ## Dashboard aktualisieren
 

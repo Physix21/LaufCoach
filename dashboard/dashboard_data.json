@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T13:04:40+02:00",
+  "generated_at": "2026-07-12T13:12:43+02:00",
   "today": "2026-07-12",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -72,16 +72,16 @@
       },
       {
         "id": "2026-W28-strength",
-        "scheduled_date": "2026-07-11",
+        "scheduled_date": "2026-07-12",
         "type": "strength",
-        "title": "Laufspezifisches Krafttraining",
+        "title": "Dosiertes Krafttraining",
         "priority": 4,
         "status": "planned",
-        "target_duration_min": 50,
+        "target_duration_min": 45,
         "target_distance_km": null,
         "target_intensity": "moderate",
-        "description": "Kreuzheben, Bulgarian Split Squat, Wadenheben, Klimmzüge, Bankdrücken und Rückenstrecker; kein Muskelversagen.",
-        "target_pace": "Kontrolliert schwer, 1–3 Wiederholungen in Reserve",
+        "description": "35-45 min Kraft, kein Muskelversagen, keine brutale Beinzerstörung: Kreuzheben 3 x 3-5 bei RPE 6-7; Bulgarian Split Squat 2 x 6-8 je Seite kontrolliert; Wadenheben 3 x 8-12 sauber und nicht bis Anschlag; Klimmzüge 3 x 4-8; Bankdrücken 3 x 5-8; Rückenstrecker oder Core 2 x 8-12. Keine Sprünge/Plyos und keine schweren Exzentrik-Experimente.",
+        "target_pace": "1-3 Wiederholungen in Reserve; nächste Laufeinheit nicht blockieren",
         "rpe_target": "6–7",
         "display_status": "info"
       },
@@ -108,19 +108,19 @@
     ]
   },
   "next_session": {
-    "id": "2026-W28-run-hills",
-    "scheduled_date": "2026-07-10",
-    "type": "run",
-    "title": "Lockerer Lauf + Bergsprints",
-    "priority": 2,
+    "id": "2026-W28-strength",
+    "scheduled_date": "2026-07-12",
+    "type": "strength",
+    "title": "Dosiertes Krafttraining",
+    "priority": 4,
     "status": "planned",
     "target_duration_min": 45,
-    "target_distance_km": 7,
-    "target_intensity": "LIT",
-    "description": "35–45 min locker laufen; nur bei vollständig unauffälliger Wade danach 6 × 10 s Bergsprint mit vollständiger Gehpause, sonst ohne Zusatzintensität beenden.",
-    "target_pace": "5:00–5:40 min/km; Bergsprints technisch sauber",
-    "rpe_target": "3–4 (Sprints kurz 8–9)",
-    "display_status": "offen"
+    "target_distance_km": null,
+    "target_intensity": "moderate",
+    "description": "35-45 min Kraft, kein Muskelversagen, keine brutale Beinzerstörung: Kreuzheben 3 x 3-5 bei RPE 6-7; Bulgarian Split Squat 2 x 6-8 je Seite kontrolliert; Wadenheben 3 x 8-12 sauber und nicht bis Anschlag; Klimmzüge 3 x 4-8; Bankdrücken 3 x 5-8; Rückenstrecker oder Core 2 x 8-12. Keine Sprünge/Plyos und keine schweren Exzentrik-Experimente.",
+    "target_pace": "1-3 Wiederholungen in Reserve; nächste Laufeinheit nicht blockieren",
+    "rpe_target": "6–7",
+    "display_status": "info"
   },
   "recent_activities": [
     {

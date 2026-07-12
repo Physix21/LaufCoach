@@ -96,7 +96,8 @@ Nach jeder bereitgestellten Aktivität:
 1. Messdaten und subjektive Angaben in `logs/training_diary_2026.md` eintragen.
 2. Coaching-Interpretationen klar von Messdaten trennen und Unsicherheiten benennen.
 3. `current_status.md` mit Leistungsanker, Belastbarkeit und nächstem Fokus aktualisieren.
-4. Zu Beginn eines neuen Coaching-Chats `athlete_profile.md`, diese Anweisungen, `wissenschaftliche_grundlagen_5km.md`, `annual_plan_2026_2027.md`, `current_status.md` und die jüngsten Tagebucheinträge lesen.
+4. Prüfen, ob kommende geplante Einheiten nach der Analyse angepasst werden müssen, zum Beispiel wegen bereits erfüllter harter Reize, hoher Gesamtbelastung, Beschwerden, verpasster Einheiten oder besserer Priorisierung. Falls ja, `plans/current_week.json` und bei Bedarf `plans/upcoming_plan.json` aktualisieren.
+5. Zu Beginn eines neuen Coaching-Chats `athlete_profile.md`, diese Anweisungen, `wissenschaftliche_grundlagen_5km.md`, `annual_plan_2026_2027.md`, `current_status.md` und die jüngsten Tagebucheinträge lesen.
 
 Minimaldaten pro Einheit:
 
