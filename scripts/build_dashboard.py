@@ -731,11 +731,11 @@ def render_html(data: dict[str, Any]) -> str:
     <div class="hero-meta" id="hero-meta"></div>
   </header>
   <main>
+    <section class="primary-plan"><div class="section-head plan-head"><div><p class="eyebrow">PLAN</p><h2 id="plan-title">Aktuelle Woche</h2></div><div class="plan-controls" id="plan-switcher" aria-label="Planwoche wählen"></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
     <section id="next-session"></section>
     <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">ZIELSPLITS</p><h2>Sub-17 Intervallmarker</h2></div><span class="muted" id="rep-target-note"></span></div><div class="target-grid" id="rep-targets"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">ROADMAP</p><h2>Wann welche Marker relevant werden</h2></div><span class="muted" id="roadmap-note"></span></div><div class="roadmap" id="roadmap"></div><div class="scheduled-strip" id="scheduled-units"></div></section>
-    <section><div class="section-head plan-head"><div><p class="eyebrow">PLAN</p><h2 id="plan-title">Aktuelle Woche</h2></div><div class="plan-controls" id="plan-switcher" aria-label="Planwoche wählen"></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
     <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div><span class="muted">Lauf + Rad</span></div><div id="intensity"></div></div></section>
     <section><div class="section-head"><div><p class="eyebrow">VERLAUF</p><h2>Wochenumfang</h2></div><span class="muted">Laufkilometer · letzte 10 Wochen</span></div><div class="chart" id="weekly-chart"></div><div class="summary-row" id="weekly-summary"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">HISTORIE</p><h2>Letzte Aktivitäten</h2></div></div><div class="table-wrap"><table><thead><tr><th>Datum</th><th>Sport</th><th>Einheit</th><th>Dauer</th><th>Distanz</th><th>Pace / Leistung</th><th>Puls</th><th>RPE</th><th>Notizen</th></tr></thead><tbody id="activities"></tbody></table></div><div id="unmatched"></div></section>
