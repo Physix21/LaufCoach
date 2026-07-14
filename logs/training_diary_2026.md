@@ -170,11 +170,12 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Struktur laut TCX-Runden: Warm-up mit progressivem Vorblock, danach 3 Serien mit je 6 x 30 s hart / 30 s locker, Serienpause ca. 3 min, Cool-down 7 min
 - Harte 30-s-Abschnitte: Ø 336 W; Spannweite der Rundenmittel 329-342 W
 - Serienmittel der harten 30-s-Abschnitte: 337 / 336 / 336 W
-- RPE, Gefühl und Beschwerden: nicht angegeben
+- Freiwillige Athletenangabe nach der Einheit: Beine fühlten sich am 14.07.2026 etwas müde an
+- RPE und Beschwerden: nicht angegeben
 
 ### Coaching-Einschätzung
 
 - Die Einheit zählt als harter Ausdauerreiz in der Kalenderwoche 13.07.-19.07.2026.
 - Die harten Abschnitte waren sehr gleichmäßig. Bezogen auf die im Profil genannte FTP-Spanne von ca. 280-290 W entsprechen 336 W ungefähr 116-120 % FTP.
 - Damit lag die Einheit unter der Planvorgabe von ca. 125-135 % FTP beziehungsweise 355-385 W bei FTP 285 W, setzte aber durch 18 Wiederholungen einen klaren intensiven Radreiz.
-- Für die restliche Woche bleibt maximal noch ein harter Ausdauerreiz sinnvoll. Die geplante Schwelle sollte frühestens nach ca. 48 h Abstand und kontrolliert gelaufen werden; bei schweren Beinen wird sie reduziert oder durch locker ersetzt.
+- Für die restliche Woche bleibt maximal noch ein harter Ausdauerreiz sinnvoll. Die gemeldete Beinmüdigkeit spricht dafür, die geplante Schwelle nur bei klar erholten Beinen frühestens nach ca. 48 h Abstand zu laufen; bei anhaltender Müdigkeit wird sie durch einen lockeren Lauf ersetzt.

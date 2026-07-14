@@ -33,7 +33,8 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - 14.07.2026: Kickr Core 3 x 6 x 30/30
 - Gesamt: 32,57 km in 60:00 min; Ø 197 W, max. 358 W; Ø 129 bpm, max. 156 bpm
 - Harte 30-s-Abschnitte: 18 Wiederholungen, Ø ca. 336 W; Serienmittel 337 / 336 / 336 W
-- RPE, Gefühl und Beschwerden: nicht angegeben
+- Freiwillige Athletenangabe nach der Einheit: Beine fühlten sich am 14.07.2026 etwas müde an
+- RPE und Beschwerden: nicht angegeben
 - Einordnung: harter Rad-HIIT-Reiz in KW 29; sehr gleichmäßig, aber unter der geplanten Leistungszielspanne von ca. 355-385 W bei FTP 285 W
 
 ## Belastbarkeit
@@ -46,6 +47,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Das geplante Krafttraining der KW 28 wurde am 12.07. absolviert; Detaildaten wurden nicht angegeben
 - Dokumentierter Laufumfang in KW 28: 6,63 km in einer Laufeinheit; dazu 3:53 h Radtraining in zwei Einheiten und ein Krafttraining
 - In KW 29 ist am 14.07. bereits ein harter Rad-HIIT-Reiz dokumentiert: 3 x 6 x 30/30, 60:00 min, 32,57 km, Ø 197 W, harte Abschnitte Ø ca. 336 W
+- Am 14.07.2026 wurden etwas müde Beine berichtet; Beschwerden wurden nicht berichtet
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
@@ -53,7 +55,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 - Den Laufumfang nach dem Sprung auf 18,96 km zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - In KW 28 keine weitere harte Ausdauereinheit ergänzen; Rad-HIIT und 400-m-Lauf erfüllen bereits das Wochenlimit, die lange Radausfahrt erhöht die Gesamtbelastung zusätzlich.
-- In KW 29 die geplante Schwelle wegen des Rad-HIIT vom 14.07. frühestens mit ca. 48 h Abstand kontrolliert laufen, nicht als 5-km-Intervall; bei schweren Beinen eher am oberen Ende der Pace-Spanne bleiben, auf 2 x 8 min reduzieren oder locker ersetzen.
+- In KW 29 die geplante Schwelle wegen des Rad-HIIT vom 14.07. und der gemeldeten Beinmüdigkeit nur bei klar erholten Beinen laufen, frühestens mit ca. 48 h Abstand und nicht als 5-km-Intervall; bei weiterhin müden Beinen durch 35-45 min locker ersetzen.
 - Lockere Läufe weiter im aktuellen Bereich absolvieren; der kurze dritte Lauf bleibt optional und nur bei unauffälliger Verträglichkeit sinnvoll.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.
