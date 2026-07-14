@@ -606,6 +606,40 @@ def next_session_from_weeks(plan_weeks: list[dict[str, Any]]) -> dict[str, Any] 
     return next_session(plan_weeks[0]["plan"].get("planned_sessions", [])) if plan_weeks else None
 
 
+def plan_week_label(plan: dict[str, Any], today: date | None = None) -> str:
+    start = parse_iso(plan.get("week_start", ""))
+    end = parse_iso(plan.get("week_end", ""))
+    today = today or date.today()
+    if start and end and start <= today <= end:
+        return "Diese Woche"
+    if start and today < start and (start - today).days <= 7:
+        return "Nächste Woche"
+    if start:
+        return f"KW {start.isocalendar().week}"
+    return "Planwoche"
+
+
+def select_plan_week(plan_weeks: list[dict[str, Any]], today: date | None = None) -> dict[str, Any] | None:
+    today = today or date.today()
+    dated = []
+    for week in plan_weeks:
+        plan = week.get("plan", {})
+        start = parse_iso(plan.get("week_start", ""))
+        end = parse_iso(plan.get("week_end", ""))
+        if start and end:
+            dated.append((start, end, week))
+    current = [week for start, end, week in dated if start <= today <= end]
+    if current:
+        return current[0]
+    future = [(start, week) for start, _, week in dated if start > today]
+    if future:
+        return min(future, key=lambda item: item[0])[1]
+    past = [(end, week) for _, end, week in dated if end < today]
+    if past:
+        return max(past, key=lambda item: item[0])[1]
+    return plan_weeks[0] if plan_weeks else None
+
+
 def plan_week_payload(
     plan: dict[str, Any],
     activities: list[dict[str, Any]],
@@ -632,11 +666,15 @@ def plan_week_payload(
 
 def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[dict[str, Any]], splits: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> dict[str, Any]:
     running_activities = [item for item in activities if item.get("sport") == "run"]
-    next_week = upcoming.get("weeks", [])[0] if isinstance(upcoming, dict) and upcoming.get("weeks") else None
-    plan_weeks = [plan_week_payload(plan, activities, weekly, "current", "Aktuelle Woche")]
-    if isinstance(next_week, dict):
-        plan_weeks.append(plan_week_payload(next_week, activities, weekly, "next", "Nächste Woche"))
-    active_week = plan_weeks[0]
+    source_weeks = [plan]
+    if isinstance(upcoming, dict):
+        source_weeks.extend(week for week in upcoming.get("weeks", []) if isinstance(week, dict))
+    today = date.today()
+    plan_weeks = [
+        plan_week_payload(week, activities, weekly, f"week-{week.get('week_start', index)}", plan_week_label(week, today))
+        for index, week in enumerate(source_weeks)
+    ]
+    active_week = select_plan_week(plan_weeks, today) or plan_weeks[0]
     plan_with_sessions = active_week["plan"]
     warnings = active_week["warnings"]
     recent = sorted(activities, key=lambda item: (item.get("date", ""), item.get("activity_id", "")), reverse=True)[:10]
@@ -715,10 +753,43 @@ def render_html(data: dict[str, Any]) -> str:
     const sport = value => ({{run:'Lauf',bike:'Rad',strength:'Kraft'}}[value] || value || '–');
     const fmtDate = value => value ? new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium'}}).format(new Date(value+'T12:00:00')) : '–';
     const statusClass = value => ({{erledigt:'done',offen:'open',optional:'optional',info:'info'}}[value] || 'open');
-    let selectedPlanKey = d.selected_plan_key || 'current';
     const planWeeks = d.plan_weeks && d.plan_weeks.length ? d.plan_weeks : [{{key:'current', label:'Aktuelle Woche', plan:d.plan, warnings:d.warnings, unmatched_activities:d.unmatched_activities, week_summary:d.metrics.current_week, intensity:d.intensity}}];
+    const todayIso = () => {{
+      const now = new Date();
+      const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+      return local.toISOString().slice(0, 10);
+    }};
+    const currentDateIso = todayIso();
+    const isoWeek = value => {{
+      const dt = new Date(value + 'T12:00:00');
+      dt.setDate(dt.getDate() + 4 - (dt.getDay() || 7));
+      const yearStart = new Date(dt.getFullYear(), 0, 1);
+      return Math.ceil((((dt - yearStart) / 86400000) + 1) / 7);
+    }};
+    const weekLabel = week => {{
+      const plan = week.plan || {{}};
+      if (plan.week_start && plan.week_end && plan.week_start <= currentDateIso && currentDateIso <= plan.week_end) return 'Diese Woche';
+      if (plan.week_start && plan.week_start > currentDateIso) {{
+        const daysUntil = (new Date(plan.week_start + 'T12:00:00') - new Date(currentDateIso + 'T12:00:00')) / 86400000;
+        if (daysUntil <= 7) return 'Nächste Woche';
+      }}
+      return plan.week_start ? `KW ${{isoWeek(plan.week_start)}}` : (week.label || 'Planwoche');
+    }};
+    const selectInitialPlanKey = () => {{
+      const current = planWeeks.find(week => {{
+        const plan = week.plan || {{}};
+        return plan.week_start && plan.week_end && plan.week_start <= currentDateIso && currentDateIso <= plan.week_end;
+      }});
+      if (current) return current.key;
+      const future = planWeeks.filter(week => (week.plan || {{}}).week_start > currentDateIso).sort((a,b) => (a.plan.week_start || '').localeCompare(b.plan.week_start || ''));
+      if (future.length) return future[0].key;
+      const past = planWeeks.filter(week => (week.plan || {{}}).week_end < currentDateIso).sort((a,b) => (b.plan.week_end || '').localeCompare(a.plan.week_end || ''));
+      if (past.length) return past[0].key;
+      return d.selected_plan_key || planWeeks[0].key;
+    }};
+    let selectedPlanKey = selectInitialPlanKey();
     const activePlanWeek = () => planWeeks.find(week => week.key === selectedPlanKey) || planWeeks[0];
-    $('hero-meta').innerHTML = `<div><span>Stand</span><strong>${{fmtDate(d.today)}}</strong></div><div><span>Phase</span><strong>${{esc(d.header.phase)}}</strong></div><div><span>Nächste Marke</span><strong>${{esc(d.header.next_milestone)}}</strong></div>`;
+    $('hero-meta').innerHTML = `<div><span>Stand</span><strong>${{fmtDate(currentDateIso)}}</strong></div><div><span>Phase</span><strong>${{esc(d.header.phase)}}</strong></div><div><span>Nächste Marke</span><strong>${{esc(d.header.next_milestone)}}</strong></div>`;
     const g = d.metrics.goal;
     const cards = [['Aktuelle 5-km-Zeit',g.current_5k],['Frühere Bestzeit',g.previous_pb],['Zielzeit',g.target_5k],['Aktuelle Pace',g.current_pace],['Zielpace',g.target_pace],['Differenz zum Ziel',g.gap_to_goal],['400 m im 5-km-Tempo',g.target_400m]];
     $('goal-metrics').innerHTML = cards.map(([label,value],i) => `<article class="metric ${{i===2?'accent':''}}"><span>${{esc(label)}}</span><strong>${{esc(value)}}</strong>${{i===0?`<small>${{fmtDate(g.current_5k_date)}}</small>`:''}}</article>`).join('');
@@ -748,7 +819,7 @@ def render_html(data: dict[str, Any]) -> str:
     const weeks=d.weekly_summary, max=Math.max(1,...weeks.map(w=>w.run_km));
     $('weekly-chart').innerHTML=weeks.map(w=>`<div class="bar-column"><span>${{num(w.run_km)}} km</span><div class="bar-track"><i style="height:${{Math.max(2,w.run_km/max*100)}}%"></i></div><small>${{esc(w.week_label)}}</small></div>`).join('');
     const renderPlanSwitcher = () => {{
-      $('plan-switcher').innerHTML = planWeeks.map(week => `<button type="button" class="${{week.key === selectedPlanKey ? 'active' : ''}}" data-plan-key="${{esc(week.key)}}">${{esc(week.label)}}</button>`).join('');
+      $('plan-switcher').innerHTML = planWeeks.map(week => `<button type="button" class="${{week.key === selectedPlanKey ? 'active' : ''}}" data-plan-key="${{esc(week.key)}}">${{esc(weekLabel(week))}}</button>`).join('');
       $('plan-switcher').querySelectorAll('button').forEach(button => button.addEventListener('click', () => {{
         selectedPlanKey = button.dataset.planKey;
         renderPlanPanel();
@@ -759,7 +830,7 @@ def render_html(data: dict[str, Any]) -> str:
       const plan = week.plan || {{}};
       const intensity = week.intensity || {{LIT:0, moderate:0, hard:0}};
       const summary = week.week_summary || {{}};
-      $('plan-title').textContent = week.label || 'Planwoche';
+      $('plan-title').textContent = weekLabel(week);
       $('week-focus').textContent = `${{fmtDate(plan.week_start)}}–${{fmtDate(plan.week_end)}} · ${{plan.focus || ''}}`;
       $('sessions').innerHTML = (plan.planned_sessions || []).map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date || plan.week_start)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl>${{planDetails(s)}}<div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
       $('warnings').innerHTML = (week.warnings || []).map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');

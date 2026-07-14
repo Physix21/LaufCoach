@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T19:37:46+02:00",
+  "generated_at": "2026-07-14T19:40:51+02:00",
   "today": "2026-07-14",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -113,8 +113,8 @@
   },
   "plan_weeks": [
     {
-      "key": "current",
-      "label": "Aktuelle Woche",
+      "key": "week-2026-07-13",
+      "label": "Diese Woche",
       "plan": {
         "week_start": "2026-07-13",
         "week_end": "2026-07-19",
@@ -251,7 +251,7 @@
       }
     },
     {
-      "key": "next",
+      "key": "week-2026-07-20",
       "label": "Nächste Woche",
       "plan": {
         "week_start": "2026-07-20",
@@ -336,9 +336,80 @@
         "moderate": 0,
         "hard": 0
       }
+    },
+    {
+      "key": "week-2026-07-27",
+      "label": "KW 31",
+      "plan": {
+        "week_start": "2026-07-27",
+        "week_end": "2026-08-02",
+        "phase": "Block 01 – Entlastung",
+        "focus": "Belastung aufnehmen und frisch werden",
+        "planned_sessions": [
+          {
+            "id": "2026-W31-run-400",
+            "type": "run",
+            "title": "6 × 400 m frisch",
+            "priority": 1,
+            "target_intensity": "moderate",
+            "target_distance_km": 7,
+            "warmup": "15 min locker einlaufen",
+            "main_set": "6 × 400 m frisch, aber kontrolliert",
+            "recovery": "200–300 m locker traben",
+            "cooldown": "auslaufen",
+            "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
+            "rpe_target": "7/10",
+            "display_status": "offen"
+          },
+          {
+            "id": "2026-W31-run-easy",
+            "type": "run",
+            "title": "35–45 min locker",
+            "priority": 2,
+            "target_intensity": "LIT",
+            "target_duration_min": 40,
+            "warmup": "locker starten",
+            "main_set": "35–45 min lockerer Dauerlauf",
+            "recovery": "keine Pausen geplant",
+            "cooldown": "locker beenden",
+            "target_pace": "5:00–5:50 min/km",
+            "rpe_target": "3/10",
+            "description": "Keine Zusatzhärte.",
+            "display_status": "offen"
+          },
+          {
+            "id": "2026-W31-bike-reduced",
+            "type": "bike",
+            "title": "Kickr 6 × 2 min reduziert",
+            "priority": 3,
+            "target_intensity": "moderate",
+            "target_duration_min": 50,
+            "warmup": "locker einfahren",
+            "main_set": "6 × 2 min bei 115 % FTP",
+            "recovery": "3 min locker zwischen den Wiederholungen",
+            "cooldown": "ausfahren",
+            "target_pace": "bei FTP 285 W ca. 328 W",
+            "rpe_target": "6–7/10",
+            "display_status": "offen"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Geplante Prioritätseinheit noch offen: 6 × 400 m frisch."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
     }
   ],
-  "selected_plan_key": "current",
+  "selected_plan_key": "week-2026-07-13",
   "next_session": {
     "id": "2026-W29-run-threshold",
     "type": "run",
