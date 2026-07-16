@@ -179,3 +179,30 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die harten Abschnitte waren sehr gleichmäßig. Bezogen auf die im Profil genannte FTP-Spanne von ca. 280-290 W entsprechen 336 W ungefähr 116-120 % FTP.
 - Damit lag die Einheit unter der Planvorgabe von ca. 125-135 % FTP beziehungsweise 355-385 W bei FTP 285 W, setzte aber durch 18 Wiederholungen einen klaren intensiven Radreiz.
 - Für die restliche Woche bleibt maximal noch ein harter Ausdauerreiz sinnvoll. Die gemeldete Beinmüdigkeit spricht dafür, die geplante Schwelle nur bei klar erholten Beinen frühestens nach ca. 48 h Abstand zu laufen; bei anhaltender Müdigkeit wird sie durch einen lockeren Lauf ersetzt.
+
+## 16.07.2026 - 3 x 8 min Schwelle
+
+**Quelle:** `data/raw/garmin/csv/16072026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 11,39 km in 58:29 min; Ø 5:08 min/km
+- Herzfrequenz: Ø 145 bpm, maximal 174 bpm
+- Laufleistung: Ø 390 W, maximal 613 W
+- Höhenmeter: 48 m Anstieg, 47 m Abstieg
+- Warm-up: 3,16 km in 18:34 min; Ø 5:52 min/km, Ø 133 bpm
+- Hauptteil:
+  - 8:00,5 min über 2,02 km; Ø 3:58 min/km, Ø 162 bpm, max. 170 bpm, Ø 482 W
+  - 8:00,3 min über 2,03 km; Ø 3:57 min/km, Ø 165 bpm, max. 171 bpm, Ø 490 W
+  - 8:00,3 min über 2,06 km; Ø 3:53 min/km, Ø 168 bpm, max. 174 bpm, Ø 484 W
+- Erholungen: 3:01,6 min über 0,40 km und 3:00,9 min über 0,32 km locker
+- Cool-down: 1,40 km in 9:51 min; Ø 7:03 min/km, Ø 127 bpm
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit wurde 48 h nach dem Rad-HIIT absolviert und ist der zweite harte Ausdauerreiz in der Kalenderwoche 13.07.-19.07.2026. Damit ist das Wochenlimit für harte Ausdauerreize erreicht.
+- Die ersten beiden 8-min-Abschnitte lagen im geplanten Schwellenbereich von 3:58-4:08 min/km. Der dritte Abschnitt war mit 3:53 min/km leicht schneller als geplant, blieb aber nach Herzfrequenz und Leistung ohne deutlichen Einbruch.
+- Der progressive Herzfrequenzverlauf von Ø 162 auf 168 bpm bei stabiler Leistung spricht für einen wirksamen, kontrollierten Schwellenreiz. Aus einer einzelnen Einheit wird der Schwellenbereich noch nicht nach oben angepasst.
+- Für den Rest der Woche nur noch lockere Laufbelastung einplanen. Die geplanten Steigerungen im lockeren Lauf werden gestrichen; der optionale dritte Lauf bleibt nur bei vollständig unauffälliger Verträglichkeit sinnvoll.

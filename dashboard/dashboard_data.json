@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T19:55:36+02:00",
-  "today": "2026-07-14",
+  "generated_at": "2026-07-16T19:56:30+02:00",
+  "today": "2026-07-16",
   "header": {
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
@@ -30,22 +30,29 @@
         "rpe_target": "7/10",
         "description": "Kontrollierter Schwellenreiz; wegen Rad-HIIT am 14.07. und gemeldeter Beinmüdigkeit nur bei klar erholten Beinen laufen, frühestens ca. 48 h danach. Nicht als 5-km-Intervall laufen. Bei weiterhin müden Beinen durch 35-45 min locker ersetzen.",
         "scheduled_date": "2026-07-16",
-        "display_status": "offen"
+        "status": "completed",
+        "completed_date": "2026-07-16",
+        "completed_activity_id": "16072026",
+        "completed_summary": "11,39 km in 58:29 min; 3 x 8 min in 3:58 / 3:57 / 3:53 min/km; Ø 145 bpm, max. 174 bpm; Ø 390 W",
+        "display_status": "erledigt",
+        "matched_activity_id": "16072026",
+        "match_reason": "Sportart/Woche passend; Heuristik-Score 7.0"
       },
       {
         "id": "2026-W29-run-easy",
         "type": "run",
-        "title": "45 min locker + 4 Steigerungen",
+        "title": "35-45 min locker",
         "priority": 2,
         "target_intensity": "LIT",
-        "target_duration_min": 45,
-        "target_distance_km": 7.5,
+        "target_duration_min": 40,
+        "target_distance_km": 6.5,
         "warmup": "direkt locker anlaufen",
-        "main_set": "45 min lockerer Dauerlauf, danach 4 × 100 m Steigerung",
-        "recovery": "vollständig locker zurückgehen oder traben zwischen den Steigerungen",
-        "cooldown": "nach den Steigerungen locker beenden",
-        "target_pace": "5:00–5:50 min/km; Steigerungen nicht sprinten",
+        "main_set": "35-45 min lockerer Dauerlauf ohne Steigerungen",
+        "recovery": "keine Pausen geplant",
+        "cooldown": "locker beenden",
+        "target_pace": "5:00–5:50 min/km",
         "rpe_target": "3–4/10",
+        "description": "Nach Rad-HIIT am 14.07. und Schwellenlauf am 16.07. nur locker laufen; keine Steigerungen, keine Bergsprints.",
         "scheduled_date": "2026-07-18",
         "display_status": "offen"
       },
@@ -63,7 +70,7 @@
         "cooldown": "locker auslaufen lassen",
         "target_pace": "5:10–5:50 min/km; nur bei unauffälliger Verträglichkeit",
         "rpe_target": "2–3/10",
-        "description": "Keine Steigerungen und keine Bergsprints. Nur ergänzen, wenn die bisherigen Läufe verträglich waren.",
+        "description": "Keine Steigerungen und keine Bergsprints. Nach dem Schwellenlauf nur ergänzen, wenn Beine und Waden vollständig unauffällig sind; sonst auslassen.",
         "scheduled_date": "2026-07-19",
         "display_status": "optional"
       },
@@ -137,22 +144,29 @@
             "rpe_target": "7/10",
             "description": "Kontrollierter Schwellenreiz; wegen Rad-HIIT am 14.07. und gemeldeter Beinmüdigkeit nur bei klar erholten Beinen laufen, frühestens ca. 48 h danach. Nicht als 5-km-Intervall laufen. Bei weiterhin müden Beinen durch 35-45 min locker ersetzen.",
             "scheduled_date": "2026-07-16",
-            "display_status": "offen"
+            "status": "completed",
+            "completed_date": "2026-07-16",
+            "completed_activity_id": "16072026",
+            "completed_summary": "11,39 km in 58:29 min; 3 x 8 min in 3:58 / 3:57 / 3:53 min/km; Ø 145 bpm, max. 174 bpm; Ø 390 W",
+            "display_status": "erledigt",
+            "matched_activity_id": "16072026",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 7.0"
           },
           {
             "id": "2026-W29-run-easy",
             "type": "run",
-            "title": "45 min locker + 4 Steigerungen",
+            "title": "35-45 min locker",
             "priority": 2,
             "target_intensity": "LIT",
-            "target_duration_min": 45,
-            "target_distance_km": 7.5,
+            "target_duration_min": 40,
+            "target_distance_km": 6.5,
             "warmup": "direkt locker anlaufen",
-            "main_set": "45 min lockerer Dauerlauf, danach 4 × 100 m Steigerung",
-            "recovery": "vollständig locker zurückgehen oder traben zwischen den Steigerungen",
-            "cooldown": "nach den Steigerungen locker beenden",
-            "target_pace": "5:00–5:50 min/km; Steigerungen nicht sprinten",
+            "main_set": "35-45 min lockerer Dauerlauf ohne Steigerungen",
+            "recovery": "keine Pausen geplant",
+            "cooldown": "locker beenden",
+            "target_pace": "5:00–5:50 min/km",
             "rpe_target": "3–4/10",
+            "description": "Nach Rad-HIIT am 14.07. und Schwellenlauf am 16.07. nur locker laufen; keine Steigerungen, keine Bergsprints.",
             "scheduled_date": "2026-07-18",
             "display_status": "offen"
           },
@@ -170,7 +184,7 @@
             "cooldown": "locker auslaufen lassen",
             "target_pace": "5:10–5:50 min/km; nur bei unauffälliger Verträglichkeit",
             "rpe_target": "2–3/10",
-            "description": "Keine Steigerungen und keine Bergsprints. Nur ergänzen, wenn die bisherigen Läufe verträglich waren.",
+            "description": "Keine Steigerungen und keine Bergsprints. Nach dem Schwellenlauf nur ergänzen, wenn Beine und Waden vollständig unauffällig sind; sonst auslassen.",
             "scheduled_date": "2026-07-19",
             "display_status": "optional"
           },
@@ -220,12 +234,8 @@
       },
       "warnings": [
         {
-          "level": "info",
-          "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
-        },
-        {
-          "level": "info",
-          "text": "Wichtigste Prioritätseinheit noch offen: 3 × 8 min Schwelle."
+          "level": "warning",
+          "text": "Der Laufumfang ist gegenüber der Vorwoche um 72 % gestiegen."
         }
       ],
       "unmatched_activities": [],
@@ -233,21 +243,21 @@
         "week_start": "2026-07-13",
         "week_end": "2026-07-19",
         "week_label": "KW 29",
-        "run_km": 0,
+        "run_km": 11.39,
         "bike_hours": 1.0,
-        "run_sessions": 0,
+        "run_sessions": 1,
         "bike_sessions": 1,
         "strength_sessions": 0,
-        "hard_endurance_sessions": 1,
+        "hard_endurance_sessions": 2,
         "lit_sessions": 0,
         "moderate_sessions": 0,
-        "hard_sessions": 1,
-        "total_duration_min": 0
+        "hard_sessions": 2,
+        "total_duration_min": 58.5
       },
       "intensity": {
         "LIT": 0,
         "moderate": 0,
-        "hard": 1
+        "hard": 2
       }
     },
     {
@@ -411,24 +421,45 @@
   ],
   "selected_plan_key": "week-2026-07-13",
   "next_session": {
-    "id": "2026-W29-run-threshold",
+    "id": "2026-W29-run-easy",
     "type": "run",
-    "title": "3 × 8 min Schwelle",
-    "priority": 1,
-    "target_intensity": "hard",
-    "target_duration_min": 50,
-    "target_distance_km": 8,
-    "warmup": "15 min locker einlaufen",
-    "main_set": "3 × 8 min Schwelle",
-    "recovery": "3 min locker traben zwischen den 8-min-Abschnitten",
-    "cooldown": "10 min auslaufen",
-    "target_pace": "3:58–4:08 min/km in den 8-min-Abschnitten",
-    "rpe_target": "7/10",
-    "description": "Kontrollierter Schwellenreiz; wegen Rad-HIIT am 14.07. und gemeldeter Beinmüdigkeit nur bei klar erholten Beinen laufen, frühestens ca. 48 h danach. Nicht als 5-km-Intervall laufen. Bei weiterhin müden Beinen durch 35-45 min locker ersetzen.",
-    "scheduled_date": "2026-07-16",
+    "title": "35-45 min locker",
+    "priority": 2,
+    "target_intensity": "LIT",
+    "target_duration_min": 40,
+    "target_distance_km": 6.5,
+    "warmup": "direkt locker anlaufen",
+    "main_set": "35-45 min lockerer Dauerlauf ohne Steigerungen",
+    "recovery": "keine Pausen geplant",
+    "cooldown": "locker beenden",
+    "target_pace": "5:00–5:50 min/km",
+    "rpe_target": "3–4/10",
+    "description": "Nach Rad-HIIT am 14.07. und Schwellenlauf am 16.07. nur locker laufen; keine Steigerungen, keine Bergsprints.",
+    "scheduled_date": "2026-07-18",
     "display_status": "offen"
   },
   "recent_activities": [
+    {
+      "activity_id": "16072026",
+      "source_file": "16072026.csv",
+      "date": "2026-07-16",
+      "sport": "run",
+      "session_name": "3 x 8 min Schwelle",
+      "duration_min": 58.48,
+      "distance_km": 11.39,
+      "avg_pace_sec_per_km": 308.1,
+      "avg_speed_kmh": 11.69,
+      "avg_hr": 145.0,
+      "max_hr": 174.0,
+      "avg_power": 390.0,
+      "max_power": 613.0,
+      "elevation_gain_m": 48.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "hard"
+    },
     {
       "activity_id": "20260714_ictrainer",
       "source_file": "Konstantin_20260714_1931_Woche_4__Workout_2__3x_3x6x30sec_mit_30sec_Pause_HIT_Training.tcx",
@@ -688,22 +719,22 @@
       "week_start": "2026-07-13",
       "week_end": "2026-07-19",
       "week_label": "KW 29",
-      "run_km": 0,
+      "run_km": 11.39,
       "bike_hours": 1.0,
-      "run_sessions": 0,
+      "run_sessions": 1,
       "bike_sessions": 1,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
+      "hard_endurance_sessions": 2,
       "lit_sessions": 0,
       "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 0
+      "hard_sessions": 2,
+      "total_duration_min": 58.5
     }
   ],
   "intensity": {
     "LIT": 0,
     "moderate": 0,
-    "hard": 1
+    "hard": 2
   },
   "repetition_targets": {
     "race_target": "16:59",
@@ -967,12 +998,8 @@
   },
   "warnings": [
     {
-      "level": "info",
-      "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
-    },
-    {
-      "level": "info",
-      "text": "Wichtigste Prioritätseinheit noch offen: 3 × 8 min Schwelle."
+      "level": "warning",
+      "text": "Der Laufumfang ist gegenüber der Vorwoche um 72 % gestiegen."
     }
   ],
   "metrics": {
@@ -991,19 +1018,19 @@
       "week_start": "2026-07-13",
       "week_end": "2026-07-19",
       "week_label": "KW 29",
-      "run_km": 0,
+      "run_km": 11.39,
       "bike_hours": 1.0,
-      "run_sessions": 0,
+      "run_sessions": 1,
       "bike_sessions": 1,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
+      "hard_endurance_sessions": 2,
       "lit_sessions": 0,
       "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 0
+      "hard_sessions": 2,
+      "total_duration_min": 58.5
     },
-    "warning_count": 0,
-    "activities_total": 4
+    "warning_count": 1,
+    "activities_total": 5
   },
   "upcoming": [
     {

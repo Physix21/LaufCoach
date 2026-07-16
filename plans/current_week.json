@@ -19,22 +19,27 @@
       "target_pace": "3:58–4:08 min/km in den 8-min-Abschnitten",
       "rpe_target": "7/10",
       "description": "Kontrollierter Schwellenreiz; wegen Rad-HIIT am 14.07. und gemeldeter Beinmüdigkeit nur bei klar erholten Beinen laufen, frühestens ca. 48 h danach. Nicht als 5-km-Intervall laufen. Bei weiterhin müden Beinen durch 35-45 min locker ersetzen.",
-      "scheduled_date": "2026-07-16"
+      "scheduled_date": "2026-07-16",
+      "status": "completed",
+      "completed_date": "2026-07-16",
+      "completed_activity_id": "16072026",
+      "completed_summary": "11,39 km in 58:29 min; 3 x 8 min in 3:58 / 3:57 / 3:53 min/km; Ø 145 bpm, max. 174 bpm; Ø 390 W"
     },
     {
       "id": "2026-W29-run-easy",
       "type": "run",
-      "title": "45 min locker + 4 Steigerungen",
+      "title": "35-45 min locker",
       "priority": 2,
       "target_intensity": "LIT",
-      "target_duration_min": 45,
-      "target_distance_km": 7.5,
+      "target_duration_min": 40,
+      "target_distance_km": 6.5,
       "warmup": "direkt locker anlaufen",
-      "main_set": "45 min lockerer Dauerlauf, danach 4 × 100 m Steigerung",
-      "recovery": "vollständig locker zurückgehen oder traben zwischen den Steigerungen",
-      "cooldown": "nach den Steigerungen locker beenden",
-      "target_pace": "5:00–5:50 min/km; Steigerungen nicht sprinten",
+      "main_set": "35-45 min lockerer Dauerlauf ohne Steigerungen",
+      "recovery": "keine Pausen geplant",
+      "cooldown": "locker beenden",
+      "target_pace": "5:00–5:50 min/km",
       "rpe_target": "3–4/10",
+      "description": "Nach Rad-HIIT am 14.07. und Schwellenlauf am 16.07. nur locker laufen; keine Steigerungen, keine Bergsprints.",
       "scheduled_date": "2026-07-18"
     },
     {
@@ -51,7 +56,7 @@
       "cooldown": "locker auslaufen lassen",
       "target_pace": "5:10–5:50 min/km; nur bei unauffälliger Verträglichkeit",
       "rpe_target": "2–3/10",
-      "description": "Keine Steigerungen und keine Bergsprints. Nur ergänzen, wenn die bisherigen Läufe verträglich waren.",
+      "description": "Keine Steigerungen und keine Bergsprints. Nach dem Schwellenlauf nur ergänzen, wenn Beine und Waden vollständig unauffällig sind; sonst auslassen.",
       "scheduled_date": "2026-07-19"
     },
     {

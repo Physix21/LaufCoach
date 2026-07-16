@@ -44,6 +44,15 @@
         "10072026"
       ],
       "warnings": []
+    },
+    "16072026.csv": {
+      "sha256": "d2038fffa7b205a288160df2a12b48279feb125855c3b620dfa6b23d97ffcc65",
+      "status": "imported",
+      "imported_at": "2026-07-16T19:54:10+02:00",
+      "activity_ids": [
+        "16072026"
+      ],
+      "warnings": []
     }
   }
 }

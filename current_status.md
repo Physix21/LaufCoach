@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 14.07.2026
+**Stand:** 16.07.2026
 
 ## Ziel und Phase
 
@@ -30,12 +30,12 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 14.07.2026: Kickr Core 3 x 6 x 30/30
-- Gesamt: 32,57 km in 60:00 min; Ø 197 W, max. 358 W; Ø 129 bpm, max. 156 bpm
-- Harte 30-s-Abschnitte: 18 Wiederholungen, Ø ca. 336 W; Serienmittel 337 / 336 / 336 W
-- Freiwillige Athletenangabe nach der Einheit: Beine fühlten sich am 14.07.2026 etwas müde an
-- RPE und Beschwerden: nicht angegeben
-- Einordnung: harter Rad-HIIT-Reiz in KW 29; sehr gleichmäßig, aber unter der geplanten Leistungszielspanne von ca. 355-385 W bei FTP 285 W
+- 16.07.2026: 3 x 8 min Schwelle
+- Gesamt: 11,39 km in 58:29 min; Ø 5:08 min/km; Ø 145 bpm, max. 174 bpm; Ø 390 W, max. 613 W
+- Hauptteil: 8:00,5 min @ 3:58 min/km, 8:00,3 min @ 3:57 min/km, 8:00,3 min @ 3:53 min/km
+- Herzfrequenz in den 8-min-Abschnitten: Ø 162 / 165 / 168 bpm; maximal 170 / 171 / 174 bpm
+- RPE, Gefühl und Beschwerden: nicht angegeben
+- Einordnung: zweiter harter Ausdauerreiz in KW 29 nach dem Rad-HIIT am 14.07.; wirksamer und überwiegend kontrollierter Schwellenreiz, dritter Abschnitt leicht schneller als geplant
 
 ## Belastbarkeit
 
@@ -48,6 +48,8 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Dokumentierter Laufumfang in KW 28: 6,63 km in einer Laufeinheit; dazu 3:53 h Radtraining in zwei Einheiten und ein Krafttraining
 - In KW 29 ist am 14.07. bereits ein harter Rad-HIIT-Reiz dokumentiert: 3 x 6 x 30/30, 60:00 min, 32,57 km, Ø 197 W, harte Abschnitte Ø ca. 336 W
 - Am 14.07.2026 wurden etwas müde Beine berichtet; Beschwerden wurden nicht berichtet
+- Am 16.07.2026 wurde die geplante Schwelle mit 11,39 km Gesamtumfang absolviert; damit sind in KW 29 zwei harte Ausdauerreize dokumentiert
+- Laufumfang KW 29 bisher: 11,39 km in einer Laufeinheit
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
@@ -55,7 +57,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 - Den Laufumfang nach dem Sprung auf 18,96 km zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - In KW 28 keine weitere harte Ausdauereinheit ergänzen; Rad-HIIT und 400-m-Lauf erfüllen bereits das Wochenlimit, die lange Radausfahrt erhöht die Gesamtbelastung zusätzlich.
-- In KW 29 die geplante Schwelle wegen des Rad-HIIT vom 14.07. und der gemeldeten Beinmüdigkeit nur bei klar erholten Beinen laufen, frühestens mit ca. 48 h Abstand und nicht als 5-km-Intervall; bei weiterhin müden Beinen durch 35-45 min locker ersetzen.
-- Lockere Läufe weiter im aktuellen Bereich absolvieren; der kurze dritte Lauf bleibt optional und nur bei unauffälliger Verträglichkeit sinnvoll.
+- In KW 29 keine weitere intensive Ausdauereinheit ergänzen; Rad-HIIT und Schwellenlauf erfüllen bereits das Wochenlimit.
+- Den verbleibenden lockeren Lauf auf 35-45 min ohne Steigerungen begrenzen; der kurze dritte Lauf bleibt optional und nur bei vollständig unauffälliger Verträglichkeit sinnvoll.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.
