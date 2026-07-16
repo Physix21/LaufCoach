@@ -37,10 +37,10 @@ section { margin: 2.5rem 0; }
 .section-head > p { max-width: 650px; margin-bottom: 0; color: var(--muted); text-align: right; }
 .muted { color: var(--muted); font-size: .84rem; }
 .plan-head { align-items: center; }
-.plan-controls { display: inline-grid; grid-auto-flow: column; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface-2); }
-.plan-controls button { min-height: 34px; padding: .38rem .75rem; border: 0; border-radius: 8px; background: transparent; color: var(--muted); font: inherit; font-size: .8rem; font-weight: 750; cursor: pointer; }
-.plan-controls button.active { background: var(--surface); color: var(--green); box-shadow: 0 2px 8px rgba(25,48,35,.08); }
-.plan-controls button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.plan-controls { display: grid; grid-template-columns: auto minmax(260px, 420px); align-items: center; gap: .55rem; padding: .35rem .45rem .35rem .7rem; border: 1px solid var(--line); border-radius: 11px; background: var(--surface-2); }
+.plan-controls span { color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.plan-controls select { min-width: 0; min-height: 36px; padding: .35rem 2rem .35rem .65rem; border: 0; border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; font-size: .84rem; font-weight: 700; cursor: pointer; box-shadow: 0 2px 8px rgba(25,48,35,.08); }
+.plan-controls select:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .next-card { display: grid; grid-template-columns: 1fr auto; gap: 2rem; margin-top: 0; padding: clamp(1.15rem, 2.5vw, 1.7rem); border-radius: 16px; background: #246044; color: white; box-shadow: var(--shadow); }
 .next-card h2 { margin-bottom: .45rem; font-size: clamp(1.35rem, 2.2vw, 1.85rem); }
 .next-card p:last-child { max-width: 760px; margin-bottom: 0; color: #d9e9e1; }
@@ -169,8 +169,8 @@ footer { padding: 2rem; color: var(--muted); font-size: .78rem; text-align: cent
   .next-card { grid-template-columns: 1fr; gap: 1.5rem; }
   .next-target { padding: 1rem 0 0; border-top: 1px solid rgba(255,255,255,.2); border-left: 0; }
   .section-head { align-items: flex-start; flex-direction: column; gap: .5rem; }
-  .plan-controls { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
-  .plan-controls button { min-width: 0; }
+  .plan-controls { grid-template-columns: 1fr; width: 100%; gap: .25rem; }
+  .plan-controls select { width: 100%; }
   .section-head > p, .progress-value { text-align: left; }
   .metric-grid, .session-grid, .two-column, .upcoming-grid { grid-template-columns: 1fr; }
   .metric-grid { grid-template-columns: repeat(2, 1fr); }

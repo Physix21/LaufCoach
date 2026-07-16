@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T19:56:30+02:00",
+  "generated_at": "2026-07-16T20:00:03+02:00",
   "today": "2026-07-16",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -408,6 +408,2310 @@
         {
           "level": "info",
           "text": "Geplante Prioritätseinheit noch offen: 6 × 400 m frisch."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-08-03",
+      "label": "KW 32",
+      "plan": {
+        "week_start": "2026-08-03",
+        "week_end": "2026-08-09",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-08-03-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+            "main_set": "8 x 400 m kontrolliert; 4 x 1000 m kontrolliert; Schwelle statt Zielpace",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-08-03-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "6-8 x 400 m: 87-90 s (3:38-3:45 min/km); 4 x 1000 m: 3:42-3:48 (3:42-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-08-10",
+      "label": "KW 33",
+      "plan": {
+        "week_start": "2026-08-10",
+        "week_end": "2026-08-16",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-08-10-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+            "main_set": "8 x 400 m kontrolliert; 4 x 1000 m kontrolliert; Schwelle statt Zielpace",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-08-10-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "6-8 x 400 m: 87-90 s (3:38-3:45 min/km); 4 x 1000 m: 3:42-3:48 (3:42-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-08-17",
+      "label": "KW 34",
+      "plan": {
+        "week_start": "2026-08-17",
+        "week_end": "2026-08-23",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-08-17-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+            "main_set": "8 x 400 m kontrolliert; 4 x 1000 m kontrolliert; Schwelle statt Zielpace",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-08-17-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "6-8 x 400 m: 87-90 s (3:38-3:45 min/km); 4 x 1000 m: 3:42-3:48 (3:42-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-08-24",
+      "label": "KW 35",
+      "plan": {
+        "week_start": "2026-08-24",
+        "week_end": "2026-08-30",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-08-24-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+            "main_set": "8 x 400 m kontrolliert; 4 x 1000 m kontrolliert; Schwelle statt Zielpace",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-08-24-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "6-8 x 400 m: 87-90 s (3:38-3:45 min/km); 4 x 1000 m: 3:42-3:48 (3:42-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-08-31",
+      "label": "KW 36",
+      "plan": {
+        "week_start": "2026-08-31",
+        "week_end": "2026-09-06",
+        "phase": "Laufrobustheit und Routine",
+        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-08-31-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+            "main_set": "8 x 400 m kontrolliert; 4 x 1000 m kontrolliert; Schwelle statt Zielpace",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-08-31-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "6-8 x 400 m: 87-90 s (3:38-3:45 min/km); 4 x 1000 m: 3:42-3:48 (3:42-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-09-07",
+      "label": "KW 37",
+      "plan": {
+        "week_start": "2026-09-07",
+        "week_end": "2026-09-13",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-09-07-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-09-07-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-09-14",
+      "label": "KW 38",
+      "plan": {
+        "week_start": "2026-09-14",
+        "week_end": "2026-09-20",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-09-14-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-09-14-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-09-21",
+      "label": "KW 39",
+      "plan": {
+        "week_start": "2026-09-21",
+        "week_end": "2026-09-27",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-09-21-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-09-21-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-09-28",
+      "label": "KW 40",
+      "plan": {
+        "week_start": "2026-09-28",
+        "week_end": "2026-10-04",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-09-28-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-09-28-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-10-05",
+      "label": "KW 41",
+      "plan": {
+        "week_start": "2026-10-05",
+        "week_end": "2026-10-11",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-10-05-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-10-05-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-10-12",
+      "label": "KW 42",
+      "plan": {
+        "week_start": "2026-10-12",
+        "week_end": "2026-10-18",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-10-12-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-10-12-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-10-19",
+      "label": "KW 43",
+      "plan": {
+        "week_start": "2026-10-19",
+        "week_end": "2026-10-25",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-10-19-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-10-19-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-10-26",
+      "label": "KW 44",
+      "plan": {
+        "week_start": "2026-10-26",
+        "week_end": "2026-11-01",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-10-26-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-10-26-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-11-02",
+      "label": "KW 45",
+      "plan": {
+        "week_start": "2026-11-02",
+        "week_end": "2026-11-08",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-11-02-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-11-02-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-11-09",
+      "label": "KW 46",
+      "plan": {
+        "week_start": "2026-11-09",
+        "week_end": "2026-11-15",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-11-09-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-11-09-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-11-16",
+      "label": "KW 47",
+      "plan": {
+        "week_start": "2026-11-16",
+        "week_end": "2026-11-22",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-11-16-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-11-16-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-11-23",
+      "label": "KW 48",
+      "plan": {
+        "week_start": "2026-11-23",
+        "week_end": "2026-11-29",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-11-23-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-11-23-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-11-30",
+      "label": "KW 49",
+      "plan": {
+        "week_start": "2026-11-30",
+        "week_end": "2026-12-06",
+        "phase": "Aerobe Basis und Schwelle",
+        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-11-30-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
+            "main_set": "4-5 x 1000 m; 10 x 400 m; 20-30 min Tempo/Cruise",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-11-30-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 84-88 s (3:30-3:40 min/km); 4-5 x 1000 m: 3:38-3:48 (3:38-3:48 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-12-07",
+      "label": "KW 50",
+      "plan": {
+        "week_start": "2026-12-07",
+        "week_end": "2026-12-13",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-12-07-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-12-07-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-12-14",
+      "label": "KW 51",
+      "plan": {
+        "week_start": "2026-12-14",
+        "week_end": "2026-12-20",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-12-14-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-12-14-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-12-21",
+      "label": "KW 52",
+      "plan": {
+        "week_start": "2026-12-21",
+        "week_end": "2026-12-27",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-12-21-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-12-21-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2026-12-28",
+      "label": "KW 53",
+      "plan": {
+        "week_start": "2026-12-28",
+        "week_end": "2027-01-03",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2026-12-28-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2026-12-28-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-01-04",
+      "label": "KW 1",
+      "plan": {
+        "week_start": "2027-01-04",
+        "week_end": "2027-01-10",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-01-04-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-01-04-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-01-11",
+      "label": "KW 2",
+      "plan": {
+        "week_start": "2027-01-11",
+        "week_end": "2027-01-17",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-01-11-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-01-11-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-01-18",
+      "label": "KW 3",
+      "plan": {
+        "week_start": "2027-01-18",
+        "week_end": "2027-01-24",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-01-18-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-01-18-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-01-25",
+      "label": "KW 4",
+      "plan": {
+        "week_start": "2027-01-25",
+        "week_end": "2027-01-31",
+        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
+        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-01-25-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
+            "main_set": "6 x 800 m; 12 x 400 m; 45-75 s bergauf",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-01-25-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "12 x 400 m: 82-87 s (3:25-3:38 min/km); 6 x 800 m: 2:48-2:56 (3:30-3:40 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-02-01",
+      "label": "KW 5",
+      "plan": {
+        "week_start": "2027-02-01",
+        "week_end": "2027-02-07",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-02-01-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-02-01-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-02-08",
+      "label": "KW 6",
+      "plan": {
+        "week_start": "2027-02-08",
+        "week_end": "2027-02-14",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-02-08-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-02-08-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-02-15",
+      "label": "KW 7",
+      "plan": {
+        "week_start": "2027-02-15",
+        "week_end": "2027-02-21",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-02-15-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-02-15-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-02-22",
+      "label": "KW 8",
+      "plan": {
+        "week_start": "2027-02-22",
+        "week_end": "2027-02-28",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-02-22-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-02-22-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-03-01",
+      "label": "KW 9",
+      "plan": {
+        "week_start": "2027-03-01",
+        "week_end": "2027-03-07",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-03-01-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-03-01-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-03-08",
+      "label": "KW 10",
+      "plan": {
+        "week_start": "2027-03-08",
+        "week_end": "2027-03-14",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-03-08-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-03-08-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-03-15",
+      "label": "KW 11",
+      "plan": {
+        "week_start": "2027-03-15",
+        "week_end": "2027-03-21",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-03-15-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-03-15-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-03-22",
+      "label": "KW 12",
+      "plan": {
+        "week_start": "2027-03-22",
+        "week_end": "2027-03-28",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-03-22-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-03-22-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-03-29",
+      "label": "KW 13",
+      "plan": {
+        "week_start": "2027-03-29",
+        "week_end": "2027-04-04",
+        "phase": "5-km-spezifischer Aufbau",
+        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-03-29-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
+            "main_set": "5-6 x 1000 m; 4 x 1200 m; 3 x 1600 m; 8-10 x 400 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-03-29-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "8-10 x 400 m: 82-85 s (3:25-3:33 min/km); 5-6 x 1000 m: 3:30-3:38 (3:30-3:38 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-04-05",
+      "label": "KW 14",
+      "plan": {
+        "week_start": "2027-04-05",
+        "week_end": "2027-04-11",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-04-05-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-04-05-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-04-12",
+      "label": "KW 15",
+      "plan": {
+        "week_start": "2027-04-12",
+        "week_end": "2027-04-18",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-04-12-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-04-12-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-04-19",
+      "label": "KW 16",
+      "plan": {
+        "week_start": "2027-04-19",
+        "week_end": "2027-04-25",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-04-19-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-04-19-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-04-26",
+      "label": "KW 17",
+      "plan": {
+        "week_start": "2027-04-26",
+        "week_end": "2027-05-02",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-04-26-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-04-26-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-05-03",
+      "label": "KW 18",
+      "plan": {
+        "week_start": "2027-05-03",
+        "week_end": "2027-05-09",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-05-03-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-05-03-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-05-10",
+      "label": "KW 19",
+      "plan": {
+        "week_start": "2027-05-10",
+        "week_end": "2027-05-16",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-05-10-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-05-10-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-05-17",
+      "label": "KW 20",
+      "plan": {
+        "week_start": "2027-05-17",
+        "week_end": "2027-05-23",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-05-17-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-05-17-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-05-24",
+      "label": "KW 21",
+      "plan": {
+        "week_start": "2027-05-24",
+        "week_end": "2027-05-30",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-05-24-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-05-24-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-05-31",
+      "label": "KW 22",
+      "plan": {
+        "week_start": "2027-05-31",
+        "week_end": "2027-06-06",
+        "phase": "Spezifische 5-km-Form",
+        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-05-31-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
+            "main_set": "10 x 400 m; 6 x 800 m; 5 x 1000 m; 3 x 1600 m",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-05-31-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "10 x 400 m: 82-85 s (3:25-3:33 min/km); 6 x 800 m: 2:44-2:50 (3:25-3:33 min/km); 5 x 1000 m: 3:24-3:32 (3:24-3:32 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-06-07",
+      "label": "KW 23",
+      "plan": {
+        "week_start": "2027-06-07",
+        "week_end": "2027-06-13",
+        "phase": "Peak und Taper",
+        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-06-07-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+            "main_set": "5 x 400 m in Zielpace; 3 x 1000 m kontrolliert; kurze Aktivierung",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-06-07-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "5 x 400 m: 81-82 s (3:24 min/km); 3 x 1000 m: 3:24-3:30 (3:24-3:30 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-06-14",
+      "label": "KW 24",
+      "plan": {
+        "week_start": "2027-06-14",
+        "week_end": "2027-06-20",
+        "phase": "Peak und Taper",
+        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-06-14-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+            "main_set": "5 x 400 m in Zielpace; 3 x 1000 m kontrolliert; kurze Aktivierung",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-06-14-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "5 x 400 m: 81-82 s (3:24 min/km); 3 x 1000 m: 3:24-3:30 (3:24-3:30 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-06-21",
+      "label": "KW 25",
+      "plan": {
+        "week_start": "2027-06-21",
+        "week_end": "2027-06-27",
+        "phase": "Peak und Taper",
+        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-06-21-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+            "main_set": "5 x 400 m in Zielpace; 3 x 1000 m kontrolliert; kurze Aktivierung",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-06-21-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "5 x 400 m: 81-82 s (3:24 min/km); 3 x 1000 m: 3:24-3:30 (3:24-3:30 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
+        }
+      ],
+      "unmatched_activities": [],
+      "week_summary": {},
+      "intensity": {
+        "LIT": 0,
+        "moderate": 0,
+        "hard": 0
+      }
+    },
+    {
+      "key": "week-2027-06-28",
+      "label": "KW 26",
+      "plan": {
+        "week_start": "2027-06-28",
+        "week_end": "2027-07-04",
+        "phase": "Peak und Taper",
+        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+        "generated": true,
+        "planned_sessions": [
+          {
+            "id": "generated-2027-06-28-focus",
+            "type": "plan",
+            "title": "Wochenrahmen",
+            "priority": 1,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
+            "main_set": "5 x 400 m in Zielpace; 3 x 1000 m kontrolliert; kurze Aktivierung",
+            "display_status": "info"
+          },
+          {
+            "id": "generated-2027-06-28-markers",
+            "type": "plan",
+            "title": "Relevante Marker",
+            "priority": 2,
+            "status": "info",
+            "target_intensity": "info",
+            "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+            "main_set": "5 x 400 m: 81-82 s (3:24 min/km); 3 x 1000 m: 3:24-3:30 (3:24-3:30 min/km)",
+            "display_status": "info"
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "level": "info",
+          "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."
         }
       ],
       "unmatched_activities": [],

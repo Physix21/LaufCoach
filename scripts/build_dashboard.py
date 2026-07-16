@@ -25,6 +25,7 @@ DATA_FILE = DASHBOARD / "dashboard_data.json"
 INDEX_FILE = DASHBOARD / "index.html"
 PLAN_FILE = ROOT / "plans" / "current_week.json"
 UPCOMING_FILE = ROOT / "plans" / "upcoming_plan.json"
+TARGET_PLAN_END = date(2027, 6, 30)
 
 WEEKLY_FIELDS = [
     "week_start", "week_end", "run_km", "bike_hours", "run_sessions",
@@ -509,6 +510,75 @@ def scheduled_interval_units(plan: dict[str, Any], upcoming: dict[str, Any]) -> 
     return sorted(entries, key=lambda item: item.get("date") or "")[:8]
 
 
+def phase_for_week(start: date) -> dict[str, Any]:
+    for phase in PROGRESSION_PHASES:
+        phase_start = parse_iso(phase["start"])
+        phase_end = parse_iso(phase["end"])
+        if phase_start and phase_end and phase_start <= start <= phase_end:
+            return phase
+    return PROGRESSION_PHASES[-1]
+
+
+def generated_week_plan(start: date) -> dict[str, Any]:
+    end = start + timedelta(days=6)
+    phase = phase_for_week(start)
+    marker_text = "; ".join(
+        f"{marker['set']}: {marker['time']} ({marker['pace']})"
+        for marker in phase.get("markers", [])
+    )
+    unit_text = "; ".join(phase.get("units", []))
+    return {
+        "week_start": start.isoformat(),
+        "week_end": end.isoformat(),
+        "phase": phase["phase"],
+        "focus": phase["focus"],
+        "generated": True,
+        "planned_sessions": [
+            {
+                "id": f"generated-{start.isoformat()}-focus",
+                "type": "plan",
+                "title": "Wochenrahmen",
+                "priority": 1,
+                "status": "info",
+                "target_intensity": "info",
+                "description": phase["focus"],
+                "main_set": unit_text,
+            },
+            {
+                "id": f"generated-{start.isoformat()}-markers",
+                "type": "plan",
+                "title": "Relevante Marker",
+                "priority": 2,
+                "status": "info",
+                "target_intensity": "info",
+                "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
+                "main_set": marker_text,
+            },
+        ],
+    }
+
+
+def complete_plan_weeks(source_weeks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    explicit: dict[str, dict[str, Any]] = {}
+    for week in source_weeks:
+        start = parse_iso(week.get("week_start", ""))
+        if start:
+            explicit[week_start_for(start).isoformat()] = week
+
+    starts = [parse_iso(item.get("week_start", "")) for item in source_weeks]
+    starts = [item for item in starts if item]
+    first = week_start_for(min(starts)) if starts else week_start_for(date.today())
+    last = week_start_for(TARGET_PLAN_END)
+
+    weeks: list[dict[str, Any]] = []
+    current = first
+    while current <= last:
+        key = current.isoformat()
+        weeks.append(explicit.get(key) or generated_week_plan(current))
+        current += timedelta(days=7)
+    return weeks
+
+
 def progression_roadmap(plan: dict[str, Any], upcoming: dict[str, Any]) -> dict[str, Any]:
     today = date.today()
     rows = []
@@ -534,6 +604,8 @@ def progression_roadmap(plan: dict[str, Any], upcoming: dict[str, Any]) -> dict[
 
 
 def create_warnings(plan: dict[str, Any], sessions: list[dict[str, Any]], activities: list[dict[str, Any]], weekly: list[dict[str, Any]]) -> list[dict[str, str]]:
+    if plan.get("generated"):
+        return [{"level": "info", "text": "Diese Woche ist noch ein automatisch erzeugter Planrahmen aus dem Jahresplan; konkrete Einheiten werden später geplant."}]
     start = parse_iso(plan.get("week_start", ""))
     end = parse_iso(plan.get("week_end", ""))
     current = next((item for item in weekly if item["week_start"] == (start.isoformat() if start else "")), None)
@@ -669,6 +741,7 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
     source_weeks = [plan]
     if isinstance(upcoming, dict):
         source_weeks.extend(week for week in upcoming.get("weeks", []) if isinstance(week, dict))
+    source_weeks = complete_plan_weeks(source_weeks)
     today = date.today()
     plan_weeks = [
         plan_week_payload(week, activities, weekly, f"week-{week.get('week_start', index)}", plan_week_label(week, today))
@@ -731,7 +804,7 @@ def render_html(data: dict[str, Any]) -> str:
     <div class="hero-meta" id="hero-meta"></div>
   </header>
   <main>
-    <section class="primary-plan"><div class="section-head plan-head"><div><p class="eyebrow">PLAN</p><h2 id="plan-title">Aktuelle Woche</h2></div><div class="plan-controls" id="plan-switcher" aria-label="Planwoche wählen"></div><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
+    <section class="primary-plan"><div class="section-head plan-head"><div><p class="eyebrow">PLAN</p><h2 id="plan-title">Aktuelle Woche</h2></div><label class="plan-controls" for="plan-week-select"><span>Woche</span><select id="plan-week-select" aria-label="Planwoche wählen"></select></label><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
     <section id="next-session"></section>
     <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
     <section><div class="section-head"><div><p class="eyebrow">ZIELSPLITS</p><h2>Sub-17 Intervallmarker</h2></div><span class="muted" id="rep-target-note"></span></div><div class="target-grid" id="rep-targets"></div></section>
@@ -750,7 +823,7 @@ def render_html(data: dict[str, Any]) -> str:
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
     const num = (value, digits=1) => value == null || value === '' ? '–' : Number(value).toLocaleString('de-DE', {{maximumFractionDigits:digits}});
     const pace = sec => sec ? `${{Math.floor(sec/60)}}:${{String(Math.round(sec%60)).padStart(2,'0')}}/km` : '–';
-    const sport = value => ({{run:'Lauf',bike:'Rad',strength:'Kraft'}}[value] || value || '–');
+    const sport = value => ({{run:'Lauf',bike:'Rad',strength:'Kraft',plan:'Plan'}}[value] || value || '–');
     const fmtDate = value => value ? new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium'}}).format(new Date(value+'T12:00:00')) : '–';
     const statusClass = value => ({{erledigt:'done',offen:'open',optional:'optional',info:'info'}}[value] || 'open');
     const planWeeks = d.plan_weeks && d.plan_weeks.length ? d.plan_weeks : [{{key:'current', label:'Aktuelle Woche', plan:d.plan, warnings:d.warnings, unmatched_activities:d.unmatched_activities, week_summary:d.metrics.current_week, intensity:d.intensity}}];
@@ -774,6 +847,13 @@ def render_html(data: dict[str, Any]) -> str:
         if (daysUntil <= 7) return 'Nächste Woche';
       }}
       return plan.week_start ? `KW ${{isoWeek(plan.week_start)}}` : (week.label || 'Planwoche');
+    }};
+    const weekOptionLabel = week => {{
+      const plan = week.plan || {{}};
+      const prefix = weekLabel(week);
+      const range = plan.week_start && plan.week_end ? `${{fmtDate(plan.week_start)}} – ${{fmtDate(plan.week_end)}}` : '';
+      const focus = plan.generated ? plan.phase : plan.focus;
+      return [prefix, range, focus].filter(Boolean).join(' · ');
     }};
     const selectInitialPlanKey = () => {{
       const current = planWeeks.find(week => {{
@@ -819,11 +899,12 @@ def render_html(data: dict[str, Any]) -> str:
     const weeks=d.weekly_summary, max=Math.max(1,...weeks.map(w=>w.run_km));
     $('weekly-chart').innerHTML=weeks.map(w=>`<div class="bar-column"><span>${{num(w.run_km)}} km</span><div class="bar-track"><i style="height:${{Math.max(2,w.run_km/max*100)}}%"></i></div><small>${{esc(w.week_label)}}</small></div>`).join('');
     const renderPlanSwitcher = () => {{
-      $('plan-switcher').innerHTML = planWeeks.map(week => `<button type="button" class="${{week.key === selectedPlanKey ? 'active' : ''}}" data-plan-key="${{esc(week.key)}}">${{esc(weekLabel(week))}}</button>`).join('');
-      $('plan-switcher').querySelectorAll('button').forEach(button => button.addEventListener('click', () => {{
-        selectedPlanKey = button.dataset.planKey;
+      const select = $('plan-week-select');
+      select.innerHTML = planWeeks.map(week => `<option value="${{esc(week.key)}}" ${{week.key === selectedPlanKey ? 'selected' : ''}}>${{esc(weekOptionLabel(week))}}</option>`).join('');
+      select.onchange = () => {{
+        selectedPlanKey = select.value;
         renderPlanPanel();
-      }}));
+      }};
     }};
     const renderPlanPanel = () => {{
       const week = activePlanWeek();
@@ -831,7 +912,7 @@ def render_html(data: dict[str, Any]) -> str:
       const intensity = week.intensity || {{LIT:0, moderate:0, hard:0}};
       const summary = week.week_summary || {{}};
       $('plan-title').textContent = weekLabel(week);
-      $('week-focus').textContent = `${{fmtDate(plan.week_start)}}–${{fmtDate(plan.week_end)}} · ${{plan.focus || ''}}`;
+      $('week-focus').textContent = `${{fmtDate(plan.week_start)}}–${{fmtDate(plan.week_end)}} · ${{plan.focus || ''}}${{plan.generated ? ' · automatisch aus Jahresplan' : ''}}`;
       $('sessions').innerHTML = (plan.planned_sessions || []).map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date || plan.week_start)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl>${{planDetails(s)}}<div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
       $('warnings').innerHTML = (week.warnings || []).map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');
       const total = Math.max(1, Object.values(intensity).reduce((a,b)=>a+b,0));
