@@ -80,6 +80,7 @@ Typische Einheiten:
 - 4 x 1200 m
 - 3 x 1600 m
 - 8–10 x 400 m
+- reduzierte Kombi-Einheit: 3 x (1000 m in aktueller 5-km-Pace, 60 s locker, 300-400 m schneller, 3 min locker), nur wenn drei Läufe pro Woche stabil vertragen werden
 - Schwelle erhalten
 
 Formcheck:
@@ -103,7 +104,10 @@ Typische Einheiten:
 - 6 x 800 m nahe 5-km-Pace
 - 5 x 1000 m nahe Zielpace/leicht langsamer
 - 3 x 1600 m knapp langsamer als 5-km-Pace
+- 4 x (1000 m nahe 5-km-Pace, 60 s locker, 400 m nahe 1500-m-Pace, 3 min locker) als spezifische Tempohärte, nicht in Wochen mit Rad-HIIT
 - kurze schnelle Strides
+
+Hinweis zur Kombi-Einheit: Der Reiz ist sportwissenschaftlich plausibel, weil er 5-km-Pace unter Vorermüdung mit kurzer schneller Laufökonomie kombiniert. Die volle Variante enthält aber 5,6 km Qualitätsumfang, davon 1,6 km deutlich schneller als 5-km-Pace. Deshalb wird sie erst im spezifischen Aufbau genutzt, vorher höchstens als reduzierte Variante.
 
 ## Phase 6: Juni 2027 – Peak und Taper
 

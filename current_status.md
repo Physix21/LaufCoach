@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 16.07.2026
+**Stand:** 19.07.2026
 
 ## Ziel und Phase
 
@@ -30,12 +30,10 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 16.07.2026: 3 x 8 min Schwelle
-- Gesamt: 11,39 km in 58:29 min; Ø 5:08 min/km; Ø 145 bpm, max. 174 bpm; Ø 390 W, max. 613 W
-- Hauptteil: 8:00,5 min @ 3:58 min/km, 8:00,3 min @ 3:57 min/km, 8:00,3 min @ 3:53 min/km
-- Herzfrequenz in den 8-min-Abschnitten: Ø 162 / 165 / 168 bpm; maximal 170 / 171 / 174 bpm
+- 19.07.2026: CRe11 Erholung auf dem Kickr
+- Gesamt: 46,65 km in 90:00 min; Ø 31,10 km/h; Ø 112 bpm, max. 125 bpm; Ø 168 W, max. 174 W
 - RPE, Gefühl und Beschwerden: nicht angegeben
-- Einordnung: zweiter harter Ausdauerreiz in KW 29 nach dem Rad-HIIT am 14.07.; wirksamer und überwiegend kontrollierter Schwellenreiz, dritter Abschnitt leicht schneller als geplant
+- Einordnung: lockere aerobe Rad-Ergänzung, kein harter Ausdauerreiz; bei ca. 58-60 % der hinterlegten FTP-Spanne passend als Erholung/LIT
 
 ## Belastbarkeit
 
@@ -49,6 +47,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - In KW 29 ist am 14.07. bereits ein harter Rad-HIIT-Reiz dokumentiert: 3 x 6 x 30/30, 60:00 min, 32,57 km, Ø 197 W, harte Abschnitte Ø ca. 336 W
 - Am 14.07.2026 wurden etwas müde Beine berichtet; Beschwerden wurden nicht berichtet
 - Am 16.07.2026 wurde die geplante Schwelle mit 11,39 km Gesamtumfang absolviert; damit sind in KW 29 zwei harte Ausdauerreize dokumentiert
+- Am 19.07.2026 wurde zusätzlich eine lockere Rad-Erholung über 90:00 min absolviert; diese erhöht die aerobe Gesamtzeit, aber nicht die Zahl harter Ausdauerreize
 - Laufumfang KW 29 bisher: 11,39 km in einer Laufeinheit
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
@@ -58,6 +57,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Den Laufumfang nach dem Sprung auf 18,96 km zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - In KW 28 keine weitere harte Ausdauereinheit ergänzen; Rad-HIIT und 400-m-Lauf erfüllen bereits das Wochenlimit, die lange Radausfahrt erhöht die Gesamtbelastung zusätzlich.
 - In KW 29 keine weitere intensive Ausdauereinheit ergänzen; Rad-HIIT und Schwellenlauf erfüllen bereits das Wochenlimit.
-- Den verbleibenden lockeren Lauf auf 35-45 min ohne Steigerungen begrenzen; der kurze dritte Lauf bleibt optional und nur bei vollständig unauffälliger Verträglichkeit sinnvoll.
+- Die 90-min-Rad-Erholung am 19.07. war sinnvoll als lockere Ergänzung; ein zusätzlicher Lauf ist in KW 29 nicht mehr nötig.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
+- Die Kombi-Einheit 4 x (1000 m in 5-km-Pace + 400 m in 1500-m-Pace) ist sportwissenschaftlich plausibel als spätere spezifische Tempohärte-Einheit, aber aktuell im Juli 2026 zu spezifisch und zu hart. Sie wird ab dem 5-km-spezifischen Aufbau in reduzierten Varianten eingeplant.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.

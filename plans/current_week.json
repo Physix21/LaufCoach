@@ -95,6 +95,26 @@
       "target_pace": "kontrolliert schwer, 1-3 Wiederholungen in Reserve",
       "rpe_target": "6–7/10",
       "scheduled_date": "2026-07-19"
+    },
+    {
+      "id": "2026-W29-bike-recovery",
+      "type": "bike",
+      "title": "CRe11 Erholung",
+      "priority": 6,
+      "target_intensity": "LIT",
+      "target_duration_min": 90,
+      "warmup": "locker einrollen",
+      "main_set": "90 min ruhige Rad-Erholung",
+      "recovery": "keine Pausen geplant",
+      "cooldown": "locker ausfahren",
+      "target_pace": "absolviert: 46,65 km in 90:00 min; Ø 168 W, max. 174 W; Ø 112 bpm, max. 125 bpm",
+      "rpe_target": "2–3/10",
+      "description": "Ungeplante, aber passende lockere Rad-Ergänzung nach zwei harten Ausdauerreizen in KW 29; zählt nicht als harte Einheit.",
+      "scheduled_date": "2026-07-19",
+      "status": "completed",
+      "completed_date": "2026-07-19",
+      "completed_activity_id": "20260719_ictrainer",
+      "completed_summary": "46,65 km in 90:00 min; Ø 168 W, max. 174 W; Ø 112 bpm, max. 125 bpm"
     }
   ],
   "next_milestone": "5-km-Formcheck im März/April 2027: unter 18:00"

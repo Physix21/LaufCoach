@@ -7,3 +7,4 @@ activity_id,source_file,date,sport,session_name,duration_min,distance_km,avg_pac
 10072026,10072026.csv,2026-07-10,bike,Radausfahrt,178.1,87.6,,29.51,127.0,166.0,179.0,843.0,514.0,,,true,
 20260714_ictrainer,Konstantin_20260714_1931_Woche_4__Workout_2__3x_3x6x30sec_mit_30sec_Pause_HIT_Training.tcx,2026-07-14,bike,Kickr Core 3 x 6 x 30/30,60.0,32.57,,32.57,129.0,156.0,197.0,358.0,0.0,,,true,18 x 30 s hart in 3 Serien; harte Abschnitte ca. 336 W im Mittel; Rohdaten aus ictrainer-TCX
 16072026,16072026.csv,2026-07-16,run,3 x 8 min Schwelle,58.48,11.39,308.1,11.69,145.0,174.0,390.0,613.0,48.0,,,true,
+20260719_ictrainer,Konstantin_20260719_1525_CRe11Erholung_Training.tcx,2026-07-19,bike,Lockere Rad-Erholung,90.0,46.65,,31.1,112.0,125.0,168.0,174.0,0.0,,,true,90 min CRe11-Erholung; Rohdaten aus ictrainer-TCX

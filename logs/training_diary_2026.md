@@ -206,3 +206,24 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die ersten beiden 8-min-Abschnitte lagen im geplanten Schwellenbereich von 3:58-4:08 min/km. Der dritte Abschnitt war mit 3:53 min/km leicht schneller als geplant, blieb aber nach Herzfrequenz und Leistung ohne deutlichen Einbruch.
 - Der progressive Herzfrequenzverlauf von Ø 162 auf 168 bpm bei stabiler Leistung spricht für einen wirksamen, kontrollierten Schwellenreiz. Aus einer einzelnen Einheit wird der Schwellenbereich noch nicht nach oben angepasst.
 - Für den Rest der Woche nur noch lockere Laufbelastung einplanen. Die geplanten Steigerungen im lockeren Lauf werden gestrichen; der optionale dritte Lauf bleibt nur bei vollständig unauffälliger Verträglichkeit sinnvoll.
+
+## 19.07.2026 - CRe11 Erholung
+
+**Quellen:** `data/raw/ictrainer/Konstantin_20260719_1525_CRe11Erholung_Training.tcx`, ergänzend FIT-Dateien mit gleichem Workoutnamen
+
+### Messdaten
+
+- Sportart: Indoor-Radtraining
+- Gesamt: 46,65 km in 90:00 min; Ø 31,10 km/h
+- Leistung: Ø 168 W, maximal 174 W
+- Herzfrequenz: Ø 112 bpm, maximal 125 bpm
+- Kadenz: Ø 80 rpm, maximal 93 rpm
+- Energie laut TCX: 865 kcal
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit ist nach Herzfrequenz und Leistung klar als lockere aerobe Radbelastung einzuordnen, nicht als harter Ausdauerreiz.
+- Bezogen auf die im Profil genannte FTP-Spanne von ca. 280-290 W entspricht die Durchschnittsleistung ungefähr 58-60 % FTP. Das passt zu einer Erholungseinheit beziehungsweise ruhigen LIT-Ergänzung.
+- Damit bleibt die Kalenderwoche 13.07.-19.07.2026 trotz dieser 90 min Rad bei zwei harten Ausdauerreizen: Rad-HIIT am 14.07. und Schwellenlauf am 16.07.
+- Die Einheit ersetzt keinen laufspezifischen Aufbau, ist in dieser Woche aber als belastungsarme Ausdauerergänzung sinnvoll, weil der harte Reizumfang bereits ausgeschöpft war.
