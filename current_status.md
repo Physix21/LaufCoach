@@ -30,9 +30,10 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 20.07.2026: lockerer Jogginglauf ohne Laufuhr
-- Gesamt: 8,0 km; Dauer, Pace, Herzfrequenz, RPE, Gefühl und Beschwerden nicht erfasst beziehungsweise nicht angegeben
-- Einordnung: lockere laufspezifische Ausdauerbelastung; die Intensität ist ohne Messdaten nicht weiter beurteilbar
+- 21.07.2026: 4 × 1000 m
+- Gesamt: 8,37 km in 43:34 min; Ø 5:12 min/km, Ø 139 bpm, maximal 175 bpm
+- Wiederholungen: 3:44 / 3:43 / 3:39 / 3:30 min/km bei Ø 492 / 495 / 503 / 512 W
+- Einordnung: harter Laufreiz mit vollständig absolviertem Umfang; die progressive Beschleunigung war weniger kontrolliert als geplant
 
 ## Belastbarkeit
 
@@ -49,13 +50,14 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Am 19.07.2026 wurde zusätzlich eine lockere Rad-Erholung über 90:00 min absolviert; diese erhöht die aerobe Gesamtzeit, aber nicht die Zahl harter Ausdauerreize
 - Laufumfang KW 29 bisher: 11,39 km in einer Laufeinheit
 - In KW 30 ist am 20.07. ein lockerer Lauf über 8,0 km ohne Uhrdaten dokumentiert; der Laufumfang der neuen Woche beträgt damit mindestens 8,0 km in einer Einheit
+- Am 21.07. wurden 4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km absolviert. Der Laufumfang in KW 30 beträgt damit 16,37 km in zwei Einheiten; dies ist der erste harte Ausdauerreiz der Woche
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
 ## Nächster Coaching-Fokus
 
-- Nach dem 8-km-Lauf vom 20.07. in KW 30 sind zwei harte Ausdauerreize möglich: 4 × 1000 m kontrolliert und das Rad-Over/Under-Training, nach Möglichkeit mit mindestens 48 h Abstand.
-- Der zweite verbleibende Lauf bleibt ein kurzer lockerer Dauerlauf ohne Bergsprints. Damit wird der Umfang über lockere Minuten statt über mehrere neue Belastungsarten aufgebaut.
+- Nach den 4 × 1000 m vom 21.07. in KW 30 bleibt das Rad-Over/Under-Training als höchstens zweiter harter Ausdauerreiz möglich, nach Möglichkeit mit mindestens 48 h Abstand. Es wird nicht durch eine weitere harte Laufeinheit ergänzt.
+- Der verbleibende Lauf bleibt ein kurzer lockerer Dauerlauf ohne Bergsprints. Damit wird der Umfang über lockere Minuten statt über mehrere neue Belastungsarten aufgebaut.
 - Den Laufumfang nach dem Sprung auf 18,96 km weiterhin zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Die Kombi-Einheit 4 x (1000 m in 5-km-Pace + 400 m in 1500-m-Pace) ist sportwissenschaftlich plausibel als spätere spezifische Tempohärte-Einheit, aber aktuell im Juli 2026 zu spezifisch und zu hart. Sie wird ab dem 5-km-spezifischen Aufbau in reduzierten Varianten eingeplant.

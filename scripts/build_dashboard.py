@@ -293,6 +293,8 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
         # können aber im Plan ausdrücklich als erledigt markiert sein.
         if session.get("status") == "completed":
             session["display_status"] = "erledigt"
+            if session.get("completed_activity_id"):
+                used.add(str(session["completed_activity_id"]))
             continue
         # Kraft bleibt reine Planinformation; Ausdauereinheiten werden über
         # importierte Aktivitätsdaten abgeglichen.

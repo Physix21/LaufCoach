@@ -245,3 +245,28 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der gemeldete Lauf zählt als lockere, laufspezifische Ausdauerbelastung; wegen fehlender Uhrdaten erfolgt keine Aussage zu Intensität oder physiologischer Reaktion.
 - Die 8,0 km sind der erste dokumentierte Lauf der Kalenderwoche 20.07.-26.07.2026. Damit ist der Wochenumfang bereits angehoben; der weitere Aufbau bleibt über eine einzelne kontrollierte Qualitätseinheit und einen kurzen lockeren Ergänzungslauf dosiert.
 - Bergsprints werden in dieser Woche gestrichen, damit Umfang und zusätzliche neuromuskuläre Intensität nicht zugleich steigen.
+
+## 21.07.2026 - 4 × 1000 m
+
+**Quelle:** `data/raw/garmin/csv/21072026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 8,37 km in 43:34 min; Ø 5:12 min/km
+- Herzfrequenz: Ø 139 bpm, maximal 175 bpm
+- Laufleistung: Ø 361 W, maximal 1.063 W
+- Höhenmeter: 40 m Anstieg, 41 m Abstieg
+- Hauptteil: vier 1-km-Wiederholungen in 3:44,2 / 3:42,5 / 3:38,6 / 3:30,0 min; entsprechend ca. 3:44 / 3:43 / 3:39 / 3:30 min/km
+- Herzfrequenz der Wiederholungen: Ø 152 / 164 / 164 / 167 bpm; maximale Herzfrequenz 165 / 170 / 171 / 175 bpm
+- Laufleistung der Wiederholungen: Ø 492 / 495 / 503 / 512 W
+- Erholungen: 0,49 km in 4:24,6 min, 0,50 km in 3:00,2 min und 0,51 km in 3:00,8 min locker
+- Cool-down: 1,40 km in 9:53,6 min; Ø ca. 7:03 min/km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die ersten beiden Wiederholungen erfüllen den vorgesehenen Tempobereich von 3:42-3:48 min/km. Die dritte und besonders die vierte Wiederholung lagen mit 3:39 beziehungsweise 3:30 min/km schneller als geplant.
+- Der geplante Qualitätsumfang von 4,0 km wurde vollständig absolviert. Die progressive Beschleunigung zeigt Geschwindigkeitsreserve, macht die Einheit aber weniger kontrolliert als vorgesehen; sie bleibt ein verwertbarer harter Laufreiz, ist jedoch kein neuer Leistungsanker.
+- Die Einheit folgt einen Tag nach dem lockeren 8-km-Lauf und ist der erste harte Ausdauerreiz der Kalenderwoche 20.07.-26.07. Für diese Woche ist höchstens noch das geplante Rad-Over/Under-Training als zweiter harter Reiz sinnvoll, mit möglichst 48 h Abstand.
+- Ein weiterer Lauf bleibt locker und ohne Bergsprints. Der Wochenumfang liegt nach zwei Läufen bei 16,37 km; der optionale sehr kurze Lauf wird nur bei unauffälliger Verträglichkeit ergänzt.

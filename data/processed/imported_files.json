@@ -3,7 +3,7 @@
     "17062026.csv": {
       "sha256": "04bd3cac9439e7eeeda1b4c96696802f316e7a595416175ba8b5100c2ef836cd",
       "status": "imported",
-      "imported_at": "2026-07-12T13:04:36+02:00",
+      "imported_at": "2026-07-21T15:20:53+02:00",
       "activity_ids": [
         "17062026"
       ],
@@ -12,7 +12,7 @@
     "29062026.csv": {
       "sha256": "d2b677b7a3abe842304f981edf7d50e8560ecce0bb9271e7f9d5f4c79feafb4a",
       "status": "imported",
-      "imported_at": "2026-07-12T13:04:36+02:00",
+      "imported_at": "2026-07-21T15:20:53+02:00",
       "activity_ids": [
         "29062026"
       ],
@@ -21,7 +21,7 @@
     "05072026.csv": {
       "sha256": "5655587b32a306cb54a32abef372ce5318aeb16b6ee4dece2a99e386ae34c59f",
       "status": "imported",
-      "imported_at": "2026-07-12T13:04:36+02:00",
+      "imported_at": "2026-07-21T15:20:53+02:00",
       "activity_ids": [
         "05072026"
       ],
@@ -30,7 +30,7 @@
     "09072026.csv": {
       "sha256": "0235d879ae1e2ac5e062f09cca14801e247c5f33e6108159d7e5470680a726ef",
       "status": "imported",
-      "imported_at": "2026-07-12T13:04:36+02:00",
+      "imported_at": "2026-07-21T15:20:53+02:00",
       "activity_ids": [
         "09072026"
       ],
@@ -39,7 +39,7 @@
     "10072026.csv": {
       "sha256": "6fe288cbaf032fe8285bdd36337ba09706282b2139d0fb5624af79a9e993d0dd",
       "status": "imported",
-      "imported_at": "2026-07-12T13:04:36+02:00",
+      "imported_at": "2026-07-21T15:20:53+02:00",
       "activity_ids": [
         "10072026"
       ],
@@ -48,9 +48,18 @@
     "16072026.csv": {
       "sha256": "d2038fffa7b205a288160df2a12b48279feb125855c3b620dfa6b23d97ffcc65",
       "status": "imported",
-      "imported_at": "2026-07-16T19:54:10+02:00",
+      "imported_at": "2026-07-21T15:20:53+02:00",
       "activity_ids": [
         "16072026"
+      ],
+      "warnings": []
+    },
+    "21072026.csv": {
+      "sha256": "618833fa1695ef71d904f6b5b87cc0faed758973a6409f4d46230f9e8305f716",
+      "status": "imported",
+      "imported_at": "2026-07-21T15:20:53+02:00",
+      "activity_ids": [
+        "21072026"
       ],
       "warnings": []
     }

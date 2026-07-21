@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:13:04+02:00",
+  "generated_at": "2026-07-21T15:20:54+02:00",
   "today": "2026-07-21",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -40,6 +40,7 @@
         "type": "run",
         "title": "4 × 1000 m kontrolliert",
         "priority": 2,
+        "status": "completed",
         "target_intensity": "hard",
         "target_distance_km": 9,
         "warmup": "15 min einlaufen",
@@ -48,7 +49,10 @@
         "cooldown": "10–15 min auslaufen",
         "target_pace": "3:42–3:48 min/km je 1000 m",
         "rpe_target": "8/10",
-        "display_status": "offen"
+        "completed_date": "2026-07-21",
+        "completed_activity_id": "21072026",
+        "completed_summary": "4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km; 8,37 km in 43:34 min, Ø 139 bpm, maximal 175 bpm. Qualitätsumfang vollständig, die letzten zwei Wiederholungen schneller als geplant.",
+        "display_status": "erledigt"
       },
       {
         "id": "2026-W30-run-hills",
@@ -138,6 +142,7 @@
             "type": "run",
             "title": "4 × 1000 m kontrolliert",
             "priority": 2,
+            "status": "completed",
             "target_intensity": "hard",
             "target_distance_km": 9,
             "warmup": "15 min einlaufen",
@@ -146,7 +151,10 @@
             "cooldown": "10–15 min auslaufen",
             "target_pace": "3:42–3:48 min/km je 1000 m",
             "rpe_target": "8/10",
-            "display_status": "offen"
+            "completed_date": "2026-07-21",
+            "completed_activity_id": "21072026",
+            "completed_summary": "4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km; 8,37 km in 43:34 min, Ø 139 bpm, maximal 175 bpm. Qualitätsumfang vollständig, die letzten zwei Wiederholungen schneller als geplant.",
+            "display_status": "erledigt"
           },
           {
             "id": "2026-W30-run-hills",
@@ -202,8 +210,8 @@
       },
       "warnings": [
         {
-          "level": "info",
-          "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
+          "level": "ok",
+          "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
         }
       ],
       "unmatched_activities": [],
@@ -211,21 +219,21 @@
         "week_start": "2026-07-20",
         "week_end": "2026-07-26",
         "week_label": "KW 30",
-        "run_km": 0,
+        "run_km": 8.37,
         "bike_hours": 0.0,
-        "run_sessions": 0,
+        "run_sessions": 1,
         "bike_sessions": 0,
         "strength_sessions": 0,
-        "hard_endurance_sessions": 0,
+        "hard_endurance_sessions": 1,
         "lit_sessions": 0,
         "moderate_sessions": 0,
-        "hard_sessions": 0,
-        "total_duration_min": 0
+        "hard_sessions": 1,
+        "total_duration_min": 43.6
       },
       "intensity": {
         "LIT": 0,
         "moderate": 0,
-        "hard": 0
+        "hard": 1
       }
     },
     {
@@ -2623,6 +2631,27 @@
   },
   "recent_activities": [
     {
+      "activity_id": "21072026",
+      "source_file": "21072026.csv",
+      "date": "2026-07-21",
+      "sport": "run",
+      "session_name": "4 × 1000 m",
+      "duration_min": 43.57,
+      "distance_km": 8.37,
+      "avg_pace_sec_per_km": 312.0,
+      "avg_speed_kmh": 11.54,
+      "avg_hr": 139.0,
+      "max_hr": 175.0,
+      "avg_power": 361.0,
+      "max_power": 1.0,
+      "elevation_gain_m": 40.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "hard"
+    },
+    {
       "activity_id": "20260719_ictrainer",
       "source_file": "Konstantin_20260719_1525_CRe11Erholung_Training.tcx",
       "date": "2026-07-19",
@@ -2923,22 +2952,22 @@
       "week_start": "2026-07-20",
       "week_end": "2026-07-26",
       "week_label": "KW 30",
-      "run_km": 0,
+      "run_km": 8.37,
       "bike_hours": 0.0,
-      "run_sessions": 0,
+      "run_sessions": 1,
       "bike_sessions": 0,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 0,
+      "hard_endurance_sessions": 1,
       "lit_sessions": 0,
       "moderate_sessions": 0,
-      "hard_sessions": 0,
-      "total_duration_min": 0
+      "hard_sessions": 1,
+      "total_duration_min": 43.6
     }
   ],
   "intensity": {
     "LIT": 0,
     "moderate": 0,
-    "hard": 0
+    "hard": 1
   },
   "repetition_targets": {
     "race_target": "16:59",
@@ -2984,12 +3013,19 @@
         "target_label": "3:24",
         "target_pace_label": "3:24 min/km",
         "marker": "5 x 1000 m zielnah",
-        "current_seconds": null,
-        "current_label": "keine Serie",
-        "gap_seconds": null,
-        "gap_label": "noch keine Daten",
-        "progress_percent": 0,
-        "source": null
+        "current_seconds": 218.8,
+        "current_label": "3:39",
+        "gap_seconds": 15.0,
+        "gap_label": "+15.0 s",
+        "progress_percent": 93.1,
+        "source": {
+          "date": "2026-07-21",
+          "activity_id": "21072026",
+          "label": "4 × 1000 m",
+          "repetitions": 4,
+          "avg_seconds": 218.8,
+          "best_seconds": 210.0
+        }
       }
     ]
   },
@@ -3181,7 +3217,7 @@
         "title": "4 × 1000 m kontrolliert",
         "main_set": "4 × 1000 m",
         "target": "3:42–3:48 min/km je 1000 m",
-        "status": "offen",
+        "status": "erledigt",
         "distances": [
           "1000"
         ]
@@ -3205,7 +3241,7 @@
         "title": "4 × 1000 m kontrolliert",
         "main_set": "4 × 1000 m",
         "target": "3:42–3:48 min/km je 1000 m",
-        "status": "planned",
+        "status": "completed",
         "distances": [
           "1000"
         ]
@@ -3238,8 +3274,8 @@
   },
   "warnings": [
     {
-      "level": "info",
-      "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
+      "level": "ok",
+      "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
     }
   ],
   "metrics": {
@@ -3258,19 +3294,19 @@
       "week_start": "2026-07-20",
       "week_end": "2026-07-26",
       "week_label": "KW 30",
-      "run_km": 0,
+      "run_km": 8.37,
       "bike_hours": 0.0,
-      "run_sessions": 0,
+      "run_sessions": 1,
       "bike_sessions": 0,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 0,
+      "hard_endurance_sessions": 1,
       "lit_sessions": 0,
       "moderate_sessions": 0,
-      "hard_sessions": 0,
-      "total_duration_min": 0
+      "hard_sessions": 1,
+      "total_duration_min": 43.6
     },
     "warning_count": 0,
-    "activities_total": 5
+    "activities_total": 6
   },
   "upcoming": [
     {
@@ -3304,6 +3340,7 @@
           "type": "run",
           "title": "4 × 1000 m kontrolliert",
           "priority": 2,
+          "status": "completed",
           "target_intensity": "hard",
           "target_distance_km": 9,
           "warmup": "15 min einlaufen",
@@ -3311,7 +3348,10 @@
           "recovery": "3 min locker traben zwischen den Wiederholungen",
           "cooldown": "10–15 min auslaufen",
           "target_pace": "3:42–3:48 min/km je 1000 m",
-          "rpe_target": "8/10"
+          "rpe_target": "8/10",
+          "completed_date": "2026-07-21",
+          "completed_activity_id": "21072026",
+          "completed_summary": "4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km; 8,37 km in 43:34 min, Ø 139 bpm, maximal 175 bpm. Qualitätsumfang vollständig, die letzten zwei Wiederholungen schneller als geplant."
         },
         {
           "id": "2026-W30-run-hills",

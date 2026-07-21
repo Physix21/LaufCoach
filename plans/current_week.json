@@ -30,6 +30,7 @@
       "type": "run",
       "title": "4 × 1000 m kontrolliert",
       "priority": 2,
+      "status": "completed",
       "target_intensity": "hard",
       "target_distance_km": 9,
       "warmup": "15 min einlaufen",
@@ -38,7 +39,10 @@
       "cooldown": "10–15 min auslaufen",
       "target_pace": "3:42–3:48 min/km je 1000 m",
       "rpe_target": "8/10",
-      "description": "Einziger harter Ausdauerreiz der Woche; kontrolliert und nicht schneller abschließen."
+      "description": "Einziger harter Ausdauerreiz der Woche; kontrolliert und nicht schneller abschließen.",
+      "completed_date": "2026-07-21",
+      "completed_activity_id": "21072026",
+      "completed_summary": "4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km; 8,37 km in 43:34 min, Ø 139 bpm, maximal 175 bpm. Qualitätsumfang vollständig, die letzten zwei Wiederholungen schneller als geplant."
     },
     {
       "id": "2026-W30-run-easy",
