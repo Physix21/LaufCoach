@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:10:18+02:00",
+  "generated_at": "2026-07-21T11:13:04+02:00",
   "today": "2026-07-21",
   "header": {
     "title": "Laufcoach Dashboard",
@@ -87,17 +87,17 @@
       {
         "id": "2026-W30-bike-over-under",
         "type": "bike",
-        "title": "Kickr locker (Alternative zu 4 × 1000 m)",
+        "title": "Kickr Over/Unders",
         "priority": 5,
-        "target_intensity": "LIT",
-        "target_duration_min": 60,
-        "warmup": "locker einrollen",
-        "main_set": "60 min ruhige Rad-Ausdauer",
-        "recovery": "keine Pausen geplant",
+        "target_intensity": "hard",
+        "target_duration_min": 75,
+        "warmup": "15 min Warm-up",
+        "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
+        "recovery": "5 min locker zwischen den Blöcken",
         "cooldown": "ausfahren",
-        "target_pace": "ca. 55-65 % FTP, bei FTP 285 W etwa 157-185 W",
-        "rpe_target": "2-3/10",
-        "description": "Das geplante Over/Under entfällt: Wenn 4 × 1000 m absolviert werden, bleibt dies die einzige harte Ausdauereinheit der Woche.",
+        "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
+        "rpe_target": "7-8/10",
+        "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten.",
         "display_status": "offen"
       }
     ]
@@ -185,17 +185,17 @@
           {
             "id": "2026-W30-bike-over-under",
             "type": "bike",
-            "title": "Kickr locker (Alternative zu 4 × 1000 m)",
+            "title": "Kickr Over/Unders",
             "priority": 5,
-            "target_intensity": "LIT",
-            "target_duration_min": 60,
-            "warmup": "locker einrollen",
-            "main_set": "60 min ruhige Rad-Ausdauer",
-            "recovery": "keine Pausen geplant",
+            "target_intensity": "hard",
+            "target_duration_min": 75,
+            "warmup": "15 min Warm-up",
+            "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
+            "recovery": "5 min locker zwischen den Blöcken",
             "cooldown": "ausfahren",
-            "target_pace": "ca. 55-65 % FTP, bei FTP 285 W etwa 157-185 W",
-            "rpe_target": "2-3/10",
-            "description": "Das geplante Over/Under entfällt: Wenn 4 × 1000 m absolviert werden, bleibt dies die einzige harte Ausdauereinheit der Woche.",
+            "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
+            "rpe_target": "7-8/10",
+            "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten.",
             "display_status": "offen"
           }
         ]
@@ -3190,9 +3190,9 @@
         "date": "2026-07-20",
         "week_start": "2026-07-20",
         "week_end": "2026-07-26",
-        "title": "Kickr locker (Alternative zu 4 × 1000 m)",
-        "main_set": "60 min ruhige Rad-Ausdauer",
-        "target": "ca. 55-65 % FTP, bei FTP 285 W etwa 157-185 W",
+        "title": "Kickr Over/Unders",
+        "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
+        "target": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
         "status": "offen",
         "distances": [
           "1000"
@@ -3214,9 +3214,9 @@
         "date": "2026-07-20",
         "week_start": "2026-07-20",
         "week_end": "2026-07-26",
-        "title": "Kickr locker (Alternative zu 4 × 1000 m)",
-        "main_set": "60 min ruhige Rad-Ausdauer",
-        "target": "ca. 55-65 % FTP, bei FTP 285 W etwa 157-185 W",
+        "title": "Kickr Over/Unders",
+        "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
+        "target": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
         "status": "planned",
         "distances": [
           "1000"
@@ -3348,17 +3348,17 @@
         {
           "id": "2026-W30-bike-over-under",
           "type": "bike",
-          "title": "Kickr locker (Alternative zu 4 × 1000 m)",
+          "title": "Kickr Over/Unders",
           "priority": 5,
-          "target_intensity": "LIT",
-          "target_duration_min": 60,
-          "warmup": "locker einrollen",
-          "main_set": "60 min ruhige Rad-Ausdauer",
-          "recovery": "keine Pausen geplant",
+          "target_intensity": "hard",
+          "target_duration_min": 75,
+          "warmup": "15 min Warm-up",
+          "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
+          "recovery": "5 min locker zwischen den Blöcken",
           "cooldown": "ausfahren",
-          "target_pace": "ca. 55-65 % FTP, bei FTP 285 W etwa 157-185 W",
-          "rpe_target": "2-3/10",
-          "description": "Das geplante Over/Under entfällt: Wenn 4 × 1000 m absolviert werden, bleibt dies die einzige harte Ausdauereinheit der Woche."
+          "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
+          "rpe_target": "7-8/10",
+          "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten."
         }
       ]
     },

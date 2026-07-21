@@ -54,7 +54,7 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Nächster Coaching-Fokus
 
-- Nach dem 8-km-Lauf vom 20.07. in KW 30 maximal eine harte Ausdauereinheit ergänzen: entweder 4 × 1000 m kontrolliert oder das Rad-Over/Under-Training; nicht beide in derselben Woche.
+- Nach dem 8-km-Lauf vom 20.07. in KW 30 sind zwei harte Ausdauerreize möglich: 4 × 1000 m kontrolliert und das Rad-Over/Under-Training, nach Möglichkeit mit mindestens 48 h Abstand.
 - Der zweite verbleibende Lauf bleibt ein kurzer lockerer Dauerlauf ohne Bergsprints. Damit wird der Umfang über lockere Minuten statt über mehrere neue Belastungsarten aufgebaut.
 - Den Laufumfang nach dem Sprung auf 18,96 km weiterhin zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
