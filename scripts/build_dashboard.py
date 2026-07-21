@@ -289,6 +289,11 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
     used: set[str] = set()
     sessions = sorted((dict(item) for item in plan.get("planned_sessions", [])), key=lambda item: item.get("priority", 99))
     for session in sessions:
+        # Manuell dokumentierte Aktivitäten haben keine importierte Aktivitäts-ID,
+        # können aber im Plan ausdrücklich als erledigt markiert sein.
+        if session.get("status") == "completed":
+            session["display_status"] = "erledigt"
+            continue
         # Kraft bleibt reine Planinformation; Ausdauereinheiten werden über
         # importierte Aktivitätsdaten abgeglichen.
         if comparable_sport(session.get("type", "")) not in {"run", "bike"}:

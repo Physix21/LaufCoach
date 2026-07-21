@@ -227,3 +227,21 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Bezogen auf die im Profil genannte FTP-Spanne von ca. 280-290 W entspricht die Durchschnittsleistung ungefähr 58-60 % FTP. Das passt zu einer Erholungseinheit beziehungsweise ruhigen LIT-Ergänzung.
 - Damit bleibt die Kalenderwoche 13.07.-19.07.2026 trotz dieser 90 min Rad bei zwei harten Ausdauerreizen: Rad-HIIT am 14.07. und Schwellenlauf am 16.07.
 - Die Einheit ersetzt keinen laufspezifischen Aufbau, ist in dieser Woche aber als belastungsarme Ausdauerergänzung sinnvoll, weil der harte Reizumfang bereits ausgeschöpft war.
+
+## 20.07.2026 - Lockerer Lauf
+
+**Quelle:** Athletenmeldung im Chat
+
+### Messdaten
+
+- Sportart: Laufen
+- Einheit: lockerer Jogginglauf ohne Laufuhr
+- Distanz: 8,0 km
+- Dauer, Pace, durchschnittliche und maximale Herzfrequenz: nicht erfasst
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der gemeldete Lauf zählt als lockere, laufspezifische Ausdauerbelastung; wegen fehlender Uhrdaten erfolgt keine Aussage zu Intensität oder physiologischer Reaktion.
+- Die 8,0 km sind der erste dokumentierte Lauf der Kalenderwoche 20.07.-26.07.2026. Damit ist der Wochenumfang bereits angehoben; der weitere Aufbau bleibt über eine einzelne kontrollierte Qualitätseinheit und einen kurzen lockeren Ergänzungslauf dosiert.
+- Bergsprints werden in dieser Woche gestrichen, damit Umfang und zusätzliche neuromuskuläre Intensität nicht zugleich steigen.
