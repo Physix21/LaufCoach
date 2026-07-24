@@ -220,7 +220,10 @@ def diary_hints() -> dict[str, dict[str, str]]:
 def stable_id(path: Path, date: str, distance: float | None, duration_sec: float | None, provided: str = "") -> str:
     if provided.strip():
         return provided.strip()
-    filename_id = re.search(r"(?:activity[_-])?(\d{8,})", path.stem, flags=re.IGNORECASE)
+    # Achtstellige Zahlen am Dateinamenanfang sind gewöhnlich YYYYMMDD und
+    # keine Garmin-Aktivitäts-ID. Sie müssen daher mit dem Dateinamen in die
+    # stabile lokale ID einfließen, damit Hin- und Rückfahrt nicht kollidieren.
+    filename_id = re.search(r"(?:activity[_-])(\d{8,})", path.stem, flags=re.IGNORECASE)
     if filename_id:
         return filename_id.group(1)
     seed = f"{path.name}|{date}|{distance or ''}|{duration_sec or ''}"
@@ -483,6 +486,13 @@ def import_all(force: bool = False) -> dict[str, Any]:
         if not parsed_activities:
             history["files"][path.name] = {"sha256": digest, "status": "skipped", "warnings": file_warnings}
             continue
+        # Eine neu importierte Datei ersetzt ihre bisherigen abgeleiteten
+        # Datensätze vollständig. Das verhindert verwaiste Datensätze, wenn
+        # sich eine lokale ID nach einer Parserkorrektur ändert.
+        for activity_id, existing in list(activities_by_id.items()):
+            if existing.get("source_file") == path.name:
+                activities_by_id.pop(activity_id)
+                splits_by_activity.pop(activity_id, None)
         for activity in parsed_activities:
             old_row = activities_by_id.get(activity["activity_id"], {})
             # Freiwillige manuelle Ergänzungen bleiben bei erneutem Import erhalten.

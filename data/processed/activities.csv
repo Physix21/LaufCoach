@@ -1,11 +1,13 @@
 activity_id,source_file,date,sport,session_name,duration_min,distance_km,avg_pace_sec_per_km,avg_speed_kmh,avg_hr,max_hr,avg_power,max_power,elevation_gain_m,training_effect,rpe,completed,notes
-17062026,17062026.csv,2026-06-17,run,5-km-Wettkampf,18.82,5.08,222.0,16.22,177.0,183.0,491.0,617.0,13.0,,,true,
-29062026,29062026.csv,2026-06-29,run,8 × 400 m Intervalle,42.48,8.18,312.0,11.54,140.0,179.0,351.0,591.0,31.0,,,true,
-05072026,05072026.csv,2026-07-05,run,Lockerer Lauf + 6 kurze Steigerungen,57.72,10.78,321.2,11.21,136.0,158.0,353.0,721.0,89.0,,,true,
+local-1c1f1254d0c6feae,17062026.csv,2026-06-17,run,5-km-Wettkampf,18.82,5.08,222.0,16.22,177.0,183.0,491.0,617.0,13.0,,,true,
+local-d19bdb49af28f751,29062026.csv,2026-06-29,run,8 × 400 m Intervalle,42.48,8.18,312.0,11.54,140.0,179.0,351.0,591.0,31.0,,,true,
+local-f97f908fa818f154,05072026.csv,2026-07-05,run,Lockerer Lauf + 6 kurze Steigerungen,57.72,10.78,321.2,11.21,136.0,158.0,353.0,721.0,89.0,,,true,
 20260707_ictrainer,Konstantin_20260707_1244_Woche_8__Workout_1__5x4min_5x4min_mit_110_FTP_Training_td.tcx,2026-07-07,bike,Rad-HIIT Kickr Core 5 x 4 min,55.22,29.66,,32.23,133.0,166.0,199.0,311.0,0.0,,,true,5 x 4 min bei ca. 305 W; Rohdaten aus ictrainer-TCX
-09072026,09072026.csv,2026-07-09,run,8 x 400 m Intervalle,35.45,6.63,321.0,11.21,141.0,180.0,374.0,664.0,31.0,,,true,
-10072026,10072026.csv,2026-07-10,bike,Radausfahrt,178.1,87.6,,29.51,127.0,166.0,179.0,843.0,514.0,,,true,
+local-def417682c0b3f57,09072026.csv,2026-07-09,run,8 x 400 m Intervalle,35.45,6.63,321.0,11.21,141.0,180.0,374.0,664.0,31.0,,,true,
+local-1bd48fd1107e4e95,10072026.csv,2026-07-10,bike,Radausfahrt,178.1,87.6,,29.51,127.0,166.0,179.0,843.0,514.0,,,true,
 20260714_ictrainer,Konstantin_20260714_1931_Woche_4__Workout_2__3x_3x6x30sec_mit_30sec_Pause_HIT_Training.tcx,2026-07-14,bike,Kickr Core 3 x 6 x 30/30,60.0,32.57,,32.57,129.0,156.0,197.0,358.0,0.0,,,true,18 x 30 s hart in 3 Serien; harte Abschnitte ca. 336 W im Mittel; Rohdaten aus ictrainer-TCX
-16072026,16072026.csv,2026-07-16,run,3 x 8 min Schwelle,58.48,11.39,308.1,11.69,145.0,174.0,390.0,613.0,48.0,,,true,
+local-980a661c247ab3ce,16072026.csv,2026-07-16,run,3 x 8 min Schwelle,58.48,11.39,308.1,11.69,145.0,174.0,390.0,613.0,48.0,,,true,
 20260719_ictrainer,Konstantin_20260719_1525_CRe11Erholung_Training.tcx,2026-07-19,bike,Lockere Rad-Erholung,90.0,46.65,,31.1,112.0,125.0,168.0,174.0,0.0,,,true,90 min CRe11-Erholung; Rohdaten aus ictrainer-TCX
-21072026,21072026.csv,2026-07-21,run,4 × 1000 m,43.57,8.37,312.0,11.54,139.0,175.0,361.0,1.0,40.0,,,true,
+local-df324c82f0a98e92,21072026.csv,2026-07-21,run,4 × 1000 m,43.57,8.37,312.0,11.54,139.0,175.0,361.0,1.0,40.0,,,true,
+local-560d2793dcca2fa4,24072026_rueckfahrt.csv,2026-07-24,bike,Rueckfahrt,64.35,31.19,,29.08,134.0,170.0,197.0,636.0,212.0,,,true,
+local-a7e7c6e3c89076c7,24072026_hinfahrt.csv,2026-07-24,bike,Hinfahrt,63.0,30.68,,29.22,131.0,165.0,182.0,721.0,180.0,,,true,

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T15:20:54+02:00",
-  "today": "2026-07-21",
+  "generated_at": "2026-07-24T07:53:28+02:00",
+  "today": "2026-07-24",
   "header": {
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
@@ -69,7 +69,9 @@
         "target_pace": "5:00-5:50 min/km; ohne Zusatzintensität",
         "rpe_target": "3-4/10",
         "description": "Nach dem bereits absolvierten 8-km-Lauf keine Bergsprints ergänzen; nur locker laufen.",
-        "display_status": "offen"
+        "display_status": "erledigt",
+        "matched_activity_id": "local-df324c82f0a98e92",
+        "match_reason": "Sportart/Woche passend; Heuristik-Score 6.5"
       },
       {
         "id": "2026-W30-run-easy-short",
@@ -102,7 +104,9 @@
         "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
         "rpe_target": "7-8/10",
         "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten.",
-        "display_status": "offen"
+        "display_status": "erledigt",
+        "matched_activity_id": "local-560d2793dcca2fa4",
+        "match_reason": "Sportart/Woche passend; Heuristik-Score 4.5"
       }
     ]
   },
@@ -171,7 +175,9 @@
             "target_pace": "5:00-5:50 min/km; ohne Zusatzintensität",
             "rpe_target": "3-4/10",
             "description": "Nach dem bereits absolvierten 8-km-Lauf keine Bergsprints ergänzen; nur locker laufen.",
-            "display_status": "offen"
+            "display_status": "erledigt",
+            "matched_activity_id": "local-df324c82f0a98e92",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 6.5"
           },
           {
             "id": "2026-W30-run-easy-short",
@@ -204,7 +210,9 @@
             "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
             "rpe_target": "7-8/10",
             "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten.",
-            "display_status": "offen"
+            "display_status": "erledigt",
+            "matched_activity_id": "local-560d2793dcca2fa4",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 4.5"
           }
         ]
       },
@@ -214,24 +222,46 @@
           "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
         }
       ],
-      "unmatched_activities": [],
+      "unmatched_activities": [
+        {
+          "activity_id": "local-a7e7c6e3c89076c7",
+          "source_file": "24072026_hinfahrt.csv",
+          "date": "2026-07-24",
+          "sport": "bike",
+          "session_name": "Hinfahrt",
+          "duration_min": 63.0,
+          "distance_km": 30.68,
+          "avg_pace_sec_per_km": null,
+          "avg_speed_kmh": 29.22,
+          "avg_hr": 131.0,
+          "max_hr": 165.0,
+          "avg_power": 182.0,
+          "max_power": 721.0,
+          "elevation_gain_m": 180.0,
+          "training_effect": null,
+          "rpe": null,
+          "completed": true,
+          "notes": "",
+          "intensity": "LIT"
+        }
+      ],
       "week_summary": {
         "week_start": "2026-07-20",
         "week_end": "2026-07-26",
         "week_label": "KW 30",
         "run_km": 8.37,
-        "bike_hours": 0.0,
+        "bike_hours": 2.12,
         "run_sessions": 1,
-        "bike_sessions": 0,
+        "bike_sessions": 2,
         "strength_sessions": 0,
         "hard_endurance_sessions": 1,
-        "lit_sessions": 0,
+        "lit_sessions": 2,
         "moderate_sessions": 0,
         "hard_sessions": 1,
         "total_duration_min": 43.6
       },
       "intensity": {
-        "LIT": 0,
+        "LIT": 2,
         "moderate": 0,
         "hard": 1
       }
@@ -2631,7 +2661,49 @@
   },
   "recent_activities": [
     {
-      "activity_id": "21072026",
+      "activity_id": "local-a7e7c6e3c89076c7",
+      "source_file": "24072026_hinfahrt.csv",
+      "date": "2026-07-24",
+      "sport": "bike",
+      "session_name": "Hinfahrt",
+      "duration_min": 63.0,
+      "distance_km": 30.68,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 29.22,
+      "avg_hr": 131.0,
+      "max_hr": 165.0,
+      "avg_power": 182.0,
+      "max_power": 721.0,
+      "elevation_gain_m": 180.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
+    {
+      "activity_id": "local-560d2793dcca2fa4",
+      "source_file": "24072026_rueckfahrt.csv",
+      "date": "2026-07-24",
+      "sport": "bike",
+      "session_name": "Rueckfahrt",
+      "duration_min": 64.35,
+      "distance_km": 31.19,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 29.08,
+      "avg_hr": 134.0,
+      "max_hr": 170.0,
+      "avg_power": 197.0,
+      "max_power": 636.0,
+      "elevation_gain_m": 212.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
+    {
+      "activity_id": "local-df324c82f0a98e92",
       "source_file": "21072026.csv",
       "date": "2026-07-21",
       "sport": "run",
@@ -2673,7 +2745,7 @@
       "intensity": "LIT"
     },
     {
-      "activity_id": "16072026",
+      "activity_id": "local-980a661c247ab3ce",
       "source_file": "16072026.csv",
       "date": "2026-07-16",
       "sport": "run",
@@ -2715,7 +2787,7 @@
       "intensity": "hard"
     },
     {
-      "activity_id": "10072026",
+      "activity_id": "local-1bd48fd1107e4e95",
       "source_file": "10072026.csv",
       "date": "2026-07-10",
       "sport": "bike",
@@ -2736,7 +2808,7 @@
       "intensity": "LIT"
     },
     {
-      "activity_id": "09072026",
+      "activity_id": "local-def417682c0b3f57",
       "source_file": "09072026.csv",
       "date": "2026-07-09",
       "sport": "run",
@@ -2778,7 +2850,7 @@
       "intensity": "hard"
     },
     {
-      "activity_id": "05072026",
+      "activity_id": "local-f97f908fa818f154",
       "source_file": "05072026.csv",
       "date": "2026-07-05",
       "sport": "run",
@@ -2797,51 +2869,31 @@
       "completed": true,
       "notes": "",
       "intensity": "LIT"
-    },
-    {
-      "activity_id": "29062026",
-      "source_file": "29062026.csv",
-      "date": "2026-06-29",
-      "sport": "run",
-      "session_name": "8 × 400 m Intervalle",
-      "duration_min": 42.48,
-      "distance_km": 8.18,
-      "avg_pace_sec_per_km": 312.0,
-      "avg_speed_kmh": 11.54,
-      "avg_hr": 140.0,
-      "max_hr": 179.0,
-      "avg_power": 351.0,
-      "max_power": 591.0,
-      "elevation_gain_m": 31.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "hard"
-    },
-    {
-      "activity_id": "17062026",
-      "source_file": "17062026.csv",
-      "date": "2026-06-17",
-      "sport": "run",
-      "session_name": "5-km-Wettkampf",
-      "duration_min": 18.82,
-      "distance_km": 5.08,
-      "avg_pace_sec_per_km": 222.0,
-      "avg_speed_kmh": 16.22,
-      "avg_hr": 177.0,
-      "max_hr": 183.0,
-      "avg_power": 491.0,
-      "max_power": 617.0,
-      "elevation_gain_m": 13.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "hard"
     }
   ],
-  "unmatched_activities": [],
+  "unmatched_activities": [
+    {
+      "activity_id": "local-a7e7c6e3c89076c7",
+      "source_file": "24072026_hinfahrt.csv",
+      "date": "2026-07-24",
+      "sport": "bike",
+      "session_name": "Hinfahrt",
+      "duration_min": 63.0,
+      "distance_km": 30.68,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 29.22,
+      "avg_hr": 131.0,
+      "max_hr": 165.0,
+      "avg_power": 182.0,
+      "max_power": 721.0,
+      "elevation_gain_m": 180.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    }
+  ],
   "weekly_summary": [
     {
       "week_start": "2026-06-01",
@@ -2953,19 +3005,19 @@
       "week_end": "2026-07-26",
       "week_label": "KW 30",
       "run_km": 8.37,
-      "bike_hours": 0.0,
+      "bike_hours": 2.12,
       "run_sessions": 1,
-      "bike_sessions": 0,
+      "bike_sessions": 2,
       "strength_sessions": 0,
       "hard_endurance_sessions": 1,
-      "lit_sessions": 0,
+      "lit_sessions": 2,
       "moderate_sessions": 0,
       "hard_sessions": 1,
       "total_duration_min": 43.6
     }
   ],
   "intensity": {
-    "LIT": 0,
+    "LIT": 2,
     "moderate": 0,
     "hard": 1
   },
@@ -2987,7 +3039,7 @@
         "progress_percent": 98.9,
         "source": {
           "date": "2026-07-09",
-          "activity_id": "09072026",
+          "activity_id": "local-def417682c0b3f57",
           "label": "8 x 400 m Intervalle",
           "repetitions": 8,
           "avg_seconds": 82.4,
@@ -3020,7 +3072,7 @@
         "progress_percent": 93.1,
         "source": {
           "date": "2026-07-21",
-          "activity_id": "21072026",
+          "activity_id": "local-df324c82f0a98e92",
           "label": "4 × 1000 m",
           "repetitions": 4,
           "avg_seconds": 218.8,
@@ -3229,7 +3281,7 @@
         "title": "Kickr Over/Unders",
         "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
         "target": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
-        "status": "offen",
+        "status": "erledigt",
         "distances": [
           "1000"
         ]
@@ -3295,12 +3347,12 @@
       "week_end": "2026-07-26",
       "week_label": "KW 30",
       "run_km": 8.37,
-      "bike_hours": 0.0,
+      "bike_hours": 2.12,
       "run_sessions": 1,
-      "bike_sessions": 0,
+      "bike_sessions": 2,
       "strength_sessions": 0,
       "hard_endurance_sessions": 1,
-      "lit_sessions": 0,
+      "lit_sessions": 2,
       "moderate_sessions": 0,
       "hard_sessions": 1,
       "total_duration_min": 43.6

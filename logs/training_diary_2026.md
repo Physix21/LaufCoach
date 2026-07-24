@@ -270,3 +270,21 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der geplante Qualitätsumfang von 4,0 km wurde vollständig absolviert. Die progressive Beschleunigung zeigt Geschwindigkeitsreserve, macht die Einheit aber weniger kontrolliert als vorgesehen; sie bleibt ein verwertbarer harter Laufreiz, ist jedoch kein neuer Leistungsanker.
 - Die Einheit folgt einen Tag nach dem lockeren 8-km-Lauf und ist der erste harte Ausdauerreiz der Kalenderwoche 20.07.-26.07. Für diese Woche ist höchstens noch das geplante Rad-Over/Under-Training als zweiter harter Reiz sinnvoll, mit möglichst 48 h Abstand.
 - Ein weiterer Lauf bleibt locker und ohne Bergsprints. Der Wochenumfang liegt nach zwei Läufen bei 16,37 km; der optionale sehr kurze Lauf wird nur bei unauffälliger Verträglichkeit ergänzt.
+
+## 24.07.2026 – Rennrad Hin- und Rückfahrt
+
+**Quellen:** `data/raw/garmin/csv/24072026_hinfahrt.csv`, `data/raw/garmin/csv/24072026_rueckfahrt.csv`
+
+### Messdaten
+
+- Sportart: Rennrad, zwei Outdoor-Aktivitäten am selben Tag
+- Hinfahrt: 30,68 km in 1:03:00 h; Ø 29,2 km/h, Ø 131 bpm, maximal 165 bpm; Ø 182 W, maximal 721 W; 180 m Anstieg
+- Rückfahrt: 31,19 km in 1:04:21 h; Ø 29,1 km/h, Ø 134 bpm, maximal 170 bpm; Ø 197 W, maximal 636 W; 212 m Anstieg
+- Zusammen: 61,87 km in 2:07:21 h; zeitgewichtete Ø 132 bpm und ca. 190 W; 392 m Anstieg
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Beide Fahrten waren über Herzfrequenz und Durchschnittsleistung überwiegend als lockere bis moderat wellige Radausdauer einzuordnen. Die hohen Maximalleistungen sind kurze Peaks und begründen keinen eigenen HIIT-Reiz.
+- Die kombinierte Dauer von gut zwei Stunden erhöht die Gesamtbelastung der Kalenderwoche jedoch deutlich. Sie zählt nicht als zweiter harter Ausdauerreiz, ersetzt das noch geplante Rad-Over/Under-Training dieser Woche aber aus Belastungssteuerungsgründen.
+- Nach dem harten Laufreiz vom 21.07. bleibt höchstens ein kurzer, sehr lockerer Lauf sinnvoll. Kein zusätzlicher Temporeiz und keine Bergsprints in dieser Kalenderwoche.

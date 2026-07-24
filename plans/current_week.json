@@ -47,25 +47,25 @@
     {
       "id": "2026-W30-run-easy",
       "type": "run",
-      "title": "40 min locker",
+      "title": "20-25 min sehr locker",
       "priority": 3,
       "target_intensity": "LIT",
-      "target_duration_min": 40,
-      "target_distance_km": 7,
+      "target_duration_min": 25,
+      "target_distance_km": 4,
       "warmup": "direkt locker anlaufen",
-      "main_set": "40 min lockerer Dauerlauf ohne Bergsprints",
+      "main_set": "20-25 min sehr lockerer Dauerlauf ohne Bergsprints",
       "recovery": "keine Pausen geplant",
       "cooldown": "locker beenden",
-      "target_pace": "5:00–5:50 min/km; ohne Zusatzintensität",
-      "rpe_target": "3–4/10",
-      "description": "Nach dem bereits absolvierten 8-km-Lauf keine Bergsprints ergänzen; nur locker laufen."
+      "target_pace": "5:10-5:50 min/km; ohne Zusatzintensität",
+      "rpe_target": "2-3/10",
+      "description": "Nach dem bereits absolvierten 8-km-Lauf und den zwei Rennradfahrten vom 24.07. nur sehr locker laufen; bei müden Beinen auslassen."
     },
     {
       "id": "2026-W30-run-easy-short",
       "type": "run",
       "title": "Optional 20-25 min sehr locker",
       "priority": 4,
-      "status": "optional",
+      "status": "cancelled",
       "target_intensity": "LIT",
       "target_duration_min": 25,
       "warmup": "locker starten",
@@ -74,7 +74,7 @@
       "cooldown": "locker beenden",
       "target_pace": "5:10–5:50 min/km; ohne Zusatzintensität",
       "rpe_target": "2–3/10",
-      "description": "Nur ergänzen, wenn die bisherigen Läufe unauffällig vertragen werden; sonst auslassen."
+      "description": "Durch die zwei Rennradfahrten vom 24.07. gestrichen; nicht zusätzlich nachholen."
     },
     {
       "id": "2026-W30-bike-over-under",
@@ -82,6 +82,7 @@
       "title": "Kickr Over/Unders",
       "priority": 5,
       "target_intensity": "hard",
+      "status": "cancelled",
       "target_duration_min": 75,
       "warmup": "15 min Warm-up",
       "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
@@ -89,7 +90,7 @@
       "cooldown": "locker ausfahren",
       "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
       "rpe_target": "7-8/10",
-      "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten."
+      "description": "Durch die zwei Rennradfahrten vom 24.07. gestrichen; nicht zusätzlich nachholen."
     }
   ]
 }
