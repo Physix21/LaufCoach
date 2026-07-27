@@ -288,3 +288,25 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Beide Fahrten waren über Herzfrequenz und Durchschnittsleistung überwiegend als lockere bis moderat wellige Radausdauer einzuordnen. Die hohen Maximalleistungen sind kurze Peaks und begründen keinen eigenen HIIT-Reiz.
 - Die kombinierte Dauer von gut zwei Stunden erhöht die Gesamtbelastung der Kalenderwoche jedoch deutlich. Sie zählt nicht als zweiter harter Ausdauerreiz, ersetzt das noch geplante Rad-Over/Under-Training dieser Woche aber aus Belastungssteuerungsgründen.
 - Nach dem harten Laufreiz vom 21.07. bleibt höchstens ein kurzer, sehr lockerer Lauf sinnvoll. Kein zusätzlicher Temporeiz und keine Bergsprints in dieser Kalenderwoche.
+
+## 25.07.2026 – Progressiver Lauf
+
+**Quelle:** `data/raw/garmin/csv/25072026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 9,01 km in 41:09 min; Ø 4:34 min/km
+- Herzfrequenz: Ø 149 bpm, maximal 170 bpm
+- Laufleistung: Ø 457 W, maximal 561 W
+- Höhenmeter: 43 m Anstieg, 48 m Abstieg
+- Kilometersplits: 4:57 / 4:54 / 4:52 / 4:23 / 4:27 / 4:16 / 4:07 / 3:56 / 5:09 min/km; Rest 0,01 km in 0:08 min
+- Die Kilometer 4–8 wurden in 21:09 min absolviert (ca. 4:14 min/km); dabei stieg die durchschnittliche Herzfrequenz von 148 auf 163 bpm.
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Lauf war nicht sehr locker: Nach drei lockeren Kilometern wurde er fortlaufend bis 3:56 min/km beschleunigt. Der mittlere Abschnitt über fünf Kilometer lag damit zügig bis im Schwellenbereich.
+- Zusammen mit den 4 × 1000 m vom 21.07. setzt diese Einheit den zweiten harten Ausdauerreiz der Kalenderwoche 20.07.–26.07. Die beiden Rennradfahrten vom Vortag erhöhen zudem die Gesamtbelastung.
+- Die ansteigende Herzfrequenz bei zunehmendem Tempo ist mit einem Progressionslauf vereinbar. Wegen des wechselnden Profils und nur einer Einheit wird daraus kein neuer Schwellen- oder Wettkampfpace-Anker abgeleitet.
+- Die folgende Woche bleibt deshalb eine Entlastungswoche: nur ein kontrollierter kurzer Laufreiz, ein lockerer Lauf und keine Radintervalle.

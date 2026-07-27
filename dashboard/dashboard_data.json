@@ -1,119 +1,74 @@
 {
-  "generated_at": "2026-07-24T07:53:28+02:00",
-  "today": "2026-07-24",
+  "generated_at": "2026-07-27T08:19:48+02:00",
+  "today": "2026-07-27",
   "header": {
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
-    "phase": "Block 01 – Einstieg Juli 2026",
-    "focus": "Laufspezifische Ausdauer bei kontrolliertem Umfang",
+    "phase": "Block 01 – Entlastung",
+    "focus": "Belastung aufnehmen und frisch werden",
     "next_milestone": "5-km-Formcheck im März/April 2027: unter 18:00"
   },
   "plan": {
-    "week_start": "2026-07-20",
-    "week_end": "2026-07-26",
-    "phase": "Block 01 – Einstieg Juli 2026",
-    "focus": "Laufspezifische Ausdauer bei kontrolliertem Umfang",
+    "week_start": "2026-07-27",
+    "week_end": "2026-08-02",
+    "phase": "Block 01 – Entlastung",
+    "focus": "Belastung aufnehmen und frisch werden",
     "planned_sessions": [
       {
-        "id": "2026-W30-run-easy-8km",
+        "id": "2026-W31-run-400",
         "type": "run",
-        "title": "Lockerer Jogginglauf",
+        "title": "6 × 400 m frisch",
         "priority": 1,
-        "status": "completed",
-        "target_intensity": "LIT",
-        "target_distance_km": 8,
-        "warmup": "direkt locker anlaufen",
-        "main_set": "8,0 km locker joggen",
-        "recovery": "keine Pausen gemeldet",
-        "cooldown": "nicht erfasst",
-        "target_pace": "nicht erfasst (ohne Laufuhr)",
-        "rpe_target": "nicht angegeben",
-        "description": "Gemeldeter lockerer Lauf ohne Laufuhr; Dauer, Pace und Herzfrequenz liegen nicht vor.",
-        "scheduled_date": "2026-07-20",
-        "completed_date": "2026-07-20",
-        "completed_activity_id": "athlete_report_20260720",
-        "completed_summary": "8,0 km locker; ohne Laufuhr, daher keine Dauer-, Pace- oder Herzfrequenzdaten",
-        "display_status": "erledigt"
+        "target_intensity": "moderate",
+        "target_distance_km": 7,
+        "warmup": "15 min locker einlaufen",
+        "main_set": "6 × 400 m frisch, aber kontrolliert",
+        "recovery": "200–300 m locker traben",
+        "cooldown": "auslaufen",
+        "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
+        "rpe_target": "7/10",
+        "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt.",
+        "display_status": "offen"
       },
       {
-        "id": "2026-W30-run-1000",
+        "id": "2026-W31-run-easy",
         "type": "run",
-        "title": "4 × 1000 m kontrolliert",
+        "title": "35–45 min locker",
         "priority": 2,
-        "status": "completed",
-        "target_intensity": "hard",
-        "target_distance_km": 9,
-        "warmup": "15 min einlaufen",
-        "main_set": "4 × 1000 m",
-        "recovery": "3 min locker traben zwischen den Wiederholungen",
-        "cooldown": "10–15 min auslaufen",
-        "target_pace": "3:42–3:48 min/km je 1000 m",
-        "rpe_target": "8/10",
-        "completed_date": "2026-07-21",
-        "completed_activity_id": "21072026",
-        "completed_summary": "4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km; 8,37 km in 43:34 min, Ø 139 bpm, maximal 175 bpm. Qualitätsumfang vollständig, die letzten zwei Wiederholungen schneller als geplant.",
-        "display_status": "erledigt"
-      },
-      {
-        "id": "2026-W30-run-hills",
-        "type": "run",
-        "title": "40 min locker",
-        "priority": 3,
         "target_intensity": "LIT",
         "target_duration_min": 40,
-        "target_distance_km": 7,
-        "warmup": "direkt locker anlaufen",
-        "main_set": "40 min lockerer Dauerlauf ohne Bergsprints",
-        "recovery": "keine Pausen geplant",
-        "cooldown": "locker beenden",
-        "target_pace": "5:00-5:50 min/km; ohne Zusatzintensität",
-        "rpe_target": "3-4/10",
-        "description": "Nach dem bereits absolvierten 8-km-Lauf keine Bergsprints ergänzen; nur locker laufen.",
-        "display_status": "erledigt",
-        "matched_activity_id": "local-df324c82f0a98e92",
-        "match_reason": "Sportart/Woche passend; Heuristik-Score 6.5"
-      },
-      {
-        "id": "2026-W30-run-easy-short",
-        "type": "run",
-        "title": "Optional 20-25 min sehr locker",
-        "priority": 4,
-        "target_intensity": "LIT",
-        "status": "optional",
-        "target_duration_min": 25,
         "warmup": "locker starten",
-        "main_set": "20-25 min sehr locker laufen",
+        "main_set": "35–45 min lockerer Dauerlauf",
         "recovery": "keine Pausen geplant",
         "cooldown": "locker beenden",
-        "target_pace": "5:10-5:50 min/km; ohne Zusatzintensität",
-        "rpe_target": "2–3/10",
-        "description": "Nur ergänzen, wenn die bisherigen Läufe unauffällig vertragen werden; sonst auslassen.",
-        "display_status": "optional"
+        "target_pace": "5:00–5:50 min/km",
+        "rpe_target": "3/10",
+        "description": "Keine Zusatzhärte.",
+        "display_status": "offen"
       },
       {
-        "id": "2026-W30-bike-over-under",
+        "id": "2026-W31-bike-reduced",
         "type": "bike",
-        "title": "Kickr Over/Unders",
-        "priority": 5,
-        "target_intensity": "hard",
-        "target_duration_min": 75,
-        "warmup": "15 min Warm-up",
-        "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
-        "recovery": "5 min locker zwischen den Blöcken",
+        "title": "Kickr 6 × 2 min reduziert",
+        "priority": 3,
+        "status": "cancelled",
+        "target_intensity": "moderate",
+        "target_duration_min": 50,
+        "warmup": "locker einfahren",
+        "main_set": "6 × 2 min bei 115 % FTP",
+        "recovery": "3 min locker zwischen den Wiederholungen",
         "cooldown": "ausfahren",
-        "target_pace": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
-        "rpe_target": "7-8/10",
-        "description": "Zweiter harter Ausdauerreiz der Woche; nach Möglichkeit mindestens 48 h Abstand zu den 4 × 1000 m einhalten.",
-        "display_status": "erledigt",
-        "matched_activity_id": "local-560d2793dcca2fa4",
-        "match_reason": "Sportart/Woche passend; Heuristik-Score 4.5"
+        "target_pace": "bei FTP 285 W ca. 328 W",
+        "rpe_target": "6–7/10",
+        "description": "Nach den zwei harten Laufreizen und dem hohen Laufumfang der Vorwoche gestrichen; bei Bedarf nur locker Rad fahren.",
+        "display_status": "offen"
       }
     ]
   },
   "plan_weeks": [
     {
       "key": "week-2026-07-20",
-      "label": "Diese Woche",
+      "label": "KW 30",
       "plan": {
         "week_start": "2026-07-20",
         "week_end": "2026-07-26",
@@ -218,8 +173,8 @@
       },
       "warnings": [
         {
-          "level": "ok",
-          "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
+          "level": "warning",
+          "text": "Der Laufumfang ist gegenüber der Vorwoche um 123 % gestiegen."
         }
       ],
       "unmatched_activities": [
@@ -243,32 +198,53 @@
           "completed": true,
           "notes": "",
           "intensity": "LIT"
+        },
+        {
+          "activity_id": "local-269da5f98bb6a8a9",
+          "source_file": "25072026.csv",
+          "date": "2026-07-25",
+          "sport": "run",
+          "session_name": "Progressiver Lauf",
+          "duration_min": 41.15,
+          "distance_km": 9.01,
+          "avg_pace_sec_per_km": 274.0,
+          "avg_speed_kmh": 13.14,
+          "avg_hr": 149.0,
+          "max_hr": 170.0,
+          "avg_power": 457.0,
+          "max_power": 561.0,
+          "elevation_gain_m": 43.0,
+          "training_effect": null,
+          "rpe": null,
+          "completed": true,
+          "notes": "",
+          "intensity": "moderate"
         }
       ],
       "week_summary": {
         "week_start": "2026-07-20",
         "week_end": "2026-07-26",
         "week_label": "KW 30",
-        "run_km": 8.37,
+        "run_km": 25.38,
         "bike_hours": 2.12,
-        "run_sessions": 1,
+        "run_sessions": 3,
         "bike_sessions": 2,
         "strength_sessions": 0,
         "hard_endurance_sessions": 1,
-        "lit_sessions": 2,
-        "moderate_sessions": 0,
+        "lit_sessions": 3,
+        "moderate_sessions": 1,
         "hard_sessions": 1,
-        "total_duration_min": 43.6
+        "total_duration_min": 84.7
       },
       "intensity": {
-        "LIT": 2,
-        "moderate": 0,
+        "LIT": 3,
+        "moderate": 1,
         "hard": 1
       }
     },
     {
       "key": "week-2026-07-27",
-      "label": "Nächste Woche",
+      "label": "Diese Woche",
       "plan": {
         "week_start": "2026-07-27",
         "week_end": "2026-08-02",
@@ -288,6 +264,7 @@
             "cooldown": "auslaufen",
             "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
             "rpe_target": "7/10",
+            "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt.",
             "display_status": "offen"
           },
           {
@@ -311,6 +288,7 @@
             "type": "bike",
             "title": "Kickr 6 × 2 min reduziert",
             "priority": 3,
+            "status": "cancelled",
             "target_intensity": "moderate",
             "target_duration_min": 50,
             "warmup": "locker einfahren",
@@ -319,6 +297,7 @@
             "cooldown": "ausfahren",
             "target_pace": "bei FTP 285 W ca. 328 W",
             "rpe_target": "6–7/10",
+            "description": "Nach den zwei harten Laufreizen und dem hohen Laufumfang der Vorwoche gestrichen; bei Bedarf nur locker Rad fahren.",
             "display_status": "offen"
           }
         ]
@@ -326,11 +305,29 @@
       "warnings": [
         {
           "level": "info",
-          "text": "Geplante Prioritätseinheit noch offen: 6 × 400 m frisch."
+          "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
+        },
+        {
+          "level": "info",
+          "text": "Wichtigste Prioritätseinheit noch offen: 6 × 400 m frisch."
         }
       ],
       "unmatched_activities": [],
-      "week_summary": {},
+      "week_summary": {
+        "week_start": "2026-07-27",
+        "week_end": "2026-08-02",
+        "week_label": "KW 31",
+        "run_km": 0,
+        "bike_hours": 0.0,
+        "run_sessions": 0,
+        "bike_sessions": 0,
+        "strength_sessions": 0,
+        "hard_endurance_sessions": 0,
+        "lit_sessions": 0,
+        "moderate_sessions": 0,
+        "hard_sessions": 0,
+        "total_duration_min": 0
+      },
       "intensity": {
         "LIT": 0,
         "moderate": 0,
@@ -339,7 +336,7 @@
     },
     {
       "key": "week-2026-08-03",
-      "label": "KW 32",
+      "label": "Nächste Woche",
       "plan": {
         "week_start": "2026-08-03",
         "week_end": "2026-08-09",
@@ -2642,7 +2639,7 @@
       }
     }
   ],
-  "selected_plan_key": "week-2026-07-20",
+  "selected_plan_key": "week-2026-07-27",
   "next_session": {
     "id": "2026-W31-run-400",
     "type": "run",
@@ -2656,10 +2653,32 @@
     "cooldown": "auslaufen",
     "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
     "rpe_target": "7/10",
+    "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt.",
     "display_status": "offen",
     "scheduled_date": "2026-07-27"
   },
   "recent_activities": [
+    {
+      "activity_id": "local-269da5f98bb6a8a9",
+      "source_file": "25072026.csv",
+      "date": "2026-07-25",
+      "sport": "run",
+      "session_name": "Progressiver Lauf",
+      "duration_min": 41.15,
+      "distance_km": 9.01,
+      "avg_pace_sec_per_km": 274.0,
+      "avg_speed_kmh": 13.14,
+      "avg_hr": 149.0,
+      "max_hr": 170.0,
+      "avg_power": 457.0,
+      "max_power": 561.0,
+      "elevation_gain_m": 43.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "moderate"
+    },
     {
       "activity_id": "local-a7e7c6e3c89076c7",
       "source_file": "24072026_hinfahrt.csv",
@@ -2722,6 +2741,27 @@
       "completed": true,
       "notes": "",
       "intensity": "hard"
+    },
+    {
+      "activity_id": "athlete_report_20260720",
+      "source_file": "athlete_report_20260720",
+      "date": "2026-07-20",
+      "sport": "run",
+      "session_name": "Lockerer Jogginglauf",
+      "duration_min": null,
+      "distance_km": 8.0,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": null,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_power": null,
+      "max_power": null,
+      "elevation_gain_m": null,
+      "training_effect": null,
+      "rpe": null,
+      "completed": false,
+      "notes": "",
+      "intensity": "LIT"
     },
     {
       "activity_id": "20260719_ictrainer",
@@ -2827,89 +2867,10 @@
       "completed": true,
       "notes": "",
       "intensity": "hard"
-    },
-    {
-      "activity_id": "20260707_ictrainer",
-      "source_file": "Konstantin_20260707_1244_Woche_8__Workout_1__5x4min_5x4min_mit_110_FTP_Training_td.tcx",
-      "date": "2026-07-07",
-      "sport": "bike",
-      "session_name": "Rad-HIIT Kickr Core 5 x 4 min",
-      "duration_min": 55.22,
-      "distance_km": 29.66,
-      "avg_pace_sec_per_km": null,
-      "avg_speed_kmh": 32.23,
-      "avg_hr": 133.0,
-      "max_hr": 166.0,
-      "avg_power": 199.0,
-      "max_power": 311.0,
-      "elevation_gain_m": 0.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "5 x 4 min bei ca. 305 W; Rohdaten aus ictrainer-TCX",
-      "intensity": "hard"
-    },
-    {
-      "activity_id": "local-f97f908fa818f154",
-      "source_file": "05072026.csv",
-      "date": "2026-07-05",
-      "sport": "run",
-      "session_name": "Lockerer Lauf + 6 kurze Steigerungen",
-      "duration_min": 57.72,
-      "distance_km": 10.78,
-      "avg_pace_sec_per_km": 321.2,
-      "avg_speed_kmh": 11.21,
-      "avg_hr": 136.0,
-      "max_hr": 158.0,
-      "avg_power": 353.0,
-      "max_power": 721.0,
-      "elevation_gain_m": 89.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "LIT"
     }
   ],
-  "unmatched_activities": [
-    {
-      "activity_id": "local-a7e7c6e3c89076c7",
-      "source_file": "24072026_hinfahrt.csv",
-      "date": "2026-07-24",
-      "sport": "bike",
-      "session_name": "Hinfahrt",
-      "duration_min": 63.0,
-      "distance_km": 30.68,
-      "avg_pace_sec_per_km": null,
-      "avg_speed_kmh": 29.22,
-      "avg_hr": 131.0,
-      "max_hr": 165.0,
-      "avg_power": 182.0,
-      "max_power": 721.0,
-      "elevation_gain_m": 180.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "LIT"
-    }
-  ],
+  "unmatched_activities": [],
   "weekly_summary": [
-    {
-      "week_start": "2026-06-01",
-      "week_end": "2026-06-07",
-      "week_label": "KW 23",
-      "run_km": 0,
-      "bike_hours": 0.0,
-      "run_sessions": 0,
-      "bike_sessions": 0,
-      "strength_sessions": 0,
-      "hard_endurance_sessions": 0,
-      "lit_sessions": 0,
-      "moderate_sessions": 0,
-      "hard_sessions": 0,
-      "total_duration_min": 0
-    },
     {
       "week_start": "2026-06-08",
       "week_end": "2026-06-14",
@@ -3004,22 +2965,37 @@
       "week_start": "2026-07-20",
       "week_end": "2026-07-26",
       "week_label": "KW 30",
-      "run_km": 8.37,
+      "run_km": 25.38,
       "bike_hours": 2.12,
-      "run_sessions": 1,
+      "run_sessions": 3,
       "bike_sessions": 2,
       "strength_sessions": 0,
       "hard_endurance_sessions": 1,
-      "lit_sessions": 2,
-      "moderate_sessions": 0,
+      "lit_sessions": 3,
+      "moderate_sessions": 1,
       "hard_sessions": 1,
-      "total_duration_min": 43.6
+      "total_duration_min": 84.7
+    },
+    {
+      "week_start": "2026-07-27",
+      "week_end": "2026-08-02",
+      "week_label": "KW 31",
+      "run_km": 0,
+      "bike_hours": 0.0,
+      "run_sessions": 0,
+      "bike_sessions": 0,
+      "strength_sessions": 0,
+      "hard_endurance_sessions": 0,
+      "lit_sessions": 0,
+      "moderate_sessions": 0,
+      "hard_sessions": 0,
+      "total_duration_min": 0
     }
   ],
   "intensity": {
-    "LIT": 2,
+    "LIT": 0,
     "moderate": 0,
-    "hard": 1
+    "hard": 0
   },
   "repetition_targets": {
     "race_target": "16:59",
@@ -3269,30 +3245,6 @@
         "title": "4 × 1000 m kontrolliert",
         "main_set": "4 × 1000 m",
         "target": "3:42–3:48 min/km je 1000 m",
-        "status": "erledigt",
-        "distances": [
-          "1000"
-        ]
-      },
-      {
-        "date": "2026-07-20",
-        "week_start": "2026-07-20",
-        "week_end": "2026-07-26",
-        "title": "Kickr Over/Unders",
-        "main_set": "3 × 10 min als Wechsel aus 1 min bei 105 % FTP und 1 min bei 90 % FTP",
-        "target": "bei FTP 285 W ca. 299 W / 257 W im Wechsel",
-        "status": "erledigt",
-        "distances": [
-          "1000"
-        ]
-      },
-      {
-        "date": "2026-07-20",
-        "week_start": "2026-07-20",
-        "week_end": "2026-07-26",
-        "title": "4 × 1000 m kontrolliert",
-        "main_set": "4 × 1000 m",
-        "target": "3:42–3:48 min/km je 1000 m",
         "status": "completed",
         "distances": [
           "1000"
@@ -3317,6 +3269,18 @@
         "title": "6 × 400 m frisch",
         "main_set": "6 × 400 m frisch, aber kontrolliert",
         "target": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
+        "status": "offen",
+        "distances": [
+          "400"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "week_start": "2026-07-27",
+        "week_end": "2026-08-02",
+        "title": "6 × 400 m frisch",
+        "main_set": "6 × 400 m frisch, aber kontrolliert",
+        "target": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
         "status": "planned",
         "distances": [
           "400"
@@ -3326,8 +3290,12 @@
   },
   "warnings": [
     {
-      "level": "ok",
-      "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
+      "level": "info",
+      "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
+    },
+    {
+      "level": "info",
+      "text": "Wichtigste Prioritätseinheit noch offen: 6 × 400 m frisch."
     }
   ],
   "metrics": {
@@ -3343,22 +3311,22 @@
       "progress_percent": 0
     },
     "current_week": {
-      "week_start": "2026-07-20",
-      "week_end": "2026-07-26",
-      "week_label": "KW 30",
-      "run_km": 8.37,
-      "bike_hours": 2.12,
-      "run_sessions": 1,
-      "bike_sessions": 2,
+      "week_start": "2026-07-27",
+      "week_end": "2026-08-02",
+      "week_label": "KW 31",
+      "run_km": 0,
+      "bike_hours": 0.0,
+      "run_sessions": 0,
+      "bike_sessions": 0,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
-      "lit_sessions": 2,
+      "hard_endurance_sessions": 0,
+      "lit_sessions": 0,
       "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 43.6
+      "hard_sessions": 0,
+      "total_duration_min": 0
     },
     "warning_count": 0,
-    "activities_total": 6
+    "activities_total": 8
   },
   "upcoming": [
     {
@@ -3472,7 +3440,8 @@
           "recovery": "200–300 m locker traben",
           "cooldown": "auslaufen",
           "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
-          "rpe_target": "7/10"
+          "rpe_target": "7/10",
+          "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt."
         },
         {
           "id": "2026-W31-run-easy",
@@ -3494,6 +3463,7 @@
           "type": "bike",
           "title": "Kickr 6 × 2 min reduziert",
           "priority": 3,
+          "status": "cancelled",
           "target_intensity": "moderate",
           "target_duration_min": 50,
           "warmup": "locker einfahren",
@@ -3501,7 +3471,8 @@
           "recovery": "3 min locker zwischen den Wiederholungen",
           "cooldown": "ausfahren",
           "target_pace": "bei FTP 285 W ca. 328 W",
-          "rpe_target": "6–7/10"
+          "rpe_target": "6–7/10",
+          "description": "Nach den zwei harten Laufreizen und dem hohen Laufumfang der Vorwoche gestrichen; bei Bedarf nur locker Rad fahren."
         }
       ]
     }

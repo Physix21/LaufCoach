@@ -80,6 +80,15 @@
         "local-560d2793dcca2fa4"
       ],
       "warnings": []
+    },
+    "25072026.csv": {
+      "sha256": "e446cb0f7772d0fb2673dc45065c24ea416bf30f947c8973d9b12ae0b51c1b99",
+      "status": "imported",
+      "imported_at": "2026-07-27T08:18:14+02:00",
+      "activity_ids": [
+        "local-269da5f98bb6a8a9"
+      ],
+      "warnings": []
     }
   }
 }

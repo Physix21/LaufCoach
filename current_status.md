@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 24.07.2026
+**Stand:** 27.07.2026
 
 ## Ziel und Phase
 
@@ -30,9 +30,9 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 24.07.2026: Rennrad Hin- und Rückfahrt
-- Zusammen: 61,87 km in 2:07:21 h; zeitgewichtete Ø 132 bpm und ca. 190 W; 392 m Anstieg
-- Einordnung: überwiegend lockere bis moderate, wellige Radausdauer; hoher Gesamtumfang, aber kein Rad-HIIT
+- 25.07.2026: Progressiver Lauf
+- 9,01 km in 41:09 min (Ø 4:34 min/km), Ø 149 bpm, maximal 170 bpm, Ø 457 W, 43 m Anstieg
+- Die Kilometer 4–8: 21:09 min (ca. 4:14 min/km); der letzte schnelle Kilometer: 3:56 min/km
 
 ## Belastbarkeit
 
@@ -51,14 +51,17 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - In KW 30 ist am 20.07. ein lockerer Lauf über 8,0 km ohne Uhrdaten dokumentiert; der Laufumfang der neuen Woche beträgt damit mindestens 8,0 km in einer Einheit
 - Am 21.07. wurden 4 × 1000 m in 3:44 / 3:43 / 3:39 / 3:30 min/km absolviert. Der Laufumfang in KW 30 beträgt damit 16,37 km in zwei Einheiten; dies ist der erste harte Ausdauerreiz der Woche
 - Am 24.07. wurden zwei Rennradfahrten über zusammen 61,87 km in 2:07:21 h und 392 m Anstieg absolviert. Sie waren nach Durchschnittsleistung und Herzfrequenz überwiegend locker bis moderat, erhöhen die Wochen-Gesamtbelastung aber deutlich.
+- Am 25.07. folgte ein progressiver 9,01-km-Lauf in 41:09 min. Die Beschleunigung von 4:57 auf 3:56 min/km macht ihn zu einem zügig bis harten Laufreiz, nicht zu einem lockeren Ergänzungslauf.
+- Der Lauf ist nach den 4 × 1000 m vom 21.07. der zweite harte Ausdauerreiz der KW 30. Der dokumentierte Laufumfang der KW 30 beträgt damit 25,38 km in drei Einheiten.
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
 ## Nächster Coaching-Fokus
 
-- Nach den zwei Rennradfahrten vom 24.07. wird das Rad-Over/Under-Training in KW 30 gestrichen. Die Woche enthält damit einen harten Laufreiz, aber eine deutlich erhöhte Gesamt-Radausdauerbelastung.
-- Wenn noch gelaufen wird, bleibt es bei 20–25 min sehr locker und ohne Bergsprints. Damit wird der Laufumfang nicht gleichzeitig mit einer weiteren langen Ausdauerbelastung gesteigert.
-- Den Laufumfang nach dem Sprung auf 18,96 km weiterhin zunächst stabilisieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
+- Die KW 30 endete mit zwei harten Laufreizen, 25,38 Laufkilometern und gut zwei Stunden zusätzlicher Radausdauer. Die KW 31 wird deshalb als Entlastungswoche geführt.
+- Der einzige Qualitätslauf der KW 31 bleibt 6 × 400 m in 87–90 s (ca. 3:38–3:45 min/km), frühestens mit ausreichendem Abstand zum 25.07. und kontrolliert ohne schnellen Endspurt.
+- Ergänzend ist nur ein lockerer Lauf über 35–45 min vorgesehen. Das geplante Kickr-Intervalltraining wird gestrichen; lockeres Radfahren bleibt bei Bedarf möglich.
+- Den Laufumfang nach dem Sprung auf 25,38 km zunächst klar reduzieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Die Kombi-Einheit 4 x (1000 m in 5-km-Pace + 400 m in 1500-m-Pace) ist sportwissenschaftlich plausibel als spätere spezifische Tempohärte-Einheit, aber aktuell im Juli 2026 zu spezifisch und zu hart. Sie wird ab dem 5-km-spezifischen Aufbau in reduzierten Varianten eingeplant.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.
