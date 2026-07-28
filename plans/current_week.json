@@ -10,6 +10,7 @@
       "type": "run",
       "title": "6 × 400 m frisch",
       "priority": 1,
+      "status": "cancelled",
       "target_intensity": "moderate",
       "target_distance_km": 7,
       "warmup": "15 min locker einlaufen",
@@ -18,13 +19,14 @@
       "cooldown": "auslaufen",
       "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
       "rpe_target": "7/10",
-      "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt."
+      "description": "Nach dem harten Rad-Segment-PR vom 27.07. gestrichen; in der Entlastungswoche keine weitere intensive Ausdauereinheit."
     },
     {
       "id": "2026-W31-run-easy",
       "type": "run",
       "title": "35–45 min locker",
       "priority": 2,
+      "status": "completed",
       "target_intensity": "LIT",
       "target_duration_min": 40,
       "warmup": "locker starten",
@@ -33,7 +35,10 @@
       "cooldown": "locker beenden",
       "target_pace": "5:00–5:50 min/km",
       "rpe_target": "3/10",
-      "description": "Keine Zusatzhärte."
+      "description": "Absolviert am 27.07.: 5,99 km in 31:45 min (Ø 5:18 min/km), Ø 129 bpm, maximal 142 bpm. Die kürzere Dauer wird nicht nachgeholt.",
+      "completed_date": "2026-07-27",
+      "completed_activity_id": "local-ad9e38718f0ee581",
+      "completed_summary": "5,99 km in 31:45 min, Ø 5:18 min/km, Ø 129 bpm, maximal 142 bpm; lockerer Lauf"
     },
     {
       "id": "2026-W31-bike-reduced",

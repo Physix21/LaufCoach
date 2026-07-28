@@ -310,3 +310,43 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Zusammen mit den 4 × 1000 m vom 21.07. setzt diese Einheit den zweiten harten Ausdauerreiz der Kalenderwoche 20.07.–26.07. Die beiden Rennradfahrten vom Vortag erhöhen zudem die Gesamtbelastung.
 - Die ansteigende Herzfrequenz bei zunehmendem Tempo ist mit einem Progressionslauf vereinbar. Wegen des wechselnden Profils und nur einer Einheit wird daraus kein neuer Schwellen- oder Wettkampfpace-Anker abgeleitet.
 - Die folgende Woche bleibt deshalb eine Entlastungswoche: nur ein kontrollierter kurzer Laufreiz, ein lockerer Lauf und keine Radintervalle.
+
+## 27.07.2026 – Lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/27072026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 5,99 km in 31:45 min; Ø 5:18 min/km
+- Herzfrequenz: Ø 129 bpm, maximal 142 bpm
+- Laufleistung: Ø 360 W, maximal 512 W
+- Höhenmeter: 37 m Anstieg, 36 m Abstieg
+- Kilometersplits: 5:17 / 5:27 / 5:22 / 5:24 / 5:19 min/km; letzte 0,99 km in 4:56 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Nach Tempo und Herzfrequenz war dies ein lockerer Lauf und damit ein passender reduzierter Umfangsreiz für die Entlastungswoche.
+- Die Dauer liegt mit 31:45 min unter den geplanten 35–45 min; angesichts des vorherigen Umfangssprungs und der gleichzeitigen Radausfahrt wird das nicht ergänzt.
+
+## 27.07.2026 – Rennradausfahrt mit Segment-PR
+
+**Quelle:** `data/raw/garmin/csv/27072026_2.csv`; Segmentleistung laut Athletenmeldung
+
+### Messdaten
+
+- Sportart: Rennrad
+- Gesamt: 61,01 km in 2:08:42 h; Ø 28,4 km/h
+- Herzfrequenz: Ø 127 bpm, maximal 174 bpm
+- Leistung: Ø 181 W, normalisierte Leistung 226 W, maximal 803 W
+- Höhenmeter: 402 m Anstieg, 458 m Abstieg
+- Segment-PR: 6:20 min bei Ø 373 W
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Gesamtausfahrt war anhand der Durchschnittswerte überwiegend locker bis moderat; die normalisierte Leistung und der gemeldete Segment-PR zeigen jedoch einen klaren kurzen intensiven Abschnitt.
+- 373 W über 6:20 min entsprechen bezogen auf die hinterlegte FTP-Spanne von 280–290 W ungefähr 129–133 % FTP. Das ist ein harter Radreiz, auch wenn die Ausfahrt insgesamt nicht als HIIT strukturiert war.
+- Der Segment-PR ist ein sehr gutes radbezogenes Leistungssignal, verändert aber weder den laufbezogenen 5-km-Anker noch die Lauftrainingspaces.
+- Für die Entlastungswoche zählt der PR als der einzige harte Ausdauerreiz. Die geplanten 400-m-Intervalle und weitere Radintervalle entfallen; bis zum Wochenende nur Erholung oder bei Bedarf sehr lockeres Radfahren.

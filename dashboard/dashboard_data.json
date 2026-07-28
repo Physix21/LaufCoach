@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-27T08:19:48+02:00",
-  "today": "2026-07-27",
+  "generated_at": "2026-07-28T19:03:31+02:00",
+  "today": "2026-07-28",
   "header": {
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
@@ -19,6 +19,7 @@
         "type": "run",
         "title": "6 × 400 m frisch",
         "priority": 1,
+        "status": "cancelled",
         "target_intensity": "moderate",
         "target_distance_km": 7,
         "warmup": "15 min locker einlaufen",
@@ -27,14 +28,17 @@
         "cooldown": "auslaufen",
         "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
         "rpe_target": "7/10",
-        "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt.",
-        "display_status": "offen"
+        "description": "Nach dem harten Rad-Segment-PR vom 27.07. gestrichen; in der Entlastungswoche keine weitere intensive Ausdauereinheit.",
+        "display_status": "erledigt",
+        "matched_activity_id": "local-ad9e38718f0ee581",
+        "match_reason": "Sportart/Woche passend; Heuristik-Score 5.0"
       },
       {
         "id": "2026-W31-run-easy",
         "type": "run",
         "title": "35–45 min locker",
         "priority": 2,
+        "status": "completed",
         "target_intensity": "LIT",
         "target_duration_min": 40,
         "warmup": "locker starten",
@@ -43,8 +47,11 @@
         "cooldown": "locker beenden",
         "target_pace": "5:00–5:50 min/km",
         "rpe_target": "3/10",
-        "description": "Keine Zusatzhärte.",
-        "display_status": "offen"
+        "description": "Absolviert am 27.07.: 5,99 km in 31:45 min (Ø 5:18 min/km), Ø 129 bpm, maximal 142 bpm. Die kürzere Dauer wird nicht nachgeholt.",
+        "completed_date": "2026-07-27",
+        "completed_activity_id": "local-ad9e38718f0ee581",
+        "completed_summary": "5,99 km in 31:45 min, Ø 5:18 min/km, Ø 129 bpm, maximal 142 bpm; lockerer Lauf",
+        "display_status": "erledigt"
       },
       {
         "id": "2026-W31-bike-reduced",
@@ -256,6 +263,7 @@
             "type": "run",
             "title": "6 × 400 m frisch",
             "priority": 1,
+            "status": "cancelled",
             "target_intensity": "moderate",
             "target_distance_km": 7,
             "warmup": "15 min locker einlaufen",
@@ -264,14 +272,17 @@
             "cooldown": "auslaufen",
             "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
             "rpe_target": "7/10",
-            "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt.",
-            "display_status": "offen"
+            "description": "Nach dem harten Rad-Segment-PR vom 27.07. gestrichen; in der Entlastungswoche keine weitere intensive Ausdauereinheit.",
+            "display_status": "erledigt",
+            "matched_activity_id": "local-ad9e38718f0ee581",
+            "match_reason": "Sportart/Woche passend; Heuristik-Score 5.0"
           },
           {
             "id": "2026-W31-run-easy",
             "type": "run",
             "title": "35–45 min locker",
             "priority": 2,
+            "status": "completed",
             "target_intensity": "LIT",
             "target_duration_min": 40,
             "warmup": "locker starten",
@@ -280,8 +291,11 @@
             "cooldown": "locker beenden",
             "target_pace": "5:00–5:50 min/km",
             "rpe_target": "3/10",
-            "description": "Keine Zusatzhärte.",
-            "display_status": "offen"
+            "description": "Absolviert am 27.07.: 5,99 km in 31:45 min (Ø 5:18 min/km), Ø 129 bpm, maximal 142 bpm. Die kürzere Dauer wird nicht nachgeholt.",
+            "completed_date": "2026-07-27",
+            "completed_activity_id": "local-ad9e38718f0ee581",
+            "completed_summary": "5,99 km in 31:45 min, Ø 5:18 min/km, Ø 129 bpm, maximal 142 bpm; lockerer Lauf",
+            "display_status": "erledigt"
           },
           {
             "id": "2026-W31-bike-reduced",
@@ -304,32 +318,50 @@
       },
       "warnings": [
         {
-          "level": "info",
-          "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
-        },
-        {
-          "level": "info",
-          "text": "Wichtigste Prioritätseinheit noch offen: 6 × 400 m frisch."
+          "level": "ok",
+          "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
         }
       ],
-      "unmatched_activities": [],
+      "unmatched_activities": [
+        {
+          "activity_id": "local-451270bd995e59e3",
+          "source_file": "27072026_2.csv",
+          "date": "2026-07-27",
+          "sport": "bike",
+          "session_name": "Rennradausfahrt mit Segment-PR",
+          "duration_min": 128.7,
+          "distance_km": 61.01,
+          "avg_pace_sec_per_km": null,
+          "avg_speed_kmh": 28.44,
+          "avg_hr": 127.0,
+          "max_hr": 174.0,
+          "avg_power": 181.0,
+          "max_power": 803.0,
+          "elevation_gain_m": 402.0,
+          "training_effect": null,
+          "rpe": null,
+          "completed": true,
+          "notes": "",
+          "intensity": "LIT"
+        }
+      ],
       "week_summary": {
         "week_start": "2026-07-27",
         "week_end": "2026-08-02",
         "week_label": "KW 31",
-        "run_km": 0,
-        "bike_hours": 0.0,
-        "run_sessions": 0,
-        "bike_sessions": 0,
+        "run_km": 5.99,
+        "bike_hours": 2.15,
+        "run_sessions": 1,
+        "bike_sessions": 1,
         "strength_sessions": 0,
         "hard_endurance_sessions": 0,
-        "lit_sessions": 0,
+        "lit_sessions": 2,
         "moderate_sessions": 0,
         "hard_sessions": 0,
-        "total_duration_min": 0
+        "total_duration_min": 31.8
       },
       "intensity": {
-        "LIT": 0,
+        "LIT": 2,
         "moderate": 0,
         "hard": 0
       }
@@ -2641,23 +2673,60 @@
   ],
   "selected_plan_key": "week-2026-07-27",
   "next_session": {
-    "id": "2026-W31-run-400",
-    "type": "run",
-    "title": "6 × 400 m frisch",
+    "id": "generated-2026-08-03-focus",
+    "type": "plan",
+    "title": "Wochenrahmen",
     "priority": 1,
-    "target_intensity": "moderate",
-    "target_distance_km": 7,
-    "warmup": "15 min locker einlaufen",
-    "main_set": "6 × 400 m frisch, aber kontrolliert",
-    "recovery": "200–300 m locker traben",
-    "cooldown": "auslaufen",
-    "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
-    "rpe_target": "7/10",
-    "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt.",
-    "display_status": "offen",
-    "scheduled_date": "2026-07-27"
+    "status": "info",
+    "target_intensity": "info",
+    "description": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
+    "main_set": "8 x 400 m kontrolliert; 4 x 1000 m kontrolliert; Schwelle statt Zielpace",
+    "display_status": "info",
+    "scheduled_date": "2026-08-03"
   },
   "recent_activities": [
+    {
+      "activity_id": "local-ad9e38718f0ee581",
+      "source_file": "27072026.csv",
+      "date": "2026-07-27",
+      "sport": "run",
+      "session_name": "Lockerer Lauf",
+      "duration_min": 31.75,
+      "distance_km": 5.99,
+      "avg_pace_sec_per_km": 318.0,
+      "avg_speed_kmh": 11.32,
+      "avg_hr": 129.0,
+      "max_hr": 142.0,
+      "avg_power": 360.0,
+      "max_power": 512.0,
+      "elevation_gain_m": 37.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
+    {
+      "activity_id": "local-451270bd995e59e3",
+      "source_file": "27072026_2.csv",
+      "date": "2026-07-27",
+      "sport": "bike",
+      "session_name": "Rennradausfahrt mit Segment-PR",
+      "duration_min": 128.7,
+      "distance_km": 61.01,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 28.44,
+      "avg_hr": 127.0,
+      "max_hr": 174.0,
+      "avg_power": 181.0,
+      "max_power": 803.0,
+      "elevation_gain_m": 402.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
     {
       "activity_id": "local-269da5f98bb6a8a9",
       "source_file": "25072026.csv",
@@ -2825,51 +2894,31 @@
       "completed": true,
       "notes": "18 x 30 s hart in 3 Serien; harte Abschnitte ca. 336 W im Mittel; Rohdaten aus ictrainer-TCX",
       "intensity": "hard"
-    },
+    }
+  ],
+  "unmatched_activities": [
     {
-      "activity_id": "local-1bd48fd1107e4e95",
-      "source_file": "10072026.csv",
-      "date": "2026-07-10",
+      "activity_id": "local-451270bd995e59e3",
+      "source_file": "27072026_2.csv",
+      "date": "2026-07-27",
       "sport": "bike",
-      "session_name": "Radausfahrt",
-      "duration_min": 178.1,
-      "distance_km": 87.6,
+      "session_name": "Rennradausfahrt mit Segment-PR",
+      "duration_min": 128.7,
+      "distance_km": 61.01,
       "avg_pace_sec_per_km": null,
-      "avg_speed_kmh": 29.51,
+      "avg_speed_kmh": 28.44,
       "avg_hr": 127.0,
-      "max_hr": 166.0,
-      "avg_power": 179.0,
-      "max_power": 843.0,
-      "elevation_gain_m": 514.0,
+      "max_hr": 174.0,
+      "avg_power": 181.0,
+      "max_power": 803.0,
+      "elevation_gain_m": 402.0,
       "training_effect": null,
       "rpe": null,
       "completed": true,
       "notes": "",
       "intensity": "LIT"
-    },
-    {
-      "activity_id": "local-def417682c0b3f57",
-      "source_file": "09072026.csv",
-      "date": "2026-07-09",
-      "sport": "run",
-      "session_name": "8 x 400 m Intervalle",
-      "duration_min": 35.45,
-      "distance_km": 6.63,
-      "avg_pace_sec_per_km": 321.0,
-      "avg_speed_kmh": 11.21,
-      "avg_hr": 141.0,
-      "max_hr": 180.0,
-      "avg_power": 374.0,
-      "max_power": 664.0,
-      "elevation_gain_m": 31.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "hard"
     }
   ],
-  "unmatched_activities": [],
   "weekly_summary": [
     {
       "week_start": "2026-06-08",
@@ -2980,20 +3029,20 @@
       "week_start": "2026-07-27",
       "week_end": "2026-08-02",
       "week_label": "KW 31",
-      "run_km": 0,
-      "bike_hours": 0.0,
-      "run_sessions": 0,
-      "bike_sessions": 0,
+      "run_km": 5.99,
+      "bike_hours": 2.15,
+      "run_sessions": 1,
+      "bike_sessions": 1,
       "strength_sessions": 0,
       "hard_endurance_sessions": 0,
-      "lit_sessions": 0,
+      "lit_sessions": 2,
       "moderate_sessions": 0,
       "hard_sessions": 0,
-      "total_duration_min": 0
+      "total_duration_min": 31.8
     }
   ],
   "intensity": {
-    "LIT": 0,
+    "LIT": 2,
     "moderate": 0,
     "hard": 0
   },
@@ -3269,7 +3318,7 @@
         "title": "6 × 400 m frisch",
         "main_set": "6 × 400 m frisch, aber kontrolliert",
         "target": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
-        "status": "offen",
+        "status": "erledigt",
         "distances": [
           "400"
         ]
@@ -3281,7 +3330,7 @@
         "title": "6 × 400 m frisch",
         "main_set": "6 × 400 m frisch, aber kontrolliert",
         "target": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
-        "status": "planned",
+        "status": "cancelled",
         "distances": [
           "400"
         ]
@@ -3290,12 +3339,8 @@
   },
   "warnings": [
     {
-      "level": "info",
-      "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
-    },
-    {
-      "level": "info",
-      "text": "Wichtigste Prioritätseinheit noch offen: 6 × 400 m frisch."
+      "level": "ok",
+      "text": "Keine automatischen Warnsignale aus den verfügbaren Daten."
     }
   ],
   "metrics": {
@@ -3314,19 +3359,19 @@
       "week_start": "2026-07-27",
       "week_end": "2026-08-02",
       "week_label": "KW 31",
-      "run_km": 0,
-      "bike_hours": 0.0,
-      "run_sessions": 0,
-      "bike_sessions": 0,
+      "run_km": 5.99,
+      "bike_hours": 2.15,
+      "run_sessions": 1,
+      "bike_sessions": 1,
       "strength_sessions": 0,
       "hard_endurance_sessions": 0,
-      "lit_sessions": 0,
+      "lit_sessions": 2,
       "moderate_sessions": 0,
       "hard_sessions": 0,
-      "total_duration_min": 0
+      "total_duration_min": 31.8
     },
     "warning_count": 0,
-    "activities_total": 8
+    "activities_total": 9
   },
   "upcoming": [
     {
@@ -3433,6 +3478,7 @@
           "type": "run",
           "title": "6 × 400 m frisch",
           "priority": 1,
+          "status": "cancelled",
           "target_intensity": "moderate",
           "target_distance_km": 7,
           "warmup": "15 min locker einlaufen",
@@ -3441,13 +3487,14 @@
           "cooldown": "auslaufen",
           "target_pace": "87–90 s je 400 m, ca. 3:38–3:45 min/km",
           "rpe_target": "7/10",
-          "description": "Einziger Qualitätslauf der Entlastungswoche; frühestens mit ausreichendem Abstand zum Progressionslauf vom 25.07. und ohne schnellen Endspurt."
+          "description": "Nach dem harten Rad-Segment-PR vom 27.07. gestrichen; in der Entlastungswoche keine weitere intensive Ausdauereinheit."
         },
         {
           "id": "2026-W31-run-easy",
           "type": "run",
           "title": "35–45 min locker",
           "priority": 2,
+          "status": "completed",
           "target_intensity": "LIT",
           "target_duration_min": 40,
           "warmup": "locker starten",
@@ -3456,7 +3503,10 @@
           "cooldown": "locker beenden",
           "target_pace": "5:00–5:50 min/km",
           "rpe_target": "3/10",
-          "description": "Keine Zusatzhärte."
+          "description": "Absolviert am 27.07.: 5,99 km in 31:45 min (Ø 5:18 min/km), Ø 129 bpm, maximal 142 bpm. Die kürzere Dauer wird nicht nachgeholt.",
+          "completed_date": "2026-07-27",
+          "completed_activity_id": "local-ad9e38718f0ee581",
+          "completed_summary": "5,99 km in 31:45 min, Ø 5:18 min/km, Ø 129 bpm, maximal 142 bpm; lockerer Lauf"
         },
         {
           "id": "2026-W31-bike-reduced",

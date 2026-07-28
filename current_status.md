@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 27.07.2026
+**Stand:** 28.07.2026
 
 ## Ziel und Phase
 
@@ -53,15 +53,17 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Am 24.07. wurden zwei Rennradfahrten über zusammen 61,87 km in 2:07:21 h und 392 m Anstieg absolviert. Sie waren nach Durchschnittsleistung und Herzfrequenz überwiegend locker bis moderat, erhöhen die Wochen-Gesamtbelastung aber deutlich.
 - Am 25.07. folgte ein progressiver 9,01-km-Lauf in 41:09 min. Die Beschleunigung von 4:57 auf 3:56 min/km macht ihn zu einem zügig bis harten Laufreiz, nicht zu einem lockeren Ergänzungslauf.
 - Der Lauf ist nach den 4 × 1000 m vom 21.07. der zweite harte Ausdauerreiz der KW 30. Der dokumentierte Laufumfang der KW 30 beträgt damit 25,38 km in drei Einheiten.
+- In KW 31 wurden am 27.07. ein lockerer Lauf über 5,99 km in 31:45 min (Ø 5:18 min/km, Ø 129 bpm) und eine Rennradausfahrt über 61,01 km in 2:08:42 h dokumentiert.
+- Auf der Radausfahrt wurde laut Athletenmeldung ein neues Strava-Segment-PR in 6:20 min bei Ø 373 W gefahren. Der Abschnitt entspricht ungefähr 129–133 % der hinterlegten FTP-Spanne und zählt als harter Radreiz; die übrige Ausfahrt war nach Durchschnittswerten locker bis moderat.
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
 ## Nächster Coaching-Fokus
 
-- Die KW 30 endete mit zwei harten Laufreizen, 25,38 Laufkilometern und gut zwei Stunden zusätzlicher Radausdauer. Die KW 31 wird deshalb als Entlastungswoche geführt.
-- Der einzige Qualitätslauf der KW 31 bleibt 6 × 400 m in 87–90 s (ca. 3:38–3:45 min/km), frühestens mit ausreichendem Abstand zum 25.07. und kontrolliert ohne schnellen Endspurt.
-- Ergänzend ist nur ein lockerer Lauf über 35–45 min vorgesehen. Das geplante Kickr-Intervalltraining wird gestrichen; lockeres Radfahren bleibt bei Bedarf möglich.
-- Den Laufumfang nach dem Sprung auf 25,38 km zunächst klar reduzieren; nicht gleichzeitig Laufhäufigkeit, Umfang und Intensität deutlich erhöhen.
+- Die KW 30 endete mit zwei harten Laufreizen, 25,38 Laufkilometern und gut zwei Stunden zusätzlicher Radausdauer. Die KW 31 bleibt deshalb eine Entlastungswoche.
+- Der lockere Lauf am 27.07. liefert bereits den laufspezifischen Reiz der Woche. Seine kürzere Dauer wird nicht nachgeholt.
+- Das Segment-PR auf dem Rennrad ist der einzige harte Ausdauerreiz der KW 31. Die geplanten 6 × 400 m und das bereits gestrichene Kickr-Intervalltraining bleiben ersatzlos gestrichen.
+- Bis zum Wochenende keine weitere intensive Ausdauereinheit; nur Ruhetage oder sehr lockeres Radfahren nach Bedarf. Den Laufumfang nach dem Sprung auf 25,38 km zunächst klar reduzieren.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Die Kombi-Einheit 4 x (1000 m in 5-km-Pace + 400 m in 1500-m-Pace) ist sportwissenschaftlich plausibel als spätere spezifische Tempohärte-Einheit, aber aktuell im Juli 2026 zu spezifisch und zu hart. Sie wird ab dem 5-km-spezifischen Aufbau in reduzierten Varianten eingeplant.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.
