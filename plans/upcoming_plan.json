@@ -138,18 +138,41 @@
         {
           "id": "2026-W31-bike-reduced",
           "type": "bike",
-          "title": "Kickr 6 × 2 min reduziert",
+          "title": "Strukturierte Indoor-Radeinheit",
           "priority": 3,
-          "status": "cancelled",
+          "status": "completed",
           "target_intensity": "moderate",
-          "target_duration_min": 50,
+          "target_duration_min": 54,
           "warmup": "locker einfahren",
-          "main_set": "6 × 2 min bei 115 % FTP",
-          "recovery": "3 min locker zwischen den Wiederholungen",
+          "main_set": "strukturierte Leistungswechsel mit kurzen Abschnitten bis ca. 300 W",
+          "recovery": "lockere Abschnitte zwischen den Leistungswechseln",
           "cooldown": "ausfahren",
-          "target_pace": "bei FTP 285 W ca. 328 W",
+          "target_pace": "Ø 206 W, maximal 304 W; kein voller HIIT-Reiz",
           "rpe_target": "6–7/10",
-          "description": "Nach den zwei harten Laufreizen und dem hohen Laufumfang der Vorwoche gestrichen; bei Bedarf nur locker Rad fahren."
+          "description": "Absolviert am 31.07.: 30,04 km in 54:00 min, Ø 206 W, maximal 304 W, Ø 132 bpm, maximal 155 bpm. Als moderat strukturierte Zusatzbelastung eingeordnet.",
+          "completed_date": "2026-07-31",
+          "completed_activity_id": "local-63b0619291267396",
+          "completed_summary": "30,04 km in 54:00 min, Ø 206 W, maximal 304 W, Ø 132 bpm, maximal 155 bpm; moderat strukturiert"
+        },
+        {
+          "id": "2026-W31-run-steady",
+          "type": "run",
+          "title": "Zügiger Lauf",
+          "priority": 4,
+          "status": "completed",
+          "target_intensity": "moderate",
+          "target_distance_km": 9,
+          "target_duration_min": 40,
+          "warmup": "direkt aus der Aktivität, kein separates Warm-up erfasst",
+          "main_set": "9,02 km zügiger Dauerlauf",
+          "recovery": "keine Pausen erfasst",
+          "cooldown": "nicht separat erfasst",
+          "target_pace": "Ø 4:26 min/km; nicht als lockerer Pace-Standard verwenden",
+          "rpe_target": "nicht angegeben",
+          "description": "Absolviert am 02.08.: 9,02 km in 39:56 min, Ø 151 bpm, maximal 163 bpm. Nicht locker im LIT-Sinn, aber kein klarer harter Schwellenreiz.",
+          "completed_date": "2026-08-02",
+          "completed_activity_id": "local-fdb20689ac1236b3",
+          "completed_summary": "9,02 km in 39:56 min, Ø 4:26 min/km, Ø 151 bpm, maximal 163 bpm; zügig/moderat"
         }
       ]
     }

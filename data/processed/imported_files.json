@@ -107,6 +107,24 @@
         "local-451270bd995e59e3"
       ],
       "warnings": []
+    },
+    "02082026.csv": {
+      "sha256": "0a31ea858959158616928dcb37f33c267fa6f3f201a927f274c150764332a779",
+      "status": "imported",
+      "imported_at": "2026-08-02T19:42:58+02:00",
+      "activity_ids": [
+        "local-fdb20689ac1236b3"
+      ],
+      "warnings": []
+    },
+    "31072026.csv": {
+      "sha256": "9c071e35b121bdb9fb5d7398a0dd0d3862415a61b5f3a977740774e6b951dd36",
+      "status": "imported",
+      "imported_at": "2026-08-02T19:42:58+02:00",
+      "activity_ids": [
+        "local-63b0619291267396"
+      ],
+      "warnings": []
     }
   }
 }

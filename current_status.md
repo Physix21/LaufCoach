@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 28.07.2026
+**Stand:** 02.08.2026
 
 ## Ziel und Phase
 
@@ -30,9 +30,9 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 25.07.2026: Progressiver Lauf
-- 9,01 km in 41:09 min (Ø 4:34 min/km), Ø 149 bpm, maximal 170 bpm, Ø 457 W, 43 m Anstieg
-- Die Kilometer 4–8: 21:09 min (ca. 4:14 min/km); der letzte schnelle Kilometer: 3:56 min/km
+- 02.08.2026: Zügiger Lauf
+- 9,02 km in 39:56 min (Ø 4:26 min/km), Ø 151 bpm, maximal 163 bpm, Ø 430 W, 53 m Anstieg
+- Kilometersplits: 4:37 / 4:29 / 4:26 / 4:30 / 4:28 / 4:23 / 4:14 / 4:22 / 4:20 min/km; Rest 0,02 km in 0:07 min
 
 ## Belastbarkeit
 
@@ -55,15 +55,18 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - Der Lauf ist nach den 4 × 1000 m vom 21.07. der zweite harte Ausdauerreiz der KW 30. Der dokumentierte Laufumfang der KW 30 beträgt damit 25,38 km in drei Einheiten.
 - In KW 31 wurden am 27.07. ein lockerer Lauf über 5,99 km in 31:45 min (Ø 5:18 min/km, Ø 129 bpm) und eine Rennradausfahrt über 61,01 km in 2:08:42 h dokumentiert.
 - Auf der Radausfahrt wurde laut Athletenmeldung ein neues Strava-Segment-PR in 6:20 min bei Ø 373 W gefahren. Der Abschnitt entspricht ungefähr 129–133 % der hinterlegten FTP-Spanne und zählt als harter Radreiz; die übrige Ausfahrt war nach Durchschnittswerten locker bis moderat.
+- Am 31.07. folgte eine strukturierte Indoor-Radeinheit über 54:00 min, Ø 206 W und maximal 304 W. Wegen kurzer Abschnitte um 300 W, aber nur maximal 155 bpm, wird sie als moderat strukturierter Radreiz und zusätzliche Gesamtbelastung eingeordnet, nicht als voller zweiter harter Ausdauerreiz.
+- Am 02.08. wurde ein zügiger Lauf über 9,02 km in 39:56 min absolviert (Ø 4:26 min/km, Ø 151 bpm, maximal 163 bpm). Er ist nicht locker im LIT-Sinn, aber anhand Herzfrequenz und Pace auch kein klarer harter Schwellenreiz.
+- Dokumentierter Laufumfang KW 31: 15,01 km in zwei Läufen. Dazu 3:02 h Radtraining in zwei Einheiten. Die Woche ist dadurch reduziert gegenüber KW 30, aber keine reine Entlastungswoche mehr.
 - Keine aktuellen Verletzungen laut Athletenprofil
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
 ## Nächster Coaching-Fokus
 
-- Die KW 30 endete mit zwei harten Laufreizen, 25,38 Laufkilometern und gut zwei Stunden zusätzlicher Radausdauer. Die KW 31 bleibt deshalb eine Entlastungswoche.
-- Der lockere Lauf am 27.07. liefert bereits den laufspezifischen Reiz der Woche. Seine kürzere Dauer wird nicht nachgeholt.
-- Das Segment-PR auf dem Rennrad ist der einzige harte Ausdauerreiz der KW 31. Die geplanten 6 × 400 m und das bereits gestrichene Kickr-Intervalltraining bleiben ersatzlos gestrichen.
-- Bis zum Wochenende keine weitere intensive Ausdauereinheit; nur Ruhetage oder sehr lockeres Radfahren nach Bedarf. Den Laufumfang nach dem Sprung auf 25,38 km zunächst klar reduzieren.
+- Die KW 31 enthielt mit Segment-PR, moderat strukturierter Radeinheit und zügigem 9-km-Lauf mehr Belastung als ursprünglich für die Entlastungswoche geplant.
+- Der Laufumfang wurde gegenüber KW 30 zwar auf 15,01 km reduziert, die Intensität war aber nicht durchgehend locker. Die nächste Woche deshalb nicht zusätzlich aggressiv steigern.
+- Nächster sinnvoller Laufreiz: eine kontrollierte Qualitätseinheit mit klar begrenztem Umfang oder ein lockerer Lauf, je nach Wochenplanung; keine harte Rad-HIIT-Einheit direkt zusätzlich, wenn bereits ein harter Lauf geplant ist.
+- Lockere Läufe bleiben wirklich locker im Bereich ca. 5:00-5:50 min/km. Der 02.08.-Lauf wird nicht als neuer LIT-Pace-Standard verwendet.
 - Die schnellen 400er bestätigen Geschwindigkeitsreserve, ersetzen aber keine kontrollierte Schwellen- und Ausdauerentwicklung.
 - Die Kombi-Einheit 4 x (1000 m in 5-km-Pace + 400 m in 1500-m-Pace) ist sportwissenschaftlich plausibel als spätere spezifische Tempohärte-Einheit, aber aktuell im Juli 2026 zu spezifisch und zu hart. Sie wird ab dem 5-km-spezifischen Aufbau in reduzierten Varianten eingeplant.
 - Nach jeder neuen Aktivität Tagebuch und diesen Status aktualisieren.

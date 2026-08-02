@@ -350,3 +350,45 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - 373 W über 6:20 min entsprechen bezogen auf die hinterlegte FTP-Spanne von 280–290 W ungefähr 129–133 % FTP. Das ist ein harter Radreiz, auch wenn die Ausfahrt insgesamt nicht als HIIT strukturiert war.
 - Der Segment-PR ist ein sehr gutes radbezogenes Leistungssignal, verändert aber weder den laufbezogenen 5-km-Anker noch die Lauftrainingspaces.
 - Für die Entlastungswoche zählt der PR als der einzige harte Ausdauerreiz. Die geplanten 400-m-Intervalle und weitere Radintervalle entfallen; bis zum Wochenende nur Erholung oder bei Bedarf sehr lockeres Radfahren.
+
+## 31.07.2026 – Strukturierte Indoor-Radeinheit
+
+**Quelle:** `data/raw/garmin/csv/31072026.csv`
+
+### Messdaten
+
+- Sportart: Radfahren, anhand der CSV-Splits ohne Höhenmeter als Indoor-/Trainer-Einheit eingeordnet
+- Gesamt: 30,04 km in 54:00 min; Ø 33,4 km/h
+- Herzfrequenz: Ø 132 bpm, maximal 155 bpm
+- Leistung: Ø 206 W, maximal 304 W
+- Höhenmeter: 0 m Anstieg
+- Struktur laut Runden: 5 min sehr locker, 15 min bei Ø 219 W, danach kurze strukturierte Abschnitte mit Ø 300 / 220 / 273 / 219 / 247 / 219 / 273 / 245 / 301 / 245 W und 20 min Ausfahren bei Ø 171 W
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit war trotz strukturierter Leistungswechsel kein voller harter Rad-HIIT-Reiz: Die beiden höchsten 1-min-Abschnitte lagen bei ca. 300-301 W, die Herzfrequenz blieb maximal bei 155 bpm und die längeren Abschnitte waren überwiegend moderat.
+- Bezogen auf die hinterlegte FTP-Spanne von 280-290 W lagen die 300-W-Abschnitte ungefähr bei 103-107 % FTP, aber nur kurz. Der Hauptreiz ist deshalb als moderat strukturierte Radeinheit mit zusätzlicher Gesamtbelastung einzuordnen.
+- In der Entlastungswoche war diese Einheit nach dem Segment-PR vom 27.07. nicht optimal priorisiert, sie überschreitet für sich allein aber nicht die Grenze zu einem zweiten harten Ausdauerreiz.
+
+## 02.08.2026 – Zügiger Lauf
+
+**Quelle:** `data/raw/garmin/csv/02082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 9,02 km in 39:56 min; Ø 4:26 min/km
+- Herzfrequenz: Ø 151 bpm, maximal 163 bpm
+- Laufleistung: Ø 430 W, maximal 558 W
+- Höhenmeter: 53 m Anstieg
+- Kilometersplits: 4:37 / 4:29 / 4:26 / 4:30 / 4:28 / 4:23 / 4:14 / 4:22 / 4:20 min/km; Rest 0,02 km in 0:07 min
+- Die Kilometer 2-9 wurden in 35:12 min absolviert (ca. 4:24 min/km)
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Lauf war nicht locker im LIT-Sinn. Die Pace lag über neun Kilometer durchgehend schneller als der aktuelle lockere Bereich von ca. 5:00-5:50 min/km und auch schneller als der zügig-lockere Orientierungsbereich von 4:35-4:55 min/km.
+- Herzfrequenz und Pace sprechen für einen moderaten bis zügigen Dauerlauf, nicht für einen zusätzlichen harten Schwellenreiz. Wegen 53 Höhenmetern und nur einer Einheit wird daraus kein neuer Schwellenpace-Anker abgeleitet.
+- Die KW 31 endet damit bei 15,01 Laufkilometern in zwei Läufen plus gut drei Stunden Rad. Das ist keine echte Entlastungswoche mehr, aber die Laufbelastung bleibt deutlich unter den 25,38 km der Vorwoche.
+- Für den nächsten Aufbau ist wichtig, die nächste harte Laufeinheit kontrolliert zu halten und nicht aus diesem Lauftempo einen neuen Standard für lockere Läufe abzuleiten.
