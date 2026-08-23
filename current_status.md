@@ -1,12 +1,12 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 02.08.2026
+**Stand:** 23.08.2026
 
 ## Ziel und Phase
 
 - Hauptziel: 5 km Straße unter 17:00 min im Juni 2027 (3:24 min/km)
 - Aktuelle Phase: Laufrobustheit und Routine, Juli-August 2026
-- Geplante Struktur: 2-3 Läufe, 1 Rad-HIIT und 1 Krafttraining pro Woche
+- Geplante Struktur: 3 Läufe und 1 Krafttraining pro Woche; Rad nur als Alternative zu einer Laufeinheit
 - Priorität: Laufumfang belastbar steigern; maximal zwei harte Ausdauereinheiten pro Woche
 
 ## Aktueller Leistungsanker
@@ -30,11 +30,19 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 
 ## Letzte dokumentierte Einheit
 
-- 02.08.2026: Zügiger Lauf
-- 9,02 km in 39:56 min (Ø 4:26 min/km), Ø 151 bpm, maximal 163 bpm, Ø 430 W, 53 m Anstieg
-- Kilometersplits: 4:37 / 4:29 / 4:26 / 4:30 / 4:28 / 4:23 / 4:14 / 4:22 / 4:20 min/km; Rest 0,02 km in 0:07 min
+- 22.08.2026: Progressiver Dauerlauf
+- 10,32 km in 45:35 min (Ø 4:25 min/km), Ø 145 bpm, maximal 173 bpm, Ø 422 W, 60 m Anstieg
+- Kilometersplits: 4:38 / 4:38 / 4:49 / 4:31 / 4:26 / 4:28 / 3:59 / 3:36 / 4:40 / 4:32 min/km; Rest 0,32 km in 1:19 min
 
 ## Belastbarkeit
+
+- Dokumentierter Laufumfang KW 32: 7,12 km in einer Laufeinheit; dazu 85,15 km Rad in 2:43 h. Der Lauf am 06.08. mit 8 × 400 m war der klare harte Laufreiz.
+- Dokumentierter Laufumfang KW 33: 32,11 km in drei Läufen. Das ist mehr als eine Verdopplung gegenüber KW 31; der 10-×-200-m-Lauf am 13.08. war der klare harte Reiz.
+- Dokumentierter Laufumfang KW 34: 40,64 km in vier Läufen, rund 27 % mehr als in KW 33.
+- KW 34 enthielt einen umfangreichen Tempodauerlauf am 17.08., 4 × 1000 m am 20.08. und einen weiteren schnellen Abschnitt bis 3:36 min/km am 22.08. Damit wurden drei zügige bis harte Laufreize gesetzt.
+- Der Tempodauerlauf am 17.08. über 10,01 km in 39:55 min ist ein starkes Schwellen-/Tempohärtesignal. Er ersetzt ohne Wettkampfcharakter keinen aktuellen 5-km-Leistungsanker.
+- Die 4 × 1000 m am 20.08. in 3:40 / 3:33 / 3:39 / 3:36 min/km bestätigen Geschwindigkeitsreserve, waren aber schneller als der bisher kontrolliert geplante Bereich.
+- Beschwerden wurden zu den neuen Aktivitäten nicht angegeben; daraus wird weder Beschwerdefreiheit geschätzt noch eine zusätzliche Einschränkung abgeleitet.
 
 - Ausgangsumfang laut Profil: ca. 10 km Laufen pro Woche bei 1-2 Läufen
 - Dokumentierter Umfang 29.06.-05.07.2026: 18,96 km in zwei Läufen, davon eine harte und eine lockere Einheit
@@ -62,6 +70,14 @@ Der letzte 400-m-Schnitt vom 09.07.2026 lag bei 82,4 s und damit nur ca. 0,9 s �
 - RPE, Gefühl und Beschwerden werden nur berücksichtigt, wenn sie freiwillig mitgeteilt werden
 
 ## Nächster Coaching-Fokus
+
+- KW 35 wird wegen des Umfangssprungs und der drei zügigen/harten Reize als Konsolidierungswoche mit drei Läufen und etwa 25–29 km geplant.
+- Nur eine kontrollierte Qualitätseinheit; die beiden anderen Läufe bleiben im lockeren Bereich von ca. 5:00–5:50 min/km.
+- Schnelle Schlusswiederholungen sind aktuell kein Ziel. Der Hauptteil soll gleichmäßig und wiederholbar bleiben.
+- Radaktivitäten werden weiterhin vollständig analysiert und als Gesamtbelastung gezählt. Im Trainingsplan stehen sie nur als Alternative zu einer Laufeinheit und werden nicht zusätzlich zum vollständigen Laufplan angesetzt.
+- Nach KW 35 den Laufumfang nur bei unauffälliger Verträglichkeit stabilisieren oder moderat weiterentwickeln; keine direkte Rückkehr auf mehr als 40 km.
+
+## Historischer Coaching-Fokus bis 02.08.2026
 
 - Die KW 31 enthielt mit Segment-PR, moderat strukturierter Radeinheit und zügigem 9-km-Lauf mehr Belastung als ursprünglich für die Entlastungswoche geplant.
 - Der Laufumfang wurde gegenüber KW 30 zwar auf 15,01 km reduziert, die Intensität war aber nicht durchgehend locker. Die nächste Woche deshalb nicht zusätzlich aggressiv steigern.

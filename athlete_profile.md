@@ -53,14 +53,16 @@
 
 Realistisch pro Woche:
 
-- 2–3 Laufeinheiten
-- 1 Radtraining, bevorzugt HIIT
+- 3 Laufeinheiten als primärer Trainingsplan
+- Radtraining nur als Alternative zu einer geplanten Laufeinheit
 - 1 Krafttraining
 - Unter der Woche: ca. 1 h pro Einheit
-- Wochenende: ca. 2 h, optional längere Radausfahrt 2–4 h
+- Wochenende: ca. 2 h; bei gewählter Radalternative sind 2–4 h möglich
 - Ruhetage flexibel
 - Alltag stressig: ca. 8/10
 - Schlaf: ca. 8 h
+
+Radaktivitäten werden weiterhin vollständig ausgewertet und bei der Gesamtbelastung berücksichtigt. In Trainingsplänen erscheinen sie jedoch nicht als eigenständige Soll-Einheiten, sondern nur als ausdrücklich gekennzeichnete Alternative zu einem Lauf.
 
 ## Krafttraining
 

@@ -17,8 +17,8 @@ ChatGPT/Codex soll als Laufcoach genutzt werden, um Trainingsdaten auszuwerten, 
 - Frühere Bestzeit: 17:35 min im Jahr 2023
 - Aktueller Laufumfang: ca. 10 km/Woche
 - Aktuelle Laufhäufigkeit: 1–2 Läufe/Woche
-- Zielstruktur: 2–3 Laufeinheiten, 1 Rad-HIIT, 1 Krafttraining pro Woche
-- Optional: langer LIT-Lauf am Wochenende oder lockere Rennradausfahrt
+- Zielstruktur: 3 Laufeinheiten und 1 Krafttraining pro Woche
+- Rad wird vollständig ausgewertet, im Plan aber nur als Ersatzalternative zu einer Laufeinheit geführt
 
 ## Ordnerstruktur
 
@@ -132,7 +132,7 @@ werden nie verändert.
 
 ### Automatische Coach-Hinweise
 
-Ausgewertet und mit dem Wochenplan abgeglichen werden Lauf- und Rad-Ausdauereinheiten.
+Ausgewertet und mit dem Wochenplan abgeglichen werden Lauf- und Rad-Ausdauereinheiten. Eine Radaktivität kann dabei die passende Laufeinheit als gewählte Radalternative erfüllen.
 Der Laufumfang bleibt separat als Laufkilometer sichtbar; die Intensitätsverteilung
 und die harte-Ausdauer-Zählung umfassen Lauf plus Rad. Krafteinheiten bleiben im Plan
 sichtbar, erhalten aber keinen automatischen Aktivitätsstatus.

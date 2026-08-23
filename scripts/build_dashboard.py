@@ -32,7 +32,7 @@ WEEKLY_FIELDS = [
     "bike_sessions", "strength_sessions", "hard_endurance_sessions",
     "lit_sessions", "moderate_sessions", "hard_sessions", "total_duration_min",
 ]
-HARD_WORDS = ("400", "800", "1000", "interval", "schwelle", "tempo", "bergsprint", "hiit", "30/30", "over/under", "wettkampf")
+HARD_WORDS = ("200", "400", "800", "1000", "interval", "schwelle", "tempo", "bergsprint", "hiit", "30/30", "over/under", "wettkampf")
 MODERATE_WORDS = ("zügig", "steady", "progressiv", "kraft")
 COMPLAINT_WORDS = ("schmerz", "achilles", "knie", "schienbein", "hüfte", "beschwerden")
 PROGRESSION_PHASES = [
@@ -308,7 +308,14 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
             continue
         candidates = []
         for activity in week_items:
-            if activity.get("activity_id") in used or comparable_sport(activity.get("sport", "")) != comparable_sport(session.get("type", "")):
+            session_sport = comparable_sport(session.get("type", ""))
+            activity_sport = comparable_sport(activity.get("sport", ""))
+            is_bike_alternative = (
+                session_sport == "run"
+                and activity_sport == "bike"
+                and "rad" in str(session.get("alternatives", "")).lower()
+            )
+            if activity.get("activity_id") in used or (activity_sport != session_sport and not is_bike_alternative):
                 continue
             score = 3.0
             title = session.get("title", "").lower()
@@ -316,7 +323,7 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
             score += sum(1.5 for token in HARD_WORDS if token in title and token in actual)
             target_distance = session.get("target_distance_km")
             actual_distance = activity.get("distance_km")
-            if target_distance and actual_distance:
+            if target_distance and actual_distance and not is_bike_alternative:
                 difference = abs(actual_distance - target_distance) / target_distance
                 score += 2 if difference <= 0.2 else (1 if difference <= 0.35 else 0)
             target_duration = session.get("target_duration_min")
@@ -328,12 +335,13 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
             actual_date = parse_iso(activity.get("date", ""))
             if scheduled and actual_date and abs((scheduled - actual_date).days) <= 1:
                 score += 1
-            candidates.append((score, activity))
+            candidates.append((score, activity, is_bike_alternative))
         if candidates and max(candidates, key=lambda item: item[0])[0] >= 4:
-            score, activity = max(candidates, key=lambda item: item[0])
+            score, activity, is_bike_alternative = max(candidates, key=lambda item: item[0])
             session["display_status"] = "erledigt"
             session["matched_activity_id"] = activity["activity_id"]
-            session["match_reason"] = f"Sportart/Woche passend; Heuristik-Score {score:.1f}"
+            prefix = "Radalternative" if is_bike_alternative else "Sportart/Woche passend"
+            session["match_reason"] = f"{prefix}; Heuristik-Score {score:.1f}"
             used.add(activity["activity_id"])
         elif session.get("status") == "optional":
             session["display_status"] = "optional"

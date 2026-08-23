@@ -10,10 +10,9 @@ Vor jeder Planung gilt `wissenschaftliche_grundlagen_5km.md` als dauerhafte Evid
 1. Hauptziel ist sub 17 auf 5 km im Juni 2027.
 2. Training soll realistisch in eine volle Woche passen.
 3. Bevorzugte Struktur:
-   - im Einstieg 2 Läufe, danach bei guter Verträglichkeit 3 Läufe pro Woche
-   - 1 Rad-HIIT auf dem Wahoo Kickr Core, solange nur 1 harter Lauf geplant ist
+   - 3 verträgliche Läufe pro Woche als primärer Trainingsplan
+   - Rad nur als Alternative zu einer konkret geplanten Laufeinheit, nicht als zusätzliche Soll-Einheit
    - 1 Krafttraining
-   - optional lockere Rennradausfahrt am Wochenende
 4. Der Athlet bevorzugt kurze, intensive Einheiten, besonders 400-m-Intervalle.
 5. Trotzdem muss genug lockere Ausdauer enthalten sein, um 5 km durchzuhalten und verletzungsarm aufzubauen.
 6. Trainingspläne sollen pro Woche konkrete Einheiten enthalten und eine empfohlene Reihenfolge angeben.
@@ -24,10 +23,13 @@ Vor jeder Planung gilt `wissenschaftliche_grundlagen_5km.md` als dauerhafte Evid
 - Aktuell ist die zentrale Ausdauer durch Rennrad vermutlich besser als die laufspezifische Robustheit.
 - Der Laufumfang muss progressiv von ca. 10 km/Woche auf zunächst 18–22 km/Woche und später ca. 25–35 km/Woche steigen.
 - Radtraining darf genutzt werden, um aerobe Reize mit weniger orthopädischer Belastung zu setzen.
+- Radaktivitäten werden weiterhin vollständig ausgewertet und bei Gesamtbelastung sowie Zahl harter Ausdauerreize berücksichtigt.
+- Im Trainingsplan stehen keine eigenständigen Rad-Soll-Einheiten. Eine Radoption wird ausschließlich im Feld `alternatives` der zu ersetzenden Laufeinheit beschrieben.
+- Wird die Radalternative absolviert, ersetzt sie den betreffenden Lauf; sie wird nicht zusätzlich zum vollständigen Laufplan gefahren.
 - Rad-HIIT zählt als harte Einheit.
 - In normalen Wochen maximal 2 harte Ausdauereinheiten:
-  - entweder 1 harte Laufeinheit + 1 Rad-HIIT
-  - oder 2 harte Laufeinheiten + lockeres Rad
+  - entweder 1 harter Lauf + 1 als Laufersatz absolviertes Rad-HIIT
+  - oder 2 harte Läufe; eine Radalternative bleibt dann locker
 - Krafttraining soll schwer genug sein, um Laufökonomie/Robustheit zu verbessern, aber nicht die Laufeinheiten zerstören.
 - Krafttrainingspläne müssen mit dem vorhandenen Kraftkeller-Setup ausführbar sein: Half Rack mit Klimmzugstange, Langhantel, Kurzhanteln, Gewichtsscheiben 1,25-20 kg, verstellbare Hantelbank, Gymnastikbänder, Hyperextension-Bank und Gymnastikball. Jede Krafteinheit soll übersichtlich nach Übung, Sätzen/Wiederholungen, Intensität und Setup-Hinweis beschrieben werden. Wenn eine Übung mit diesem Setup nicht sinnvoll machbar ist, eine passende Alternative nennen.
 - Drei verträgliche Läufe pro Woche haben für die laufspezifische Entwicklung mittelfristig Vorrang; Radtraining ergänzt, ersetzt sie aber nicht vollständig.
@@ -85,7 +87,7 @@ Für jede Woche:
    - RPE-Ziel
    - Bei Wiederholungszeiten wie `400 m in 88–90 s` immer zusätzlich die
      entsprechende Pace angeben, hier `3:40–3:45 min/km`.
-5. Optionale Alternativen, falls nur 2 Läufe möglich sind
+5. Zu jeder Laufeinheit eine Radalternative, die den Lauf ersetzt und nicht zusätzlich absolviert wird
 6. Was nach der Woche dokumentiert werden soll
 
 ## Umgang mit Trainingstagebuch

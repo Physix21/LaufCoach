@@ -3,7 +3,7 @@
     "17062026.csv": {
       "sha256": "04bd3cac9439e7eeeda1b4c96696802f316e7a595416175ba8b5100c2ef836cd",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:02+02:00",
       "activity_ids": [
         "local-1c1f1254d0c6feae"
       ],
@@ -12,7 +12,7 @@
     "29062026.csv": {
       "sha256": "d2b677b7a3abe842304f981edf7d50e8560ecce0bb9271e7f9d5f4c79feafb4a",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-d19bdb49af28f751"
       ],
@@ -21,7 +21,7 @@
     "05072026.csv": {
       "sha256": "5655587b32a306cb54a32abef372ce5318aeb16b6ee4dece2a99e386ae34c59f",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:02+02:00",
       "activity_ids": [
         "local-f97f908fa818f154"
       ],
@@ -30,7 +30,7 @@
     "09072026.csv": {
       "sha256": "0235d879ae1e2ac5e062f09cca14801e247c5f33e6108159d7e5470680a726ef",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:02+02:00",
       "activity_ids": [
         "local-def417682c0b3f57"
       ],
@@ -39,7 +39,7 @@
     "10072026.csv": {
       "sha256": "6fe288cbaf032fe8285bdd36337ba09706282b2139d0fb5624af79a9e993d0dd",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:02+02:00",
       "activity_ids": [
         "local-1bd48fd1107e4e95"
       ],
@@ -48,7 +48,7 @@
     "16072026.csv": {
       "sha256": "d2038fffa7b205a288160df2a12b48279feb125855c3b620dfa6b23d97ffcc65",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:02+02:00",
       "activity_ids": [
         "local-980a661c247ab3ce"
       ],
@@ -57,7 +57,7 @@
     "21072026.csv": {
       "sha256": "618833fa1695ef71d904f6b5b87cc0faed758973a6409f4d46230f9e8305f716",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-df324c82f0a98e92"
       ],
@@ -66,7 +66,7 @@
     "24072026_hinfahrt.csv": {
       "sha256": "09ca83d8bdff8fb8cb1a3e968a19bb1ceb13b916f5194d0bdb795f61b4faaf3a",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-a7e7c6e3c89076c7"
       ],
@@ -75,7 +75,7 @@
     "24072026_rueckfahrt.csv": {
       "sha256": "c3a9a98f93b791dadd4807d9ed4cb3c3388043618badb2348326b93c42880ead",
       "status": "imported",
-      "imported_at": "2026-07-24T07:52:31+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-560d2793dcca2fa4"
       ],
@@ -84,7 +84,7 @@
     "25072026.csv": {
       "sha256": "e446cb0f7772d0fb2673dc45065c24ea416bf30f947c8973d9b12ae0b51c1b99",
       "status": "imported",
-      "imported_at": "2026-07-27T08:18:14+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-269da5f98bb6a8a9"
       ],
@@ -93,7 +93,7 @@
     "27072026.csv": {
       "sha256": "e430b6c4a3925a382ecd4a16efacb880ad2aa7727b806bbb7ccf47e341b1b361",
       "status": "imported",
-      "imported_at": "2026-07-28T19:03:16+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-ad9e38718f0ee581"
       ],
@@ -102,7 +102,7 @@
     "27072026_2.csv": {
       "sha256": "7af580ce28ea8b0b7d7a13c33c1e4a4e78bd63c9608116aa426a637440e14711",
       "status": "imported",
-      "imported_at": "2026-07-28T19:03:16+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-451270bd995e59e3"
       ],
@@ -111,7 +111,7 @@
     "02082026.csv": {
       "sha256": "0a31ea858959158616928dcb37f33c267fa6f3f201a927f274c150764332a779",
       "status": "imported",
-      "imported_at": "2026-08-02T19:42:58+02:00",
+      "imported_at": "2026-08-23T10:15:02+02:00",
       "activity_ids": [
         "local-fdb20689ac1236b3"
       ],
@@ -120,9 +120,99 @@
     "31072026.csv": {
       "sha256": "9c071e35b121bdb9fb5d7398a0dd0d3862415a61b5f3a977740774e6b951dd36",
       "status": "imported",
-      "imported_at": "2026-08-02T19:42:58+02:00",
+      "imported_at": "2026-08-23T10:15:03+02:00",
       "activity_ids": [
         "local-63b0619291267396"
+      ],
+      "warnings": []
+    },
+    "03082026.csv": {
+      "sha256": "9ba8a9f9c44ea2f96c6bb8fcbdefbfe808ae98cb93fa40a8d6281bf43d00146a",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-3252b49fb3177e5a"
+      ],
+      "warnings": []
+    },
+    "06082026.csv": {
+      "sha256": "7e96d20b17794bf9dd032cbae54270e285d303c773a4a3df8f68bd3195e0d0e5",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-94576d6257b3cb13"
+      ],
+      "warnings": []
+    },
+    "06082026_run.csv": {
+      "sha256": "029a38c811455ad164ee602b2809bf6acc951b00030b989f2e7d1b4a856fbe44",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-0c29a2fc88125da3"
+      ],
+      "warnings": []
+    },
+    "11082026.csv": {
+      "sha256": "a32ade2c44728f14aa0fe3f7f660fd4d0b022e14aa0dd1793231305d8149eda8",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-66c17ee650ab1016"
+      ],
+      "warnings": []
+    },
+    "13082026.csv": {
+      "sha256": "6e5b4509c2714a6bdea500227153d240ffead3a9df9c8c6796cef183b846f325",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-ff1dac900a93c8e3"
+      ],
+      "warnings": []
+    },
+    "15082026.csv": {
+      "sha256": "6247c4a3edc148280293968c4c2929ff90def7773334e90f58d192f5b3abbf9a",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-7d3aed42a836faba"
+      ],
+      "warnings": []
+    },
+    "17082026.csv": {
+      "sha256": "a5533c3d7166db6faf29a1b4ed051e3ef9f49b3f09a9247494e27be13c0ade19",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-1e828864563f5675"
+      ],
+      "warnings": []
+    },
+    "18082026.csv": {
+      "sha256": "23fe994fefdf0eb26a8edf792f9ead30db34ee78a4911192d81e27e3dd31b9a0",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-b212ebdef9d5681a"
+      ],
+      "warnings": []
+    },
+    "20082026.csv": {
+      "sha256": "a407288e8bd4ba7a6c0f4c79e7dfee0539a86cd197ae7e2d0b66d1e40dd42a1d",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:02+02:00",
+      "activity_ids": [
+        "local-d7934df9f69bb22a"
+      ],
+      "warnings": []
+    },
+    "22082026.csv": {
+      "sha256": "65bca521ce171e7cd347b08bbfde09125d0f28dfb34348ef46d01ed3e5a9da09",
+      "status": "imported",
+      "imported_at": "2026-08-23T10:15:03+02:00",
+      "activity_ids": [
+        "local-a63f3cbe4d10f2af"
       ],
       "warnings": []
     }

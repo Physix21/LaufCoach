@@ -17,7 +17,7 @@ Ziel:
 - kurze Intervalle kontrolliert einbauen
 - zusätzlichen Umfang zuerst über lockere Laufminuten aufbauen
 - Krafttraining etablieren
-- Rad-HIIT integrieren, aber nicht mit Lauf-HIIT überladen
+- Rad-HIIT nur als Ersatzalternative integrieren und nicht mit Lauf-HIIT überladen
 
 Typische Einheiten:
 
@@ -36,7 +36,7 @@ Ziel:
 - lockere Laufumfänge erhöhen
 - 400er/kurze Intervalle zur Laufökonomie behalten
 - lange LIT-Reize über Lauf oder Rad
-- Rad-HIIT nur zusätzlich, wenn in der Woche höchstens ein harter Lauf vorgesehen ist
+- Rad-HIIT nur als Alternative zu einer Laufeinheit, wenn danach insgesamt höchstens zwei harte Ausdauerreize verbleiben
 
 Typische Einheiten:
 
@@ -44,7 +44,7 @@ Typische Einheiten:
 - 20–30 min Tempodauerlauf oder Cruise Intervals
 - 10 x 400 m
 - 60–80 min lockerer Lauf
-- Rad-HIIT nach Belastungssteuerung
+- Rad-HIIT nach Belastungssteuerung als Ersatzalternative
 
 ## Phase 3: Dezember 2026–Januar 2027 – Kraft, Hügel, VO2max-Vorbereitung
 
@@ -72,7 +72,7 @@ Ziel:
 - aktuelle 5-km-Leistung deutlich verbessern
 - Einheiten in Richtung 17:xx stabilisieren
 - Formcheck vorbereiten
-- bei zwei harten Laufeinheiten das Radtraining locker halten
+- bei zwei harten Laufeinheiten eine gewählte Radalternative locker halten
 
 Typische Einheiten:
 
@@ -131,8 +131,8 @@ Typische Einheiten:
 Standardstruktur nach stabilem Aufbau:
 
 - 3 Läufe/Woche: 1 Qualitätslauf, 1 lockerer Lauf mit Steigerungen und 1 längerer lockerer Lauf
-- 1 Rad-HIIT/Woche, solange nur 1 harter Lauf geplant ist; bei 2 harten Läufen nur lockeres Rad
+- Rad nur als Ersatzoption zu einer konkreten Laufeinheit; kein eigenständiger Rad-Solltermin im Trainingsplan
+- eine harte Radalternative zählt weiterhin als harter Ausdauerreiz; bei einem weiteren harten Lauf bleibt jede andere Radalternative locker
 - 1 Krafttraining/Woche
-- optional lockere Radausfahrt
 
 Dauerhaft nur 2 Läufe/Woche macht sub 17 deutlich schwieriger, ist aber in Belastungswochen besser als erzwungene Überlastung. Laufumfang wird zuerst über lockere Minuten gesteigert. Umfang, Intensität und Häufigkeit werden nicht gleichzeitig deutlich erhöht.

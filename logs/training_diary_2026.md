@@ -392,3 +392,177 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Herzfrequenz und Pace sprechen für einen moderaten bis zügigen Dauerlauf, nicht für einen zusätzlichen harten Schwellenreiz. Wegen 53 Höhenmetern und nur einer Einheit wird daraus kein neuer Schwellenpace-Anker abgeleitet.
 - Die KW 31 endet damit bei 15,01 Laufkilometern in zwei Läufen plus gut drei Stunden Rad. Das ist keine echte Entlastungswoche mehr, aber die Laufbelastung bleibt deutlich unter den 25,38 km der Vorwoche.
 - Für den nächsten Aufbau ist wichtig, die nächste harte Laufeinheit kontrolliert zu halten und nicht aus diesem Lauftempo einen neuen Standard für lockere Läufe abzuleiten.
+
+## 03.08.2026 – Rennradausfahrt
+
+**Quelle:** `data/raw/garmin/csv/03082026.csv`
+
+### Messdaten
+
+- Sportart: Rennrad; die Sportart wurde anhand von Geschwindigkeit und 10-km-Runden erkannt
+- Gesamt: 54,58 km in 1:40:19 h; Ø 32,6 km/h
+- Herzfrequenz: Ø 145 bpm, maximal 166 bpm
+- Höhenmeter: 259 m Anstieg
+- Leistung, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Ausfahrt war nach Dauer, Geschwindigkeit und Herzfrequenz eine relevante aerobe Gesamtbelastung. Ohne Leistungsdaten und subjektive Angaben wird sie nicht sicher als lockerer oder harter Reiz klassifiziert.
+- Sie wird vollständig ausgewertet, verändert aber nicht die laufbezogenen Pace-Anker.
+
+## 06.08.2026 – 8 × 400 m
+
+**Quelle:** `data/raw/garmin/csv/06082026_run.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 7,12 km in 37:10 min; Ø 5:13 min/km
+- Herzfrequenz: Ø 140 bpm, maximal 178 bpm
+- Laufleistung: Ø 353 W, maximal 679 W; 35 m Anstieg
+- 400-m-Wiederholungen: 86,6 / 86,5 / 84,6 / 85,4 / 85,0 / 84,3 / 82,3 / 77,3 s; entsprechend ca. 3:37 / 3:36 / 3:32 / 3:34 / 3:32 / 3:31 / 3:26 / 3:13 min/km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Qualitätsumfang von 3,2 km wurde absolviert. Die ersten sechs Wiederholungen waren schnell und weitgehend kontrolliert; die letzten beiden lagen deutlich schneller, besonders die Schlusswiederholung.
+- Die Einheit ist ein harter Laufreiz. Die 77,3 s der letzten Wiederholung sind ein Geschwindigkeitssignal, aber kein neuer 5-km- oder Trainingspace-Anker.
+
+## 06.08.2026 – Radausfahrt
+
+**Quelle:** `data/raw/garmin/csv/06082026.csv`
+
+### Messdaten
+
+- Sportart: Radfahren
+- Gesamt: 30,57 km in 1:02:56 h; Ø 29,1 km/h
+- Leistung: Ø 170 W, maximal 820 W; 173 m Anstieg
+- Herzfrequenz, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Durchschnittsleistung entspricht bezogen auf die hinterlegte FTP-Spanne etwa 59–61 % FTP und spricht für eine überwiegend lockere Ausfahrt. Der Maximalwert ist ein kurzer Peak und kein eigener HIIT-Nachweis.
+- Zusammen mit dem 400-m-Lauf am selben Tag erhöht die Ausfahrt die Tagesbelastung deutlich, ohne als zweiter sicherer harter Reiz gewertet zu werden.
+
+## 11.08.2026 – Langer lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/11082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 12,70 km in 1:05:10 h; Ø 5:08 min/km
+- Herzfrequenz: Ø 143 bpm, maximal 162 bpm
+- Laufleistung: Ø 378 W, maximal 468 W; 134 m Anstieg
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Tempo und Gesamtprofil passen zu einem lockeren bis moderaten langen Lauf. Die Höhenmeter erklären einen Teil der Herzfrequenz- und Pace-Schwankungen.
+- Mit 65 min und 12,70 km ist dies der bis dahin längste dokumentierte Lauf im aktuellen Aufbau und ein deutlicher laufspezifischer Umfangsreiz.
+
+## 13.08.2026 – 10 × 200 m
+
+**Quelle:** `data/raw/garmin/csv/13082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 8,07 km in 48:33 min; Ø 6:01 min/km
+- Herzfrequenz: Ø 137 bpm, maximal 177 bpm
+- Laufleistung: Ø 303 W, maximal 721 W; 43 m Anstieg
+- Zehn 200-m-Wiederholungen in 35,3 / 37,9 / 39,2 / 38,5 / 38,1 / 38,4 / 38,2 / 37,8 / 36,3 / 33,4 s; entsprechend ca. 2:47–3:16 min/km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit setzte einen kurzen, sehr schnellen neuromuskulären Reiz. Die große Tempodifferenz und der sehr schnelle letzte Abschnitt zeigen, dass die Wiederholungen nicht gleichmäßig kontrolliert waren.
+- Wegen der kurzen Wiederholungen wird daraus kein neuer 5-km-Pace-Anker abgeleitet. In der Woche ist dies der erste klare harte Laufreiz.
+
+## 15.08.2026 – Zügiger Dauerlauf
+
+**Quelle:** `data/raw/garmin/csv/15082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 11,34 km in 56:31 min; Ø 4:59 min/km
+- Herzfrequenz: Ø 142 bpm, maximal 158 bpm
+- Laufleistung: Ø 429 W, maximal 585 W; 59 m Anstieg
+- Kilometersplits: 5:12 / 4:53 / 4:55 / 5:03 / 5:08 / 4:52 / 4:42 / 5:05 / 5:01 / 4:55 / 4:49 min/km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Lauf lag an der schnellen Grenze des lockeren Bereichs und war eher locker bis moderat als regenerativ. Herzfrequenz und Splits zeigen keinen Schwellenreiz.
+- Der Lauf schließt KW 33 mit 32,11 km in drei Läufen ab; gegenüber den 15,01 km der Vorwoche ist das mehr als eine Verdopplung des Laufumfangs.
+
+## 17.08.2026 – Tempodauerlauf über 10 km
+
+**Quelle:** `data/raw/garmin/csv/17082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 10,01 km in 39:55 min; Ø 3:59 min/km
+- Herzfrequenz: Ø 162 bpm, maximal 175 bpm
+- Laufleistung: Ø 463 W, maximal 555 W; 33 m Anstieg
+- Nach dem ersten Kilometer in 4:18 min folgten neun Kilometer in 35:37 min, entsprechend ca. 3:57,4 min/km; Schlusskilometer 3:49 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Neun Kilometer nahe dem hinterlegten Schwellenbereich sind ein umfangreicher harter Laufreiz. Der progressive Schlusskilometer erhöht die Belastung zusätzlich.
+- Die Einheit ist ein starkes nachhaltiges Temposignal, wird ohne Wettkampfcharakter und ohne subjektive Daten aber noch nicht als neuer 5-km-Leistungsanker verwendet.
+
+## 18.08.2026 – Langer lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/18082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 12,15 km in 1:03:43 h; Ø 5:15 min/km
+- Herzfrequenz: Ø 135 bpm, maximal 151 bpm
+- Laufleistung: Ø 417 W, maximal 535 W; 47 m Anstieg
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Pace und Herzfrequenz entsprechen einem lockeren aeroben Lauf. Die Einheit folgt allerdings direkt am Tag nach dem umfangreichen Tempodauerlauf und erhöht dadurch die kurzfristige mechanische Belastung.
+
+## 20.08.2026 – 4 × 1000 m
+
+**Quelle:** `data/raw/garmin/csv/20082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 8,16 km in 44:12 min; Ø 5:25 min/km
+- Herzfrequenz: Ø 132 bpm, maximal 174 bpm
+- Laufleistung: Ø 331 W, maximal 605 W; 28 m Anstieg
+- 1000-m-Wiederholungen: 3:39,8 / 3:33,0 / 3:39,3 / 3:35,6 min; entsprechend ca. 3:40 / 3:33 / 3:39 / 3:36 min/km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Alle vier Wiederholungen lagen schneller als der zuletzt geplante kontrollierte Bereich von 3:42–3:48 min/km. Die Einheit ist der zweite klare harte Laufreiz der Woche.
+- Der Qualitätsumfang wurde ohne erkennbaren Einbruch absolviert, aber die schnelle zweite Wiederholung zeigt erneut eine Tendenz zu aggressiverem Tempo als geplant.
+
+## 22.08.2026 – Progressiver Dauerlauf
+
+**Quelle:** `data/raw/garmin/csv/22082026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 10,32 km in 45:35 min; Ø 4:25 min/km
+- Herzfrequenz: Ø 145 bpm, maximal 173 bpm
+- Laufleistung: Ø 422 W, maximal 604 W; 60 m Anstieg
+- Kilometersplits: 4:38 / 4:38 / 4:49 / 4:31 / 4:26 / 4:28 / 3:59 / 3:36 / 4:40 / 4:32 min/km; Rest 0,32 km in 1:19 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Lauf war wegen der Kilometer 7 und 8 kein durchgehend lockerer Dauerlauf. Besonders 3:36 min/km setzt nach Tempodauerlauf und 4 × 1000 m einen weiteren intensiven Abschnitt.
+- KW 34 endet mit 40,64 km in vier Läufen. Das sind rund 27 % mehr als in KW 33 und etwa das 2,7-Fache von KW 31; zusammen mit drei zügigen/harten Reizen ist das ein klares Signal für eine Konsolidierungswoche ohne weitere Umfangssteigerung.

@@ -41,7 +41,7 @@ ALIASES = {
     "duration": ("time", "zeit", "duration", "dauer", "elapsed time", "gesamtzeit"),
     "distance": ("distance", "distanz", "distance km", "distanz km"),
     "pace": ("average pace", "avg pace", "durchschnittspace", "pace", "o pace min km"),
-    "speed": ("average speed", "avg speed", "durchschnittsgeschwindigkeit", "geschwindigkeit"),
+    "speed": ("average speed", "avg speed", "durchschnittsgeschwindigkeit", "geschwindigkeit", "o geschwindigkeit"),
     "avg_hr": ("average heart rate", "avg heart rate", "avg hr", "durchschnittliche herzfrequenz", "o herzfrequenz", "o herzfrequenz bpm"),
     "max_hr": ("maximum heart rate", "max heart rate", "max hr", "maximale herzfrequenz", "maximale herzfrequenz bpm"),
     "avg_power": ("average power", "avg power", "durchschnittliche leistung", "o leistung", "o leistung w"),
