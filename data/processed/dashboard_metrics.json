@@ -11,9 +11,9 @@
     "progress_percent": 0
   },
   "current_week": {
-    "week_start": "2026-08-24",
-    "week_end": "2026-08-30",
-    "week_label": "KW 35",
+    "week_start": "2026-08-31",
+    "week_end": "2026-09-06",
+    "week_label": "KW 36",
     "run_km": 0,
     "bike_hours": 0.0,
     "run_sessions": 0,
@@ -26,5 +26,5 @@
     "total_duration_min": 0
   },
   "warning_count": 0,
-  "activities_total": 18
+  "activities_total": 21
 }

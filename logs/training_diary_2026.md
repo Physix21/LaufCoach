@@ -566,3 +566,93 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 
 - Der Lauf war wegen der Kilometer 7 und 8 kein durchgehend lockerer Dauerlauf. Besonders 3:36 min/km setzt nach Tempodauerlauf und 4 × 1000 m einen weiteren intensiven Abschnitt.
 - KW 34 endet mit 40,64 km in vier Läufen. Das sind rund 27 % mehr als in KW 33 und etwa das 2,7-Fache von KW 31; zusammen mit drei zügigen/harten Reizen ist das ein klares Signal für eine Konsolidierungswoche ohne weitere Umfangssteigerung.
+
+## 24.08.2026 – Langer lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/24082026.csv`
+
+### Messdaten
+
+- Gesamt: 13,29 km in 1:08:51 h; Ø 5:11 min/km
+- Herzfrequenz: Ø 127 bpm, maximal 145 bpm
+- Laufleistung: Ø 367 W, maximal 464 W; 114 m Anstieg
+- Kilometersplits: 5:13 / 5:03 / 5:07 / 5:03 / 5:05 / 5:16 / 5:32 / 5:05 / 5:03 / 5:15 / 5:07 / 5:13 / 5:20 min/km; Rest 0,29 km in 1:27 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Pace und niedrige Herzfrequenz sprechen trotz des welligen Profils für einen lockeren aeroben Lauf.
+- Mit 13,29 km ist dies der längste dokumentierte Lauf im aktuellen Aufbau. Der Umfang ist ein sinnvoller Konsolidierungsreiz, aber noch keine spezifische Vorbereitung auf 21,1 km.
+
+## 25.08.2026 – Radausfahrt
+
+**Quelle:** `data/raw/garmin/csv/25082026.csv`
+
+### Messdaten
+
+- Gesamt: 33,23 km in 1:05:57 h; Ø 30,2 km/h
+- Höhenmeter: 209 m Anstieg
+- Herzfrequenz, Leistung, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Ausfahrt erhöht die aerobe Gesamtbelastung. Ohne Herzfrequenz, Leistung oder subjektive Angaben wird ihre Intensität nicht sicher als locker, moderat oder hart klassifiziert.
+- Sie verändert die laufbezogenen Pace-Anker nicht.
+
+## 27.08.2026 – 3 × 7 min kontrollierte Schwelle
+
+**Quelle:** `data/raw/garmin/csv/27082026.csv`
+
+### Messdaten
+
+- Gesamt: 11,62 km in 53:02 min; Ø 4:34 min/km
+- Herzfrequenz: Ø 148 bpm, maximal 168 bpm
+- Laufleistung: Ø 416 W, maximal 672 W; 82 m Anstieg
+- Warm-up: 2,47 km in 13:04 min
+- Belastungsabschnitte: 1,84 km in 7:00 min (ca. 3:48 min/km), 1,78 km in 7:00 min (ca. 3:56 min/km) und 1,80 km in 7:00 min (ca. 3:54 min/km)
+- Erholung: jeweils 3:00 min lockeres Traben; Cool-down 2,60 km in 12:58 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit erfüllt den geplanten kontrollierten Schwellenreiz mit 21 min Qualitätszeit. Die Abschnitte blieben innerhalb beziehungsweise knapp schneller als der bisherigen Schwellenorientierung von 3:55–4:08 min/km.
+- Trotz Streckenprofil blieb der Hauptteil ohne erkennbaren Einbruch. Die Einheit zählt als einziger klarer harter Ausdauerreiz der KW 35.
+
+## 29.08.2026 – Sehr lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/29082026.csv`
+
+### Messdaten
+
+- Gesamt: 5,92 km in 33:37 min; Ø 5:40 min/km
+- Herzfrequenz: Ø 116 bpm, maximal 134 bpm
+- Laufleistung: Ø 332 W, maximal 432 W; 44 m Anstieg
+- Kilometersplits: 5:37 / 5:32 / 5:50 / 5:47 / 5:40 min/km; Rest 0,92 km in 5:11 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Pace und Herzfrequenz entsprechen einem sehr lockeren Lauf. Es wurden keine schnellen Abschnitte dokumentiert.
+- KW 35 erreicht damit 30,83 Laufkilometer in drei Einheiten. Gegenüber 40,64 km in KW 34 ist das eine sinnvolle Reduktion bei stabiler Laufhäufigkeit.
+
+## 30.08.2026 – Radausfahrt
+
+**Quelle:** `data/raw/garmin/csv/30082026.csv`
+
+### Messdaten
+
+- Gesamt: 31,27 km in 1:08:21 h; Ø 27,4 km/h
+- Höhenmeter: 152 m Anstieg
+- Herzfrequenz, Leistung, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Ausfahrt erhöht die Gesamtbelastung am Ende der Woche. Ohne Herzfrequenz, Leistung oder subjektive Angaben ist keine sichere Intensitätsklassifikation möglich.
+- Zusammen mit der Fahrt vom 25.08. wurden in KW 35 insgesamt 64,50 km und 2:14:18 h Rad dokumentiert. Beide Fahrten werden in der Gesamtbelastung berücksichtigt, aber nicht als sichere harte Reize gezählt.
+
+## Wochenfazit KW 35
+
+- 30,83 km Laufen in drei Einheiten sowie 64,50 km Rad in zwei Einheiten
+- Ein klarer harter Ausdauerreiz: 3 × 7 min kontrollierte Schwelle am 27.08.
+- Der Laufumfang wurde nach der Belastungsspitze der KW 34 reduziert und die Drei-Läufe-Struktur beibehalten.
+- Wegen des angekündigten Halbmarathons am 06.09.2026 wird KW 36 als kurze Wettkampf- und Entlastungswoche geplant. Die zuvor vorgesehenen 4 × 1000 m und der 60-min-Lauf entfallen.
