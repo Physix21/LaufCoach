@@ -1,184 +1,63 @@
 {
-  "generated_at": "2026-08-31T11:17:09+02:00",
-  "today": "2026-08-31",
+  "generated_at": "2026-09-07T14:42:19+02:00",
+  "today": "2026-09-07",
   "header": {
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
-    "phase": "Phase 2 – Wettkampfwoche",
-    "focus": "Frisch und kontrolliert in den Halbmarathon",
-    "next_milestone": "Halbmarathon am 06.09.2026; danach 5-km-Formcheck im März/April 2027"
+    "phase": "Phase 2 – Erholung nach Halbmarathon",
+    "focus": "Mechanische Erholung vor erneutem Aufbau",
+    "next_milestone": "5-km-Formcheck im Frühjahr 2027"
   },
   "plan": {
-    "week_start": "2026-08-31",
-    "week_end": "2026-09-06",
-    "phase": "Phase 2 – Wettkampfwoche",
-    "focus": "Frisch und kontrolliert in den Halbmarathon",
-    "next_milestone": "Halbmarathon am 06.09.2026; danach 5-km-Formcheck im März/April 2027",
+    "week_start": "2026-09-07",
+    "week_end": "2026-09-13",
+    "phase": "Phase 2 – Erholung nach Halbmarathon",
+    "focus": "Mechanische Erholung vor erneutem Aufbau",
     "planned_sessions": [
       {
-        "id": "2026-W36-run-easy-strides",
+        "id": "2026-W37-run-recovery-short",
         "type": "run",
-        "title": "35 min locker mit 4 kurzen Steigerungen",
+        "title": "25–35 min sehr locker",
         "priority": 1,
-        "scheduled_date": "2026-09-01",
+        "scheduled_date": "2026-09-10",
         "target_intensity": "LIT",
         "target_duration_min": 35,
-        "target_distance_km": 6.5,
-        "warmup": "Die ersten 10 min sehr ruhig anlaufen",
-        "main_set": "30–35 min locker; am Ende 4 × 15 s kontrolliert zügig, kein Sprint",
-        "recovery": "Je 60–90 s gehen oder sehr locker traben",
-        "cooldown": "3–5 min locker auslaufen",
-        "target_pace": "5:10–5:45 min/km; Steigerungen nur technisch sauber",
-        "rpe_target": "3/10",
-        "description": "Lockere Aktivierung ohne Trainingsmüdigkeit. Bei ungewöhnlicher Müdigkeit die Steigerungen weglassen.",
-        "alternatives": "Statt dieses Laufs 35–45 min Rad sehr locker bei ca. 145–170 W. Die Radfahrt ersetzt den Lauf und kommt nicht zusätzlich dazu.",
+        "target_distance_km": 6,
+        "warmup": "10 min besonders ruhig beginnen",
+        "main_set": "25–35 min sehr locker, nur bei unauffälliger Erholung",
+        "recovery": "Gehpausen sind erlaubt",
+        "cooldown": "Locker beenden",
+        "target_pace": "5:30–6:10 min/km oder langsamer nach Bedarf",
+        "rpe_target": "2/10",
+        "description": "Kein Pflichttermin: bei deutlicher Muskelermüdung oder Beschwerden auslassen.",
+        "alternatives": "Statt des Laufs 30–45 min Rad sehr locker bei ca. 140–165 W oder vollständige Ruhe. Die Alternative ersetzt den Lauf.",
         "display_status": "offen"
       },
       {
-        "id": "2026-W36-run-pre-race",
+        "id": "2026-W37-run-recovery",
         "type": "run",
-        "title": "25 min Wettkampfaktivierung",
+        "title": "40–45 min locker",
         "priority": 2,
-        "scheduled_date": "2026-09-03",
+        "scheduled_date": "2026-09-13",
         "target_intensity": "LIT",
-        "target_duration_min": 25,
-        "target_distance_km": 4.5,
+        "target_duration_min": 45,
+        "target_distance_km": 8,
         "warmup": "10 min sehr locker",
-        "main_set": "15–20 min locker, darin 3 × 20 s kontrollierte Steigerung",
-        "recovery": "Je 90 s sehr locker traben",
-        "cooldown": "5 min locker auslaufen",
-        "target_pace": "5:15–5:50 min/km; Steigerungen nicht sprinten",
-        "rpe_target": "2–3/10",
-        "description": "Nur die Beine bewegen; kein Schwellen- oder Intervallreiz. Freitag und Samstag ohne Lauftraining.",
-        "alternatives": "Statt dieses Laufs 25–35 min Rad sehr locker bei ca. 145–165 W. Die Radfahrt ersetzt den Lauf und kommt nicht zusätzlich dazu.",
-        "display_status": "offen"
-      },
-      {
-        "id": "2026-W36-race-half-marathon",
-        "type": "run",
-        "title": "Halbmarathon",
-        "priority": 3,
-        "scheduled_date": "2026-09-06",
-        "target_intensity": "hard",
-        "target_duration_min": 100,
-        "target_distance_km": 21.1,
-        "warmup": "8–12 min sehr locker, kurze dynamische Mobilisation und 3 × 15 s Steigerung; nicht ermüden",
-        "main_set": "Kilometer 1–5 bewusst kontrolliert; Kilometer 6–15 nur bei stabiler Kontrolle leicht steigern; ab Kilometer 16 nach Tagesform entscheiden",
-        "recovery": "Keine geplanten Pausen; Verpflegungsstellen kontrolliert nutzen",
-        "cooldown": "5–10 min gehen und anschließend trinken/essen; kein Auslaufen erforderlich",
-        "target_pace": "km 1–5: 4:35–4:40 min/km; km 6–15: bei guter Kontrolle 4:25–4:35 min/km; Schlussabschnitt nach Tagesform",
-        "rpe_target": "bis km 15 höchstens 7/10, danach optional steigern",
-        "description": "Kontrollierter Nebenwettkampf ohne spezifischen Halbmarathon-Aufbau. Kein aggressiver Start und keine feste Zielzeit erzwingen. Bei Hitze, deutlicher Müdigkeit oder Beschwerden Tempo reduzieren beziehungsweise abbrechen.",
-        "alternatives": "Falls eine Teilnahme nicht sinnvoll ist: 60–75 min lockerer Lauf bei 5:10–5:45 min/km oder 90 min Rad locker. Die Alternative ersetzt den Wettkampf.",
+        "main_set": "40–45 min gleichmäßig locker ohne Steigerungen",
+        "recovery": "Keine Pausen geplant; bei Bedarf gehen",
+        "cooldown": "Locker beenden",
+        "target_pace": "5:15–5:55 min/km",
+        "rpe_target": "3/10",
+        "description": "Nur absolvieren, wenn der erste Erholungslauf und der Alltag unauffällig sind.",
+        "alternatives": "Statt dieses Laufs 50–70 min Rad locker bei ca. 145–175 W. Die Radfahrt ersetzt den Lauf.",
         "display_status": "offen"
       }
     ]
   },
   "plan_weeks": [
     {
-      "key": "week-2026-08-31",
-      "label": "Diese Woche",
-      "plan": {
-        "week_start": "2026-08-31",
-        "week_end": "2026-09-06",
-        "phase": "Phase 2 – Wettkampfwoche",
-        "focus": "Frisch und kontrolliert in den Halbmarathon",
-        "next_milestone": "Halbmarathon am 06.09.2026; danach 5-km-Formcheck im März/April 2027",
-        "planned_sessions": [
-          {
-            "id": "2026-W36-run-easy-strides",
-            "type": "run",
-            "title": "35 min locker mit 4 kurzen Steigerungen",
-            "priority": 1,
-            "scheduled_date": "2026-09-01",
-            "target_intensity": "LIT",
-            "target_duration_min": 35,
-            "target_distance_km": 6.5,
-            "warmup": "Die ersten 10 min sehr ruhig anlaufen",
-            "main_set": "30–35 min locker; am Ende 4 × 15 s kontrolliert zügig, kein Sprint",
-            "recovery": "Je 60–90 s gehen oder sehr locker traben",
-            "cooldown": "3–5 min locker auslaufen",
-            "target_pace": "5:10–5:45 min/km; Steigerungen nur technisch sauber",
-            "rpe_target": "3/10",
-            "description": "Lockere Aktivierung ohne Trainingsmüdigkeit. Bei ungewöhnlicher Müdigkeit die Steigerungen weglassen.",
-            "alternatives": "Statt dieses Laufs 35–45 min Rad sehr locker bei ca. 145–170 W. Die Radfahrt ersetzt den Lauf und kommt nicht zusätzlich dazu.",
-            "display_status": "offen"
-          },
-          {
-            "id": "2026-W36-run-pre-race",
-            "type": "run",
-            "title": "25 min Wettkampfaktivierung",
-            "priority": 2,
-            "scheduled_date": "2026-09-03",
-            "target_intensity": "LIT",
-            "target_duration_min": 25,
-            "target_distance_km": 4.5,
-            "warmup": "10 min sehr locker",
-            "main_set": "15–20 min locker, darin 3 × 20 s kontrollierte Steigerung",
-            "recovery": "Je 90 s sehr locker traben",
-            "cooldown": "5 min locker auslaufen",
-            "target_pace": "5:15–5:50 min/km; Steigerungen nicht sprinten",
-            "rpe_target": "2–3/10",
-            "description": "Nur die Beine bewegen; kein Schwellen- oder Intervallreiz. Freitag und Samstag ohne Lauftraining.",
-            "alternatives": "Statt dieses Laufs 25–35 min Rad sehr locker bei ca. 145–165 W. Die Radfahrt ersetzt den Lauf und kommt nicht zusätzlich dazu.",
-            "display_status": "offen"
-          },
-          {
-            "id": "2026-W36-race-half-marathon",
-            "type": "run",
-            "title": "Halbmarathon",
-            "priority": 3,
-            "scheduled_date": "2026-09-06",
-            "target_intensity": "hard",
-            "target_duration_min": 100,
-            "target_distance_km": 21.1,
-            "warmup": "8–12 min sehr locker, kurze dynamische Mobilisation und 3 × 15 s Steigerung; nicht ermüden",
-            "main_set": "Kilometer 1–5 bewusst kontrolliert; Kilometer 6–15 nur bei stabiler Kontrolle leicht steigern; ab Kilometer 16 nach Tagesform entscheiden",
-            "recovery": "Keine geplanten Pausen; Verpflegungsstellen kontrolliert nutzen",
-            "cooldown": "5–10 min gehen und anschließend trinken/essen; kein Auslaufen erforderlich",
-            "target_pace": "km 1–5: 4:35–4:40 min/km; km 6–15: bei guter Kontrolle 4:25–4:35 min/km; Schlussabschnitt nach Tagesform",
-            "rpe_target": "bis km 15 höchstens 7/10, danach optional steigern",
-            "description": "Kontrollierter Nebenwettkampf ohne spezifischen Halbmarathon-Aufbau. Kein aggressiver Start und keine feste Zielzeit erzwingen. Bei Hitze, deutlicher Müdigkeit oder Beschwerden Tempo reduzieren beziehungsweise abbrechen.",
-            "alternatives": "Falls eine Teilnahme nicht sinnvoll ist: 60–75 min lockerer Lauf bei 5:10–5:45 min/km oder 90 min Rad locker. Die Alternative ersetzt den Wettkampf.",
-            "display_status": "offen"
-          }
-        ]
-      },
-      "warnings": [
-        {
-          "level": "info",
-          "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
-        },
-        {
-          "level": "info",
-          "text": "Wichtigste Prioritätseinheit noch offen: 35 min locker mit 4 kurzen Steigerungen."
-        }
-      ],
-      "unmatched_activities": [],
-      "week_summary": {
-        "week_start": "2026-08-31",
-        "week_end": "2026-09-06",
-        "week_label": "KW 36",
-        "run_km": 0,
-        "bike_hours": 0.0,
-        "run_sessions": 0,
-        "bike_sessions": 0,
-        "strength_sessions": 0,
-        "hard_endurance_sessions": 0,
-        "lit_sessions": 0,
-        "moderate_sessions": 0,
-        "hard_sessions": 0,
-        "total_duration_min": 0
-      },
-      "intensity": {
-        "LIT": 0,
-        "moderate": 0,
-        "hard": 0
-      }
-    },
-    {
       "key": "week-2026-09-07",
-      "label": "Nächste Woche",
+      "label": "Diese Woche",
       "plan": {
         "week_start": "2026-09-07",
         "week_end": "2026-09-13",
@@ -228,11 +107,29 @@
       "warnings": [
         {
           "level": "info",
-          "text": "Geplante Prioritätseinheit noch offen: 25–35 min sehr locker."
+          "text": "In der aktuellen Planwoche ist noch keine Laufeinheit erfasst."
+        },
+        {
+          "level": "info",
+          "text": "Wichtigste Prioritätseinheit noch offen: 25–35 min sehr locker."
         }
       ],
       "unmatched_activities": [],
-      "week_summary": {},
+      "week_summary": {
+        "week_start": "2026-09-07",
+        "week_end": "2026-09-13",
+        "week_label": "KW 37",
+        "run_km": 0,
+        "bike_hours": 0.0,
+        "run_sessions": 0,
+        "bike_sessions": 0,
+        "strength_sessions": 0,
+        "hard_endurance_sessions": 0,
+        "lit_sessions": 0,
+        "moderate_sessions": 0,
+        "hard_sessions": 0,
+        "total_duration_min": 0
+      },
       "intensity": {
         "LIT": 0,
         "moderate": 0,
@@ -241,7 +138,7 @@
     },
     {
       "key": "week-2026-09-14",
-      "label": "KW 38",
+      "label": "Nächste Woche",
       "plan": {
         "week_start": "2026-09-14",
         "week_end": "2026-09-20",
@@ -2301,27 +2198,69 @@
       }
     }
   ],
-  "selected_plan_key": "week-2026-08-31",
+  "selected_plan_key": "week-2026-09-07",
   "next_session": {
-    "id": "2026-W36-run-easy-strides",
+    "id": "2026-W37-run-recovery-short",
     "type": "run",
-    "title": "35 min locker mit 4 kurzen Steigerungen",
+    "title": "25–35 min sehr locker",
     "priority": 1,
-    "scheduled_date": "2026-09-01",
+    "scheduled_date": "2026-09-10",
     "target_intensity": "LIT",
     "target_duration_min": 35,
-    "target_distance_km": 6.5,
-    "warmup": "Die ersten 10 min sehr ruhig anlaufen",
-    "main_set": "30–35 min locker; am Ende 4 × 15 s kontrolliert zügig, kein Sprint",
-    "recovery": "Je 60–90 s gehen oder sehr locker traben",
-    "cooldown": "3–5 min locker auslaufen",
-    "target_pace": "5:10–5:45 min/km; Steigerungen nur technisch sauber",
-    "rpe_target": "3/10",
-    "description": "Lockere Aktivierung ohne Trainingsmüdigkeit. Bei ungewöhnlicher Müdigkeit die Steigerungen weglassen.",
-    "alternatives": "Statt dieses Laufs 35–45 min Rad sehr locker bei ca. 145–170 W. Die Radfahrt ersetzt den Lauf und kommt nicht zusätzlich dazu.",
+    "target_distance_km": 6,
+    "warmup": "10 min besonders ruhig beginnen",
+    "main_set": "25–35 min sehr locker, nur bei unauffälliger Erholung",
+    "recovery": "Gehpausen sind erlaubt",
+    "cooldown": "Locker beenden",
+    "target_pace": "5:30–6:10 min/km oder langsamer nach Bedarf",
+    "rpe_target": "2/10",
+    "description": "Kein Pflichttermin: bei deutlicher Muskelermüdung oder Beschwerden auslassen.",
+    "alternatives": "Statt des Laufs 30–45 min Rad sehr locker bei ca. 140–165 W oder vollständige Ruhe. Die Alternative ersetzt den Lauf.",
     "display_status": "offen"
   },
   "recent_activities": [
+    {
+      "activity_id": "local-87fbc5baaf5a2de2",
+      "source_file": "06092026.csv",
+      "date": "2026-09-06",
+      "sport": "run",
+      "session_name": "Laufaktivität",
+      "duration_min": 90.83,
+      "distance_km": 21.29,
+      "avg_pace_sec_per_km": 256.0,
+      "avg_speed_kmh": 14.06,
+      "avg_hr": 156.0,
+      "max_hr": 181.0,
+      "avg_power": 437.0,
+      "max_power": 611.0,
+      "elevation_gain_m": 38.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
+    {
+      "activity_id": "local-3131897e6bcb0321",
+      "source_file": "02092026.csv",
+      "date": "2026-09-02",
+      "sport": "run",
+      "session_name": "Laufaktivität",
+      "duration_min": 60.9,
+      "distance_km": 11.04,
+      "avg_pace_sec_per_km": 331.0,
+      "avg_speed_kmh": 10.88,
+      "avg_hr": 125.0,
+      "max_hr": 161.0,
+      "avg_power": 339.0,
+      "max_power": 744.0,
+      "elevation_gain_m": 50.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
     {
       "activity_id": "local-01433d377a07d222",
       "source_file": "30082026.csv",
@@ -2489,67 +2428,10 @@
       "completed": true,
       "notes": "",
       "intensity": "LIT"
-    },
-    {
-      "activity_id": "local-1e828864563f5675",
-      "source_file": "17082026.csv",
-      "date": "2026-08-17",
-      "sport": "run",
-      "session_name": "Tempodauerlauf über 10 km",
-      "duration_min": 39.92,
-      "distance_km": 10.01,
-      "avg_pace_sec_per_km": 239.0,
-      "avg_speed_kmh": 15.06,
-      "avg_hr": 162.0,
-      "max_hr": 175.0,
-      "avg_power": 463.0,
-      "max_power": 555.0,
-      "elevation_gain_m": 33.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "hard"
-    },
-    {
-      "activity_id": "local-7d3aed42a836faba",
-      "source_file": "15082026.csv",
-      "date": "2026-08-15",
-      "sport": "run",
-      "session_name": "Zügiger Dauerlauf",
-      "duration_min": 56.52,
-      "distance_km": 11.34,
-      "avg_pace_sec_per_km": 299.0,
-      "avg_speed_kmh": 12.04,
-      "avg_hr": 142.0,
-      "max_hr": 158.0,
-      "avg_power": 429.0,
-      "max_power": 585.0,
-      "elevation_gain_m": 59.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "moderate"
     }
   ],
   "unmatched_activities": [],
   "weekly_summary": [
-    {
-      "week_start": "2026-06-29",
-      "week_end": "2026-07-05",
-      "week_label": "KW 27",
-      "run_km": 18.96,
-      "bike_hours": 0.0,
-      "run_sessions": 2,
-      "bike_sessions": 0,
-      "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
-      "lit_sessions": 1,
-      "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 100.2
-    },
     {
       "week_start": "2026-07-06",
       "week_end": "2026-07-12",
@@ -2674,6 +2556,21 @@
       "week_start": "2026-08-31",
       "week_end": "2026-09-06",
       "week_label": "KW 36",
+      "run_km": 32.33,
+      "bike_hours": 0.0,
+      "run_sessions": 2,
+      "bike_sessions": 0,
+      "strength_sessions": 0,
+      "hard_endurance_sessions": 0,
+      "lit_sessions": 2,
+      "moderate_sessions": 0,
+      "hard_sessions": 0,
+      "total_duration_min": 151.7
+    },
+    {
+      "week_start": "2026-09-07",
+      "week_end": "2026-09-13",
+      "week_label": "KW 37",
       "run_km": 0,
       "bike_hours": 0.0,
       "run_sessions": 0,
@@ -2780,7 +2677,7 @@
           "Schwelle statt Zielpace"
         ],
         "index": 1,
-        "status": "aktuell"
+        "status": "abgeschlossen"
       },
       {
         "period": "September-November 2026",
@@ -2808,7 +2705,7 @@
           "20-30 min Tempo/Cruise"
         ],
         "index": 2,
-        "status": "geplant"
+        "status": "aktuell"
       },
       {
         "period": "Dezember 2026-Januar 2027",
@@ -2940,7 +2837,7 @@
     },
     {
       "level": "info",
-      "text": "Wichtigste Prioritätseinheit noch offen: 35 min locker mit 4 kurzen Steigerungen."
+      "text": "Wichtigste Prioritätseinheit noch offen: 25–35 min sehr locker."
     }
   ],
   "metrics": {
@@ -2956,9 +2853,9 @@
       "progress_percent": 0
     },
     "current_week": {
-      "week_start": "2026-08-31",
-      "week_end": "2026-09-06",
-      "week_label": "KW 36",
+      "week_start": "2026-09-07",
+      "week_end": "2026-09-13",
+      "week_label": "KW 37",
       "run_km": 0,
       "bike_hours": 0.0,
       "run_sessions": 0,
@@ -2971,7 +2868,7 @@
       "total_duration_min": 0
     },
     "warning_count": 0,
-    "activities_total": 21
+    "activities_total": 23
   },
   "upcoming": [
     {

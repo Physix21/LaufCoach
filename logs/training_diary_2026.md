@@ -650,7 +650,51 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die Ausfahrt erhöht die Gesamtbelastung am Ende der Woche. Ohne Herzfrequenz, Leistung oder subjektive Angaben ist keine sichere Intensitätsklassifikation möglich.
 - Zusammen mit der Fahrt vom 25.08. wurden in KW 35 insgesamt 64,50 km und 2:14:18 h Rad dokumentiert. Beide Fahrten werden in der Gesamtbelastung berücksichtigt, aber nicht als sichere harte Reize gezählt.
 
-## Wochenfazit KW 35
+## 02.09.2026 – Aktivierung mit 4 × 340 m und kurzen Steigerungen
+
+**Quelle:** `data/raw/garmin/csv/02092026.csv`
+
+### Messdaten
+
+- Sportart: Laufen
+- Gesamt: 11,04 km in 1:00:54 h; Ø 5:31 min/km
+- Herzfrequenz: Ø 125 bpm, maximal 161 bpm
+- Laufleistung: Ø 339 W, maximal 744 W; 50 m Anstieg
+- Einlaufen: 6,52 km in 36:58 min; anschließend vier 340-m-Abschnitte in 1:25,4 / 1:25,6 / 1:22,2 / 1:20,5 min, entsprechend ca. 4:10 / 4:12 / 4:03 / 3:59 min/km
+- Danach drei kurze schnelle Steigerungen über 90–180 m; Auslaufen 1,84 km in 10:12 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit blieb insgesamt locker und enthielt nur kurze Aktivierungen. Die vier Abschnitte wurden zunehmend schneller, ohne dass daraus ein neuer Leistungsanker abgeleitet wird.
+- Die Einheit passt als Vorbelastung vor dem Halbmarathon; die fehlenden subjektiven Angaben erlauben keine Aussage zu Beschwerden oder Ermüdung.
+
+## 06.09.2026 – Halbmarathon
+
+**Quelle:** `data/raw/garmin/csv/06092026.csv`
+
+### Messdaten
+
+- Sportart: Laufen, Halbmarathon-Wettkampf
+- Gesamt: 21,29 km in 1:30:50 h; Ø 4:16 min/km
+- Herzfrequenz: Ø 156 bpm, maximal 181 bpm
+- Laufleistung: Ø 437 W, maximal 611 W; 38 m Anstieg
+- Kilometersplits: 4:45 / 4:05 / 4:27 / 4:25 / 4:23 / 4:22 / 4:21 / 4:20 / 4:20 / 4:19 / 4:18 / 4:19 / 4:18 / 4:18 / 4:19 / 4:19 / 4:01 / 4:02 / 3:58 / 3:49 / 3:43; Rest 0,29 km in 1:01 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Wettkampf wurde nach dem ersten Kilometer kontrolliert und anschließend klar progressiv gelaufen. Die letzten fünf vollen Kilometer lagen bei etwa 4:01 bis 3:43 min/km; der Maximalpuls von 181 bpm bestätigt einen hohen Wettkampf- beziehungsweise Endbelastungsreiz.
+- Das Ergebnis ist ein gutes Ausdauersignal und zeigt, dass die geplante konservative Strategie mit späterem Steigern funktionierte. Es ersetzt wegen der anderen Distanz und Belastungsdauer keinen aktuellen 5-km-Leistungsanker.
+- Der Halbmarathon ist der harte Ausdauerreiz der KW 36. In KW 37 stehen deshalb Erholung, Beschwerdebeobachtung und höchstens zwei sehr lockere Läufe im Vordergrund; kein Nachholen ausgefallener Intensität.
+
+## Wochenfazit KW 36
+
+- 32,33 km Laufen in zwei dokumentierten Einheiten; davon 21,29 km im Halbmarathon.
+- Die Aktivierung am 02.09. blieb kontrolliert. Der Halbmarathon am 06.09. wurde progressiv beendet und zählt als hoher Gesamtbelastungsreiz.
+- Für die Folgewoche gilt der bereits geplante Erholungsblock: erster lockerer Lauf nur bei unauffälliger Reaktion, zweiter Lauf ebenfalls nur bei guter Verträglichkeit; Schwelle und Krafttraining zunächst zurückstellen.
+
+## Rückblick: Wochenfazit KW 35
 
 - 30,83 km Laufen in drei Einheiten sowie 64,50 km Rad in zwei Einheiten
 - Ein klarer harter Ausdauerreiz: 3 × 7 min kontrollierte Schwelle am 27.08.

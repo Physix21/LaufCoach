@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 31.08.2026
+**Stand:** 07.09.2026
 
 ## Ziel und Phase
 
@@ -45,9 +45,19 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 - Für einen maximal gelaufenen Halbmarathon fehlt ein spezifischer Aufbau mit längeren Läufen. Der Wettkampf wird deshalb konservativ begonnen und nicht als belastbare Prognose der Halbmarathon-Leistungsfähigkeit behandelt.
 - Der Halbmarathon ist der einzige harte Ausdauerreiz der KW 36. 4 × 1000 m, langer Trainingslauf, Rad-HIIT und schweres Krafttraining entfallen.
 
+## Aktualisierung nach KW 36
+
+- 02.09.: 11,04 km Aktivierung in 1:00:54 h, Ø 5:31 min/km, Ø 125 bpm, maximal 161 bpm; vier kurze Abschnitte und anschließende Steigerungen.
+- 06.09.: 21,29 km Halbmarathon in 1:30:50 h, Ø 4:16 min/km, Ø 156 bpm, maximal 181 bpm; progressiver Verlauf mit 4:01 bis 3:43 min/km auf den letzten fünf vollen Kilometern.
+- KW 36: 32,33 km Laufen in zwei Einheiten; der Halbmarathon ist der einzige harte Ausdauerreiz.
+- Der Halbmarathon ist ein Ausdauer- und Belastbarkeitssignal, aber kein neuer 5-km-Leistungsanker.
+- Subjektive Angaben zu RPE, Gefühl und Beschwerden fehlen weiterhin; daher wird keine Beschwerdefreiheit angenommen.
+
 ## Nächster Coaching-Fokus
 
-- KW 36: zwei kurze lockere Aktivierungsläufe und Halbmarathon am 06.09.; kein zusätzliches Radtraining als Soll-Einheit und kein Krafttraining
+- KW 37: Erholung mit höchstens zwei lockeren Läufen; Wiedereinstieg nur bei unauffälliger Reaktion und ohne freiwillig berichtete Beschwerden
+- Kein zusätzlicher harter Ausdauerreiz, kein Nachholen ausgefallener Intensität und zunächst kein schweres Krafttraining
+- Ab KW 38 nur bei vollständiger Erholung Rückkehr zu drei Läufen und einem kontrollierten Schwellenreiz
 - Renneinteilung: erste 5 km bei 4:35–4:40 min/km, Kilometer 6–15 nur bei stabiler Kontrolle auf 4:25–4:35 min/km steigern, danach nach Tagesform entscheiden
 - Diese Pace-Spanne ist eine konservative Wettkampfstrategie aus dem vorhandenen Trainingsverlauf, keine Leistungsprognose oder Garantie für eine Zielzeit
 - KW 37: Erholung mit höchstens zwei lockeren Läufen; Wiedereinstieg nur bei unauffälliger freiwillig berichteter Reaktion und ohne Beschwerden

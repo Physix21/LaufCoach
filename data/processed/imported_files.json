@@ -260,6 +260,24 @@
         "local-01433d377a07d222"
       ],
       "warnings": []
+    },
+    "02092026.csv": {
+      "sha256": "8c93bc77e1a84775e18a9a309a8bdb8833d93981fb7e784f78ba61c21be29b80",
+      "status": "imported",
+      "imported_at": "2026-09-07T14:39:27+02:00",
+      "activity_ids": [
+        "local-3131897e6bcb0321"
+      ],
+      "warnings": []
+    },
+    "06092026.csv": {
+      "sha256": "94d517215bf7bbd70e9cea6243697d1168c246fba5f1fd50fe90d2f184574388",
+      "status": "imported",
+      "imported_at": "2026-09-07T14:39:27+02:00",
+      "activity_ids": [
+        "local-87fbc5baaf5a2de2"
+      ],
+      "warnings": []
     }
   }
 }
