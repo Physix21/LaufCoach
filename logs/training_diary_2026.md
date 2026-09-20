@@ -694,6 +694,133 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die Aktivierung am 02.09. blieb kontrolliert. Der Halbmarathon am 06.09. wurde progressiv beendet und zählt als hoher Gesamtbelastungsreiz.
 - Für die Folgewoche gilt der bereits geplante Erholungsblock: erster lockerer Lauf nur bei unauffälliger Reaktion, zweiter Lauf ebenfalls nur bei guter Verträglichkeit; Schwelle und Krafttraining zunächst zurückstellen.
 
+## 08.09.2026 – Radausfahrt mit Leistungspyramide
+
+**Quelle:** `data/raw/garmin/csv/08092026.csv`
+
+### Messdaten
+
+- Sportart: Radfahren
+- Gesamt: 27,46 km in 49:00 min; Ø 33,6 km/h
+- Leistung: Ø 210 W, Normalized Power 220 W, maximal 303 W; 0 m Anstieg
+- Struktur: 5 min bei Ø 169 W, 15 min bei Ø 219 W, danach 1 / 2 / 3 / 2 / 1 min bei Ø 300 / 273 / 247 / 273 / 300 W; dazwischen jeweils 1 min bei Ø 219–246 W; Abschluss 15 min bei Ø 171 W
+- Herzfrequenz, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Gemessen an der im Profil hinterlegten FTP von ca. 280–290 W enthielt die Pyramide kurze Abschnitte von etwa 85 bis 107 % FTP. Der Gesamtwert von 220 W NP entspricht etwa 76–79 % FTP.
+- Damit war die Fahrt kein sehr lockerer Regenerationsersatz wie für KW 37 vorgesehen, sondern ein strukturierter moderater Reiz mit kurzen höheren Leistungsspitzen. Ohne Herzfrequenz und subjektive Angaben wird sie nicht sicher als harter Ausdauerreiz klassifiziert.
+- Die Einheit folgte zwei Tage nach dem Halbmarathon und erhöht deshalb die frühe Nachbelastung, verändert aber keinen laufbezogenen Leistungsanker.
+
+## 10.09.2026 – Sehr lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/10092026.csv`
+
+### Messdaten
+
+- Gesamt: 7,73 km in 40:00 min; Ø 5:11 min/km
+- Herzfrequenz: Ø 130 bpm, maximal 144 bpm
+- Laufleistung: Ø 366 W, maximal 442 W; 44 m Anstieg
+- Kilometersplits: 4:58 / 5:15 / 5:15 / 5:17 / 5:08 / 5:05 / 5:16 min/km; Rest 0,73 km in 3:47 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Der Lauf war fünf Minuten länger und schneller als die geplanten 25–35 min bei 5:30–6:10 min/km. Die niedrige und über die Kilometer stabile Herzfrequenz spricht dennoch für einen lockeren aeroben Reiz.
+- Gegenüber dem Halbmarathon lagen vier Tage Abstand. Aus den Messdaten ist kein deutlicher Belastungseinbruch erkennbar; eine Aussage zur muskulären Erholung oder Beschwerdefreiheit ist ohne subjektive Angaben nicht möglich.
+
+## 12.09.2026 – 3 × 6 min kontrollierte Schwelle
+
+**Quelle:** `data/raw/garmin/csv/12092026.csv`
+
+### Messdaten
+
+- Gesamt: 12,53 km in 1:03:57 h; Ø 5:06 min/km
+- Herzfrequenz: Ø 133 bpm, maximal 166 bpm
+- Laufleistung: Ø 367 W, maximal 553 W; 60 m Anstieg
+- Einlaufen: 6,08 km in 35:16 min (5:48 min/km)
+- Belastungsabschnitte: 1,46 km in 6:00 min (ca. 4:07 min/km), 1,52 km in 6:08 min (ca. 4:03 min/km) und 1,57 km in 6:11 min (ca. 3:56 min/km)
+- Herzfrequenz und Leistung der Belastungsabschnitte: Ø 145 / 158 / 161 bpm und Ø 452 / 461 / 456 W
+- Erholung: zweimal etwa 3 min lockeres Traben; Cool-down 0,86 km in 4:21 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Einheit war für KW 37 nicht vorgesehen und nahm den geplanten Schwellenreiz der Folgewoche vorweg. Sechs Tage nach dem Halbmarathon ist sie ein klarer harter Laufreiz innerhalb der Erholungswoche.
+- Die Abschnitte wurden progressiv schneller, während die Leistung stabil blieb. Der letzte Abschnitt lag am schnellen Rand des hinterlegten Schwellenbereichs; ein Einbruch ist nicht erkennbar.
+- Das ist ein gutes kontrolliertes Schwellsignal, aber wegen des kurzen Hauptteils und fehlender subjektiver Angaben kein neuer 5-km-Leistungsanker.
+
+## Wochenfazit KW 37
+
+- 20,26 km Laufen in zwei Einheiten und 27,46 km Rad in 49:00 min.
+- Der Lauf am 10.09. blieb anhand Pace und Herzfrequenz locker. Die Rad-Pyramide war moderat strukturiert, und der Schwellenlauf am 12.09. war der einzige klar harte Ausdauerreiz.
+- Gegenüber der geplanten reinen Erholungswoche lag damit mehr Intensität vor. Der Laufumfang blieb gegenüber KW 36 reduziert; für KW 38 wird nicht zusätzlich verschärft und der nächste Qualitätslauf bleibt an vollständige Erholung gebunden.
+
+## 14.09.2026 – Langer lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/14092026.csv`
+
+### Messdaten
+
+- Gesamt: 12,33 km in 1:03:07 h; Ø 5:07 min/km
+- Herzfrequenz: Ø 143 bpm, maximal 159 bpm
+- Laufleistung: Ø 379 W; 74 m Anstieg
+- 2-km-Abschnitte: 4:56 / 5:12 / 5:12 / 5:13 / 5:04 / 5:06 min/km; Rest 0,33 km in 1:43,5 min
+- Der exportierte Maximalwert von 1.621 W ist ein isolierter Leistungsspitzenwert und wird nicht als belastbarer physiologischer Messwert interpretiert.
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Nach dem etwas schnelleren ersten Abschnitt blieb das Tempo gleichmäßig. Herzfrequenz und Pace zeigen keinen klaren Einbruch; der letzte vollständige Abschnitt war wieder etwas schneller.
+- Mit 63 min und 12,33 km lag der Lauf knapp über den vorgesehenen 55–60 min und ersetzte inhaltlich den langen lockeren Lauf der Woche. Fünf Tage Abstand bis zum Schwellenlauf ließen ausreichend zeitlichen Abstand zwischen dem Umfangs- und dem Qualitätsreiz.
+
+## 16.09.2026 – Radausfahrt mit doppelter Leistungspyramide
+
+**Quelle:** `data/raw/garmin/csv/16092026.csv`
+
+### Messdaten
+
+- Sportart: Radfahren
+- Gesamt: 25,57 km in 46:30 min; Ø 33,0 km/h
+- Leistung: Ø 218 W, Normalized Power 227 W, maximal 303 W; 0 m Anstieg
+- Struktur: 5 min bei Ø 169 W, 10 min bei Ø 219 W, danach zweimal 1 / 2 / 3 min bei Ø 301 / 273 / 247 W; zwischen den Belastungen jeweils 1 min bei Ø 219–220 W; Abschluss 10:30 min bei Ø 171 W
+- Herzfrequenz, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Bezogen auf die im Profil hinterlegte FTP von ca. 280–290 W lagen die 1-min-Abschnitte bei etwa 104–108 %, die 2-min-Abschnitte bei etwa 94–98 % und die 3-min-Abschnitte bei etwa 85–88 % FTP. Die NP entsprach etwa 78–81 % FTP.
+- Die Einheit war damit intensiver als die lockere Radalternative von 150–180 W, wegen der kurzen Belastungsabschnitte aber kein gleichwertiger Ersatz für den geplanten Schwellenlauf. Sie wird als moderater strukturierter Reiz und nicht als zweiter klar harter Ausdauerreiz eingeordnet.
+
+## 19.09.2026 – 3 × 7 min kontrollierte Schwelle
+
+**Quelle:** `data/raw/garmin/csv/19092026.csv`
+
+### Messdaten
+
+- Gesamt: 8,62 km in 39:25 min; Ø 4:34 min/km
+- Herzfrequenz: Ø 147 bpm, maximal 171 bpm
+- Laufleistung: Ø 458 W, maximal 661 W; 67 m Anstieg
+- Einlaufen: 1,86 km in 9:59 min (5:22 min/km)
+- Belastungsabschnitte: 1,81 km in 7:00 min (3:52 min/km), 1,77 km in 7:00 min (3:57 min/km) und 1,81 km in 7:00 min (3:52 min/km)
+- Steigungsangepasste Pace der Belastungsabschnitte: 3:51 / 3:57 / 3:57 min/km
+- Herzfrequenz und Leistung der Belastungsabschnitte: Ø 161 / 164 / 162 bpm und Ø 510 / 520 / 520 W
+- Erholung: zweimal 3 min lockeres Traben; Cool-down 0,30 km in 2:26 min
+- Bodenkontaktbalance: beim Einlaufen 50,5 % links / 49,5 % rechts, in den Belastungsabschnitten 53,2 / 52,1 / 51,9 % links
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die drei Abschnitte waren bei stabiler Leistung und ohne Herzfrequenzanstieg bis zum letzten Abschnitt gleichmäßig. Die tatsächliche Pace des dritten Abschnitts profitierte vom Gefälle; die steigungskorrigierte Pace entsprach dem zweiten Abschnitt.
+- Mit 21 min Qualitätszeit war der Hauptteil drei Minuten länger und mit 3:52–3:57 min/km schneller als die geplanten 3 × 6 min bei 3:58–4:05 min/km. Die Messdaten zeigen keinen Einbruch, rechtfertigen ohne RPE und mit kurzem Auslaufen aber keine weitere Verschärfung in der Folgewoche.
+- Die Linksbetonung der Bodenkontaktzeit trat vor allem unter Belastung auf. Eine einzelne Einheit erlaubt wegen Streckenverlauf, Kurven und möglicher Sensoreinflüsse keine Diagnose; der Wert wird bei künftigen Qualitätsläufen beobachtet, ohne daraus Beschwerden abzuleiten.
+
+## Wochenfazit KW 38
+
+- Bis einschließlich 19.09. wurden 20,95 km Laufen in zwei Einheiten und 25,57 km Rad in 46:30 min dokumentiert.
+- Der lange lockere Lauf ersetzte den geplanten Umfangsreiz, die Radausfahrt den zweiten lockeren Lauftermin. Der Schwellenlauf war der einzige klar harte Ausdauerreiz; die Rad-Pyramide zählt als moderater strukturierter Reiz.
+- Der Laufumfang blieb nahezu gleich zu KW 37. Die Woche stabilisierte zwei Läufe, aber noch nicht die angestrebte Drei-Läufe-Struktur; eine zusätzliche Einheit wird nicht nachgeholt.
+- Für KW 39 bleibt die geplante Steigerung auf 3 × 8 min Schwelle nur bei unauffälliger Erholung bestehen. Die Pace bleibt kontrolliert bei 3:58–4:05 min/km, und Ein- sowie Auslaufen werden vollständig absolviert.
+
 ## Rückblick: Wochenfazit KW 35
 
 - 30,83 km Laufen in drei Einheiten sowie 64,50 km Rad in zwei Einheiten

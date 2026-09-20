@@ -74,7 +74,7 @@ def find_column(headers: Iterable[str], field: str) -> str | None:
     return None
 
 
-def clean_number(value: Any) -> float | None:
+def clean_number(value: Any, *, grouped_thousands: bool = False) -> float | None:
     text = str(value or "").strip()
     if not text or text in {"--", "-", "n/a", "N/A"}:
         return None
@@ -83,6 +83,8 @@ def clean_number(value: Any) -> float | None:
     if not match:
         return None
     number = match.group(0).replace(" ", "")
+    if grouped_thousands and re.fullmatch(r"[-+]?\d{1,3}(,\d{3})+", number):
+        number = number.replace(",", "")
     if "," in number and "." in number:
         number = number.replace(".", "").replace(",", ".") if number.rfind(",") > number.rfind(".") else number.replace(",", "")
     else:
@@ -271,7 +273,7 @@ def build_activity(path: Path, row: dict[str, str], columns: dict[str, str | Non
         "avg_hr": rounded(clean_number(row_value(row, columns, "avg_hr")), 0),
         "max_hr": rounded(clean_number(row_value(row, columns, "max_hr")), 0),
         "avg_power": rounded(clean_number(row_value(row, columns, "avg_power")), 0),
-        "max_power": rounded(clean_number(row_value(row, columns, "max_power")), 0),
+        "max_power": rounded(clean_number(row_value(row, columns, "max_power"), grouped_thousands=True), 0),
         "elevation_gain_m": rounded(clean_number(row_value(row, columns, "elevation")), 0),
         "training_effect": rounded(clean_number(row_value(row, columns, "training_effect")), 1),
         "rpe": rounded(clean_number(row_value(row, columns, "rpe")), 1),
@@ -349,7 +351,10 @@ def aggregate_split_rows(rows: list[dict[str, str]], columns: dict[str, str | No
             aggregate[column] = str(sum(value * weight for value, weight in valid) / weight_sum) if weight_sum else str(sum(value for value, _ in valid) / len(valid))
     for field in ("max_hr", "max_power"):
         column = columns.get(field)
-        values = [clean_number(row.get(column)) for row in rows] if column else []
+        values = [
+            clean_number(row.get(column), grouped_thousands=field == "max_power")
+            for row in rows
+        ] if column else []
         if column and any(value is not None for value in values):
             aggregate[column] = str(max(value for value in values if value is not None))
     column = columns.get("elevation")

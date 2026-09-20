@@ -20,3 +20,9 @@ python scripts/import_garmin_csv.py
 
 Mit `--force` werden alle Rohdateien erneut geparst. Das ist vor allem nach einer
 Änderung der Parserlogik nützlich; manuelle `rpe`- und `notes`-Werte bleiben erhalten.
+
+Parser-Tests ausführen:
+
+```powershell
+python -m unittest scripts.test_import_garmin_csv
+```

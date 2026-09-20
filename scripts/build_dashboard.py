@@ -33,7 +33,7 @@ WEEKLY_FIELDS = [
     "lit_sessions", "moderate_sessions", "hard_sessions", "total_duration_min",
 ]
 HARD_WORDS = ("200", "400", "800", "1000", "interval", "schwelle", "tempo", "bergsprint", "hiit", "30/30", "over/under", "wettkampf")
-MODERATE_WORDS = ("zügig", "steady", "progressiv", "kraft")
+MODERATE_WORDS = ("zügig", "steady", "progressiv", "kraft", "pyramide")
 COMPLAINT_WORDS = ("schmerz", "achilles", "knie", "schienbein", "hüfte", "beschwerden")
 PROGRESSION_PHASES = [
     {

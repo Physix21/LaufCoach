@@ -1,22 +1,22 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 07.09.2026
+**Stand:** 20.09.2026
 
 ## Ziel und Phase
 
 - Hauptziel: 5 km Straße unter 17:00 min im Juni 2027 (3:24 min/km)
-- Nächster Wettkampf: Halbmarathon am 06.09.2026; kontrollierter Nebenwettkampf ohne spezifischen Halbmarathon-Aufbau
-- Aktuelle Phase: Übergang zu Phase 2 – aerobe Basis und Schwelle
-- Geplante Struktur nach der Wettkampferholung: 3 Läufe und 1 Krafttraining pro Woche; Rad nur als Alternative zu einer Laufeinheit
-- Kurzfristige Priorität: bis zum Halbmarathon Belastung reduzieren, danach erholen und erst anschließend wieder aufbauen
+- Letzter Wettkampf: Halbmarathon am 06.09.2026 in 1:30:50 h; kontrollierter Nebenwettkampf ohne spezifischen Halbmarathon-Aufbau
+- Aktuelle Phase: Phase 2 – aerobe Basis und Schwelle
+- Geplante Struktur: 3 Läufe und 1 Krafttraining pro Woche; Rad nur als Alternative zu einer Laufeinheit
+- Kurzfristige Priorität: die Drei-Läufe-Struktur kontrolliert stabilisieren, ohne Laufhäufigkeit, Umfang und Intensität gleichzeitig deutlich zu erhöhen
 
 ## Aktueller Leistungsanker
 
-- Letzter 5-km-Wettkampf: 18:49 min am 17.06.2026; dieser CSV-Wert bleibt der Leistungsanker
-- Garmin-Distanz: 5,08 km; erste fünf aufgezeichnete Kilometerrunden in 18:34,5
+- Letzter 5-km-Wettkampf: 18:49 min am 17.06.2026; dieser Wert bleibt der Leistungsanker
+- Garmin-Distanz: 5,08 km; erste fünf aufgezeichnete Kilometerrunden in 18:34,5 min
 - Bestzeit: 17:35 min (2023)
-- Beobachtete höchste Herzfrequenz: 183 bpm im letzten Wettkampf; das Profil nennt 180 bpm
-- Der Tempodauerlauf am 17.08. über 10,01 km in 39:55 min und die jüngsten Schwellenabschnitte zeigen eine verbesserte aerobe Tempohärte, ersetzen aber keinen aktuellen Wettkampfanker
+- Beobachtete höchste Herzfrequenz: 183 bpm im 5-km-Wettkampf; das Profil nennt 180 bpm
+- Der Tempodauerlauf am 17.08., der Halbmarathon am 06.09. sowie die Schwellenabschnitte am 12.09. und 19.09. zeigen eine verbesserte aerobe Tempohärte, ersetzen aber keinen aktuellen 5-km-Wettkampfanker
 
 ## Zielsplit-Referenz sub 17
 
@@ -30,35 +30,25 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Letzte dokumentierte Woche
 
-- KW 35: 30,83 km Laufen in drei Einheiten und 2:14 h Rad in zwei Einheiten
-- 24.08.: 13,29 km lockerer Dauerlauf in 1:08:51 h (5:11 min/km), Ø 127 bpm, maximal 145 bpm, 114 m Anstieg
-- 27.08.: 3 × 7 min kontrollierte Schwelle innerhalb von 11,62 km; Abschnitte ca. 3:48 / 3:56 / 3:54 min/km, Ø 148 bpm, maximal 168 bpm
-- 29.08.: 5,92 km sehr locker in 33:37 min (5:40 min/km), Ø 116 bpm, maximal 134 bpm
-- 25.08. und 30.08.: zusammen 64,50 km Rad in 2:14:18 h; Herzfrequenz und Leistung fehlen, daher keine sichere Intensitätsklassifikation
-- RPE, Gefühl und Beschwerden wurden zu den neuen Aktivitäten nicht angegeben; daraus wird weder Beschwerdefreiheit noch eine Einschränkung abgeleitet
+- KW 38 bis einschließlich 19.09.: 20,95 km Laufen in zwei Einheiten und 25,57 km Rad in 46:30 min
+- 14.09.: 12,33 km locker in 1:03:07 h (5:07 min/km), Ø 143 bpm, maximal 159 bpm
+- 16.09.: doppelte Leistungspyramide auf dem Rad, Ø 218 W, NP 227 W, maximal 303 W; als moderater strukturierter Reiz eingeordnet
+- 19.09.: 3 × 7 min kontrollierte Schwelle innerhalb von 8,62 km; Abschnitte 3:52 / 3:57 / 3:52 min/km, steigungskorrigiert 3:51 / 3:57 / 3:57 min/km, maximal 171 bpm
+- RPE, Gefühl und Beschwerden wurden nicht angegeben; daraus wird weder Beschwerdefreiheit noch eine Einschränkung abgeleitet
 
 ## Belastbarkeit und Einordnung
 
-- Der Laufumfang sank nach 40,64 km in KW 34 auf 30,83 km in KW 35. Damit wurde der vorherige Belastungssprung konsolidiert.
-- Der Lauf am 24.08. ist mit 13,29 km der längste dokumentierte Lauf im aktuellen Aufbau. Das ist ein gutes Ausdauersignal, liegt aber deutlich unter der Halbmarathondistanz.
-- Die Schwellenabschnitte am 27.08. waren weitgehend gleichmäßig und ohne erkennbaren Einbruch. Sie zählen als einziger klarer harter Ausdauerreiz der Woche.
-- Für einen maximal gelaufenen Halbmarathon fehlt ein spezifischer Aufbau mit längeren Läufen. Der Wettkampf wird deshalb konservativ begonnen und nicht als belastbare Prognose der Halbmarathon-Leistungsfähigkeit behandelt.
-- Der Halbmarathon ist der einzige harte Ausdauerreiz der KW 36. 4 × 1000 m, langer Trainingslauf, Rad-HIIT und schweres Krafttraining entfallen.
-
-## Aktualisierung nach KW 36
-
-- 02.09.: 11,04 km Aktivierung in 1:00:54 h, Ø 5:31 min/km, Ø 125 bpm, maximal 161 bpm; vier kurze Abschnitte und anschließende Steigerungen.
-- 06.09.: 21,29 km Halbmarathon in 1:30:50 h, Ø 4:16 min/km, Ø 156 bpm, maximal 181 bpm; progressiver Verlauf mit 4:01 bis 3:43 min/km auf den letzten fünf vollen Kilometern.
-- KW 36: 32,33 km Laufen in zwei Einheiten; der Halbmarathon ist der einzige harte Ausdauerreiz.
-- Der Halbmarathon ist ein Ausdauer- und Belastbarkeitssignal, aber kein neuer 5-km-Leistungsanker.
-- Subjektive Angaben zu RPE, Gefühl und Beschwerden fehlen weiterhin; daher wird keine Beschwerdefreiheit angenommen.
+- Der Laufumfang blieb nach 20,26 km in KW 37 mit 20,95 km in KW 38 nahezu stabil. Wegen der Radalternative wurden erneut zwei statt der angestrebten drei Läufe absolviert.
+- Der lockere Lauf am 14.09. war bei weitgehend stabiler Pace und Herzfrequenz der Umfangsreiz der Woche. Der exportierte Maximalwert von 1.621 W ist ein isolierter Ausreißer und kein Leistungsanker.
+- Die Rad-Pyramide enthielt zweimal kurze Abschnitte von 1 / 2 / 3 min bei etwa 104–108 / 94–98 / 85–88 % der hinterlegten FTP. Sie war intensiver als die vorgesehene lockere Radalternative, wird aber nicht als zweiter klar harter Ausdauerreiz gewertet.
+- Die drei 7-min-Schwellenabschnitte wurden bei stabiler Leistung und ohne Einbruch absolviert. Sie waren schneller als die Vorgabe; deshalb steigt in KW 39 nur die Belastungsdauer, nicht die Zielpace.
+- Die Bodenkontaktbalance war in den Belastungsabschnitten linksbetont (51,9–53,2 %). Ohne Beschwerden und aus nur einer Einheit folgt keine Diagnose; die Entwicklung wird bei weiteren Qualitätsläufen beobachtet.
 
 ## Nächster Coaching-Fokus
 
-- KW 37: Erholung mit höchstens zwei lockeren Läufen; Wiedereinstieg nur bei unauffälliger Reaktion und ohne freiwillig berichtete Beschwerden
-- Kein zusätzlicher harter Ausdauerreiz, kein Nachholen ausgefallener Intensität und zunächst kein schweres Krafttraining
-- Ab KW 38 nur bei vollständiger Erholung Rückkehr zu drei Läufen und einem kontrollierten Schwellenreiz
-- Renneinteilung: erste 5 km bei 4:35–4:40 min/km, Kilometer 6–15 nur bei stabiler Kontrolle auf 4:25–4:35 min/km steigern, danach nach Tagesform entscheiden
-- Diese Pace-Spanne ist eine konservative Wettkampfstrategie aus dem vorhandenen Trainingsverlauf, keine Leistungsprognose oder Garantie für eine Zielzeit
-- KW 37: Erholung mit höchstens zwei lockeren Läufen; Wiedereinstieg nur bei unauffälliger freiwillig berichteter Reaktion und ohne Beschwerden
-- Ab KW 38 Rückkehr zu drei Läufen mit einem kontrollierten Schwellenreiz, ohne den Halbmarathon durch zusätzliche Intensität „nachzuholen“
+- KW 39: drei Läufe stabilisieren – 45 min locker mit Steigerungen, 3 × 8 min kontrollierte Schwelle und 60–65 min locker
+- Schwelle weiterhin bei 3:58–4:05 min/km; vollständiges Ein- und Auslaufen, keine erneute Pace-Verschärfung
+- Mindestens 48 Stunden ohne harte Ausdauerbelastung vor und nach dem Schwellenlauf
+- Krafttraining nur so dosieren, dass der lange lockere Lauf nicht beeinträchtigt wird; kein Muskelversagen
+- Kein zusätzlicher Rad-HIIT-Reiz; eine gewählte Radalternative ersetzt den jeweiligen Lauf
+- Bodenkontaktbalance bei der nächsten strukturierten Laufeinheit beobachten, ohne eine einzelne Messung zu überbewerten
