@@ -39,9 +39,12 @@ ALIASES = {
     "sport": ("activity type", "aktivitaetstyp", "sport", "type", "aktivitaetsart"),
     "session_name": ("title", "titel", "activity name", "aktivitaetsname", "name"),
     "duration": ("time", "zeit", "duration", "dauer", "elapsed time", "gesamtzeit"),
+    "moving_duration": ("moving time", "time moving", "zeit in bewegung"),
     "distance": ("distance", "distanz", "distance km", "distanz km"),
     "pace": ("average pace", "avg pace", "durchschnittspace", "pace", "o pace min km"),
+    "moving_pace": ("average moving pace", "avg moving pace", "pace in bewegung", "o pace in bewegung"),
     "speed": ("average speed", "avg speed", "durchschnittsgeschwindigkeit", "geschwindigkeit", "o geschwindigkeit"),
+    "moving_speed": ("average moving speed", "avg moving speed", "geschwindigkeit in bewegung", "o geschwindigkeit in bewegung"),
     "avg_hr": ("average heart rate", "avg heart rate", "avg hr", "durchschnittliche herzfrequenz", "o herzfrequenz", "o herzfrequenz bpm"),
     "max_hr": ("maximum heart rate", "max heart rate", "max hr", "maximale herzfrequenz", "maximale herzfrequenz bpm"),
     "avg_power": ("average power", "avg power", "durchschnittliche leistung", "o leistung", "o leistung w"),
@@ -130,6 +133,12 @@ def parse_date(value: Any) -> str:
     if compact:
         try:
             return datetime.strptime("".join(compact.groups()), "%d%m%Y").date().isoformat()
+        except ValueError:
+            return ""
+    compact_short_year = re.search(r"(?<!\d)(\d{2})(\d{2})(\d{2})(?!\d)", text)
+    if compact_short_year:
+        try:
+            return datetime.strptime("".join(compact_short_year.groups()), "%d%m%y").date().isoformat()
         except ValueError:
             return ""
     return ""
@@ -242,10 +251,19 @@ def row_value(row: dict[str, str], columns: dict[str, str | None], field: str) -
 
 
 def build_activity(path: Path, row: dict[str, str], columns: dict[str, str | None], hint: dict[str, str], warning: list[str]) -> dict[str, str]:
-    duration_sec = parse_seconds(row_value(row, columns, "duration"))
+    elapsed_duration_sec = parse_seconds(row_value(row, columns, "duration"))
+    moving_duration_sec = parse_seconds(row_value(row, columns, "moving_duration"))
+    use_moving_values = bool(
+        elapsed_duration_sec
+        and moving_duration_sec
+        and elapsed_duration_sec > moving_duration_sec * 1.1
+    )
+    duration_sec = moving_duration_sec if use_moving_values else elapsed_duration_sec or moving_duration_sec
     distance = clean_number(row_value(row, columns, "distance"))
-    pace = parse_seconds(row_value(row, columns, "pace"))
-    speed = clean_number(row_value(row, columns, "speed"))
+    pace_field = "moving_pace" if use_moving_values else "pace"
+    speed_field = "moving_speed" if use_moving_values else "speed"
+    pace = parse_seconds(row_value(row, columns, pace_field))
+    speed = clean_number(row_value(row, columns, speed_field))
     if pace is None and duration_sec and distance:
         pace = duration_sec / distance
     if speed is None and pace:
@@ -259,7 +277,7 @@ def build_activity(path: Path, row: dict[str, str], columns: dict[str, str | Non
     sport = sport_code(source_sport, session_name)
     if not sport_is_explicit(source_sport, session_name):
         warning.append(f"{path.name}: Keine Sportart erkannt; 'run' angenommen. Für Rad/Kraft einen Zusatz wie '_kickr' oder '_kraft' verwenden.")
-    activity_id = stable_id(path, date, distance, duration_sec, row_value(row, columns, "activity_id"))
+    activity_id = stable_id(path, date, distance, elapsed_duration_sec or duration_sec, row_value(row, columns, "activity_id"))
     return {
         "activity_id": activity_id,
         "source_file": path.name,

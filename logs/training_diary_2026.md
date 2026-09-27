@@ -821,6 +821,56 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der Laufumfang blieb nahezu gleich zu KW 37. Die Woche stabilisierte zwei Läufe, aber noch nicht die angestrebte Drei-Läufe-Struktur; eine zusätzliche Einheit wird nicht nachgeholt.
 - Für KW 39 bleibt die geplante Steigerung auf 3 × 8 min Schwelle nur bei unauffälliger Erholung bestehen. Die Pace bleibt kontrolliert bei 3:58–4:05 min/km, und Ein- sowie Auslaufen werden vollständig absolviert.
 
+## 25.09.2026 – 3 × 8 min kontrollierte Schwelle
+
+**Quelle:** `data/raw/garmin/csv/25092026.csv`
+
+### Messdaten
+
+- Gesamt: 10,40 km in 47:16 min; Ø 4:33 min/km
+- Herzfrequenz: Ø 150 bpm, maximal 170 bpm
+- Laufleistung: Ø 410 W, maximal 624 W; 45 m Anstieg
+- Einlaufen: 2,57 km in 12:11 min (4:44 min/km)
+- Belastungsabschnitte: 1,98 km in 8:00 min (4:03 min/km), 1,98 km in 8:00 min (4:03 min/km) und 2,00 km in 8:00 min (4:00 min/km)
+- Steigungsangepasste Pace der Belastungsabschnitte: 4:03 / 4:05 / 4:03 min/km
+- Herzfrequenz und Leistung der Belastungsabschnitte: Ø 161 / 163 / 163 bpm und Ø 449 / 444 / 459 W
+- Erholung: zweimal 3 min lockeres Traben; Cool-down 0,89 km in 5:05 min
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die geplanten 3 × 8 min wurden innerhalb der Zielpace von 3:58–4:05 min/km gleichmäßig absolviert. Leistung und Herzfrequenz blieben über die drei Abschnitte stabil; ein Einbruch ist nicht erkennbar.
+- Der dritte Abschnitt lag mit 4:00 min/km am schnelleren Rand, ohne zum Test zu werden. Das bestätigt die aktuelle Schwellensteuerung, ersetzt aber keinen 5-km-Formcheck und verändert den Wettkampfanker nicht.
+- Einlaufen und besonders Auslaufen waren kürzer als die geplanten 15 beziehungsweise 10–15 min. Die Qualität des Hauptteils war vollständig; bei der nächsten Qualitätseinheit werden die ruhigen Anteile wieder vollständig eingeplant.
+- Die beim Schwellenlauf am 19.09. beobachtete Bodenkontaktbalance ist in diesem Export nicht enthalten und kann daher nicht verglichen werden.
+
+## 26.09.2026 – Rad-HIIT 24 × 40/20 s
+
+**Quelle:** `data/raw/garmin/csv/260926.csv`
+
+### Messdaten
+
+- Sportart: Indoor-Radfahren
+- Gesamt: 24,82 km; 43:20 min in Bewegung, 1:14:10 h verstrichene Gesamtzeit einschließlich 30:50 min ohne Strecke
+- Herzfrequenz: Ø 139 bpm, maximal 163 bpm
+- Leistung: Ø 232 W, Normalized Power 258 W, maximal 344 W; 0 m Anstieg
+- Struktur: 5 min bei Ø 156 W, danach 10 × 40/20 s; 5 min bei Ø 171 W, danach 8 × 40/20 s; 5 min bei Ø 171 W, danach 6 × 40/20 s; abschließend 5 min bei Ø 157 W
+- Belastungen: 24 × 40 s bei Ø 335–338 W; Erholungen überwiegend 20 s bei Ø 178–183 W
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Bezogen auf die hinterlegte FTP von ca. 280–290 W lagen die 40-s-Abschnitte bei etwa 116–121 % FTP. Mit 16 min Belastungszeit, sehr gleichmäßiger Leistung und 258 W NP war dies ein klar harter Rad-HIIT-Reiz.
+- Der Reiz folgte direkt am Tag nach dem Schwellenlauf. Damit wurden zwei harte Ausdauerreize an aufeinanderfolgenden Tagen absolviert statt mit dem vorgesehenen Abstand von mindestens 48 Stunden.
+- Für KW 39 sind damit beide harten Ausdauerreize erfüllt. Am 27.09. findet nach Angabe des Athleten kein Lauf mehr statt; der geplante lange lockere Lauf wird nicht nachgeholt.
+
+## Wochenfazit KW 39
+
+- Dokumentiert wurden 10,40 km Laufen in einer Einheit und 24,82 km Rad mit 43:20 min Bewegungszeit. Weitere Einheiten der Woche sind nicht dokumentiert und werden nicht unterstellt.
+- Der Schwellenlauf erfüllte den geplanten Hauptteil kontrolliert. Das Rad-HIIT am Folgetag war der zweite klare harte Ausdauerreiz; der Abstand war kürzer als vorgesehen.
+- Der geplante lockere Lauf mit Steigerungen, der lange lockere Lauf und das Krafttraining sind nicht dokumentiert. Der Athlet hat bestätigt, dass am 27.09. kein Lauf mehr stattfindet.
+- Die Drei-Läufe-Struktur wurde in dieser Woche nicht erreicht. In der Folgewoche wird nicht versucht, den ausgefallenen Umfang nachzuholen; der Einstieg erfolgt locker, und der nächste harte Reiz folgt erst nach ausreichender Erholung.
+
 ## Rückblick: Wochenfazit KW 35
 
 - 30,83 km Laufen in drei Einheiten sowie 64,50 km Rad in zwei Einheiten

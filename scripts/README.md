@@ -12,6 +12,10 @@ Das Skript importiert zuerst Garmin-CSVs mit `import_garmin_csv.py` und erzeugt
 anschließend alle verarbeiteten Tabellen sowie `dashboard/index.html`. Unter Windows
 führt `update_dashboard.bat` denselben Ablauf per Doppelklick aus.
 
+Wenn verstrichene Zeit und Bewegungszeit deutlich voneinander abweichen, verwendet
+die Auswertung die Bewegungszeit und -geschwindigkeit. Längere Pausen werden dadurch
+nicht als aktive Trainingszeit gezählt.
+
 Nur den Garmin-Import ausführen:
 
 ```powershell

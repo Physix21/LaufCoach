@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 20.09.2026
+**Stand:** 27.09.2026
 
 ## Ziel und Phase
 
@@ -30,25 +30,26 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Letzte dokumentierte Woche
 
-- KW 38 bis einschließlich 19.09.: 20,95 km Laufen in zwei Einheiten und 25,57 km Rad in 46:30 min
-- 14.09.: 12,33 km locker in 1:03:07 h (5:07 min/km), Ø 143 bpm, maximal 159 bpm
-- 16.09.: doppelte Leistungspyramide auf dem Rad, Ø 218 W, NP 227 W, maximal 303 W; als moderater strukturierter Reiz eingeordnet
-- 19.09.: 3 × 7 min kontrollierte Schwelle innerhalb von 8,62 km; Abschnitte 3:52 / 3:57 / 3:52 min/km, steigungskorrigiert 3:51 / 3:57 / 3:57 min/km, maximal 171 bpm
+- KW 39: 10,40 km Laufen in einer Einheit und 24,82 km Rad mit 43:20 min Bewegungszeit; weitere Einheiten sind nicht dokumentiert
+- 25.09.: 3 × 8 min kontrollierte Schwelle innerhalb von 10,40 km; Abschnitte 4:03 / 4:03 / 4:00 min/km, steigungskorrigiert 4:03 / 4:05 / 4:03 min/km, maximal 170 bpm
+- 26.09.: Rad-HIIT mit 24 × 40/20 s; Belastungen bei Ø 335–338 W, Ø 232 W, NP 258 W, maximal 344 W und maximal 163 bpm
+- 27.09.: laut Athlet kein weiterer Lauf; der geplante lange lockere Lauf entfällt und wird nicht nachgeholt
 - RPE, Gefühl und Beschwerden wurden nicht angegeben; daraus wird weder Beschwerdefreiheit noch eine Einschränkung abgeleitet
 
 ## Belastbarkeit und Einordnung
 
-- Der Laufumfang blieb nach 20,26 km in KW 37 mit 20,95 km in KW 38 nahezu stabil. Wegen der Radalternative wurden erneut zwei statt der angestrebten drei Läufe absolviert.
-- Der lockere Lauf am 14.09. war bei weitgehend stabiler Pace und Herzfrequenz der Umfangsreiz der Woche. Der exportierte Maximalwert von 1.621 W ist ein isolierter Ausreißer und kein Leistungsanker.
-- Die Rad-Pyramide enthielt zweimal kurze Abschnitte von 1 / 2 / 3 min bei etwa 104–108 / 94–98 / 85–88 % der hinterlegten FTP. Sie war intensiver als die vorgesehene lockere Radalternative, wird aber nicht als zweiter klar harter Ausdauerreiz gewertet.
-- Die drei 7-min-Schwellenabschnitte wurden bei stabiler Leistung und ohne Einbruch absolviert. Sie waren schneller als die Vorgabe; deshalb steigt in KW 39 nur die Belastungsdauer, nicht die Zielpace.
-- Die Bodenkontaktbalance war in den Belastungsabschnitten linksbetont (51,9–53,2 %). Ohne Beschwerden und aus nur einer Einheit folgt keine Diagnose; die Entwicklung wird bei weiteren Qualitätsläufen beobachtet.
+- Der Schwellenhauptteil am 25.09. wurde innerhalb der geplanten Pace bei stabiler Herzfrequenz und Leistung vollständig absolviert. Das bestätigt den aktuellen Schwellenbereich, ist aber kein neuer 5-km-Leistungsanker.
+- Einlaufen und besonders Auslaufen waren kürzer als geplant. Bei der nächsten Qualitätseinheit werden die ruhigen Anteile wieder vollständig absolviert.
+- Das Rad-HIIT am 26.09. lag in den 40-s-Belastungen bei etwa 116–121 % der hinterlegten FTP und zählt als zweiter klar harter Ausdauerreiz der Woche.
+- Beide harten Reize lagen an aufeinanderfolgenden Tagen. Das unterschreitet den vorgesehenen Abstand von mindestens 48 Stunden; deshalb entfällt der Lauf am 27.09. und der Wochenumfang wird nicht nachgeholt.
+- Die angestrebte Drei-Läufe-Struktur wurde in KW 39 nicht erreicht. Belastbare Aussagen zur Laufverträglichkeit fehlen, weil nur eine Laufeinheit dokumentiert ist.
+- Die Bodenkontaktbalance ist im Export vom 25.09. nicht enthalten und kann nicht mit dem linksbetonten Wert vom 19.09. verglichen werden.
 
 ## Nächster Coaching-Fokus
 
-- KW 39: drei Läufe stabilisieren – 45 min locker mit Steigerungen, 3 × 8 min kontrollierte Schwelle und 60–65 min locker
-- Schwelle weiterhin bei 3:58–4:05 min/km; vollständiges Ein- und Auslaufen, keine erneute Pace-Verschärfung
-- Mindestens 48 Stunden ohne harte Ausdauerbelastung vor und nach dem Schwellenlauf
-- Krafttraining nur so dosieren, dass der lange lockere Lauf nicht beeinträchtigt wird; kein Muskelversagen
-- Kein zusätzlicher Rad-HIIT-Reiz; eine gewählte Radalternative ersetzt den jeweiligen Lauf
-- Bodenkontaktbalance bei der nächsten strukturierten Laufeinheit beobachten, ohne eine einzelne Messung zu überbewerten
+- KW 40 locker beginnen und weder den ausgefallenen Lauf noch den Wochenumfang aus KW 39 nachholen
+- Den nächsten harten Ausdauerreiz erst nach ausreichender Erholung und mit mindestens 48 Stunden Abstand zu einem weiteren harten Reiz setzen
+- Drei verträgliche Läufe weiter anstreben, den Umfang aber zunächst über lockere Minuten und nicht gleichzeitig mit zusätzlicher Intensität steigern
+- Schwelle vorerst weiterhin bei 3:58–4:05 min/km; vollständiges Ein- und Auslaufen, keine Pace-Verschärfung
+- Kein zusätzlicher Rad-HIIT-Reiz neben zwei harten Laufeinheiten; eine Radalternative ersetzt weiterhin den betreffenden Lauf
+- Bodenkontaktbalance bei der nächsten strukturierten Laufeinheit beobachten, sofern der Export den Wert enthält, ohne eine einzelne Messung zu überbewerten
