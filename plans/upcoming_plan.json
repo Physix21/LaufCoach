@@ -1,4 +1,84 @@
 {
   "schema_version": 1,
-  "weeks": []
+  "weeks": [
+    {
+      "week_start": "2026-09-28",
+      "week_end": "2026-10-04",
+      "phase": "Phase 2 – Aerobe Basis und Schwelle",
+      "focus": "Nach dem Doppelreiz kontrolliert erholen und mit einem einzigen Qualitätslauf zur Drei-Läufe-Struktur zurückkehren",
+      "planned_sessions": [
+        {
+          "id": "2026-W40-run-easy",
+          "type": "run",
+          "title": "40–45 min locker mit 4 Steigerungen",
+          "priority": 1,
+          "scheduled_date": "2026-09-29",
+          "target_intensity": "LIT",
+          "target_duration_min": 45,
+          "target_distance_km": 8,
+          "warmup": "Die ersten 10 min sehr ruhig anlaufen",
+          "main_set": "35–40 min gleichmäßig locker, danach 4 × 15 s technisch lockere Steigerung",
+          "recovery": "Zwischen den Steigerungen 60–90 s gehen oder sehr locker traben",
+          "cooldown": "3–5 min locker auslaufen",
+          "target_pace": "5:10–5:50 min/km; Steigerungen zügig, aber nicht sprinten",
+          "rpe_target": "3/10",
+          "description": "Lockerer Wiedereinstieg nach den harten Ausdauerreizen am 25. und 26.09.; keine nachgeholten Kilometer.",
+          "alternatives": "Statt dieses Laufs 50–60 min Rad locker bei ca. 150–180 W; ersetzt den Lauf."
+        },
+        {
+          "id": "2026-W40-strength",
+          "type": "strength",
+          "title": "Krafttraining dosiert",
+          "priority": 2,
+          "scheduled_date": "2026-09-30",
+          "target_intensity": "moderate",
+          "target_duration_min": 40,
+          "warmup": "5–8 min allgemein und 2 leichte Ramp-up-Sätze für Kreuzheben und Split Squats",
+          "main_set": "Kreuzheben 2 × 4–5; Bulgarian Split Squat 2 × 6 je Seite; einbeiniges Wadenheben 2 × 8–12; Klimmzüge 3 Sätze; Bankdrücken 3 × 5–8; Rückenstrecker 2 × 8–12",
+          "recovery": "2–3 min bei Grundübungen, 60–90 s bei Ergänzungsübungen",
+          "cooldown": "Kurz mobilisieren",
+          "target_pace": "2–3 Wiederholungen im Tank; kein Muskelversagen",
+          "rpe_target": "6/10",
+          "setup": "Half Rack, Langhantel, Kurzhanteln, Bank, Klimmzugstange und Hyperextension-Bank",
+          "description": "Unterkörpervolumen bewusst begrenzt, damit der Qualitätslauf nicht beeinträchtigt wird."
+        },
+        {
+          "id": "2026-W40-run-1000s",
+          "type": "run",
+          "title": "4 × 1000 m kontrolliert",
+          "priority": 3,
+          "scheduled_date": "2026-10-02",
+          "target_intensity": "hard",
+          "target_duration_min": 55,
+          "target_distance_km": 10,
+          "warmup": "15 min locker, Lauf-ABC nach Bedarf und 3 kurze Steigerungen",
+          "main_set": "4 × 1000 m gleichmäßig in 3:45–3:50 min je Wiederholung (3:45–3:50 min/km); nicht schneller eröffnen",
+          "recovery": "2:30 min locker traben",
+          "cooldown": "10–15 min locker auslaufen",
+          "target_pace": "3:45–3:50 min/km beziehungsweise 3:45–3:50 min pro 1000 m",
+          "rpe_target": "7/10",
+          "description": "Einziger harter Ausdauerreiz der Woche. Gleichmäßigkeit und vollständiges Ein- und Auslaufen sind wichtiger als eine schnelle Schlusswiederholung.",
+          "alternatives": "Statt dieses Laufs 15 min locker Rad, 5 × 4 min bei ca. 280–295 W mit 3 min locker, danach 10 min ausfahren. Ersetzt den Lauf und zählt als harter Reiz."
+        },
+        {
+          "id": "2026-W40-run-long",
+          "type": "run",
+          "title": "60–65 min locker",
+          "priority": 4,
+          "scheduled_date": "2026-10-04",
+          "target_intensity": "LIT",
+          "target_duration_min": 65,
+          "target_distance_km": 12,
+          "warmup": "Die ersten 10 min sehr ruhig beginnen",
+          "main_set": "60–65 min gleichmäßig locker ohne Endbeschleunigung",
+          "recovery": "Keine Pausen geplant",
+          "cooldown": "Locker beenden",
+          "target_pace": "5:10–5:50 min/km",
+          "rpe_target": "3–4/10",
+          "description": "Ruhiger Umfangsreiz; kein zusätzliches Tempo, auch wenn sich die Beine frisch anfühlen.",
+          "alternatives": "Statt dieses Laufs 80–100 min Rad locker bei ca. 150–180 W. Die Radfahrt ersetzt den Lauf."
+        }
+      ]
+    }
+  ]
 }
