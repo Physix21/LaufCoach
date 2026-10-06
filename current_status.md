@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 27.09.2026
+**Stand:** 06.10.2026 (letzte Aktivität: 04.10.2026)
 
 ## Ziel und Phase
 
@@ -16,7 +16,7 @@
 - Garmin-Distanz: 5,08 km; erste fünf aufgezeichnete Kilometerrunden in 18:34,5 min
 - Bestzeit: 17:35 min (2023)
 - Beobachtete höchste Herzfrequenz: 183 bpm im 5-km-Wettkampf; das Profil nennt 180 bpm
-- Der Tempodauerlauf am 17.08., der Halbmarathon am 06.09. sowie die Schwellenabschnitte am 12.09. und 19.09. zeigen eine verbesserte aerobe Tempohärte, ersetzen aber keinen aktuellen 5-km-Wettkampfanker
+- Der Tempodauerlauf am 17.08., der Halbmarathon am 06.09. sowie die Schwellenabschnitte am 12.09., 19.09. und 25.09. zeigen eine verbesserte aerobe Tempohärte, ersetzen aber keinen aktuellen 5-km-Wettkampfanker
 
 ## Zielsplit-Referenz sub 17
 
@@ -30,6 +30,14 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Letzte dokumentierte Woche
 
+- KW 40: 16,35 km Laufen in zwei Einheiten und 28,78 km Rad in 54:04 min; Krafttraining und ein dritter Lauf sind nicht dokumentiert
+- 02.10.: 8,05 km locker in 42:55 min (5:20 min/km), Ø 129 bpm, maximal 143 bpm; gleichmäßige 2-km-Runden
+- 03.10.: 54:04 min Rad mit Leistungstreppen bis Ø 244 W, insgesamt Ø 182 W und NP 189 W; moderat strukturierter Reiz, kein klares HIIT
+- 04.10.: 4 × 1000 m in 3:40 / 3:40 / 3:37 / 3:27 min/km innerhalb von 8,30 km; schneller als geplant und zum Ende deutlich beschleunigt. Herzfrequenz fehlt im Export.
+- RPE, Gefühl und Beschwerden wurden nicht angegeben; daraus wird weder Beschwerdefreiheit noch eine Einschränkung abgeleitet.
+
+### Vorwoche KW 39
+
 - KW 39: 10,40 km Laufen in einer Einheit und 24,82 km Rad mit 43:20 min Bewegungszeit; weitere Einheiten sind nicht dokumentiert
 - 25.09.: 3 × 8 min kontrollierte Schwelle innerhalb von 10,40 km; Abschnitte 4:03 / 4:03 / 4:00 min/km, steigungskorrigiert 4:03 / 4:05 / 4:03 min/km, maximal 170 bpm
 - 26.09.: Rad-HIIT mit 24 × 40/20 s; Belastungen bei Ø 335–338 W, Ø 232 W, NP 258 W, maximal 344 W und maximal 163 bpm
@@ -38,18 +46,14 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Belastbarkeit und Einordnung
 
-- Der Schwellenhauptteil am 25.09. wurde innerhalb der geplanten Pace bei stabiler Herzfrequenz und Leistung vollständig absolviert. Das bestätigt den aktuellen Schwellenbereich, ist aber kein neuer 5-km-Leistungsanker.
-- Einlaufen und besonders Auslaufen waren kürzer als geplant. Bei der nächsten Qualitätseinheit werden die ruhigen Anteile wieder vollständig absolviert.
-- Das Rad-HIIT am 26.09. lag in den 40-s-Belastungen bei etwa 116–121 % der hinterlegten FTP und zählt als zweiter klar harter Ausdauerreiz der Woche.
-- Beide harten Reize lagen an aufeinanderfolgenden Tagen. Das unterschreitet den vorgesehenen Abstand von mindestens 48 Stunden; deshalb entfällt der Lauf am 27.09. und der Wochenumfang wird nicht nachgeholt.
-- Die angestrebte Drei-Läufe-Struktur wurde in KW 39 nicht erreicht. Belastbare Aussagen zur Laufverträglichkeit fehlen, weil nur eine Laufeinheit dokumentiert ist.
-- Die Bodenkontaktbalance ist im Export vom 25.09. nicht enthalten und kann nicht mit dem linksbetonten Wert vom 19.09. verglichen werden.
+- Der lockere Lauf am 02.10. zeigt bei gleichmäßiger Pace einen niedrigen und stabilen Puls. Zusammen mit dem Intervalllauf ergibt das jedoch erst zwei Läufe in KW 40; die angestrebte Drei-Läufe-Struktur ist noch nicht stabil.
+- Die vier 1000-m-Wiederholungen waren schneller als die Vorgabe, besonders die letzte mit 3:27 min/km. Die Temposteigerung belegt Geschwindigkeitsreserve, erlaubt ohne kontrollierten Formcheck und ohne Pulsdaten aber keine neue 5-km-Prognose oder schnellere Trainingsvorgabe.
+- Ein- und Auslaufen am 04.10. waren kürzer als vorgesehen. Die strukturierte Radfahrt lag am Vortag; sie zählt nicht als klar harter Reiz, erhöhte aber die Gesamtbelastung vor den Intervallen.
+- Die Bodenkontaktbalance fehlt auch im Export vom 04.10. und kann weiterhin nicht verglichen werden.
 
 ## Nächster Coaching-Fokus
 
-- KW 40 locker beginnen und weder den ausgefallenen Lauf noch den Wochenumfang aus KW 39 nachholen
-- Den nächsten harten Ausdauerreiz erst nach ausreichender Erholung und mit mindestens 48 Stunden Abstand zu einem weiteren harten Reiz setzen
-- Drei verträgliche Läufe weiter anstreben, den Umfang aber zunächst über lockere Minuten und nicht gleichzeitig mit zusätzlicher Intensität steigern
-- Schwelle vorerst weiterhin bei 3:58–4:05 min/km; vollständiges Ein- und Auslaufen, keine Pace-Verschärfung
-- Kein zusätzlicher Rad-HIIT-Reiz neben zwei harten Laufeinheiten; eine Radalternative ersetzt weiterhin den betreffenden Lauf
-- Bodenkontaktbalance bei der nächsten strukturierten Laufeinheit beobachten, sofern der Export den Wert enthält, ohne eine einzelne Messung zu überbewerten
+- KW 41 mit einem lockeren Lauf beginnen. Ein kontrollierter Schwellenlauf folgt mit Abstand zum harten Lauf vom 04.10.; keine ausgefallenen Kilometer nachholen.
+- Drei verträgliche Läufe anstreben, dabei nur die lockeren Minuten maßvoll ergänzen. Bei nicht dokumentierter Erholung nicht gleichzeitig Umfang und Tempo verschärfen.
+- Schwelle vorerst bei 3:58–4:05 min/km mit vollständigem Ein- und Auslaufen; Wiederholungen gleichmäßig statt mit schneller Schlusswiederholung.
+- Rad bleibt eine Ersatzoption für eine konkrete Laufeinheit. Ein zusätzliches Rad-HIIT würde als harter Ausdauerreiz zählen.

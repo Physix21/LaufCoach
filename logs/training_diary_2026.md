@@ -871,6 +871,64 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der geplante lockere Lauf mit Steigerungen, der lange lockere Lauf und das Krafttraining sind nicht dokumentiert. Der Athlet hat bestätigt, dass am 27.09. kein Lauf mehr stattfindet.
 - Die Drei-Läufe-Struktur wurde in dieser Woche nicht erreicht. In der Folgewoche wird nicht versucht, den ausgefallenen Umfang nachzuholen; der Einstieg erfolgt locker, und der nächste harte Reiz folgt erst nach ausreichender Erholung.
 
+## 02.10.2026 – Lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/02102026.csv`
+
+### Messdaten
+
+- Gesamt: 8,05 km in 42:55 min; Ø 5:20 min/km
+- Herzfrequenz: Ø 129 bpm, maximal 143 bpm
+- Laufleistung: Ø 361 W, maximal 470 W; 30 m Anstieg
+- Vier 2-km-Runden: 5:20 / 5:19 / 5:18 / 5:22 min/km; Rest 0,05 km
+- RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Gleichmäßige Pace und niedrige, nur leicht steigende Herzfrequenz sprechen für einen lockeren aeroben Lauf.
+- Der Lauf entspricht in Dauer und Distanz ungefähr der geplanten lockeren Einheit, wurde aber erst am 02.10. statt am 29.09. absolviert. Steigerungen sind nicht dokumentiert.
+
+## 03.10.2026 – Radausfahrt mit Leistungspyramide
+
+**Quelle:** `data/raw/garmin/csv/03102026.csv`
+
+### Messdaten
+
+- Sportart: Radfahren; ob drinnen oder draußen, geht aus diesem CSV nicht hervor
+- Gesamt: 28,78 km in 54:04 min; Ø 31,9 km/h
+- Leistung: Ø 182 W, Normalized Power 189 W, maximal 245 W; 0 m Anstieg
+- Struktur: etwa 9 min bei Ø 170 W; drei kurze Leistungstreppen von jeweils fünf etwa einminütigen Abschnitten bei Ø 199 / 210 / 221–222 / 233 / 244 W; dazwischen und danach überwiegend Ø 141–171 W
+- Herzfrequenz, RPE, Gefühl und Beschwerden: nicht angegeben
+
+### Coaching-Einschätzung
+
+- Die Leistungstreppen erreichten maximal etwa 84–87 % der hinterlegten FTP von 280–290 W. Dies ist ein moderat strukturierter, kein klar harter Rad-HIIT-Reiz.
+- Die Fahrt ist kürzer und zeitweise intensiver als die geplante lockere Radalternative zum langen Lauf. Sie ersetzt den fehlenden langen Lauf hinsichtlich der laufspezifischen Belastung nicht gleichwertig.
+
+## 04.10.2026 – 4 × 1000 m
+
+**Quelle:** `data/raw/garmin/csv/04102026.csv`
+
+### Messdaten
+
+- Gesamt: 8,30 km in 43:18 min verstrichener Zeit; 41:47 min in Bewegung; Ø 5:13 min/km über die verstrichene Zeit
+- Vier 1000-m-Abschnitte: 3:40,1 / 3:39,7 / 3:37,4 / 3:26,7 min (ca. 3:40 / 3:40 / 3:37 / 3:27 min/km)
+- Steigungsangepasste Pace: 3:49 / 3:44 / 3:42 / 3:29 min/km; mittlere Laufleistung: 484 / 491 / 493 / 509 W
+- Vor dem ersten Intervall: 1,00 km in 5:04 min und 0,79 km in 7:27 min verstrichener Zeit. Zwischen den Intervallen: 0,35 / 0,34 / 0,34 km in 2:12 / 2:13 / 2:23 min. Danach: 0,31 km in 3:31 min und 1,17 km in 6:04 min.
+- Herzfrequenz: im Export nicht vorhanden. Bodenkontaktbalance: im Export nicht vorhanden. RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Der geplante Hauptteil von vier 1000-m-Wiederholungen wurde absolviert, aber alle Abschnitte waren schneller als die Zielzeit von 3:45–3:50 min; der letzte war deutlich schneller. Die Progression zeigt Tempofähigkeit, jedoch nicht die gewünschte gleichmäßige, kontrollierte Ausführung.
+- Vorlauf und Auslauf waren kürzer als geplant. Die 0,79-km-Runde vor dem ersten Intervall und die 0,31-km-Runde danach enthalten langsame beziehungsweise stehende Zeit; die genaue Pausenstruktur lässt sich aus den Runden allein nicht sicher bestimmen.
+- Ohne Herzfrequenz und subjektive Angaben lässt sich die innere Belastung nicht beurteilen. Die Einheit ist kein neuer 5-km-Leistungsanker und begründet keine Verschärfung der Trainingspaces.
+
+## Wochenfazit KW 40
+
+- Dokumentiert: 16,35 km Laufen in zwei Einheiten und 28,78 km Rad in 54:04 min. Krafttraining und weitere Einheiten sind nicht dokumentiert.
+- Der Lauf am 02.10. war locker. Die Radfahrt am 03.10. war moderat strukturiert. Der Intervalllauf am 04.10. war der einzige klar harte Ausdauerreiz, folgte aber direkt auf die Radfahrt.
+- Der geplante lange lockere Lauf entfiel. Die angestrebte Drei-Läufe-Struktur wurde erneut nicht erreicht. In KW 41 werden keine ausgefallenen Kilometer nachgeholt; der nächste Qualitätslauf bleibt kontrolliert, mit vollständigem Ein- und Auslaufen.
+
 ## Rückblick: Wochenfazit KW 35
 
 - 30,83 km Laufen in drei Einheiten sowie 64,50 km Rad in zwei Einheiten

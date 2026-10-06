@@ -42,3 +42,6 @@ local-1213c566bdbb1430,16092026.csv,2026-09-16,bike,Radausfahrt mit doppelter Le
 local-d9928d5e2d01b81f,19092026.csv,2026-09-19,run,3 × 7 min kontrollierte Schwelle,39.42,8.62,274.4,13.12,147.0,171.0,458.0,661.0,67.0,,,true,
 local-e9f1430a2144c1f2,25092026.csv,2026-09-25,run,3 × 8 min kontrollierte Schwelle,47.27,10.4,272.7,13.2,150.0,170.0,410.0,624.0,45.0,,,true,
 local-396ff5343e650c60,260926.csv,2026-09-26,bike,Rad-HIIT 24 × 40/20 s,43.33,24.82,,34.4,139.0,163.0,232.0,344.0,0.0,,,true,
+local-d117f96c12cd4c6e,02102026.csv,2026-10-02,run,Lockerer Lauf,42.92,8.05,320.0,11.25,129.0,143.0,361.0,470.0,30.0,,,true,
+local-593c675e515f261c,03102026.csv,2026-10-03,bike,Radausfahrt mit Leistungspyramide,54.07,28.78,,31.9,,,182.0,245.0,0.0,,,true,
+local-33baad1f1c064b58,04102026.csv,2026-10-04,run,4 × 1000 m,43.3,8.3,313.0,11.5,,,344.0,590.0,26.0,,,true,

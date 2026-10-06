@@ -350,6 +350,33 @@
         "local-396ff5343e650c60"
       ],
       "warnings": []
+    },
+    "02102026.csv": {
+      "sha256": "78abf7f155c57cfbeb0c06dbeb6a9fdd689f4a8bf098ff1ac8023ab6e21bbc43",
+      "status": "imported",
+      "imported_at": "2026-10-06T21:17:26+02:00",
+      "activity_ids": [
+        "local-d117f96c12cd4c6e"
+      ],
+      "warnings": []
+    },
+    "03102026.csv": {
+      "sha256": "7f6bb5709edb0576f90a7d538c2a82b3cb83bf35b673e3f9adec20a48fe7251d",
+      "status": "imported",
+      "imported_at": "2026-10-06T21:17:26+02:00",
+      "activity_ids": [
+        "local-593c675e515f261c"
+      ],
+      "warnings": []
+    },
+    "04102026.csv": {
+      "sha256": "5cad556712bf1e5a847ea581814e6c643e884d07ca530d6eb838f347dad5411b",
+      "status": "imported",
+      "imported_at": "2026-10-06T21:17:26+02:00",
+      "activity_ids": [
+        "local-33baad1f1c064b58"
+      ],
+      "warnings": []
     }
   }
 }
