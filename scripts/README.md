@@ -9,6 +9,8 @@ von Repository und OneDrive. Die Tokenablage erhält nur Rechte für das lokale
 Benutzerkonto. Passwort und MFA-Code werden verdeckt und ausschließlich lokal eingegeben.
 
 1. Einmal `garmin_login.bat` öffnen und anmelden, gegebenenfalls mit MFA.
+   Bei Passwort und MFA-Code erscheinen beim Tippen **keine Zeichen oder
+   Sternchen**. Die Eingabe wird trotzdem angenommen; mit **Enter** bestätigen.
 2. Danach `sync_garmin.bat` öffnen; lädt Lauf- und Radaktivitäten der letzten
    30 Tage einschließlich Zwischenzeiten. Alternativ kann der Laufcoach dieses
    Skript nach eingerichteter Anmeldung selbst aufrufen.

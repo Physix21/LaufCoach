@@ -25,6 +25,12 @@ class SyncError(Exception):
     pass
 
 
+def prompt_secret(label: str) -> str:
+    print("Die Eingabe bleibt unsichtbar: Es erscheinen keine Zeichen oder Sternchen.", flush=True)
+    print("Bitte eintippen und mit Enter bestaetigen.", flush=True)
+    return getpass(f"{label}: ")
+
+
 def local_home() -> Path:
     base = os.environ.get("LOCALAPPDATA")
     if not base:
@@ -180,8 +186,8 @@ def main() -> int:
         token_dir = secure_token_directory()
         if args.command == "login":
             email = input("Garmin-E-Mail (nur lokal): ").strip()
-            password = getpass("Garmin-Passwort (verdeckt): ")
-            api = Garmin(email=email, password=password, prompt_mfa=lambda: getpass("Garmin MFA-Code: "), retry_attempts=1)
+            password = prompt_secret("Garmin-Passwort")
+            api = Garmin(email=email, password=password, prompt_mfa=lambda: prompt_secret("Garmin MFA-Code"), retry_attempts=1)
             api.login(str(token_dir))
             api.client.dump(str(token_dir))
             print("Lokale Anmeldung gespeichert. Das Passwort wird vom Skript nicht gespeichert.")

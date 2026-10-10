@@ -1,5 +1,7 @@
 """Anonymisierte Vertragsprüfungen ohne Netzwerk oder Kontozugang."""
 from datetime import date
+from contextlib import redirect_stdout
+from io import StringIO
 import json
 from pathlib import Path
 import tempfile
@@ -14,6 +16,19 @@ CSV = b"Lap,Time,Distance,Average Pace\n1,5:00,1.00,5:00\n2,5:00,1.00,5:00\nSumm
 ITEM = {"activityId": 12345678901, "activityName": "Anonymer Testlauf",
         "startTimeLocal": "2030-04-02 12:00:00", "activityType": {"typeKey": "running"},
         "distance": 2000, "duration": 600, "elapsedDuration": 600, "movingDuration": 599}
+
+
+class SecretPromptTests(unittest.TestCase):
+    def test_instructions_precede_hidden_input_without_exposing_secret(self):
+        output = StringIO()
+        def read_secret(label):
+            self.assertIn("keine Zeichen oder Sternchen", output.getvalue())
+            self.assertIn("Enter", output.getvalue())
+            self.assertEqual(label, "Testpasswort: ")
+            return "synthetic-secret"
+        with redirect_stdout(output), patch.object(sync, "getpass", side_effect=read_secret):
+            self.assertEqual(sync.prompt_secret("Testpasswort"), "synthetic-secret")
+        self.assertNotIn("synthetic-secret", output.getvalue())
 
 
 class SyncTests(unittest.TestCase):
