@@ -118,3 +118,10 @@ Minimaldaten pro Einheit:
 RPE, Gefühl, Beschwerden und Kommentare sind freiwillig. Nicht routinemäßig danach fragen und fehlende Angaben nicht als Datenmangel beanstanden. Wenn der Athlet Beschwerden freiwillig nennt, müssen sie aus Sicherheitsgründen bei der Planung berücksichtigt werden.
 
 Wenn maschinell auswertbare Daten vorhanden sind, diese bevorzugen.
+
+Der lokale Garmin-Abruf ist eingerichtet und seit 10.10.2026 mit echtem Konto geprüft.
+Bei einer Aufforderung, neue Aktivitäten abzurufen oder auszuwerten, kann vor dem
+Import `scripts/garmin_sync.py sync` über die in `scripts/README.md` beschriebene
+lokale Python-Umgebung ausgeführt werden. Tokens nicht lesen oder ausgeben.
+Mögliche Dubletten prüfen; bei abweichenden Dateinamen-Daten die Runden vergleichen
+und bestätigte Garmin-Startdaten über Metadaten sowie im Tagebuch korrigieren.

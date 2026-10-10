@@ -307,9 +307,9 @@
       "warnings": []
     },
     "14092026.csv": {
-      "sha256": "b73d63f5427446e49b2bf003d1b0e878af9e8948a947ac45d81bdd0e6431a8ff",
+      "sha256": "ebf7c8527b97a6035936b81ad7e39d0c76c745f325f21fd28b28de3765cb10ab",
       "status": "imported",
-      "imported_at": "2026-09-27T16:51:56+02:00",
+      "imported_at": "2026-10-10T17:56:53+02:00",
       "activity_ids": [
         "local-fc8465acd640bafd"
       ],
@@ -352,27 +352,27 @@
       "warnings": []
     },
     "02102026.csv": {
-      "sha256": "78abf7f155c57cfbeb0c06dbeb6a9fdd689f4a8bf098ff1ac8023ab6e21bbc43",
+      "sha256": "851c34f84f6596f435cfde9b8cb43d0c0f4f78028cc7db471c1d23e629bc438d",
       "status": "imported",
-      "imported_at": "2026-10-06T21:17:26+02:00",
+      "imported_at": "2026-10-10T17:56:53+02:00",
       "activity_ids": [
         "local-d117f96c12cd4c6e"
       ],
       "warnings": []
     },
     "03102026.csv": {
-      "sha256": "7f6bb5709edb0576f90a7d538c2a82b3cb83bf35b673e3f9adec20a48fe7251d",
+      "sha256": "970cc50a04791558167b843e73451720b59557cf81a623c89e7c104a50f618f0",
       "status": "imported",
-      "imported_at": "2026-10-06T21:17:26+02:00",
+      "imported_at": "2026-10-10T17:56:53+02:00",
       "activity_ids": [
         "local-593c675e515f261c"
       ],
       "warnings": []
     },
     "04102026.csv": {
-      "sha256": "5cad556712bf1e5a847ea581814e6c643e884d07ca530d6eb838f347dad5411b",
+      "sha256": "4d5fb9a4cb1408021e18b823727887f81765d8491d78f7a1da5fb6792aa6c048",
       "status": "imported",
-      "imported_at": "2026-10-06T21:17:26+02:00",
+      "imported_at": "2026-10-10T17:56:53+02:00",
       "activity_ids": [
         "local-33baad1f1c064b58"
       ],
@@ -402,6 +402,24 @@
       "imported_at": "2026-10-10T14:22:17+02:00",
       "activity_ids": [
         "local-7ed4eb324c8d1bd3"
+      ],
+      "warnings": []
+    },
+    "2026-09-28_run_activity_24527182828.csv": {
+      "sha256": "3449c11728f9aedf8a7c5380497edd7f9b40dae1e6a1babb707dc70276483e00",
+      "status": "imported",
+      "imported_at": "2026-10-10T17:56:53+02:00",
+      "activity_ids": [
+        "24527182828"
+      ],
+      "warnings": []
+    },
+    "2026-10-04_bike_activity_24603618759.csv": {
+      "sha256": "117b4de0bf95678a06c62d0c3b06f2ceb75ffb55f43d527f3fdc42fa26bf129a",
+      "status": "imported",
+      "imported_at": "2026-10-10T17:56:53+02:00",
+      "activity_ids": [
+        "24603618759"
       ],
       "warnings": []
     }

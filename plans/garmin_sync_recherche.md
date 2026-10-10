@@ -1,11 +1,11 @@
 # Garmin Connect: lokale Übernahme neuer Aktivitäten
 
 **Stand:** 10.10.2026
-**Umfang:** Quellen- und Codeprüfung. Anschließend lokales Abrufskript mit synthetischen Tests implementiert; kein Login und kein Zugriff auf ein Garmin-Konto. Bedienung in [Scripts](../scripts/README.md).
+**Umfang:** Quellen- und Codeprüfung, lokales Abrufskript mit synthetischen Tests. Am 10.10.2026 nach lokaler Anmeldung erfolgreicher realer Kontozugriff und CSV-Abruf. Bedienung in [Scripts](../scripts/README.md).
 
 ## Empfehlung
 
-Das implementierte lokale Skript ermittelt neue Aktivitäten und lädt deren Zwischenzeiten-CSV nach Formatprüfung herunter. Der bestehende Importer verarbeitet sie beim anschließenden Coaching-/Dashboard-Schritt. Die verwendete Bibliothek ist `python-garminconnect` 0.3.17. Der echte Kontozugriff und das CSV-Format müssen beim ersten eingerichteten Abruf noch geprüft werden; erfolgreicher Download wurde hier nicht behauptet.
+Das implementierte lokale Skript ermittelt neue Aktivitäten und lädt deren Zwischenzeiten-CSV nach Formatprüfung herunter. Der bestehende Importer verarbeitet sie beim anschließenden Coaching-/Dashboard-Schritt. Die verwendete Bibliothek ist `python-garminconnect` 0.3.17. Der erste reale Abruf hat funktioniert: sechs Downloads, davon nach Rundenvergleich vier bekannte Einheiten mit korrigierbarem Datum und zwei zuvor fehlende Aktivitäten. Neun weitere mögliche Dubletten wurden bereits anhand der Zusammenfassungen ausgelassen.
 
 ## Verfügbare Wege
 
@@ -31,7 +31,7 @@ Der geprüfte [Bibliotheksquellcode](https://github.com/cyberjunky/python-garmin
 | Runden als JSON | `get_activity_splits(str(activity_id))` |
 | Ergänzende Rundenformen | `get_activity_typed_splits(...)` und `get_activity_split_summaries(...)` |
 
-Der CSV-Aufruf verwendet `/download-service/export/csv/activity/{id}`; seine Dokumentation benennt ausdrücklich eine CSV der Splits. JSON-Runden kommen über `/activity-service/activity/{id}/splits`. Das sind vorhandene interne Webdienstpfade, keine zugesicherte offizielle Privatkunden-API. Ungeprüft bleiben kontospezifische Verfügbarkeit, Sprache, Einheiten und genaue Spalten des tatsächlichen Downloads.
+Der CSV-Aufruf verwendet `/download-service/export/csv/activity/{id}`; seine Dokumentation benennt ausdrücklich eine CSV der Splits. JSON-Runden kommen über `/activity-service/activity/{id}/splits`. Das sind vorhandene interne Webdienstpfade, keine zugesicherte offizielle Privatkunden-API. Verfügbarkeit, metrische Einheiten und die deutsche Spaltenvariante wurden beim ersten realen Download geprüft.
 
 ## Anschluss an den vorhandenen Importer
 
@@ -58,4 +58,4 @@ Die neue Token-Datei heißt `garmin_tokens.json`. Alte Garth-Dateien `oauth1_tok
 
 Garmin kann interne Dienste und Anmeldung ändern. MFA, abgelaufene Tokens, HTTP 403 und HTTP 429 können einen Abruf stoppen; das Bibliotheksbeispiel behandelt Authentifizierungs-, Zugriffs- und Ratenfehler getrennt. Bei diesen Fehlern anhalten und den Grund melden, statt wiederholt Passwörter zu versuchen. [Fehlerbehandlung im Beispiel](https://github.com/cyberjunky/python-garminconnect/blob/master/example.py)
 
-Ein lokales Skript läuft nur, wenn der Rechner und die Anmeldung verfügbar sind. Abruf auf Wunsch ist der kleinste sinnvolle Einstieg. Ein späterer Zeitplan über die Windows-Aufgabenplanung ist eine separate Erweiterung. Erst nach einem erfolgreichen realen Download lassen sich CSV-Kompatibilität und vollständige Rundenübernahme für dieses Konto bestätigen.
+Ein lokales Skript läuft nur, wenn der Rechner und die Anmeldung verfügbar sind. Abruf auf Wunsch ist der kleinste sinnvolle Einstieg. Ein späterer Zeitplan über die Windows-Aufgabenplanung ist eine separate Erweiterung. Der erste reale Download und die Rundenübernahme sind geprüft; künftige Formatänderungen können neue Anpassungen erforderlich machen.

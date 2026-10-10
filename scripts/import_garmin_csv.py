@@ -41,19 +41,19 @@ ALIASES = {
     "duration": ("time", "zeit", "duration", "dauer", "elapsed time", "gesamtzeit"),
     "moving_duration": ("moving time", "time moving", "zeit in bewegung"),
     "distance": ("distance", "distanz", "distance km", "distanz km"),
-    "pace": ("average pace", "avg pace", "durchschnittspace", "pace", "o pace min km"),
+    "pace": ("average pace", "avg pace", "durchschnittspace", "pace", "o pace", "o pace min km"),
     "moving_pace": ("average moving pace", "avg moving pace", "pace in bewegung", "o pace in bewegung"),
     "speed": ("average speed", "avg speed", "durchschnittsgeschwindigkeit", "geschwindigkeit", "o geschwindigkeit"),
     "moving_speed": ("average moving speed", "avg moving speed", "geschwindigkeit in bewegung", "o geschwindigkeit in bewegung"),
     "avg_hr": ("average heart rate", "avg heart rate", "avg hr", "durchschnittliche herzfrequenz", "o herzfrequenz", "o herzfrequenz bpm"),
-    "max_hr": ("maximum heart rate", "max heart rate", "max hr", "maximale herzfrequenz", "maximale herzfrequenz bpm"),
+    "max_hr": ("maximum heart rate", "max heart rate", "max hr", "max hf", "maximale herzfrequenz", "maximale herzfrequenz bpm"),
     "avg_power": ("average power", "avg power", "durchschnittliche leistung", "o leistung", "o leistung w"),
     "max_power": ("maximum power", "max power", "max leistung", "max leistung w"),
-    "elevation": ("elevation gain", "total ascent", "anstieg gesamt", "anstieg gesamt m", "hoehenmeter"),
+    "elevation": ("elevation gain", "total ascent", "anstieg gesamt", "anstieg gesamt m", "hoehenmeter", "positiver hohenunterschied", "positiver hoehenunterschied"),
     "training_effect": ("training effect", "trainingseffekt", "aerobic te"),
     "rpe": ("rpe", "perceived exertion", "belastungsempfinden"),
     "notes": ("notes", "notizen", "comments", "kommentare"),
-    "lap": ("lap", "laps", "runde", "runden", "split"),
+    "lap": ("lap", "laps", "runde", "runden", "split", "zwischenzeit", "zwischenzeiten"),
 }
 
 
@@ -268,7 +268,7 @@ def build_activity(path: Path, row: dict[str, str], columns: dict[str, str | Non
         pace = duration_sec / distance
     if speed is None and pace:
         speed = 3600 / pace
-    date = parse_date(row_value(row, columns, "date")) or parse_date(path.stem) or hint.get("date", "")
+    date = parse_date(row_value(row, columns, "date")) or hint.get("date", "") or parse_date(path.stem)
     if not date:
         date = datetime.fromtimestamp(path.stat().st_mtime).date().isoformat()
         warning.append(f"{path.name}: Kein Aktivitätsdatum gefunden; Dateidatum {date} verwendet. Datei künftig mit YYYY-MM-DD beginnen.")
@@ -277,7 +277,8 @@ def build_activity(path: Path, row: dict[str, str], columns: dict[str, str | Non
     sport = sport_code(source_sport, session_name)
     if not sport_is_explicit(source_sport, session_name):
         warning.append(f"{path.name}: Keine Sportart erkannt; 'run' angenommen. Für Rad/Kraft einen Zusatz wie '_kickr' oder '_kraft' verwenden.")
-    activity_id = stable_id(path, date, distance, elapsed_duration_sec or duration_sec, row_value(row, columns, "activity_id"))
+    activity_id = stable_id(path, date, distance, elapsed_duration_sec or duration_sec,
+                            row_value(row, columns, "activity_id") or hint.get("local_activity_id", ""))
     return {
         "activity_id": activity_id,
         "source_file": path.name,
@@ -407,7 +408,7 @@ def parse_file(path: Path, hints: dict[str, dict[str, str]]) -> tuple[list[dict[
     metadata_path = path.with_suffix(".metadata.json")
     if metadata_path.exists():
         metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
-        for field in ("date", "session_name", "sport"):
+        for field in ("date", "session_name", "sport", "local_activity_id"):
             if isinstance(metadata.get(field), str):
                 hint[field] = metadata[field]
     if summary_rows:

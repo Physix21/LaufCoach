@@ -23,8 +23,11 @@ Abweichender Zeitraum:
 & "$env:LOCALAPPDATA\Laufcoach\venv\Scripts\python.exe" scripts/garmin_sync.py sync --since 2026-10-01
 ```
 
-Der Client verwendet inoffizielle Garmin-Webdienste. Ein echter Kontologin und
-Download sind noch nicht geprüft. [Quellen und Grenzen](../plans/garmin_sync_recherche.md).
+Der Client verwendet inoffizielle Garmin-Webdienste. Kontologin und direkter
+CSV-Download wurden am 10.10.2026 erfolgreich geprüft. Der direkte deutsche
+Export verwendet unter anderem `Zwischenzeit`, `Max. HF` und `Positiver
+Höhenunterschied`; diese Spalten werden erkannt, Summenzeilen nicht als Runde gezählt.
+[Quellen und Grenzen](../plans/garmin_sync_recherche.md).
 Kein Passwort im Chat oder Repository hinterlegen. Für erneute Anmeldung wieder
 `garmin_login.bat` verwenden. Es ist kein Hintergrundzeitplan eingerichtet.
 
@@ -37,6 +40,12 @@ Garmin-IDs verhindern erneute Downloads. Mögliche Dubletten alter manueller
 Exporte werden anhand Datum, Sportart, Distanz und Dauer ausgelassen und gemeldet;
 sie gelten nicht automatisch als bestätigte Zuordnung. Bei zwei tatsächlich
 verschiedenen, nahezu identischen Einheiten ist eine manuelle Prüfung nötig.
+Bei abweichenden Dateinamen-Daten sämtliche Runden vergleichen. Erst nach
+bestätigter Übereinstimmung dürfen Metadaten das Datum berichtigen: `date`
+enthält das Garmin-Startdatum, `local_activity_id` bewahrt die vorhandene ID,
+`garmin_activity_id` hinterlegt die bestätigte Zuordnung für folgende Abrufe.
+Zusätzliche Downloads derselben Einheit unter `csv/verified_duplicates/`
+aufbewahren; dieser Unterordner wird nicht importiert. Rohdateien bleiben unverändert.
 Maximal 200 Aktivitäten pro Aufruf; beim Seitenlimit wird Unvollständigkeit gemeldet.
 Einige Kraft-/Schwimmformate sind ausdrücklich nicht Teil dieses CSV-Abrufs.
 

@@ -84,6 +84,16 @@ class SyncTests(unittest.TestCase):
         self.assertEqual(result["known"], 0)
         self.api.download_activity.assert_not_called()
 
+    def test_reviewed_legacy_mapping_prevents_download_despite_old_filename_date(self):
+        self.raw.mkdir()
+        source = self.raw / "2030-03-31_run.csv"
+        source.write_bytes(CSV)
+        source.with_suffix(".metadata.json").write_text(json.dumps({
+            "local_activity_id": "local-test", "garmin_activity_id": str(ITEM["activityId"])}))
+        result = self.run_sync(existing=[{"activity_id": "local-test", "source_file": source.name}])
+        self.assertEqual(result["known"], 1)
+        self.api.download_activity.assert_not_called()
+
     def test_different_session_on_same_day_is_not_deduplicated(self):
         existing = [{"activity_id": "local-anonymous", "date": "2030-04-02", "sport": "run",
                      "distance_km": "4.0", "duration_min": "20.0"}]

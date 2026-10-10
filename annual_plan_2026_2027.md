@@ -81,7 +81,7 @@ späterer spezifischer Einheiten erneut geprüft.
 
 ## Regeln für die laufende Anpassung
 
-Die Planung ist vollständig, bleibt aber anpassbar. Bis 04.10.2026 liegen
+Die Planung ist vollständig, bleibt aber anpassbar. Bis 10.10.2026 liegen
 Aktivitätsdaten vor; zukünftige Durchführung oder Verträglichkeit wird nicht
 unterstellt. Nach jeder Woche die nächste Belastungsstufe prüfen. Nach Ausfällen
 bei der letzten verträglichen Woche ansetzen, ohne versäumte Reize nachzuholen.

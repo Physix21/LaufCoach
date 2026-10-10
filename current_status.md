@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 10.10.2026 (Planung und Aktivitäten bis einschließlich 10.10.2026)
+**Stand:** 10.10.2026 (Aktivitäten bis einschließlich 10.10.2026; direkter Garmin-Abgleich erfolgreich, historische Datumszuordnungen korrigiert)
 
 ## Ziel und Phase
 
@@ -40,10 +40,12 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Letzte abgeschlossene Woche
 
-- KW 40: 16,35 km Laufen in zwei Einheiten und 28,78 km Rad in 54:04 min; Krafttraining und ein dritter Lauf sind nicht dokumentiert
-- 02.10.: 8,05 km locker in 42:55 min (5:20 min/km), Ø 129 bpm, maximal 143 bpm; gleichmäßige 2-km-Runden
-- 03.10.: 54:04 min Rad mit Leistungstreppen bis Ø 244 W, insgesamt Ø 182 W und NP 189 W; moderat strukturierter Reiz, kein klares HIIT
-- 04.10.: 4 × 1000 m in 3:40 / 3:40 / 3:37 / 3:27 min/km innerhalb von 8,30 km; schneller als geplant und zum Ende deutlich beschleunigt. Herzfrequenz fehlt im Export.
+- KW 40 nach direktem Garmin-Abgleich: 26,41 km Laufen in drei Einheiten und 58,94 km Rad in ca. 2:46:42 h Timerzeit; Krafttraining ist nicht dokumentiert.
+- 28.09., neu ergänzt: 10,06 km Tempodauerlauf in 41:21,6 min, Ø ca. 4:07 min/km aus Distanz/Zeit, Ø 159 bpm, maximal 173 bpm. Durchgehend schwellennahe Pace, als harter Reiz eingeordnet.
+- 30.09. (Datum korrigiert, zuvor 02.10.): 8,05 km locker in 42:55 min (5:20 min/km), Ø 129 bpm, maximal 143 bpm; gleichmäßige 2-km-Runden.
+- 02.10. (zuvor 03.10.): 54:04 min Rad mit Leistungstreppen bis Ø 244 W, insgesamt Ø 182 W und NP 189 W; moderat strukturierter Reiz, kein klares HIIT.
+- 03.10. (zuvor 04.10.): 4 × 1000 m in 3:40 / 3:40 / 3:37 / 3:27 min/km innerhalb von 8,30 km; schneller als geplant und zum Ende deutlich beschleunigt. Herzfrequenz fehlt im Export.
+- 04.10., neu ergänzt: 30,16 km Rad in 1:52:37,5 h Timerzeit (1:43:37,4 h in Bewegung), Ø 84 bpm, maximal 152 bpm; Leistung fehlt. Vorläufig locker eingeordnet, Pulssignal allein nicht ausreichend für eine sichere Belastungsbewertung.
 - RPE, Gefühl und Beschwerden wurden nicht angegeben; daraus wird weder Beschwerdefreiheit noch eine Einschränkung abgeleitet.
 
 ### Vorwoche KW 39
@@ -56,10 +58,10 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Belastbarkeit und Einordnung
 
-- Der lockere Lauf am 02.10. zeigt bei gleichmäßiger Pace einen niedrigen und stabilen Puls. Zusammen mit dem Intervalllauf ergibt das jedoch erst zwei Läufe in KW 40; die angestrebte Drei-Läufe-Struktur ist noch nicht stabil.
+- Der lockere Lauf am 30.09. zeigt bei gleichmäßiger Pace einen niedrigen und stabilen Puls. Mit dem neu erfassten Tempodauerlauf wurden drei Läufe in KW 40 erreicht, davon zwei harte. Eine Woche belegt noch keine stabile Drei-Läufe-Routine; zuvor fehlende Daten dürfen nicht als ausgefallenes Training interpretiert werden.
 - Die vier 1000-m-Wiederholungen waren schneller als die Vorgabe, besonders die letzte mit 3:27 min/km. Die Temposteigerung belegt Geschwindigkeitsreserve, erlaubt ohne kontrollierten Formcheck und ohne Pulsdaten aber keine neue 5-km-Prognose oder schnellere Trainingsvorgabe.
-- Ein- und Auslaufen am 04.10. waren kürzer als vorgesehen. Die strukturierte Radfahrt lag am Vortag; sie zählt nicht als klar harter Reiz, erhöhte aber die Gesamtbelastung vor den Intervallen.
-- Die Bodenkontaktbalance fehlt auch im Export vom 04.10. und kann weiterhin nicht verglichen werden.
+- Ein- und Auslaufen der Intervalle am 03.10. waren kürzer als vorgesehen. Die strukturierte Radfahrt lag am Vortag; sie zählt nicht als klar harter Reiz, erhöhte aber die Gesamtbelastung vor den Intervallen.
+- Die Bodenkontaktbalance fehlt auch im Export des Intervalllaufs am 03.10. und kann weiterhin nicht verglichen werden.
 
 ## Nächster Coaching-Fokus
 

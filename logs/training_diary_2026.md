@@ -756,7 +756,7 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der Lauf am 10.09. blieb anhand Pace und Herzfrequenz locker. Die Rad-Pyramide war moderat strukturiert, und der Schwellenlauf am 12.09. war der einzige klar harte Ausdauerreiz.
 - Gegenüber der geplanten reinen Erholungswoche lag damit mehr Intensität vor. Der Laufumfang blieb gegenüber KW 36 reduziert; für KW 38 wird nicht zusätzlich verschärft und der nächste Qualitätslauf bleibt an vollständige Erholung gebunden.
 
-## 14.09.2026 – Langer lockerer Lauf
+## 15.09.2026 – Langer lockerer Lauf
 
 **Quelle:** `data/raw/garmin/csv/14092026.csv`
 
@@ -871,7 +871,23 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der geplante lockere Lauf mit Steigerungen, der lange lockere Lauf und das Krafttraining sind nicht dokumentiert. Der Athlet hat bestätigt, dass am 27.09. kein Lauf mehr stattfindet.
 - Die Drei-Läufe-Struktur wurde in dieser Woche nicht erreicht. In der Folgewoche wird nicht versucht, den ausgefallenen Umfang nachzuholen; der Einstieg erfolgt locker, und der nächste harte Reiz folgt erst nach ausreichender Erholung.
 
-## 02.10.2026 – Lockerer Lauf
+## 28.09.2026 – Tempodauerlauf (beim Garmin-Abgleich ergänzt)
+
+**Quelle:** `data/raw/garmin/csv/2026-09-28_run_activity_24527182828.csv`; lokales Startdatum direkt aus Garmin Connect.
+
+### Messdaten
+
+- 10,06 km in 41:21,6 min Timerzeit; 41:16 min in Bewegung, 42:42,2 min verstrichen laut Aktivitätsmetadaten.
+- Ø ca. 4:07 min/km aus Distanz und Zeit; exportierte Durchschnittspace 4:06 min/km. Ø 159 bpm, maximal 173 bpm, 42 m Anstieg. Leistungswerte fehlen in der Zwischenzeiten-CSV.
+- Fünf 2-km-Runden in 8:17,8 / 8:08,2 / 8:11,5 / 8:07,3 / 8:15,0 min, anschließend 0,06 km in 21,7 s. Durchschnittspuls der vollen Runden: 145 / 163 / 161 / 164 / 162 bpm.
+- RPE, Gefühl und Beschwerden nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Durchgehender Lauf nahe dem derzeitigen Schwellenbereich; als harter Ausdauerreiz eingeordnet. Das ist ein zusätzlicher dokumentierter Lauf in KW 40, kein Wettkampf oder neuer 5-km-Leistungsanker.
+- Die vollen Runden waren gleichmäßig. Separate ruhige Ein- und Auslaufabschnitte sind in dieser Aufzeichnung nicht erkennbar; andere Aktivitäten werden nicht unterstellt.
+
+## 30.09.2026 – Lockerer Lauf
 
 **Quelle:** `data/raw/garmin/csv/02102026.csv`
 
@@ -886,9 +902,9 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 ### Coaching-Einschätzung
 
 - Gleichmäßige Pace und niedrige, nur leicht steigende Herzfrequenz sprechen für einen lockeren aeroben Lauf.
-- Der Lauf entspricht in Dauer und Distanz ungefähr der geplanten lockeren Einheit, wurde aber erst am 02.10. statt am 29.09. absolviert. Steigerungen sind nicht dokumentiert.
+- Der Lauf entspricht in Dauer und Distanz ungefähr der geplanten lockeren Einheit, wurde am 30.09. statt am 29.09. absolviert. Das Garmin-Startdatum korrigiert die frühere Zuordnung zum 02.10. anhand des Dateinamens. Steigerungen sind nicht dokumentiert.
 
-## 03.10.2026 – Radausfahrt mit Leistungspyramide
+## 02.10.2026 – Radausfahrt mit Leistungspyramide
 
 **Quelle:** `data/raw/garmin/csv/03102026.csv`
 
@@ -905,7 +921,7 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Die Leistungstreppen erreichten maximal etwa 84–87 % der hinterlegten FTP von 280–290 W. Dies ist ein moderat strukturierter, kein klar harter Rad-HIIT-Reiz.
 - Die Fahrt ist kürzer und zeitweise intensiver als die geplante lockere Radalternative zum langen Lauf. Sie ersetzt den fehlenden langen Lauf hinsichtlich der laufspezifischen Belastung nicht gleichwertig.
 
-## 04.10.2026 – 4 × 1000 m
+## 03.10.2026 – 4 × 1000 m
 
 **Quelle:** `data/raw/garmin/csv/04102026.csv`
 
@@ -923,11 +939,27 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Vorlauf und Auslauf waren kürzer als geplant. Die 0,79-km-Runde vor dem ersten Intervall und die 0,31-km-Runde danach enthalten langsame beziehungsweise stehende Zeit; die genaue Pausenstruktur lässt sich aus den Runden allein nicht sicher bestimmen.
 - Ohne Herzfrequenz und subjektive Angaben lässt sich die innere Belastung nicht beurteilen. Die Einheit ist kein neuer 5-km-Leistungsanker und begründet keine Verschärfung der Trainingspaces.
 
-## Wochenfazit KW 40
+## 04.10.2026 – Radausfahrt (beim Garmin-Abgleich ergänzt)
 
-- Dokumentiert: 16,35 km Laufen in zwei Einheiten und 28,78 km Rad in 54:04 min. Krafttraining und weitere Einheiten sind nicht dokumentiert.
-- Der Lauf am 02.10. war locker. Die Radfahrt am 03.10. war moderat strukturiert. Der Intervalllauf am 04.10. war der einzige klar harte Ausdauerreiz, folgte aber direkt auf die Radfahrt.
-- Der geplante lange lockere Lauf entfiel. Die angestrebte Drei-Läufe-Struktur wurde erneut nicht erreicht. In KW 41 werden keine ausgefallenen Kilometer nachgeholt; der nächste Qualitätslauf bleibt kontrolliert, mit vollständigem Ein- und Auslaufen.
+**Quelle:** `data/raw/garmin/csv/2026-10-04_bike_activity_24603618759.csv`; Aktivitätsmetadaten aus Garmin Connect.
+
+### Messdaten
+
+- 30,16 km in 1:52:37,5 h Timerzeit; 1:43:37,4 h in Bewegung, 2:45:43,6 h verstrichen laut Aktivitätsmetadaten. Timerzeit und verstrichene Zeit sind hier ausdrücklich verschieden.
+- Ø ca. 16,1 km/h bezogen auf die Timerzeit, Ø 84 bpm, maximal 152 bpm; 106 m Anstieg. Leistung fehlt.
+- Sechs 5-km-Runden sowie 0,16 km Rest. Ø Puls der vollen Runden: 78 / 85 / 82 / 88 / 79 / 94 bpm.
+- RPE, Gefühl und Beschwerden nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Keine belastbare Grundlage für einen weiteren harten Reiz. Vorläufig als locker erfasst; die niedrigen Pulswerte allein beweisen keine durchgehend niedrige Belastung oder korrekte Sensoraufzeichnung.
+- Die zusätzliche Dauer wird in der Wochenbelastung berücksichtigt. Die Radausfahrt ersetzt keinen laufspezifischen Umfang.
+
+## Wochenfazit KW 40 (nach Garmin-Abgleich korrigiert)
+
+- Dokumentiert: 26,41 km Laufen in drei Einheiten und 58,94 km Rad in insgesamt ca. 2:46:42 h Timerzeit. Krafttraining ist nicht dokumentiert.
+- Harte Laufreize: Tempodauerlauf am 28.09. und Intervalle am 03.10.; dazwischen lockerer Lauf am 30.09. Die moderat strukturierte Radfahrt am 02.10. lag vor den Intervallen. Am 04.10. kam die längere Radausfahrt hinzu.
+- Drei Läufe wurden erreicht, aber mit zwei harten Läufen und nur einem lockeren Lauf. Ein einzelner solcher Wochenumfang begründet noch keine dauerhafte Belastbarkeit. Die zuvor aus unvollständigen Dateien abgeleitete Aussage von nur zwei Läufen ist korrigiert; keine Nachholkilometer planen.
 
 ## 08.10.2026 – Zügiger Dauerlauf
 
@@ -941,7 +973,7 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 
 ### Coaching-Einschätzung
 
-- Gleichmäßiger Lauf, aber schneller und länger als die geplanten 30 min bei 5:15–5:50 min/km. Auch der Puls liegt deutlich über dem lockeren Lauf vom 02.10. (Ø 129 bpm). Deshalb als zügig/moderat eingeordnet; eine genaue physiologische Zone ist daraus nicht ableitbar.
+- Gleichmäßiger Lauf, aber schneller und länger als die geplanten 30 min bei 5:15–5:50 min/km. Auch der Puls liegt deutlich über dem lockeren Lauf vom 30.09. (Ø 129 bpm; zuvor irrtümlich 02.10.). Deshalb als zügig/moderat eingeordnet; eine genaue physiologische Zone ist daraus nicht ableitbar.
 - Der Lauf wird dem lockeren Laufplatz der Woche zugeordnet, mit sichtbarer Abweichung von der Vorgabe. Er ist kein Schwellenlauf.
 
 ## 09.10.2026 – Rad: 3 × 5 min schwellennahe Belastung
@@ -993,6 +1025,13 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - 38 konkrete Wochen sind bis einschließlich 27.06.2027 hinterlegt. Entlastungswochen, 10-km-Test, Erholung, 5-km-Spezifik und Taper sind berücksichtigt; spätere Temposteigerungen haben Voraussetzungen und Ersatzvorgaben.
 - Der 10-km-Test ersetzt den alten 5-km-Frühjahrscheck. Unter 38 min allein bestätigt keine Sub-17-Form. Die Quellen und Grenzen der Monatswahl stehen in `plans/10km_test_evidenz_2027.md`.
 - Die Zielangabe ist ein Planungsupdate. Anschließend wurden die Aktivitäten vom 08., 09. und 10.10. nachgereicht; sie sind oben getrennt ausgewertet und in die unmittelbar folgende Planung eingearbeitet.
+
+## 10.10.2026 – Erster direkter Garmin-Abgleich
+
+- Lokale Anmeldung und Abruf der Zwischenzeiten erfolgreich. Im abgefragten Zeitraum sechs Dateien heruntergeladen; neun mögliche Dubletten anhand der Zusammenfassungen ausgelassen, darunter 08.–10.10. Keine neuere Aktivität als 10.10. vorhanden.
+- Vier Downloads über sämtliche Runden mit bestehenden Exporten abgeglichen: Distanzen und verfügbare Durchschnittspulse identisch, Zeitabweichungen höchstens 0,6 s durch Rundung. Diese Einheiten werden jeweils nur einmal gezählt.
+- Korrigierte Aktivitätsdaten aus `startTimeLocal`: langer Lauf 15.09. statt 14.09.; lockerer Lauf 30.09. statt 02.10.; Leistungspyramide Rad 02.10. statt 03.10.; 1000er 03.10. statt 04.10. Alte Rohdateinamen bleiben unverändert; geprüfte Metadaten korrigieren Datum und erhalten bestehende lokale IDs. Die entsprechenden Tagebucheinträge oben sind berichtigt.
+- Zwei zuvor fehlende Aktivitäten ergänzt: Tempodauerlauf 28.09. und Radausfahrt 04.10. Die KW-40-Auswertung ist entsprechend korrigiert. Aktuelle Erholungsplanung nach 09./10.10. bleibt passend.
 
 ## Rückblick: Wochenfazit KW 35
 

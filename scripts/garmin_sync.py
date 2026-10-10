@@ -105,6 +105,22 @@ def validate_download(path: Path, metadata: dict, item: dict) -> None:
         raise SyncError(f"Aktivität {metadata['activity_id']}: widersprüchliches Datum.")
 
 
+def confirmed_garmin_ids(raw_dir: Path, existing: list[dict]) -> set[str]:
+    """Nur nach Rundenvergleich bestätigte Zuordnungen alter Exporte nutzen."""
+    result = set()
+    for row in existing:
+        source = raw_dir / Path(row.get("source_file", "")).name
+        metadata_path = source.with_suffix(".metadata.json")
+        if not source.is_file() or not metadata_path.exists():
+            continue
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        garmin_id = str(metadata.get("garmin_activity_id", ""))
+        if (metadata.get("local_activity_id") == row.get("activity_id")
+                and re.fullmatch(r"\d{8,}", garmin_id)):
+            result.add(garmin_id)
+    return result
+
+
 def download_new(api, csv_format, since: date, *, raw_dir: Path = importer.RAW_DIR,
                  existing: list[dict] | None = None, max_pages: int = 10) -> dict:
     if str(api.get_unit_system()).lower() != "metric":
@@ -113,6 +129,7 @@ def download_new(api, csv_format, since: date, *, raw_dir: Path = importer.RAW_D
     if existing is None:
         existing = importer.read_table(importer.ACTIVITIES_FILE)
     known_ids = {row["activity_id"] for row in existing}
+    known_ids.update(confirmed_garmin_ids(raw_dir, existing))
     seen = set()
     result = {"downloaded": [], "known": 0, "possible_duplicates": [], "unsupported": 0}
     exhausted = False

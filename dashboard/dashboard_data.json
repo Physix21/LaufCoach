@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T17:50:14+02:00",
+  "generated_at": "2026-10-10T17:56:53+02:00",
   "today": "2026-10-10",
   "season": {
     "plan_start": "2026-10-05",
@@ -97,7 +97,7 @@
         "cooldown": "5 min locker beenden (gesamt 30 min)",
         "target_pace": "5:15–5:50 min/km",
         "rpe_target": "3/10",
-        "description": "Ruhiger Einstieg nach den Intervallen vom 04.10.; keine Nachholkilometer.",
+        "description": "Ruhiger Einstieg nach den Intervallen vom 03.10. (Garmin-Datum korrigiert); keine Nachholkilometer.",
         "alternatives": "Statt dieses Laufs 40–50 min Rad locker bei ca. 150–180 W; ersetzt den Lauf.",
         "display_status": "erledigt",
         "matched_activity_id": "local-332b56b2538fd5fa",
@@ -197,7 +197,7 @@
             "cooldown": "5 min locker beenden (gesamt 30 min)",
             "target_pace": "5:15–5:50 min/km",
             "rpe_target": "3/10",
-            "description": "Ruhiger Einstieg nach den Intervallen vom 04.10.; keine Nachholkilometer.",
+            "description": "Ruhiger Einstieg nach den Intervallen vom 03.10. (Garmin-Datum korrigiert); keine Nachholkilometer.",
             "alternatives": "Statt dieses Laufs 40–50 min Rad locker bei ca. 150–180 W; ersetzt den Lauf.",
             "display_status": "erledigt",
             "matched_activity_id": "local-332b56b2538fd5fa",
@@ -5179,9 +5179,30 @@
       "intensity": "moderate"
     },
     {
+      "activity_id": "24603618759",
+      "source_file": "2026-10-04_bike_activity_24603618759.csv",
+      "date": "2026-10-04",
+      "sport": "bike",
+      "session_name": "Radausfahrt",
+      "duration_min": 112.63,
+      "distance_km": 30.16,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 16.07,
+      "avg_hr": 84.0,
+      "max_hr": 152.0,
+      "avg_power": null,
+      "max_power": null,
+      "elevation_gain_m": 106.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "LIT"
+    },
+    {
       "activity_id": "local-33baad1f1c064b58",
       "source_file": "04102026.csv",
-      "date": "2026-10-04",
+      "date": "2026-10-03",
       "sport": "run",
       "session_name": "4 × 1000 m",
       "duration_min": 43.3,
@@ -5202,7 +5223,7 @@
     {
       "activity_id": "local-593c675e515f261c",
       "source_file": "03102026.csv",
-      "date": "2026-10-03",
+      "date": "2026-10-02",
       "sport": "bike",
       "session_name": "Radausfahrt mit Leistungspyramide",
       "duration_min": 54.07,
@@ -5223,7 +5244,7 @@
     {
       "activity_id": "local-d117f96c12cd4c6e",
       "source_file": "02102026.csv",
-      "date": "2026-10-02",
+      "date": "2026-09-30",
       "sport": "run",
       "session_name": "Lockerer Lauf",
       "duration_min": 42.92,
@@ -5240,6 +5261,27 @@
       "completed": true,
       "notes": "",
       "intensity": "LIT"
+    },
+    {
+      "activity_id": "24527182828",
+      "source_file": "2026-09-28_run_activity_24527182828.csv",
+      "date": "2026-09-28",
+      "sport": "run",
+      "session_name": "Tempodauerlauf",
+      "duration_min": 41.36,
+      "distance_km": 10.06,
+      "avg_pace_sec_per_km": 246.0,
+      "avg_speed_kmh": 14.63,
+      "avg_hr": 159.0,
+      "max_hr": 173.0,
+      "avg_power": null,
+      "max_power": null,
+      "elevation_gain_m": 42.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "",
+      "intensity": "hard"
     },
     {
       "activity_id": "local-396ff5343e650c60",
@@ -5282,48 +5324,6 @@
       "completed": true,
       "notes": "",
       "intensity": "hard"
-    },
-    {
-      "activity_id": "local-d9928d5e2d01b81f",
-      "source_file": "19092026.csv",
-      "date": "2026-09-19",
-      "sport": "run",
-      "session_name": "3 × 7 min kontrollierte Schwelle",
-      "duration_min": 39.42,
-      "distance_km": 8.62,
-      "avg_pace_sec_per_km": 274.4,
-      "avg_speed_kmh": 13.12,
-      "avg_hr": 147.0,
-      "max_hr": 171.0,
-      "avg_power": 458.0,
-      "max_power": 661.0,
-      "elevation_gain_m": 67.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "hard"
-    },
-    {
-      "activity_id": "local-1213c566bdbb1430",
-      "source_file": "16092026.csv",
-      "date": "2026-09-16",
-      "sport": "bike",
-      "session_name": "Radausfahrt mit doppelter Leistungspyramide",
-      "duration_min": 46.5,
-      "distance_km": 25.57,
-      "avg_pace_sec_per_km": null,
-      "avg_speed_kmh": 33.0,
-      "avg_hr": null,
-      "max_hr": null,
-      "avg_power": 218.0,
-      "max_power": 303.0,
-      "elevation_gain_m": 0.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "moderate"
     }
   ],
   "unmatched_activities": [
@@ -5474,16 +5474,16 @@
       "week_start": "2026-09-28",
       "week_end": "2026-10-04",
       "week_label": "KW 40",
-      "run_km": 16.35,
-      "bike_hours": 0.9,
-      "run_sessions": 2,
-      "bike_sessions": 1,
+      "run_km": 26.41,
+      "bike_hours": 2.78,
+      "run_sessions": 3,
+      "bike_sessions": 2,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
-      "lit_sessions": 1,
+      "hard_endurance_sessions": 2,
+      "lit_sessions": 2,
       "moderate_sessions": 1,
-      "hard_sessions": 1,
-      "total_duration_min": 140.3
+      "hard_sessions": 2,
+      "total_duration_min": 294.3
     },
     {
       "week_start": "2026-10-05",
@@ -5556,7 +5556,7 @@
         "gap_label": "+12.2 s",
         "progress_percent": 94.4,
         "source": {
-          "date": "2026-10-04",
+          "date": "2026-10-03",
           "activity_id": "local-33baad1f1c064b58",
           "label": "4 × 1000 m",
           "repetitions": 4,
@@ -5757,7 +5757,7 @@
       "total_duration_min": 149.5
     },
     "warning_count": 1,
-    "activities_total": 32
+    "activities_total": 33
   },
   "upcoming": [
     {

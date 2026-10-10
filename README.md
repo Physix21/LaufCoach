@@ -64,10 +64,10 @@ Laufcoach/
 
 ## Dashboard aktualisieren
 
-**Direkter Garmin-Abruf vorbereitet:** Einmal `garmin_login.bat` lokal öffnen
+**Direkter Garmin-Abruf eingerichtet:** Einmal `garmin_login.bat` lokal öffnen
 und anmelden, danach `sync_garmin.bat` für neue Zwischenzeiten-CSVs nutzen.
-Zugangstokens bleiben außerhalb von Repository und OneDrive. Ein echter
-Kontozugriff ist noch nicht geprüft. [Einrichtung und Ablauf](scripts/README.md#garmin-direkt-herunterladen).
+Zugangstokens bleiben außerhalb von Repository und OneDrive. Anmeldung und
+CSV-Abruf wurden am 10.10.2026 erfolgreich geprüft. [Einrichtung und Ablauf](scripts/README.md#garmin-direkt-herunterladen).
 Die folgenden Schritte bleiben als manueller Importweg verfügbar.
 
 Das Dashboard läuft vollständig lokal und benötigt nur Python 3.10 oder neuer. Es gibt
