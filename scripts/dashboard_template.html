@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Laufcoach · Dein Trainingsplan</title>
+  <link rel="stylesheet" href="style.css">
+  <script>window.DASHBOARD_DATA = __DASHBOARD_DATA__;</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#trainingsplan">Zum Trainingsplan</a>
+  <header class="page-header">
+    <div><p class="eyebrow">DEIN WEG ZU SUB 17</p><h1>Laufcoach<span>5 km · Juni 2027</span></h1></div>
+    <p class="data-status" id="data-status"></p>
+  </header>
+  <nav class="page-nav" aria-label="Bereiche"><a href="#diese-woche">Diese Woche</a><a href="#naechste-woche">Nächste Woche</a><a href="#verlauf">Verlauf</a><a href="#ziel">Ziel</a></nav>
+  <main id="trainingsplan">
+    <noscript><p class="notice">Bitte JavaScript aktivieren, um die lokal gespeicherten Trainingspläne anzuzeigen.</p></noscript>
+    <div id="plan-alert" role="status"></div>
+    <div class="plan-intro"><h2>Deine nächsten zwei Wochen</h2><p>Termine sind Vorschläge. Dauer jeweils inklusive Ein- und Auslaufen; Kilometer sind Richtwerte. Freie Tage dienen der Erholung.</p></div>
+    <div class="weeks" id="weeks"></div>
+    <section id="verlauf" aria-labelledby="verlauf-title">
+      <div class="section-heading"><div><p class="eyebrow">DOKUMENTIERTES TRAINING</p><h2 id="verlauf-title">Dein Verlauf</h2></div><p id="summary-period"></p></div>
+      <div class="metric-grid" id="week-metrics"></div>
+      <details class="disclosure"><summary>Wochenumfang &amp; Trainingshinweise</summary><div class="disclosure-body"><p class="muted">Laufkilometer · letzte 10 Wochen · nur erfasste Aktivitäten</p><div class="chart" id="weekly-chart" role="list" aria-label="Laufkilometer je Woche"></div><h3>Hinweise zur aktuellen Woche</h3><div id="warnings"></div><p class="muted" id="intensity"></p><p class="muted" id="unmatched"></p></div></details>
+      <details class="disclosure"><summary>Letzte 10 Aktivitäten</summary><div class="disclosure-body activity-list" id="activities"></div></details>
+    </section>
+    <section id="ziel" aria-labelledby="ziel-title">
+      <div class="section-heading"><div><p class="eyebrow">5 KM AUF DER STRASSE</p><h2 id="ziel-title">Das Ziel im Blick</h2></div></div>
+      <div class="goal-strip" id="goal-metrics"></div>
+      <details class="disclosure"><summary>Zielzeiten &amp; Jahresplanung</summary><div class="disclosure-body"><p class="muted" id="rep-target-note"></p><div class="target-grid" id="rep-targets"></div><h3>Der Weg bis Juni 2027</h3><p class="muted" id="roadmap-note"></p><div class="roadmap" id="roadmap"></div></div></details>
+      <details class="disclosure" id="other-weeks-panel" hidden><summary>Weitere gespeicherte Planwochen</summary><div class="disclosure-body"><label for="plan-week-select">Planwoche wählen</label><select id="plan-week-select"></select><div id="other-week"></div></div></details>
+    </section>
+  </main>
+  <footer>Aktualisiert <span id="generated"></span> · Planvorgaben und erfasste Aktivitäten werden getrennt dargestellt.</footer>
+</body>
+</html>

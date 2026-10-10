@@ -17,6 +17,7 @@ Vor jeder Planung gilt `wissenschaftliche_grundlagen_5km.md` als dauerhafte Evid
 5. Trotzdem muss genug lockere Ausdauer enthalten sein, um 5 km durchzuhalten und verletzungsarm aufzubauen.
 6. Trainingspläne sollen pro Woche konkrete Einheiten enthalten und eine empfohlene Reihenfolge angeben.
 7. Die genaue Wochenplanung kann flexibel vom Athleten gelegt werden.
+8. Im Dashboard müssen die aktuelle und die folgende Kalenderwoche stets als konkrete Pläne vorliegen. Bei jeder Wochenplanung `plans/current_week.json` und `plans/upcoming_plan.json` entsprechend pflegen. Jede Einheit braucht Datum, Gesamtdauer, Einlaufen/Aufwärmen, Hauptteil, Pausen, Auslaufen/Abschluss und Pace beziehungsweise Kraftintensität. Die Teilzeiten müssen zur Gesamtdauer passen. Fehlen neue Verlaufsdaten, die Folgewoche ausdrücklich als vorläufig kennzeichnen und keine automatische Belastungssteigerung annehmen. Allgemeine Jahresplan-Marker sind kein Wochenplan.
 
 ## Wichtige Trainingslogik
 

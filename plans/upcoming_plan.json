@@ -1,4 +1,88 @@
 {
   "schema_version": 1,
-  "weeks": []
+  "weeks": [
+    {
+      "week_start": "2026-10-12",
+      "week_end": "2026-10-18",
+      "phase": "Phase 2 – Aerobe Basis und Schwelle",
+      "focus": "Drei Läufe festigen: 30 min locker, 2 × 6 min Schwelle und 45 min locker; keine Steigerung gegenüber KW 41",
+      "planning_note": "Vorläufig auf Basis der bis 04.10. erfassten Aktivitäten. Nach Auswertung von KW 41 prüfen und gegebenenfalls reduzieren. Ausgefallene Einheiten nicht nachholen; bei bereits hoher Belastung den Schwellenlauf durch 30 min locker ersetzen.",
+      "planned_sessions": [
+        {
+          "id": "2026-W42-run-easy",
+          "type": "run",
+          "title": "30 min locker",
+          "priority": 1,
+          "scheduled_date": "2026-10-13",
+          "target_intensity": "LIT",
+          "target_duration_min": 30,
+          "target_distance_km": 5.5,
+          "warmup": "10 min sehr ruhig anlaufen (Teil der 30 min)",
+          "main_set": "15 min locker und gleichmäßig",
+          "recovery": "Keine Pausen geplant",
+          "cooldown": "5 min locker beenden (gesamt 30 min)",
+          "target_pace": "5:15–5:50 min/km",
+          "rpe_target": "3/10",
+          "description": "Ruhiger Wochenbeginn. Die Laufhäufigkeit festigen, ohne zusätzliche Minuten oder Tempo hinzuzunehmen.",
+          "alternatives": "Statt dieses Laufs 40–50 min Rad locker bei ca. 150–180 W; ersetzt den Lauf."
+        },
+        {
+          "id": "2026-W42-strength",
+          "type": "strength",
+          "title": "Krafttraining dosiert",
+          "priority": 2,
+          "scheduled_date": "2026-10-14",
+          "target_intensity": "moderate",
+          "target_duration_min": 50,
+          "warmup": "8 min allgemein aufwärmen, darin 2 leichte Vorbereitungssätze Kreuzheben",
+          "main_set": "Kreuzheben 2 × 4–5\nBulgarian Split Squat 2 × 6 je Seite\nEinbeiniges Wadenheben 2 × 8–12 je Seite\nKlimmzüge 3 × 4–8\nBankdrücken 3 × 5–8\nRückenstrecker 2 × 8–12",
+          "recovery": "2–3 min bei Grundübungen, 60–90 s bei Ergänzungsübungen",
+          "cooldown": "2 min locker mobilisieren; Hauptteil mit Pausen ca. 40 min",
+          "target_pace": "2–3 Wiederholungen im Tank; kein Muskelversagen",
+          "rpe_target": "6/10",
+          "setup": "Kreuzheben: Langhantel vom Boden. Split Squat: hinterer Fuß auf der Bank, Kurzhanteln seitlich. Wadenheben: Kurzhantel, freie Hand am Rack. Klimmzüge: Rackstange, bei Bedarf Bandunterstützung. Bankdrücken: Langhantel im Half Rack mit Sicherheitsablagen. Rückenstrecker: Hyperextension-Bank. Für alle Übungen die Last so wählen, dass 2–3 saubere Wiederholungen übrig bleiben.",
+          "alternatives": "Split Squat bei unsicherem Stand durch Ausfallschritte am Boden ersetzen; Klimmzüge durch Kurzhantelrudern 3 × 6–10 je Seite; Bankdrücken durch Kurzhanteldrücken mit gleicher Satzzahl. Bei Zeitmangel einen Satz der Oberkörperübungen streichen, Pausen nicht verkürzen.",
+          "description": "Unterkörpervolumen begrenzt, damit der folgende Qualitätslauf nicht beeinträchtigt wird."
+        },
+        {
+          "id": "2026-W42-run-threshold",
+          "type": "run",
+          "title": "2 × 6 min kontrollierte Schwelle",
+          "priority": 3,
+          "scheduled_date": "2026-10-16",
+          "target_intensity": "hard",
+          "target_duration_min": 45,
+          "target_distance_km": 9,
+          "warmup": "15 min insgesamt: 12 min locker, dann 3 × 15 s steigern mit je 45 s locker traben",
+          "main_set": "2 × 6 min gleichmäßig bei 3:58–4:05 min/km",
+          "recovery": "Einmal 3 min locker traben zwischen den beiden Abschnitten",
+          "cooldown": "15 min locker auslaufen (gesamt 45 min)",
+          "target_pace": "3:58–4:05 min/km; nicht schneller abschließen",
+          "rpe_target": "7/10",
+          "description": "Einziger geplanter harter Ausdauerreiz; vollständiges Ein- und Auslaufen und gleichmäßige Abschnitte.",
+          "alternatives": "Statt dieses Laufs 15 min locker Rad, 3 × 8 min bei ca. 255–270 W mit 4 min locker, danach 10 min ausfahren. Ersetzt den Lauf und zählt als harter Reiz."
+        },
+        {
+          "id": "2026-W42-run-long",
+          "type": "run",
+          "title": "45 min locker",
+          "priority": 4,
+          "scheduled_date": "2026-10-18",
+          "target_intensity": "LIT",
+          "target_duration_min": 45,
+          "target_distance_km": 8,
+          "warmup": "10 min sehr ruhig beginnen (Teil der 45 min)",
+          "main_set": "30 min gleichmäßig locker ohne Endbeschleunigung",
+          "recovery": "Keine Pausen geplant",
+          "cooldown": "5 min locker beenden (gesamt 45 min)",
+          "target_pace": "5:15–5:50 min/km",
+          "rpe_target": "3–4/10",
+          "description": "Dritter Lauf als ruhiger Umfangsreiz. Dauer wie in KW 41; keine Endbeschleunigung und keine Nachholkilometer.",
+          "alternatives": "Statt dieses Laufs 60–75 min Rad locker bei ca. 150–180 W; ersetzt den Lauf."
+        }
+      ],
+      "next_milestone": "5-km-Formcheck im März oder Anfang April 2027",
+      "provisional": true
+    }
+  ]
 }

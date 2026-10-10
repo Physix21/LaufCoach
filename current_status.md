@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 06.10.2026 (letzte Aktivität: 04.10.2026)
+**Stand:** 10.10.2026 (Planungsstand; letzte Aktivität unverändert: 04.10.2026)
 
 ## Ziel und Phase
 
@@ -52,6 +52,9 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 - Die Bodenkontaktbalance fehlt auch im Export vom 04.10. und kann weiterhin nicht verglichen werden.
 
 ## Nächster Coaching-Fokus
+
+- KW 41 (05.–11.10.) und KW 42 (12.–18.10.) liegen als konkrete Dashboard-Pläne vor: jeweils 30 min locker, dosiertes Krafttraining, 2 × 6 min Schwelle innerhalb von 45 min und 45 min locker. Die Laufteilzeiten sind inklusive Ein- und Auslaufen präzisiert; Kraft ist mit ca. 50 min einschließlich Pausen angesetzt.
+- KW 42 ist vorläufig und wiederholt die Laufbelastung aus KW 41 ohne Steigerung. Zu KW 41 sind noch keine Aktivitäten erfasst; die Durchführung wird nicht unterstellt. Nach deren Auswertung den Folgeplan prüfen und bei hoher Belastung den Schwellenlauf durch 30 min locker ersetzen.
 
 - KW 41 mit einem lockeren Lauf beginnen. Ein kontrollierter Schwellenlauf folgt mit Abstand zum harten Lauf vom 04.10.; keine ausgefallenen Kilometer nachholen.
 - Drei verträgliche Läufe anstreben, dabei nur die lockeren Minuten maßvoll ergänzen. Bei nicht dokumentierter Erholung nicht gleichzeitig Umfang und Tempo verschärfen.

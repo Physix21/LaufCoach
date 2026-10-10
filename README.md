@@ -108,6 +108,21 @@ Die aktuelle Woche wird in `plans/current_week.json` gepflegt; weitere Wochen st
 in `plans/upcoming_plan.json`. Diese JSON-Dateien sind die einzige Planquelle des
 Dashboards.
 
+Die Startansicht zeigt aktuelle und nächste Kalenderwoche gleichzeitig, auf dem
+Smartphone untereinander. Datum, Gesamtdauer, Pace sowie Einlaufen, Hauptteil,
+Pausen und Auslaufen stehen direkt an jeder Einheit. Radalternativen und
+Gerätehinweise lassen sich öffnen. Verlauf, Aktivitäten und Jahresplanung sind
+darunter kompakt zusammengefasst. Ein vergangener Termin ohne Aktivitätsnachweis
+wird als „Nicht dokumentiert“ angezeigt; eine automatische Zuordnung bestätigt
+nicht, dass alle Trainingsvorgaben eingehalten wurden.
+
+Bei jeder Wochenplanung beide Kalenderwochen konkret pflegen. Der Build bricht
+bei fehlenden Wochen oder unvollständigen Einheiten mit einer Fehlermeldung ab.
+Die Anzeige wechselt anhand des lokalen Kalenderdatums auch ohne neuen Build.
+Falls nach einem Wochenwechsel noch kein Folgeplan veröffentlicht wurde, weist
+das Dashboard auf die fehlende Planung hin. Neue individuelle Trainingspläne
+müssen weiterhin anhand des Verlaufs erstellt und veröffentlicht werden.
+
 Krafteinheiten sollen in diesen Plan-Dateien übersichtlich strukturiert werden:
 `warmup`, `main_set`, `recovery`, `cooldown`, `setup`, `alternatives`,
 `target_pace` und `rpe_target`. Das Feld `setup` beschreibt konkret, wie die Übung

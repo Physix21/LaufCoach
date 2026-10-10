@@ -25,7 +25,6 @@ DATA_FILE = DASHBOARD / "dashboard_data.json"
 INDEX_FILE = DASHBOARD / "index.html"
 PLAN_FILE = ROOT / "plans" / "current_week.json"
 UPCOMING_FILE = ROOT / "plans" / "upcoming_plan.json"
-TARGET_PLAN_END = date(2027, 6, 30)
 
 WEEKLY_FIELDS = [
     "week_start", "week_end", "run_km", "bike_hours", "run_sessions",
@@ -525,73 +524,48 @@ def scheduled_interval_units(plan: dict[str, Any], upcoming: dict[str, Any]) -> 
     return sorted(entries, key=lambda item: item.get("date") or "")[:8]
 
 
-def phase_for_week(start: date) -> dict[str, Any]:
-    for phase in PROGRESSION_PHASES:
-        phase_start = parse_iso(phase["start"])
-        phase_end = parse_iso(phase["end"])
-        if phase_start and phase_end and phase_start <= start <= phase_end:
-            return phase
-    return PROGRESSION_PHASES[-1]
-
-
-def generated_week_plan(start: date) -> dict[str, Any]:
-    end = start + timedelta(days=6)
-    phase = phase_for_week(start)
-    marker_text = "; ".join(
-        f"{marker['set']}: {marker['time']} ({marker['pace']})"
-        for marker in phase.get("markers", [])
-    )
-    unit_text = "; ".join(phase.get("units", []))
-    return {
-        "week_start": start.isoformat(),
-        "week_end": end.isoformat(),
-        "phase": phase["phase"],
-        "focus": phase["focus"],
-        "generated": True,
-        "planned_sessions": [
-            {
-                "id": f"generated-{start.isoformat()}-focus",
-                "type": "plan",
-                "title": "Wochenrahmen",
-                "priority": 1,
-                "status": "info",
-                "target_intensity": "info",
-                "description": phase["focus"],
-                "main_set": unit_text,
-            },
-            {
-                "id": f"generated-{start.isoformat()}-markers",
-                "type": "plan",
-                "title": "Relevante Marker",
-                "priority": 2,
-                "status": "info",
-                "target_intensity": "info",
-                "description": "Orientierungswerte aus dem Jahresplan; konkrete Wochenpaces werden später anhand der aktuellen Belastbarkeit festgelegt.",
-                "main_set": marker_text,
-            },
-        ],
-    }
-
-
 def complete_plan_weeks(source_weeks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Nur tatsächlich geplante Wochen ausliefern, keine Jahresplan-Platzhalter."""
     explicit: dict[str, dict[str, Any]] = {}
     for week in source_weeks:
         start = parse_iso(week.get("week_start", ""))
         if start:
-            explicit[week_start_for(start).isoformat()] = week
+            key = start.isoformat()
+            if key in explicit:
+                raise ValueError(f"Doppelte Planwoche: {key}")
+            explicit[key] = week
+    return [explicit[key] for key in sorted(explicit)]
 
-    starts = [parse_iso(item.get("week_start", "")) for item in source_weeks]
-    starts = [item for item in starts if item]
-    first = week_start_for(min(starts)) if starts else week_start_for(date.today())
-    last = week_start_for(TARGET_PLAN_END)
 
-    weeks: list[dict[str, Any]] = []
-    current = first
-    while current <= last:
-        key = current.isoformat()
-        weeks.append(explicit.get(key) or generated_week_plan(current))
-        current += timedelta(days=7)
-    return weeks
+def validate_plan_horizon(source_weeks: list[dict[str, Any]], today: date | None = None) -> None:
+    """Ein Build braucht vollständige konkrete Pläne für diese und nächste Woche."""
+    monday = week_start_for(today or date.today())
+    weeks = {week.get("week_start"): week for week in complete_plan_weeks(source_weeks)}
+    for start in (monday, monday + timedelta(days=7)):
+        plan = weeks.get(start.isoformat(), {})
+        sessions = plan.get("planned_sessions", [])
+        if plan.get("generated") or not sessions:
+            raise ValueError(f"Konkreter Trainingsplan fehlt für {start.isoformat()}; aktuelle und nächste Woche müssen gepflegt sein.")
+        end = start + timedelta(days=6)
+        if plan.get("week_end") != end.isoformat():
+            raise ValueError(f"Ungültiges Wochenende im Plan {start.isoformat()}")
+        ids = set()
+        for session in sessions:
+            scheduled = parse_iso(session.get("scheduled_date", ""))
+            if not scheduled or not start <= scheduled <= end:
+                raise ValueError(f"Einheitsdatum außerhalb der Planwoche {start.isoformat()}")
+            for field in ("id", "type", "title", "warmup", "main_set", "recovery", "cooldown", "target_pace"):
+                if not session.get(field):
+                    raise ValueError(f"{session.get('title', 'Einheit')}: {field} fehlt")
+            if session["type"] not in {"run", "strength", "rest"}:
+                raise ValueError("Im Hauptplan stehen nur Lauf, Kraft oder Ruhetage; Rad bleibt Alternative.")
+            if session["id"] in ids:
+                raise ValueError(f"Doppelte Einheits-ID: {session['id']}")
+            ids.add(session["id"])
+            if not isinstance(session.get("target_duration_min"), (int, float)) or session["target_duration_min"] <= 0:
+                raise ValueError(f"{session['title']}: positive Gesamtdauer fehlt")
+            if session["type"] == "run" and not session.get("alternatives"):
+                raise ValueError(f"{session['title']}: Radalternative fehlt")
 
 
 def progression_roadmap(plan: dict[str, Any], upcoming: dict[str, Any]) -> dict[str, Any]:
@@ -804,179 +778,23 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
 
 def render_html(data: dict[str, Any]) -> str:
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    return f'''<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="color-scheme" content="light dark">
-  <title>Laufcoach Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="hero">
-    <div><p class="eyebrow">LOKAL · OFFLINE · AKTUELL</p><h1>Laufcoach Dashboard</h1><p class="hero-goal">5 km sub 17 im Juni 2027</p></div>
-    <div class="hero-meta" id="hero-meta"></div>
-  </header>
-  <main>
-    <section class="primary-plan"><div class="section-head plan-head"><div><p class="eyebrow">PLAN</p><h2 id="plan-title">Aktuelle Woche</h2></div><label class="plan-controls" for="plan-week-select"><span>Woche</span><select id="plan-week-select" aria-label="Planwoche wählen"></select></label><p id="week-focus"></p></div><div class="session-grid" id="sessions"></div></section>
-    <section id="next-session"></section>
-    <section><div class="section-head"><div><p class="eyebrow">LEISTUNGSANKER</p><h2>Ziel-Fortschritt</h2></div><div id="progress-label"></div></div><div class="metric-grid" id="goal-metrics"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">ZIELSPLITS</p><h2>Sub-17 Intervallmarker</h2></div><span class="muted" id="rep-target-note"></span></div><div class="target-grid" id="rep-targets"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">ROADMAP</p><h2>Wann welche Marker relevant werden</h2></div><span class="muted" id="roadmap-note"></span></div><div class="roadmap" id="roadmap"></div><div class="scheduled-strip" id="scheduled-units"></div></section>
-    <section class="two-column"><div class="panel"><div class="section-head"><div><p class="eyebrow">COACH CHECK</p><h2>Hinweise</h2></div></div><div id="warnings"></div></div><div class="panel"><div class="section-head"><div><p class="eyebrow">VERTEILUNG</p><h2>Intensität</h2></div><span class="muted">Lauf + Rad</span></div><div id="intensity"></div></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">VERLAUF</p><h2>Wochenumfang</h2></div><span class="muted">Laufkilometer · letzte 10 Wochen</span></div><div class="chart" id="weekly-chart"></div><div class="summary-row" id="weekly-summary"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">HISTORIE</p><h2>Letzte Aktivitäten</h2></div></div><div class="table-wrap"><table><thead><tr><th>Datum</th><th>Sport</th><th>Einheit</th><th>Dauer</th><th>Distanz</th><th>Pace / Leistung</th><th>Puls</th><th>RPE</th><th>Notizen</th></tr></thead><tbody id="activities"></tbody></table></div><div id="unmatched"></div></section>
-    <section><div class="section-head"><div><p class="eyebrow">AUSBLICK</p><h2>Nächste Wochen</h2></div></div><div class="upcoming-grid" id="upcoming"></div></section>
-  </main>
-  <footer>Generiert <span id="generated"></span> · Quelle: lokale Plan- und Garmin-Daten</footer>
-  <script>window.DASHBOARD_DATA = {payload};</script>
-  <script>
-  (() => {{
-    const d = window.DASHBOARD_DATA;
-    const $ = id => document.getElementById(id);
-    const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
-    const num = (value, digits=1) => value == null || value === '' ? '–' : Number(value).toLocaleString('de-DE', {{maximumFractionDigits:digits}});
-    const pace = sec => sec ? `${{Math.floor(sec/60)}}:${{String(Math.round(sec%60)).padStart(2,'0')}}/km` : '–';
-    const sport = value => ({{run:'Lauf',bike:'Rad',strength:'Kraft',plan:'Plan'}}[value] || value || '–');
-    const fmtDate = value => value ? new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium'}}).format(new Date(value+'T12:00:00')) : '–';
-    const statusClass = value => ({{erledigt:'done',offen:'open',optional:'optional',info:'info'}}[value] || 'open');
-    const planWeeks = d.plan_weeks && d.plan_weeks.length ? d.plan_weeks : [{{key:'current', label:'Aktuelle Woche', plan:d.plan, warnings:d.warnings, unmatched_activities:d.unmatched_activities, week_summary:d.metrics.current_week, intensity:d.intensity}}];
-    const todayIso = () => {{
-      const now = new Date();
-      const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
-      return local.toISOString().slice(0, 10);
-    }};
-    const currentDateIso = todayIso();
-    const isoWeek = value => {{
-      const dt = new Date(value + 'T12:00:00');
-      dt.setDate(dt.getDate() + 4 - (dt.getDay() || 7));
-      const yearStart = new Date(dt.getFullYear(), 0, 1);
-      return Math.ceil((((dt - yearStart) / 86400000) + 1) / 7);
-    }};
-    const weekLabel = week => {{
-      const plan = week.plan || {{}};
-      if (plan.week_start && plan.week_end && plan.week_start <= currentDateIso && currentDateIso <= plan.week_end) return 'Diese Woche';
-      if (plan.week_start && plan.week_start > currentDateIso) {{
-        const daysUntil = (new Date(plan.week_start + 'T12:00:00') - new Date(currentDateIso + 'T12:00:00')) / 86400000;
-        if (daysUntil <= 7) return 'Nächste Woche';
-      }}
-      return plan.week_start ? `KW ${{isoWeek(plan.week_start)}}` : (week.label || 'Planwoche');
-    }};
-    const weekOptionLabel = week => {{
-      const plan = week.plan || {{}};
-      const prefix = weekLabel(week);
-      const range = plan.week_start && plan.week_end ? `${{fmtDate(plan.week_start)}} – ${{fmtDate(plan.week_end)}}` : '';
-      const focus = plan.generated ? plan.phase : plan.focus;
-      return [prefix, range, focus].filter(Boolean).join(' · ');
-    }};
-    const selectInitialPlanKey = () => {{
-      const current = planWeeks.find(week => {{
-        const plan = week.plan || {{}};
-        return plan.week_start && plan.week_end && plan.week_start <= currentDateIso && currentDateIso <= plan.week_end;
-      }});
-      if (current) return current.key;
-      const future = planWeeks.filter(week => (week.plan || {{}}).week_start > currentDateIso).sort((a,b) => (a.plan.week_start || '').localeCompare(b.plan.week_start || ''));
-      if (future.length) return future[0].key;
-      const past = planWeeks.filter(week => (week.plan || {{}}).week_end < currentDateIso).sort((a,b) => (b.plan.week_end || '').localeCompare(a.plan.week_end || ''));
-      if (past.length) return past[0].key;
-      return d.selected_plan_key || planWeeks[0].key;
-    }};
-    let selectedPlanKey = selectInitialPlanKey();
-    const activePlanWeek = () => planWeeks.find(week => week.key === selectedPlanKey) || planWeeks[0];
-    $('hero-meta').innerHTML = `<div><span>Stand</span><strong>${{fmtDate(currentDateIso)}}</strong></div><div><span>Phase</span><strong>${{esc(d.header.phase)}}</strong></div><div><span>Nächste Marke</span><strong>${{esc(d.header.next_milestone)}}</strong></div>`;
-    const g = d.metrics.goal;
-    const cards = [['Aktuelle 5-km-Zeit',g.current_5k],['Frühere Bestzeit',g.previous_pb],['Zielzeit',g.target_5k],['Aktuelle Pace',g.current_pace],['Zielpace',g.target_pace],['Differenz zum Ziel',g.gap_to_goal],['400 m im 5-km-Tempo',g.target_400m]];
-    $('goal-metrics').innerHTML = cards.map(([label,value],i) => `<article class="metric ${{i===2?'accent':''}}"><span>${{esc(label)}}</span><strong>${{esc(value)}}</strong>${{i===0?`<small>${{fmtDate(g.current_5k_date)}}</small>`:''}}</article>`).join('');
-    $('progress-label').innerHTML = `<span class="progress-value">${{num(g.progress_percent)}} %</span><span class="muted">vom Startanker zum Ziel</span>`;
-    const rt = d.repetition_targets;
-    $('rep-target-note').textContent = rt.note;
-    $('rep-targets').innerHTML = rt.rows.map(row => {{
-      const source = row.source;
-      const gapClass = row.gap_seconds == null ? 'missing' : (row.gap_seconds <= 0 ? 'ready' : 'gap');
-      const gapText = row.gap_seconds == null ? 'noch keine Daten' : `${{row.gap_seconds > 0 ? '+' : ''}}${{Math.round(row.gap_seconds)}} s`;
-      const targetText = `${{row.target_label}} · ${{row.target_pace_label}} · ${{row.marker}}`;
-      return `<article class="target-card ${{gapClass}}"><div class="target-head"><span>${{row.distance_m}} m</span><strong>${{esc(gapText)}}</strong></div><div class="target-bar" title="${{num(row.progress_percent)}} %"><i style="width:${{row.progress_percent}}%"></i><b></b></div><dl><div><dt>Aktuell</dt><dd>${{esc(row.current_label)}}${{source ? ` Ø aus ${{source.repetitions}} Wdh.` : ''}}</dd></div><div><dt>Ziel</dt><dd>${{esc(targetText)}}</dd></div><div><dt>Quelle</dt><dd>${{source ? `${{esc(source.label)}} · ${{fmtDate(source.date)}}` : 'keine passende Intervallserie'}}</dd></div></dl></article>`;
-    }}).join('');
-    const pr = d.progression_roadmap;
-    $('roadmap-note').textContent = pr.note;
-    $('roadmap').innerHTML = pr.rows.map(row => `<article class="roadmap-card ${{esc(row.status)}}"><div class="roadmap-top"><span>${{esc(row.period)}}</span><b>${{esc(row.status)}}</b></div><h3>${{esc(row.phase)}}</h3><p>${{esc(row.focus)}}</p><div class="marker-list">${{row.markers.map(m => `<div><strong>${{esc(m.distance)}}</strong><span>${{esc(m.time)}} · ${{esc(m.pace)}}</span><small>${{esc(m.set)}}</small></div>`).join('')}}</div><ul>${{row.units.map(unit => `<li>${{esc(unit)}}</li>`).join('')}}</ul></article>`).join('');
-    $('scheduled-units').innerHTML = pr.scheduled_units.length ? `<div><strong>Konkret im Plan</strong><span>${{pr.scheduled_units.map(unit => `${{fmtDate(unit.date)}}: ${{esc(unit.main_set)}} (${{esc(unit.target)}})`).join(' · ')}}</span></div>` : '';
-    const planDetails = s => [
-      ['Warm-up', s.warmup],
-      ['Hauptteil', s.main_set],
-      ['Pause', s.recovery],
-      ['Cool-down', s.cooldown],
-      ['Setup', s.setup],
-      ['Alternativen', s.alternatives]
-    ].filter(([,value]) => value != null && value !== '').map(([label,value]) => `<div><dt>${{esc(label)}}</dt><dd>${{esc(value)}}</dd></div>`).join('');
-    if (d.next_session) {{ const s=d.next_session; $('next-session').innerHTML=`<article class="next-card"><div><p class="eyebrow">NÄCHSTE EMPFOHLENE EINHEIT · ${{fmtDate(s.scheduled_date)}}</p><h2>${{esc(s.title)}}</h2><p>${{esc(s.description)}}</p></div><div class="next-target"><span>${{esc(s.target_pace || 'Ziel gemäß Plan')}}</span><strong>RPE ${{esc(s.rpe_target || '–')}}</strong><small>Priorität ${{esc(s.priority)}} · ${{esc(s.target_intensity)}}</small></div></article>`; }}
-    const weeks=d.weekly_summary, max=Math.max(1,...weeks.map(w=>w.run_km));
-    $('weekly-chart').innerHTML=weeks.map(w=>`<div class="bar-column"><span>${{num(w.run_km)}} km</span><div class="bar-track"><i style="height:${{Math.max(2,w.run_km/max*100)}}%"></i></div><small>${{esc(w.week_label)}}</small></div>`).join('');
-    const renderPlanSwitcher = () => {{
-      const select = $('plan-week-select');
-      select.innerHTML = planWeeks.map(week => `<option value="${{esc(week.key)}}" ${{week.key === selectedPlanKey ? 'selected' : ''}}>${{esc(weekOptionLabel(week))}}</option>`).join('');
-      select.onchange = () => {{
-        selectedPlanKey = select.value;
-        renderPlanPanel();
-      }};
-    }};
-    const renderPlanPanel = () => {{
-      const week = activePlanWeek();
-      const plan = week.plan || {{}};
-      const intensity = week.intensity || {{LIT:0, moderate:0, hard:0}};
-      const summary = week.week_summary || {{}};
-      $('plan-title').textContent = weekLabel(week);
-      $('week-focus').textContent = `${{fmtDate(plan.week_start)}}–${{fmtDate(plan.week_end)}} · ${{plan.focus || ''}}${{plan.generated ? ' · automatisch aus Jahresplan' : ''}}`;
-      $('sessions').innerHTML = (plan.planned_sessions || []).map(s => `<article class="session-card ${{statusClass(s.display_status)}}"><div class="card-top"><span class="priority">P${{esc(s.priority)}}</span>${{s.display_status==='info'?'':`<span class="badge ${{statusClass(s.display_status)}}">${{esc(s.display_status)}}</span>`}}</div><p class="sport">${{esc(sport(s.type))}} · ${{fmtDate(s.scheduled_date || plan.week_start)}}</p><h3>${{esc(s.title)}}</h3><p>${{esc(s.description || '')}}</p><dl>${{planDetails(s)}}<div><dt>Ziel</dt><dd>${{esc(s.target_pace || '–')}}</dd></div><div><dt>Umfang</dt><dd>${{s.target_duration_min?esc(s.target_duration_min)+' min':''}}${{s.target_duration_min&&s.target_distance_km?' · ':''}}${{s.target_distance_km?num(s.target_distance_km)+' km':''}}</dd></div><div><dt>Intensität</dt><dd>${{esc(s.target_intensity)}} · RPE ${{esc(s.rpe_target || '–')}}</dd></div></dl>${{s.match_reason?`<small>${{esc(s.match_reason)}}</small>`:''}}</article>`).join('');
-      $('warnings').innerHTML = (week.warnings || []).map(w => `<div class="notice ${{esc(w.level)}}"><span></span><p>${{esc(w.text)}}</p></div>`).join('');
-      const total = Math.max(1, Object.values(intensity).reduce((a,b)=>a+b,0));
-      $('intensity').innerHTML = ['LIT','moderate','hard'].map(key => `<div class="intensity-row"><div><span class="dot ${{key}}"></span><strong>${{key==='moderate'?'Moderat':key}}</strong><b>${{intensity[key] || 0}}</b></div><div class="track"><i class="${{key}}" style="width:${{(intensity[key] || 0)/total*100}}%"></i></div></div>`).join('');
-      $('weekly-summary').innerHTML=`<div><strong>${{num(summary.run_km)}} km</strong><span>Laufumfang</span></div><div><strong>${{summary.run_sessions||0}}</strong><span>Läufe</span></div><div><strong>${{summary.hard_endurance_sessions||0}}</strong><span>harte Ausdauer</span></div>`;
-      const unmatched = week.unmatched_activities || [];
-      $('unmatched').innerHTML = unmatched.length ? `<p class="unmatched"><strong>${{unmatched.length}} nicht zugeordnet:</strong> ${{unmatched.map(a=>esc(a.session_name)).join(', ')}}</p>` : '';
-      renderPlanSwitcher();
-    }};
-    $('activities').innerHTML=d.recent_activities.length?d.recent_activities.map(a=>`<tr><td>${{fmtDate(a.date)}}</td><td><span class="badge neutral">${{esc(sport(a.sport))}}</span></td><td><strong>${{esc(a.session_name)}}</strong><small>${{esc(a.intensity)}}</small></td><td>${{num(a.duration_min)}} min</td><td>${{a.distance_km!=null?num(a.distance_km,2)+' km':'–'}}</td><td>${{a.avg_pace_sec_per_km?pace(a.avg_pace_sec_per_km):(a.avg_power?num(a.avg_power,0)+' W':'–')}}</td><td>${{a.avg_hr?num(a.avg_hr,0)+' / '+num(a.max_hr,0):'–'}}</td><td>${{num(a.rpe)}}</td><td>${{esc(a.notes||'–')}}</td></tr>`).join(''):'<tr><td colspan="9" class="empty">Noch keine Aktivitäten importiert.</td></tr>';
-    const activityLabels = ['Datum','Sport','Einheit','Dauer','Distanz','Pace / Leistung','Puls','RPE','Notizen'];
-    $('activities').querySelectorAll('tr').forEach(row => row.querySelectorAll('td:not(.empty)').forEach((cell, index) => cell.dataset.label = activityLabels[index]));
-    const sessionDetails = s => [
-      ['Priorität', s.priority],
-      ['Intensität', s.target_intensity],
-      ['Dauer', s.target_duration_min ? `${{s.target_duration_min}} min` : ''],
-      ['Distanz', s.target_distance_km ? `${{num(s.target_distance_km)}} km` : ''],
-      ['Warm-up', s.warmup],
-      ['Hauptteil', s.main_set],
-      ['Pause', s.recovery],
-      ['Cool-down', s.cooldown],
-      ['Setup', s.setup],
-      ['Alternativen', s.alternatives],
-      ['Pace / Leistung', s.target_pace],
-      ['RPE', s.rpe_target],
-      ['Status', s.status],
-      ['Details', s.description]
-    ].filter(([,value]) => value != null && value !== '').map(([label,value]) => `<div><dt>${{esc(label)}}</dt><dd>${{esc(value)}}</dd></div>`).join('');
-    $('upcoming').innerHTML=d.upcoming.map(w=>`<article><p class="eyebrow">${{fmtDate(w.week_start)}} – ${{fmtDate(w.week_end)}}</p><h3>${{esc(w.focus)}}</h3><ul>${{(w.planned_sessions||[]).map(s=>`<li class="upcoming-session" tabindex="0"><span>${{esc(sport(s.type))}}</span><strong>${{esc(s.title)}}</strong><div class="session-popover"><p>${{esc(s.title)}}</p><dl>${{sessionDetails(s)}}</dl></div></li>`).join('')}}</ul></article>`).join('');
-    renderPlanPanel();
-    $('generated').textContent = new Intl.DateTimeFormat('de-DE', {{dateStyle:'medium',timeStyle:'short'}}).format(new Date(d.generated_at));
-  }})();
-  </script>
-</body>
-</html>'''
+    template = (ROOT / "scripts" / "dashboard_template.html").read_text(encoding="utf-8")
+    return template.replace("__DASHBOARD_DATA__", payload)
 
 
 def main() -> int:
     ensure_structure()
     print("Laufcoach Dashboard Build")
     print("-------------------------")
-    imported = import_all()
-    for warning in imported["warnings"]:
-        print(f"WARNUNG: {warning}")
     plan = load_plan(PLAN_FILE)
     upcoming = load_json(UPCOMING_FILE, {"weeks": []})
     if not isinstance(upcoming, dict):
         print(f"WARNUNG: {UPCOMING_FILE.relative_to(ROOT)} muss ein JSON-Objekt enthalten; leerer Ausblick verwendet.")
         upcoming = {"weeks": []}
+    validate_plan_horizon([plan, *upcoming.get("weeks", [])])
+    imported = import_all()
+    for warning in imported["warnings"]:
+        print(f"WARNUNG: {warning}")
     activities = read_activities()
     splits = read_splits()
     weekly = summarize_weeks(activities, plan)

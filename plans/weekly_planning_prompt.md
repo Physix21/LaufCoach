@@ -30,6 +30,7 @@ Bitte gib aus:
 1. kurze Einschätzung der Woche
 2. was angepasst werden sollte
 3. konkrete nächste Trainingswoche in empfohlener Reihenfolge
+   und vollständige Pläne für aktuelle plus folgende Kalenderwoche in den JSON-Planquellen; jeweils mit Datum, Gesamtdauer, Pace, Einlaufen, Hauptteil, Pausen und Auslaufen
 4. zu jeder Laufeinheit eine passende Radalternative, die den Lauf ersetzt und nicht zusätzlich absolviert wird
 5. welche Daten ich danach dokumentieren soll
 ```
