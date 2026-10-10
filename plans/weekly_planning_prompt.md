@@ -3,12 +3,14 @@
 Kopiere diesen Prompt in ChatGPT/Codex, nachdem du die letzte Woche dokumentiert hast.
 
 ```text
-Du bist mein Laufcoach für das Ziel: 5 km Straße unter 17:00 im Juni 2027.
+Du bist mein Laufcoach für das Ziel: 5 km Straße unter 17:00 am 22.06.2027.
+Zwischenziel: 10 km unter 38:00 im April 2027; 18.04. ist der noch ungebuchte Planungstermin.
 
 Bitte werte die folgende Trainingswoche aus und erstelle den Plan für die nächste Woche.
 
 Berücksichtige:
 - Hauptziel sub 17
+- den vollständigen Wochenplan bis Juni erhalten; kommende Wochen gezielt anpassen, nicht durch allgemeine Phasen ersetzen
 - aktuelle Phase laut annual_plan_2026_2027.md
 - nach dem Einstieg möglichst 3 verträgliche Läufe pro Woche; Alternativplan mit 2 Läufen
 - dritten Lauf zunächst über kurze lockere Laufzeit aufbauen

@@ -1,0 +1,65 @@
+{
+  "plan_start": "2026-10-05",
+  "plan_end": "2027-06-27",
+  "updated_on": "2026-10-10",
+  "primary_goal": {
+    "date": "2027-06-22",
+    "distance_km": 5,
+    "target_seconds": 1019,
+    "title": "5 km unter 17:00 min",
+    "date_status": "Termin vom Athleten vorgegeben"
+  },
+  "test_goal": {
+    "date": "2027-04-18",
+    "distance_km": 10,
+    "target_seconds": 2279,
+    "title": "10 km unter 38:00 min",
+    "date_status": "Planungstermin; Veranstaltung noch offen",
+    "recommended_window": "April 2027, bevorzugt 10.–25.04."
+  },
+  "planning_note": "Vollständiger Sollplan auf Basis der Daten bis 10.10.2026. Nach jeder Trainingswoche abgleichen; spätere Tempostufen sind an die jeweils angegebenen Voraussetzungen gebunden. Der 10-km-Test ersetzt den bisher vorgesehenen 5-km-Formcheck im Frühjahr.",
+  "phases": [
+    {
+      "period": "Oktober–November 2026",
+      "start": "2026-10-05",
+      "end": "2026-11-29",
+      "phase": "Drei Läufe stabilisieren",
+      "focus": "Kontrollierte Schwelle und kurze 400er wechseln sich ab. Laufminuten langsam aufbauen; jede vierte Woche entlasten."
+    },
+    {
+      "period": "Dezember 2026–Januar 2027",
+      "start": "2026-11-30",
+      "end": "2027-01-31",
+      "phase": "Aerobe Basis und Kraft",
+      "focus": "Längere lockere Läufe, Schwelle und dosierte Hügelreize. Feiertage und Entlastungswochen bewusst kürzer."
+    },
+    {
+      "period": "Februar–März 2027",
+      "start": "2027-02-01",
+      "end": "2027-03-28",
+      "phase": "10-km-Tempohärte",
+      "focus": "Längere kontrollierte Abschnitte in Richtung 3:48 min/km; 400er erhalten Tempogefühl und Abwechslung."
+    },
+    {
+      "period": "April 2027",
+      "start": "2027-03-29",
+      "end": "2027-04-25",
+      "phase": "10-km-Test und Erholung",
+      "focus": "Testlauf unter 38 min am vorläufigen 18.04., danach eine ruhige Woche und neue Pace-Einordnung."
+    },
+    {
+      "period": "Ende April–13. Juni 2027",
+      "start": "2027-04-26",
+      "end": "2027-06-13",
+      "phase": "5-km-spezifischer Aufbau",
+      "focus": "400er, 800er und 1000er gezielt kombinieren. Zielpace nur bei erfüllten Voraussetzungen, keine automatische Beschleunigung."
+    },
+    {
+      "period": "14.–27. Juni 2027",
+      "start": "2027-06-14",
+      "end": "2027-06-27",
+      "phase": "Taper und Zielrennen",
+      "focus": "Laufminuten reduzieren, kurze schnelle Abschnitte erhalten. Dienstag 22.06.: 5 km unter 17 min; anschließend Erholung."
+    }
+  ]
+}

@@ -273,7 +273,7 @@ def build_activity(path: Path, row: dict[str, str], columns: dict[str, str | Non
         date = datetime.fromtimestamp(path.stat().st_mtime).date().isoformat()
         warning.append(f"{path.name}: Kein Aktivitätsdatum gefunden; Dateidatum {date} verwendet. Datei künftig mit YYYY-MM-DD beginnen.")
     session_name = row_value(row, columns, "session_name") or hint.get("session_name", "") or title_from_filename(path)
-    source_sport = row_value(row, columns, "sport")
+    source_sport = row_value(row, columns, "sport") or hint.get("sport", "")
     sport = sport_code(source_sport, session_name)
     if not sport_is_explicit(source_sport, session_name):
         warning.append(f"{path.name}: Keine Sportart erkannt; 'run' angenommen. Für Rad/Kraft einen Zusatz wie '_kickr' oder '_kraft' verwenden.")
@@ -403,7 +403,13 @@ def parse_file(path: Path, hints: dict[str, dict[str, str]]) -> tuple[list[dict[
 
     activities: list[dict[str, str]] = []
     splits: list[dict[str, str]] = []
-    hint = hints.get(path.name, {})
+    hint = dict(hints.get(path.name, {}))
+    metadata_path = path.with_suffix(".metadata.json")
+    if metadata_path.exists():
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        for field in ("date", "session_name", "sport"):
+            if isinstance(metadata.get(field), str):
+                hint[field] = metadata[field]
     if summary_rows:
         activity = build_activity(path, summary_rows[-1], columns, hint, warnings)
         activities.append(activity)
@@ -422,7 +428,9 @@ def parse_file(path: Path, hints: dict[str, dict[str, str]]) -> tuple[list[dict[
                 activities[0]["session_name"] = infer_session_name(activities[0], splits)
 
     for activity in activities:
-        if inferred_header_sport:
+        if hint.get("sport"):
+            activity["sport"] = sport_code(hint["sport"])
+        elif inferred_header_sport:
             activity["sport"] = inferred_header_sport
         if activity["sport"] != "run":
             activity["avg_pace_sec_per_km"] = ""
@@ -492,6 +500,9 @@ def import_all(force: bool = False) -> dict[str, Any]:
     paths = {path for pattern in ("*.csv", "*.CSV", "*.cvs", "*.CVS") for path in RAW_DIR.glob(pattern)}
     for path in sorted(paths):
         digest = file_digest(path)
+        metadata_path = path.with_suffix(".metadata.json")
+        if metadata_path.exists():
+            digest = hashlib.sha256((digest + file_digest(metadata_path)).encode("ascii")).hexdigest()
         old = history["files"].get(path.name, {})
         recorded_ids = old.get("activity_ids", [])
         records_still_exist = bool(recorded_ids) and all(activity_id in activities_by_id for activity_id in recorded_ids)

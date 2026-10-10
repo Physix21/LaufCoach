@@ -12,15 +12,24 @@
 <body>
   <a class="skip-link" href="#trainingsplan">Zum Trainingsplan</a>
   <header class="page-header">
-    <div><p class="eyebrow">DEIN WEG ZU SUB 17</p><h1>Laufcoach<span>5 km · Juni 2027</span></h1></div>
+    <div><p class="eyebrow">DEIN WEG ZU SUB 17</p><h1>Laufcoach<span>5 km · 22.06.2027</span></h1></div>
     <p class="data-status" id="data-status"></p>
   </header>
-  <nav class="page-nav" aria-label="Bereiche"><a href="#diese-woche">Diese Woche</a><a href="#naechste-woche">Nächste Woche</a><a href="#verlauf">Verlauf</a><a href="#ziel">Ziel</a></nav>
+  <nav class="page-nav" aria-label="Bereiche"><a href="#diese-woche" id="nav-current">Diese Woche</a><a href="#naechste-woche" id="nav-next">Nächste Woche</a><a href="#plan-auswahl">Alle Wochen</a><a href="#verlauf">Verlauf</a><a href="#ziel">Ziel</a></nav>
   <main id="trainingsplan">
     <noscript><p class="notice">Bitte JavaScript aktivieren, um die lokal gespeicherten Trainingspläne anzuzeigen.</p></noscript>
     <div id="plan-alert" role="status"></div>
-    <div class="plan-intro"><h2>Deine nächsten zwei Wochen</h2><p>Termine sind Vorschläge. Dauer jeweils inklusive Ein- und Auslaufen; Kilometer sind Richtwerte. Freie Tage dienen der Erholung.</p></div>
+    <div class="season-goals" id="season-goals"></div>
+    <div class="plan-intro" id="plan-auswahl"><h2>Dein Trainingsplan bis zum Ziel</h2><p>Jede Woche ist konkret ausgearbeitet. Zukünftige Vorgaben werden nach deinem Trainingsverlauf angepasst. Trainingstage sind Vorschläge; der 5-km-Wettkampf am 22.06.2027 ist fest.</p></div>
+    <div class="plan-browser" id="other-weeks-panel">
+      <label for="plan-week-select">Woche auswählen</label>
+      <div class="week-controls"><button id="previous-week" type="button" aria-label="Vorherige Planwoche">← Zurück</button><select id="plan-week-select"></select><button id="next-week" type="button" aria-label="Nächste Planwoche">Weiter →</button></div>
+      <div class="plan-shortcuts"><button id="show-near-weeks" type="button">Diese &amp; nächste Woche</button><button id="show-test-week" type="button">Zum 10-km-Test</button><button id="show-race-week" type="button">Zum 5-km-Rennen</button></div>
+      <p class="muted" id="plan-selection-status" role="status" aria-live="polite"></p>
+    </div>
+    <p class="muted plan-key">Dauer inklusive Ein- und Auslaufen; Kilometer sind Richtwerte. Voraussetzungen für spätere Tempostufen stehen direkt an der Einheit.</p>
     <div class="weeks" id="weeks"></div>
+    <div id="other-week" hidden></div>
     <section id="verlauf" aria-labelledby="verlauf-title">
       <div class="section-heading"><div><p class="eyebrow">DOKUMENTIERTES TRAINING</p><h2 id="verlauf-title">Dein Verlauf</h2></div><p id="summary-period"></p></div>
       <div class="metric-grid" id="week-metrics"></div>
@@ -31,7 +40,6 @@
       <div class="section-heading"><div><p class="eyebrow">5 KM AUF DER STRASSE</p><h2 id="ziel-title">Das Ziel im Blick</h2></div></div>
       <div class="goal-strip" id="goal-metrics"></div>
       <details class="disclosure"><summary>Zielzeiten &amp; Jahresplanung</summary><div class="disclosure-body"><p class="muted" id="rep-target-note"></p><div class="target-grid" id="rep-targets"></div><h3>Der Weg bis Juni 2027</h3><p class="muted" id="roadmap-note"></p><div class="roadmap" id="roadmap"></div></div></details>
-      <details class="disclosure" id="other-weeks-panel" hidden><summary>Weitere gespeicherte Planwochen</summary><div class="disclosure-body"><label for="plan-week-select">Planwoche wählen</label><select id="plan-week-select"></select><div id="other-week"></div></div></details>
     </section>
   </main>
   <footer>Aktualisiert <span id="generated"></span> · Planvorgaben und erfasste Aktivitäten werden getrennt dargestellt.</footer>

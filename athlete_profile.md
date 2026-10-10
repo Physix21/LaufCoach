@@ -2,9 +2,10 @@
 
 ## Ziel
 
-- Hauptziel: 5 km Straße unter 17:00 Minuten im Juni 2027
-- Zwischenziel: 2–3 Monate vorher ein 5-km-Formcheck, idealerweise unter 18:00 Minuten
-- Zielwettkampf: noch nicht terminiert, Zielmonat Juni 2027
+- Hauptziel: 5 km Straße unter 17:00 Minuten am Dienstag, 22.06.2027
+- Zwischenziel: ein beliebiger geeigneter 10-km-Lauf unter 38:00 Minuten vor dem Hauptziel; ersetzt den bisherigen 5-km-Frühjahrscheck
+- 10-km-Zeitfenster: April 2027, bevorzugt Mitte April; 18.04.2027 als verschiebbarer Planungstermin, Veranstaltung noch offen
+- Zielwettkampf: Termin 22.06.2027 vom Athleten vorgegeben; Veranstaltung nicht benannt
 - Nebenwettkampf: Halbmarathon am 06.09.2026; Teilnahme ohne spezifischen Halbmarathon-Aufbau
 
 ## Leistungsstand

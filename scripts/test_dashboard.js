@@ -48,9 +48,10 @@ test('full rendering uses real template IDs, shows both weeks and updates on Mon
   const listeners = {};
   const makeWeek = start => ({plan: {week_start:start, week_end:addDays(start,6), focus:'Test', planned_sessions:[{
     title:'<script>test</script>', type:'run', scheduled_date:addDays(start,1), target_duration_min:30,
-    target_pace:'5:30 min/km', warmup:'10 min', main_set:'15 min', recovery:'Keine', cooldown:'5 min', alternatives:'Rad locker'
+    target_pace:'5:30 min/km', warmup:'10 min', main_set:'15 min', recovery:'Keine', cooldown:'5 min', alternatives:'Rad locker', condition:'Drei stabile Laufwochen', fallback:'Sonst locker bleiben'
   }]}, week_summary:{run_km:5, run_sessions:1}, intensity:{LIT:1}, warnings:[]});
-  const data = {plan_weeks:[makeWeek('2030-12-23'),makeWeek('2030-12-30')], recent_activities:[], weekly_summary:[],
+  const data = {plan_weeks:[makeWeek('2030-12-23'),makeWeek('2030-12-30'),makeWeek('2031-01-06'),makeWeek('2031-01-13')], recent_activities:[], weekly_summary:[],
+    season:{test_goal:{date:'2031-01-12',title:'Test'},primary_goal:{date:'2031-01-14',title:'Rennen'}},
     progression_roadmap:{rows:[]}, metrics:{goal:{}}, repetition_targets:{rows:[]}, generated_at:'2030-12-29T12:00:00Z'};
   const context = {
     Date:Clock, Intl,
@@ -64,11 +65,32 @@ test('full rendering uses real template IDs, shows both weeks and updates on Mon
   assert.ok(html.includes('5:30 min/km') && html.includes('Einlaufen') && html.includes('Auslaufen'));
   assert.ok(!html.includes('<script>test</script>'));
   assert.ok(html.includes('&lt;script&gt;test&lt;/script&gt;'));
+  assert.ok(elements['plan-selection-status'].textContent.includes('4 konkrete Planwochen'));
+  assert.equal(elements['previous-week'].disabled, true);
+  elements['next-week'].onclick();
+  assert.equal(elements['plan-week-select'].value, '2030-12-30');
+  assert.equal(elements.weeks.hidden, true);
+  assert.ok(elements['other-week'].innerHTML.includes('Drei stabile Laufwochen'));
+  assert.ok(elements['other-week'].innerHTML.includes('Sonst locker bleiben'));
+  elements['show-test-week'].onclick();
+  assert.equal(elements['plan-week-select'].value, '2031-01-06');
+  elements['show-race-week'].onclick();
+  assert.equal(elements['plan-week-select'].value, '2031-01-13');
+  assert.equal(elements['next-week'].disabled, true);
+  elements['previous-week'].onclick();
+  assert.equal(elements['plan-week-select'].value, '2031-01-06');
+  elements['plan-week-select'].value = '2030-12-23';
+  elements['plan-week-select'].onchange();
+  assert.ok(elements['other-week'].innerHTML.includes('23.12.2030'));
+  elements['show-near-weeks'].onclick();
+  assert.equal(elements.weeks.hidden, false);
   now = '2030-12-30T00:01:00';
   listeners.focus();
   assert.ok(elements.weeks.innerHTML.includes('06.01.2031'));
+  now = '2031-01-20T00:01:00';
+  listeners.focus();
   assert.ok(elements['plan-alert'].innerHTML.includes('nicht vollständig'));
-  assert.equal(elements['other-weeks-panel'].hidden, false);
+  elements['plan-week-select'].value = '2031-01-13';
   elements['plan-week-select'].onchange();
-  assert.ok(elements['other-week'].innerHTML.includes('Gespeicherter Plan'));
+  assert.ok(elements['other-week'].innerHTML.includes('13.01.2031'));
 });

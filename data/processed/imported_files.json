@@ -377,6 +377,33 @@
         "local-33baad1f1c064b58"
       ],
       "warnings": []
+    },
+    "08102026.csv": {
+      "sha256": "2851c5a08656ad469b7beba0c5b4cd1b96e14b81a23f9159a7cfaf56acdb2aa2",
+      "status": "imported",
+      "imported_at": "2026-10-10T14:22:17+02:00",
+      "activity_ids": [
+        "local-332b56b2538fd5fa"
+      ],
+      "warnings": []
+    },
+    "09102026.csv": {
+      "sha256": "9da9851985f6b36eb1186032ac796a6c3bbbea8db1a81c4af92900eb8ebf715f",
+      "status": "imported",
+      "imported_at": "2026-10-10T14:22:17+02:00",
+      "activity_ids": [
+        "local-7848416a16dc7935"
+      ],
+      "warnings": []
+    },
+    "10102026.csv": {
+      "sha256": "872744bc7652ad28fa3925e3605c538e95728572a1f87042d6d7ac2582df1762",
+      "status": "imported",
+      "imported_at": "2026-10-10T14:22:17+02:00",
+      "activity_ids": [
+        "local-7ed4eb324c8d1bd3"
+      ],
+      "warnings": []
     }
   }
 }

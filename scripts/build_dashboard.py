@@ -25,6 +25,7 @@ DATA_FILE = DASHBOARD / "dashboard_data.json"
 INDEX_FILE = DASHBOARD / "index.html"
 PLAN_FILE = ROOT / "plans" / "current_week.json"
 UPCOMING_FILE = ROOT / "plans" / "upcoming_plan.json"
+SEASON_FILE = ROOT / "plans" / "season_goals.json"
 
 WEEKLY_FIELDS = [
     "week_start", "week_end", "run_km", "bike_hours", "run_sessions",
@@ -34,81 +35,6 @@ WEEKLY_FIELDS = [
 HARD_WORDS = ("200", "400", "800", "1000", "interval", "schwelle", "tempo", "bergsprint", "hiit", "30/30", "over/under", "wettkampf")
 MODERATE_WORDS = ("zügig", "steady", "progressiv", "kraft", "pyramide")
 COMPLAINT_WORDS = ("schmerz", "achilles", "knie", "schienbein", "hüfte", "beschwerden")
-PROGRESSION_PHASES = [
-    {
-        "period": "Juli-August 2026",
-        "start": "2026-07-01",
-        "end": "2026-08-31",
-        "phase": "Laufrobustheit und Routine",
-        "focus": "Kontrollierte Qualitaet, Umfang stabilisieren, kurze Intervalle nicht erzwingen.",
-        "markers": [
-            {"distance": "400 m", "time": "87-90 s", "pace": "3:38-3:45 min/km", "set": "6-8 x 400 m"},
-            {"distance": "1000 m", "time": "3:42-3:48", "pace": "3:42-3:48 min/km", "set": "4 x 1000 m"},
-        ],
-        "units": ["8 x 400 m kontrolliert", "4 x 1000 m kontrolliert", "Schwelle statt Zielpace"],
-    },
-    {
-        "period": "September-November 2026",
-        "start": "2026-09-01",
-        "end": "2026-11-30",
-        "phase": "Aerobe Basis und Schwelle",
-        "focus": "Drei Laeufe stabilisieren, Schwelle verbessern, 400er fuer Oekonomie behalten.",
-        "markers": [
-            {"distance": "400 m", "time": "84-88 s", "pace": "3:30-3:40 min/km", "set": "10 x 400 m"},
-            {"distance": "1000 m", "time": "3:38-3:48", "pace": "3:38-3:48 min/km", "set": "4-5 x 1000 m"},
-        ],
-        "units": ["4-5 x 1000 m", "10 x 400 m", "20-30 min Tempo/Cruise"],
-    },
-    {
-        "period": "Dezember 2026-Januar 2027",
-        "start": "2026-12-01",
-        "end": "2027-01-31",
-        "phase": "Kraft, Huegel, VO2max-Vorbereitung",
-        "focus": "Huegelkraft und laengere Intervalle, noch keine volle 5-km-Schaerfe.",
-        "markers": [
-            {"distance": "400 m", "time": "82-87 s", "pace": "3:25-3:38 min/km", "set": "12 x 400 m"},
-            {"distance": "800 m", "time": "2:48-2:56", "pace": "3:30-3:40 min/km", "set": "6 x 800 m"},
-        ],
-        "units": ["6 x 800 m", "12 x 400 m", "45-75 s bergauf"],
-    },
-    {
-        "period": "Februar-Maerz 2027",
-        "start": "2027-02-01",
-        "end": "2027-03-31",
-        "phase": "5-km-spezifischer Aufbau",
-        "focus": "Einheiten in Richtung 17:xx stabilisieren, Formcheck unter 18:00 vorbereiten.",
-        "markers": [
-            {"distance": "400 m", "time": "82-85 s", "pace": "3:25-3:33 min/km", "set": "8-10 x 400 m"},
-            {"distance": "1000 m", "time": "3:30-3:38", "pace": "3:30-3:38 min/km", "set": "5-6 x 1000 m"},
-        ],
-        "units": ["5-6 x 1000 m", "4 x 1200 m", "3 x 1600 m", "8-10 x 400 m"],
-    },
-    {
-        "period": "April-Mai 2027",
-        "start": "2027-04-01",
-        "end": "2027-05-31",
-        "phase": "Spezifische 5-km-Form",
-        "focus": "Zielpace zunehmend integrieren, Tempohaerte aufbauen.",
-        "markers": [
-            {"distance": "400 m", "time": "82-85 s", "pace": "3:25-3:33 min/km", "set": "10 x 400 m"},
-            {"distance": "800 m", "time": "2:44-2:50", "pace": "3:25-3:33 min/km", "set": "6 x 800 m"},
-            {"distance": "1000 m", "time": "3:24-3:32", "pace": "3:24-3:32 min/km", "set": "5 x 1000 m"},
-        ],
-        "units": ["10 x 400 m", "6 x 800 m", "5 x 1000 m", "3 x 1600 m"],
-    },
-    {
-        "period": "Juni 2027",
-        "start": "2027-06-01",
-        "end": "2027-06-30",
-        "phase": "Peak und Taper",
-        "focus": "Frisch werden, Intensitaet kurz erhalten, Umfang reduzieren.",
-        "markers": [
-            {"distance": "400 m", "time": "81-82 s", "pace": "3:24 min/km", "set": "5 x 400 m"},
-            {"distance": "1000 m", "time": "3:24-3:30", "pace": "3:24-3:30 min/km", "set": "3 x 1000 m"},
-        ],
-        "units": ["5 x 400 m in Zielpace", "3 x 1000 m kontrolliert", "kurze Aktivierung"],
-    },
-]
 
 
 def ensure_structure() -> None:
@@ -121,7 +47,7 @@ def ensure_structure() -> None:
             "week_end": (monday + timedelta(days=6)).isoformat(),
             "phase": "Noch nicht geplant",
             "focus": "Wochenplan in plans/current_week.json ergänzen",
-            "next_milestone": "5-km-Formcheck im Frühjahr 2027",
+            "next_milestone": "10-km-Test im Frühjahr 2027",
             "planned_sessions": [],
         })
         print("Hinweis: Fehlenden Plan plans/current_week.json als Vorlage angelegt.")
@@ -240,7 +166,6 @@ def summarize_weeks(activities: list[dict[str, Any]], plan: dict[str, Any]) -> l
     for start in sorted(starts):
         end = start + timedelta(days=6)
         week_items = [item for item in activities if (d := parse_iso(item.get("date", ""))) and start <= d <= end]
-        run_items = [item for item in week_items if item.get("sport") == "run"]
         endurance_items = [item for item in week_items if item.get("sport") in {"run", "bike"}]
         intensity = Counter(classify_intensity(item) for item in endurance_items)
         summaries.append({
@@ -256,7 +181,7 @@ def summarize_weeks(activities: list[dict[str, Any]], plan: dict[str, Any]) -> l
             "lit_sessions": intensity["LIT"],
             "moderate_sessions": intensity["moderate"],
             "hard_sessions": intensity["hard"],
-            "total_duration_min": round(sum(item.get("duration_min") or 0 for item in run_items), 1),
+            "total_duration_min": round(sum(item.get("duration_min") or 0 for item in week_items), 1),
         })
     return summaries
 
@@ -281,12 +206,15 @@ def comparable_sport(value: str) -> str:
     return text
 
 
-def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     start = parse_iso(plan.get("week_start", ""))
     end = parse_iso(plan.get("week_end", ""))
     week_items = [item for item in activities if item.get("sport") in {"run", "bike"} and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
-    used: set[str] = set()
     sessions = sorted((dict(item) for item in plan.get("planned_sessions", [])), key=lambda item: item.get("priority", 99))
+    # Bestätigte Zuordnungen reservieren, bevor eine frühere Planposition
+    # dieselbe Aktivität durch die Heuristik beanspruchen könnte.
+    used: set[str] = {str(s["completed_activity_id"]) for s in sessions
+                      if s.get("status") == "completed" and s.get("completed_activity_id")}
     for session in sessions:
         # Manuell dokumentierte Aktivitäten haben keine importierte Aktivitäts-ID,
         # können aber im Plan ausdrücklich als erledigt markiert sein.
@@ -294,6 +222,9 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> list[d
             session["display_status"] = "erledigt"
             if session.get("completed_activity_id"):
                 used.add(str(session["completed_activity_id"]))
+                if any(str(a.get("activity_id")) == str(session["completed_activity_id"]) for a in week_items):
+                    session["matched_activity_id"] = session["completed_activity_id"]
+                    session["match_reason"] = "Nach Aktivitätsanalyse ausdrücklich zugeordnet"
             continue
         # Kraft bleibt reine Planinformation; Ausdauereinheiten werden über
         # importierte Aktivitätsdaten abgeglichen.
@@ -484,7 +415,7 @@ def repetition_targets(activities: list[dict[str, Any]], splits: list[dict[str, 
     return {
         "race_target": "16:59",
         "pace": "3:24 min/km Renntempo",
-        "note": "Balken zeigen den Abstand aktueller Intervall-Serien zum sub-17-Renntempo; 72-s-400er sind Speedreserve, keine Pflicht fuer sub 17.",
+        "note": "Zielsplit und letzte erfasste Intervallserie im Vergleich. Kurze schnelle Wiederholungen sind kein Nachweis der 5-km-Wettkampfform.",
         "rows": rows,
     }
 
@@ -543,35 +474,75 @@ def validate_plan_horizon(source_weeks: list[dict[str, Any]], today: date | None
     weeks = {week.get("week_start"): week for week in complete_plan_weeks(source_weeks)}
     for start in (monday, monday + timedelta(days=7)):
         plan = weeks.get(start.isoformat(), {})
-        sessions = plan.get("planned_sessions", [])
-        if plan.get("generated") or not sessions:
-            raise ValueError(f"Konkreter Trainingsplan fehlt für {start.isoformat()}; aktuelle und nächste Woche müssen gepflegt sein.")
-        end = start + timedelta(days=6)
-        if plan.get("week_end") != end.isoformat():
-            raise ValueError(f"Ungültiges Wochenende im Plan {start.isoformat()}")
-        ids = set()
-        for session in sessions:
-            scheduled = parse_iso(session.get("scheduled_date", ""))
-            if not scheduled or not start <= scheduled <= end:
-                raise ValueError(f"Einheitsdatum außerhalb der Planwoche {start.isoformat()}")
-            for field in ("id", "type", "title", "warmup", "main_set", "recovery", "cooldown", "target_pace"):
-                if not session.get(field):
-                    raise ValueError(f"{session.get('title', 'Einheit')}: {field} fehlt")
-            if session["type"] not in {"run", "strength", "rest"}:
-                raise ValueError("Im Hauptplan stehen nur Lauf, Kraft oder Ruhetage; Rad bleibt Alternative.")
-            if session["id"] in ids:
-                raise ValueError(f"Doppelte Einheits-ID: {session['id']}")
-            ids.add(session["id"])
-            if not isinstance(session.get("target_duration_min"), (int, float)) or session["target_duration_min"] <= 0:
-                raise ValueError(f"{session['title']}: positive Gesamtdauer fehlt")
-            if session["type"] == "run" and not session.get("alternatives"):
-                raise ValueError(f"{session['title']}: Radalternative fehlt")
+        validate_concrete_week(plan, start)
+
+
+def validate_concrete_week(plan: dict[str, Any], start: date) -> None:
+    if start.weekday() != 0:
+        raise ValueError(f"Planwoche beginnt nicht montags: {start}")
+    sessions = plan.get("planned_sessions", [])
+    if plan.get("generated") or not sessions:
+        raise ValueError(f"Konkreter Trainingsplan fehlt für {start.isoformat()}; aktuelle und nächste Woche müssen gepflegt sein.")
+    end = start + timedelta(days=6)
+    if plan.get("week_end") != end.isoformat():
+        raise ValueError(f"Ungültiges Wochenende im Plan {start.isoformat()}")
+    ids = set()
+    for session in sessions:
+        scheduled = parse_iso(session.get("scheduled_date", ""))
+        if not scheduled or not start <= scheduled <= end:
+            raise ValueError(f"Einheitsdatum außerhalb der Planwoche {start.isoformat()}")
+        for field in ("id", "type", "title", "warmup", "main_set", "recovery", "cooldown", "target_pace"):
+            if not session.get(field):
+                raise ValueError(f"{session.get('title', 'Einheit')}: {field} fehlt")
+        if session["type"] not in {"run", "strength", "rest"}:
+            raise ValueError("Im Hauptplan stehen nur Lauf, Kraft oder Ruhetage; Rad bleibt Alternative.")
+        if session["id"] in ids:
+            raise ValueError(f"Doppelte Einheits-ID: {session['id']}")
+        ids.add(session["id"])
+        if not isinstance(session.get("target_duration_min"), (int, float)) or session["target_duration_min"] <= 0:
+            raise ValueError(f"{session['title']}: positive Gesamtdauer fehlt")
+        if session["type"] == "run" and not session.get("alternatives"):
+            raise ValueError(f"{session['title']}: Radalternative fehlt")
+        parts = session.get("duration_components_min")
+        if parts and abs(sum(parts.values()) - session["target_duration_min"]) > 0.11:
+            raise ValueError(f"{session['title']}: Teilzeiten passen nicht zur Gesamtdauer")
+        if session["type"] == "run" and scheduled.weekday() < 5 and not session.get("race_distance_km") and session["target_duration_min"] > 60:
+            raise ValueError(f"{session['title']}: überschreitet die verfügbare Stunde unter der Woche")
+
+
+def validate_season_plan(source_weeks: list[dict[str, Any]], season: dict[str, Any]) -> None:
+    """Lücken, unvollständige Fernplanung und fehlende Zielrennen verhindern."""
+    start, end = parse_iso(season.get("plan_start", "")), parse_iso(season.get("plan_end", ""))
+    if not start or not end or end < start:
+        raise ValueError("Gültiger Saisonzeitraum fehlt in plans/season_goals.json")
+    weeks = {w["week_start"]: w for w in complete_plan_weeks(source_weeks)}
+    cursor = start
+    all_sessions = []
+    while cursor <= end:
+        plan = weeks.get(cursor.isoformat(), {})
+        validate_concrete_week(plan, cursor)
+        sessions = plan["planned_sessions"]
+        if sum(s.get("target_intensity") == "hard" for s in sessions) > 2:
+            raise ValueError(f"Mehr als zwei harte Einheiten in {cursor}")
+        all_sessions.extend(sessions)
+        cursor += timedelta(days=7)
+    ids = [s["id"] for s in all_sessions]
+    if len(set(ids)) != len(ids):
+        raise ValueError("Einheits-IDs sind über die Saison nicht eindeutig")
+    hard_dates = sorted(date.fromisoformat(s["scheduled_date"]) for s in all_sessions if s.get("target_intensity") == "hard")
+    if any((b-a).days < 2 for a,b in zip(hard_dates, hard_dates[1:])):
+        raise ValueError("Harte Ausdauerreize liegen an aufeinanderfolgenden Tagen")
+    for key in ("test_goal", "primary_goal"):
+        goal = season.get(key, {})
+        matching = [s for s in all_sessions if s.get("scheduled_date") == goal.get("date") and s.get("race_distance_km") == goal.get("distance_km") and s.get("type") == "run"]
+        if len(matching) != 1:
+            raise ValueError(f"Zielrennen {key} fehlt oder ist doppelt im konkreten Plan")
 
 
 def progression_roadmap(plan: dict[str, Any], upcoming: dict[str, Any]) -> dict[str, Any]:
     today = date.today()
     rows = []
-    for index, phase in enumerate(PROGRESSION_PHASES):
+    for index, phase in enumerate(load_json(SEASON_FILE, {}).get("phases", [])):
         start = parse_iso(phase["start"])
         end = parse_iso(phase["end"])
         if start and end and start <= today <= end:
@@ -601,6 +572,16 @@ def create_warnings(plan: dict[str, Any], sessions: list[dict[str, Any]], activi
     previous = next((item for item in weekly if start and item["week_start"] == (start - timedelta(days=7)).isoformat()), None)
     week_activities = [item for item in activities if item.get("sport") in {"run", "bike"} and start and end and (d := parse_iso(item.get("date", ""))) and start <= d <= end]
     warnings: list[dict[str, str]] = []
+    actual_hard_dates = sorted(
+        d for item in activities
+        if item.get("sport") in {"run", "bike"} and classify_intensity(item) == "hard"
+        and start and end and (d := parse_iso(item.get("date", "")))
+        and start - timedelta(days=1) <= d <= end
+    )
+    for first, second in zip(actual_hard_dates, actual_hard_dates[1:]):
+        if second >= start and (second - first).days <= 1:
+            warnings.append({"level": "warning", "text":
+                f"Harte Ausdauerreize am {first:%d.%m.} und {second:%d.%m.} dokumentiert. Erholung priorisieren; künftig mindestens einen lockeren Tag dazwischen planen."})
     if current and current["hard_endurance_sessions"] > 2:
         warnings.append({"level": "warning", "text": "Diese Woche enthält mehr als 2 harte Ausdauerreize. Keine weitere Intensität ergänzen."})
     planned_hard = sum(item.get("target_intensity", "").lower() == "hard" and item.get("type") in {"run", "bike"} for item in sessions if item.get("display_status") != "optional")
@@ -753,12 +734,13 @@ def build_data(plan: dict[str, Any], upcoming: dict[str, Any], activities: list[
     return {
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "today": date.today().isoformat(),
+        "season": load_json(SEASON_FILE, {}),
         "header": {
             "title": "Laufcoach Dashboard",
             "goal": "5 km sub 17 im Juni 2027",
             "phase": plan.get("phase", "Keine Phase hinterlegt"),
             "focus": plan.get("focus", ""),
-            "next_milestone": plan.get("next_milestone", "5-km-Formcheck im Frühjahr 2027"),
+            "next_milestone": plan.get("next_milestone", "10-km-Test im Frühjahr 2027"),
         },
         "plan": plan_with_sessions,
         "plan_weeks": plan_weeks,
@@ -791,7 +773,9 @@ def main() -> int:
     if not isinstance(upcoming, dict):
         print(f"WARNUNG: {UPCOMING_FILE.relative_to(ROOT)} muss ein JSON-Objekt enthalten; leerer Ausblick verwendet.")
         upcoming = {"weeks": []}
-    validate_plan_horizon([plan, *upcoming.get("weeks", [])])
+    source_weeks = [plan, *upcoming.get("weeks", [])]
+    validate_plan_horizon(source_weeks)
+    validate_season_plan(source_weeks, load_json(SEASON_FILE, {}))
     imported = import_all()
     for warning in imported["warnings"]:
         print(f"WARNUNG: {warning}")

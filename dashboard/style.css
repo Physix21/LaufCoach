@@ -83,6 +83,21 @@ main > section { margin-top: 3rem; }
 .phase p:last-child { font-size: .83rem; color: var(--muted); margin-top: .5rem; }
 .phase.current { border-color: var(--green); background: var(--tint); }
 select { display: block; margin-block: .5rem 1.2rem; max-width: 100%; padding: .7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font: inherit; }
+.season-goals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.season-goals article { padding: 1rem; background: var(--tint); border-radius: 8px; }
+.season-goals h2 { font-size: 1.1rem; }
+.season-goals p:last-child { color: var(--muted); font-size: .8rem; margin-top: .4rem; }
+.plan-browser { padding: 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.plan-browser label { font-weight: 600; font-size: .9rem; }
+.week-controls { display: flex; gap: .6rem; align-items: center; margin-top: .5rem; }
+.week-controls select { flex: 1; min-width: 0; width: 0; margin: 0; text-overflow: ellipsis; }
+button { min-height: 44px; border: 1px solid var(--line); background: var(--surface); color: var(--green); padding: .55rem .8rem; border-radius: 6px; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; }
+button:hover:not(:disabled) { background: var(--tint); }
+button:disabled { opacity: .45; cursor: default; }
+.plan-shortcuts { display: flex; flex-wrap: wrap; gap: .5rem; margin-block: .75rem; }
+.plan-key { margin-block: 1rem; }
+.session-condition { margin-block: .7rem; padding: .7rem; background: var(--tint); border-radius: 5px; font-size: .8rem; }
+#other-week .sessions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 footer { padding-block: 2rem; color: var(--muted); font-size: .75rem; }
 @media (max-width: 760px) {
   .page-header, .page-nav, main, footer { width: calc(100% - 2rem); }
@@ -94,6 +109,10 @@ footer { padding-block: 2rem; color: var(--muted); font-size: .75rem; }
   .page-nav { gap: .15rem 1rem; }
   .page-nav a { font-size: .8rem; }
   .weeks { grid-template-columns: 1fr; gap: 2rem; }
+  .season-goals, #other-week .sessions { grid-template-columns: 1fr; }
+  .week-controls { flex-wrap: wrap; }
+  .week-controls select { order: -1; flex-basis: 100%; width: 100%; }
+  .week-controls button { flex: 1; }
   .session { padding: 1rem; }
   .session.quality { padding-left: calc(1rem - 2px); }
   .metric-grid { gap: .5rem; }

@@ -2,14 +2,20 @@
 
 Die dauerhafte sportwissenschaftliche Evidenzbasis mit Quellen, Grenzen und konkreten Coachingregeln liegt in [`wissenschaftliche_grundlagen_5km.md`](wissenschaftliche_grundlagen_5km.md). Sie wird vor neuen mehrmonatigen Trainingsblöcken und bei relevanter neuer Evidenz überprüft.
 
-Ziel: Im Juni 2027 5 km auf der Straße unter 17:00 Minuten laufen.
+Ziele: 5 km am **22.06.2027 unter 17:00 min**, davor **10 km im April 2027 unter 38:00 min**. Der 18.04.2027 ist ein verschiebbarer Testtermin, noch ohne gewählte Veranstaltung.
+
+Der [vollständige Trainingsplan](plans/gesamtplan_2026_2027.md) umfasst 38 individuell
+ausgearbeitete Kalenderwochen bis einschließlich Wettkampf- und Erholungswoche.
+Die [Begründung für den April-Test](plans/10km_test_evidenz_2027.md) trennt
+wissenschaftliche Befunde von der individuellen Planungsentscheidung.
 
 Dieses Projekt dient als lokales Trainingstagebuch und Planungsordner.  
 ChatGPT/Codex soll als Laufcoach genutzt werden, um Trainingsdaten auszuwerten, Wochen zu planen und den Plan dynamisch anzupassen.
 
 ## Aktueller Stand
 
-- Zielmonat: Juni 2027
+- Zieltermin: 22.06.2027
+- Zwischentest: 10 km unter 38:00 min im April 2027, Planungstermin 18.04.
 - Zielstrecke: 5 km Straße
 - Zielzeit: sub 17:00
 - Zielpace: 3:24 min/km
@@ -57,6 +63,12 @@ Laufcoach/
 5. Priorität hat das Ziel sub 17 im Juni 2027, aber ohne unnötiges Verletzungsrisiko.
 
 ## Dashboard aktualisieren
+
+**Direkter Garmin-Abruf vorbereitet:** Einmal `garmin_login.bat` lokal öffnen
+und anmelden, danach `sync_garmin.bat` für neue Zwischenzeiten-CSVs nutzen.
+Zugangstokens bleiben außerhalb von Repository und OneDrive. Ein echter
+Kontozugriff ist noch nicht geprüft. [Einrichtung und Ablauf](scripts/README.md#garmin-direkt-herunterladen).
+Die folgenden Schritte bleiben als manueller Importweg verfügbar.
 
 Das Dashboard läuft vollständig lokal und benötigt nur Python 3.10 oder neuer. Es gibt
 keinen Server und keine zusätzlichen Python-Pakete.
@@ -115,6 +127,13 @@ Gerätehinweise lassen sich öffnen. Verlauf, Aktivitäten und Jahresplanung sin
 darunter kompakt zusammengefasst. Ein vergangener Termin ohne Aktivitätsnachweis
 wird als „Nicht dokumentiert“ angezeigt; eine automatische Zuordnung bestätigt
 nicht, dass alle Trainingsvorgaben eingehalten wurden.
+
+Über die Wochenwahl oberhalb der Einheiten ist jede der 38 Wochen einzeln
+aufrufbar. Vor-/Zurück-Schaltflächen und Sprünge zu beiden Rennen ergänzen die
+Auswahl. „Diese & nächste Woche“ stellt die Übersicht wieder her. Spätere
+Tempostufen zeigen ihre Voraussetzungen und Ersatzvorgaben direkt an der Einheit.
+Termine und Phasen liegen in `plans/season_goals.json`; der Build prüft zusätzlich
+die lückenlose Saison, beide Zielrennen und vorhandene Teilzeiten.
 
 Bei jeder Wochenplanung beide Kalenderwochen konkret pflegen. Der Build bricht
 bei fehlenden Wochen oder unvollständigen Einheiten mit einer Fehlermeldung ab.

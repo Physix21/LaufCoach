@@ -1,138 +1,96 @@
-# Jahresplanung bis Juni 2027
+# Jahresplanung bis zum 22.06.2027
 
-## Zielmarken
+**Planungsstand:** 10.10.2026. Die Einzelwochen liegen vollständig in
+`plans/current_week.json` und `plans/upcoming_plan.json`; Termine und Phasen in
+`plans/season_goals.json`. Die [Wochenübersicht](plans/gesamtplan_2026_2027.md)
+fasst alle 38 Wochen zusammen. Das Dashboard zeigt jede Woche mit allen Details.
 
-| Marke | Zeit | Pace | 400 m |
-|---|---:|---:|---:|
-| Aktuell (17.06.2026) | 18:49 | 3:46/km | 90,3 s (3:46 min/km) |
-| Frühere PB | 17:35 | 3:31/km | 84,4 s (3:31 min/km) |
-| Ziel | 16:59 | 3:24/km | 81,5 s (3:24 min/km) |
+## Ziele und Leistungsanker
 
-## Phase 1: Juli–August 2026 – Laufrobustheit und Routine
+| Bezug | Termin | Zeit | Pace |
+|---|---|---:|---:|
+| Letzter gemessener 5-km-Wettkampf | 17.06.2026 | 18:49 min | 3:46 min/km |
+| Frühere Bestzeit | 2023 | 17:35 min | 3:31 min/km |
+| 10-km-Zwischenziel | April 2027; Planungstermin 18.04. | unter 38:00 min | unter 3:48 min/km |
+| 5-km-Hauptziel | Dienstag, 22.06.2027 | unter 17:00 min | unter 3:24 min/km |
 
-Ziel:
+Der 5-km-Termin stammt vom Athleten. Der 10-km-Termin ist eine noch ungebuchte,
+verschiebbare Planungshilfe. Der frühere zusätzliche 5-km-Formcheck im Frühjahr
+wird durch den 10-km-Test ersetzt. Die Ziele sind keine gemessene aktuelle Form.
 
-- von ca. 10 km/Woche kontrolliert in Richtung 18–22 km/Woche entwickeln; die Spanne ist Orientierung, keine Pflicht zu einem festen Datum
-- zunächst 2 Läufe verträglich absolvieren und den dritten Lauf über 20–35 lockere Minuten zum Standard entwickeln
-- kurze Intervalle kontrolliert einbauen
-- zusätzlichen Umfang zuerst über lockere Laufminuten aufbauen
-- Krafttraining etablieren
-- Rad-HIIT nur als Ersatzalternative integrieren und nicht mit Lauf-HIIT überladen
+## Warum der 10-km-Test im April liegt
 
-Typische Einheiten:
+Mitte April lässt Zeit für den Aufbau regelmäßiger Laufwochen und längerer
+kontrollierter Abschnitte. Vom 18.04. bis 22.06. bleiben 65 Tage: eine ruhige
+Folgewoche, etwa sechs bis sieben Wochen mit 5-km-Schwerpunkt einschließlich
+Entlastung und zuletzt ein kurzer Taper. Die [Quellenprüfung](plans/10km_test_evidenz_2027.md)
+erläutert die Evidenz und ihre Grenzen. Ein optimaler Kalendermonat ist nicht
+experimentell belegt; April ist die individuelle Ableitung für diese Zielfolge.
 
-- 8 x 400 m kontrolliert
-- 3 x 8 min Schwelle
-- lockerer Lauf + kurze Bergsprints
-- kurzer dritter LIT-Lauf; bei fehlender Laufverträglichkeit ersatzweise lockeres Rad
+Unter 38 min über 10 km ist ein sinnvolles Zwischenziel, aber allein kein Beleg
+für unter 17 min über 5 km. Die Juni-Paces werden nach dem Test und anhand
+späterer spezifischer Einheiten erneut geprüft.
 
-## Phase 2: September–November 2026 – Aerobe Basis und Schwelle
+## Oktober–November 2026: Drei Läufe stabilisieren
 
-Ziel:
+- Drei Läufe und eine dosierte Krafteinheit pro Woche etablieren.
+- Lockeren Lauf von 30 auf etwa 35 min und längeren Lauf schrittweise auf 55 min entwickeln.
+- Schwelle zunächst 3:58–4:05 min/km, mit vollständigem Ein- und Auslaufen.
+- 23.10.: 6 × 400 m in 88–90 s (3:40–3:45 min/km), 90 s Trabpause. Am 13.11. folgen 8 × 400 m bei gleicher Pace.
+- Entlastungen in den Wochen ab 26.10. und 23.11.; keine Nachholkilometer.
 
-- ca. 22–30 km/Woche als anpassbare Orientierung
-- drei Läufe pro Woche stabilisieren: ein Qualitätslauf, ein lockerer Lauf mit Steigerungen und ein längerer lockerer Lauf
-- Schwellenleistung verbessern
-- lockere Laufumfänge erhöhen
-- 400er/kurze Intervalle zur Laufökonomie behalten
-- lange LIT-Reize über Lauf oder Rad
-- Rad-HIIT nur als Alternative zu einer Laufeinheit, wenn danach insgesamt höchstens zwei harte Ausdauerreize verbleiben
+## Dezember 2026–Januar 2027: Aerobe Basis und Kraft
 
-Typische Einheiten:
+- Lockere Laufzeit weiter festigen, längeren Lauf schrittweise auf etwa 60–65 min entwickeln.
+- Schwelle, dosierte Hügelreize, Fahrtspiel und 400er abwechseln.
+- Feiertagswoche kürzer und ohne harte Einheit; Jahreswechsel mit kurzem Fahrtspiel.
+- Im Januar nur bei erfüllten Voraussetzungen die nächste Tempostufe nutzen.
+- Kraft A/B mit vorhandenem Rack, Hanteln, Bank und Klimmzugstange; Entlastungswochen mit geringerer Satzzahl und Last.
 
-- 4–5 x 1000 m kontrolliert
-- 20–30 min Tempodauerlauf oder Cruise Intervals
-- 10 x 400 m
-- 60–80 min lockerer Lauf
-- Rad-HIIT nach Belastungssteuerung als Ersatzalternative
+## Februar–März 2027: Vorbereitung auf 10 km
 
-## Phase 3: Dezember 2026–Januar 2027 – Kraft, Hügel, VO2max-Vorbereitung
+- Drei Läufe weiter stabilisieren; meist etwa 150–180 Laufminuten pro Belastungswoche.
+- Längeren Lauf bis höchstens 75 min ausbauen; unter der Woche maximal etwa 60 min pro Laufeinheit.
+- Schwellenintervalle, 1000er und später 2000-/3000-m-Abschnitte in Richtung 10-km-Pace.
+- 400er bleiben enthalten, etwa 10 × 400 m am 19.02. und 8 × 400 m am 12.03.
+- Entlastung in den Wochen ab 22.02. und 22.03. Tempoerhöhungen sind an die konkreten Voraussetzungen der Einheiten gebunden.
 
-Ziel:
+## April 2027: Testlauf und Erholung
 
-- Hügelkraft und Laufökonomie
-- robuste Strukturen
-- kurze intensive Reize
-- Krafttraining spezifischer
-- keine zu frühe 5-km-Schärfe
-- 400er, Hügel und längere Intervalle von etwa 2–5 min blockweise abwechseln
+- 02.04.: 3 × 2000 m bei 3:48–3:52 min/km, sofern vorherige Abschnitte die Stufe tragen.
+- 09.04.: 5 × 1000 m bei 3:45–3:48 min/km, ohne maximalen Schlusssprint.
+- Testwoche: zwei kurze lockere Läufe mit wenigen Steigerungen und leichte Kraft zu Wochenbeginn.
+- Sonntag, 18.04.: 10-km-Test mit Ziel unter 38 min, vollständigem Warm-up und Cool-down.
+- 19.–25.04.: keine harte Ausdauer; Läufe und leichte Kraft nur bei abgeklungener Wettkampfermüdung.
 
-Typische Einheiten:
+## 26.04.–13.06.2027: 5-km-spezifischer Aufbau
 
-- 8–10 x 45–75 s bergauf
-- 6 x 800 m
-- 12 x 400 m kontrolliert
-- lockerer Lauf + Strides/Bergsprints
-- Krafttraining schwer, aber dosiert
+- Nach der Erholung 400er zunächst im bisherigen kontrollierten Bereich aufnehmen.
+- Anschließend 400er, 800er und 1000er gezielt in Richtung aktueller 5-km-Form entwickeln; Entlastung ab 17.05.
+- Schnellere Mai-Stufen nur nach Testauswertung und den an der Einheit genannten Kriterien. Die dort genannten Marker sind praktische Coachingentscheidungen, keine validierten Leistungsgarantien.
+- Zielpace-nahe 1000er Anfang Juni nur nach gleichmäßig bewältigtem Vorbereitungsblock. Bei nicht erfüllter Voraussetzung gilt die hinterlegte Ersatzvorgabe.
+- Lockere Ausdauer und dosierte Kraft erhalten; keine zusätzlichen harten Radeinheiten zum Laufplan hinzufügen.
 
-## Phase 4: Februar–März 2027 – 5-km-spezifischer Aufbau
+## 14.–27.06.2027: Taper, Wettkampf und Erholung
 
-Ziel:
+- Ab 14.06. deutlich weniger Laufminuten, etwa 75 min gegenüber rund 134 min in der Vorwoche im Sollplan; tatsächliche Entlastung am erreichten Umfang ausrichten.
+- 18.06.: nur 3 × 400 m mit langen Trabpausen, bei vorhandener Grundlage zielnah.
+- 20.06.: 20 min locker mit zwei kurzen Steigerungen; Montag Ruhetag.
+- Dienstag, 22.06.: 5-km-Zielwettkampf. Bei passender Form kontrolliert beginnen und 16:59 min anstreben.
+- Kraft entfällt in der Rennwoche; Freitag und Sonntag danach nur optionale kurze Erholungsläufe.
 
-- aktuelle 5-km-Leistung deutlich verbessern
-- Einheiten in Richtung 17:xx stabilisieren
-- Formcheck vorbereiten
-- bei zwei harten Laufeinheiten eine gewählte Radalternative locker halten
+## Regeln für die laufende Anpassung
 
-Typische Einheiten:
+Die Planung ist vollständig, bleibt aber anpassbar. Bis 04.10.2026 liegen
+Aktivitätsdaten vor; zukünftige Durchführung oder Verträglichkeit wird nicht
+unterstellt. Nach jeder Woche die nächste Belastungsstufe prüfen. Nach Ausfällen
+bei der letzten verträglichen Woche ansetzen, ohne versäumte Reize nachzuholen.
 
-- 5–6 x 1000 m
-- 4 x 1200 m
-- 3 x 1600 m
-- 8–10 x 400 m
-- reduzierte Kombi-Einheit: 3 x (1000 m in aktueller 5-km-Pace, 60 s locker, 300-400 m schneller, 3 min locker), nur wenn drei Läufe pro Woche stabil vertragen werden
-- Schwelle erhalten
+Normalstruktur: drei Läufe, eine Krafteinheit und freie Erholungstage. Ein
+umfangreicher Qualitätslauf pro Woche; insgesamt höchstens zwei harte
+Ausdauerreize einschließlich Radalternativen und möglichst mindestens 48 Stunden
+Abstand. Rad ersetzt den jeweiligen Lauf vollständig. Paces orientieren sich an
+aktueller Leistung; Zielpace wird nicht automatisch mit dem Kalender freigegeben.
 
-Formcheck:
-
-- März oder Anfang April 2027
-- Ziel: unter 18:00
-- sehr gutes Zeichen: 17:45–17:55
-
-## Phase 5: April–Mai 2027 – Spezifische 5-km-Form
-
-Ziel:
-
-- Zielpace 3:24/km zunehmend integrieren
-- Tempohärte aufbauen
-- Umfang nicht maximal, sondern spezifisch
-- Rad überwiegend locker fahren; Rad-HIIT ersetzt bei Bedarf einen harten Lauf, kommt aber nicht als dritter harter Ausdauerreiz hinzu
-
-Typische Einheiten:
-
-- 10 x 400 m in Richtung 82–85 s (ca. 3:25–3:33 min/km)
-- 6 x 800 m nahe 5-km-Pace
-- 5 x 1000 m nahe Zielpace/leicht langsamer
-- 3 x 1600 m knapp langsamer als 5-km-Pace
-- 4 x (1000 m nahe 5-km-Pace, 60 s locker, 400 m nahe 1500-m-Pace, 3 min locker) als spezifische Tempohärte, nicht in Wochen mit Rad-HIIT
-- kurze schnelle Strides
-
-Hinweis zur Kombi-Einheit: Der Reiz ist sportwissenschaftlich plausibel, weil er 5-km-Pace unter Vorermüdung mit kurzer schneller Laufökonomie kombiniert. Die volle Variante enthält aber 5,6 km Qualitätsumfang, davon 1,6 km deutlich schneller als 5-km-Pace. Deshalb wird sie erst im spezifischen Aufbau genutzt, vorher höchstens als reduzierte Variante.
-
-## Phase 6: Juni 2027 – Peak und Taper
-
-Ziel:
-
-- frisch werden
-- Intensität kurz erhalten
-- Umfang reduzieren
-- keine zerstörenden Einheiten mehr
-
-Typische Einheiten:
-
-- 5 x 400 m in Zielpace 3:24 min/km (ca. 81,5 s je 400 m)
-- 3 x 1000 m kontrolliert
-- kurze Aktivierung
-- lockere Läufe
-- Wettkampf
-
-## Langfristige Zielstruktur
-
-Standardstruktur nach stabilem Aufbau:
-
-- 3 Läufe/Woche: 1 Qualitätslauf, 1 lockerer Lauf mit Steigerungen und 1 längerer lockerer Lauf
-- Rad nur als Ersatzoption zu einer konkreten Laufeinheit; kein eigenständiger Rad-Solltermin im Trainingsplan
-- eine harte Radalternative zählt weiterhin als harter Ausdauerreiz; bei einem weiteren harten Lauf bleibt jede andere Radalternative locker
-- 1 Krafttraining/Woche
-
-Dauerhaft nur 2 Läufe/Woche macht sub 17 deutlich schwieriger, ist aber in Belastungswochen besser als erzwungene Überlastung. Laufumfang wird zuerst über lockere Minuten gesteigert. Umfang, Intensität und Häufigkeit werden nicht gleichzeitig deutlich erhöht.
+Das Hauptziel ist mit drei Läufen pro Woche ambitioniert. Die vollständige
+Planung ist eine Arbeitsgrundlage, keine Zusage einer bestimmten Wettkampfzeit.

@@ -929,6 +929,71 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Der Lauf am 02.10. war locker. Die Radfahrt am 03.10. war moderat strukturiert. Der Intervalllauf am 04.10. war der einzige klar harte Ausdauerreiz, folgte aber direkt auf die Radfahrt.
 - Der geplante lange lockere Lauf entfiel. Die angestrebte Drei-Läufe-Struktur wurde erneut nicht erreicht. In KW 41 werden keine ausgefallenen Kilometer nachgeholt; der nächste Qualitätslauf bleibt kontrolliert, mit vollständigem Ein- und Auslaufen.
 
+## 08.10.2026 – Zügiger Dauerlauf
+
+**Quelle:** `data/raw/garmin/csv/08102026.csv`
+
+### Messdaten
+
+- 9,00 km in 43:19 min; 43:13 min in Bewegung. Ø 4:49 min/km, Ø 144 bpm, maximal 156 bpm; Ø 398 W, maximal 508 W, 51 m Anstieg.
+- Neun volle Kilometerrunden in 4:47 / 4:48 / 4:43 / 4:50 / 4:56 / 4:48 / 4:46 / 4:52 / 4:49 min/km.
+- RPE, Gefühl und Beschwerden nicht angegeben; Bodenkontaktbalance im Export nicht vorhanden.
+
+### Coaching-Einschätzung
+
+- Gleichmäßiger Lauf, aber schneller und länger als die geplanten 30 min bei 5:15–5:50 min/km. Auch der Puls liegt deutlich über dem lockeren Lauf vom 02.10. (Ø 129 bpm). Deshalb als zügig/moderat eingeordnet; eine genaue physiologische Zone ist daraus nicht ableitbar.
+- Der Lauf wird dem lockeren Laufplatz der Woche zugeordnet, mit sichtbarer Abweichung von der Vorgabe. Er ist kein Schwellenlauf.
+
+## 09.10.2026 – Rad: 3 × 5 min schwellennahe Belastung
+
+**Quelle:** `data/raw/garmin/csv/09102026.csv`
+
+### Messdaten
+
+- 33,97 km in 60:00 min; Ø 34,0 km/h. Ø 216 W, NP 226 W, maximal 275 W; 0 m Anstieg.
+- 5 min bei Ø 169 W, 20 min bei Ø 217 W, danach 3 × ca. 5 min bei Ø 273 W mit jeweils ca. 3 min bei Ø 171 W; anschließend 5 min bei Ø 217 W und 6 min bei Ø 170 W.
+- Herzfrequenz, RPE, Gefühl und Beschwerden nicht angegeben. Ob drinnen oder draußen, geht aus diesem CSV nicht hervor.
+
+### Coaching-Einschätzung
+
+- Die drei Belastungen entsprechen rund 94–98 % der hinterlegten FTP von 280–290 W. Das ist schwellennahe Arbeit; zur konservativen Belastungssteuerung zählt die Fahrt als harter Ausdauerreiz. Aus den Leistungsdaten allein wird kein VO2max-HIIT oder neuer FTP-Wert abgeleitet.
+- Da am Folgetag zusätzlich Laufintervalle absolviert wurden, war dies in der tatsächlich ausgeführten Woche eine zusätzliche Qualitätseinheit und keine entlastende Radalternative.
+
+## 10.10.2026 – 8 × 400 m
+
+**Quelle:** `data/raw/garmin/csv/10102026.csv`
+
+### Messdaten
+
+- 8,09 km in 46:11 min verstrichener Zeit; 42:26 min in Bewegung. Ø 5:43 min/km über die verstrichene Zeit, Ø 136 bpm, maximal 178 bpm; Ø 324 W, maximal 708 W, 39 m Anstieg.
+- 400er in 84,3 / 85,4 / 84,6 / 86,0 / 83,1 / 83,1 / 82,3 / 74,2 s. Exportierte Pace: 3:31 / 3:34 / 3:31 / 3:35 / 3:28 / 3:28 / 3:26 / 3:06 min/km.
+- Erste sieben Wiederholungen Ø 84,1 s (ca. 3:30 min/km); alle acht Ø 82,9 s (ca. 3:27 min/km). Der Gesamtschnitt wird durch die deutlich schnellere Schlusswiederholung beeinflusst.
+- Steigungsangepasste Intervallpaces: 3:34 / 3:45 / 3:45 / 3:44 / 3:34 / 3:33 / 3:33 / 3:12 min/km. Ø Herzfrequenz der Intervalle 141 / 156 / 159 / 158 / 158 / 159 / 160 / 164 bpm.
+- Sieben Erholungsrunden über 0,22–0,26 km in 1:30–1:38 min. Vor dem ersten Intervall etwa 12:15 min mit 1,82 km, einschließlich langsamer/stehender Anteile. Nach dem letzten Intervall etwa 12:08 min mit 1,38 km, ebenfalls mit langsamen/stehenden Anteilen.
+- RPE, Gefühl und Beschwerden nicht angegeben; Bodenkontaktbalance fehlt.
+
+### Coaching-Einschätzung
+
+- Der Qualitätsplatz der Woche wurde durch 400er statt der geplanten 2 × 6 min Schwelle belegt. Die ersten sieben Wiederholungen lagen dicht zusammen; die letzte war mit 74,2 s deutlich schneller und bildet keine kontrollierte Fortsetzung der Serie.
+- Schnelligkeitsreserve ist vorhanden. Die 400er mit Trabpausen und dem sehr schnellen Abschluss belegen keine 5-km-Leistung unter 17 min; der Wettkampfanker bleibt unverändert.
+- Zwei intensive Ausdauertage lagen direkt hintereinander (09./10.10.). Für 11.10. deshalb Ruhetag als Hauptvorgabe; höchstens 20 min sehr locker als ausdrücklich optionale Alternative bei normaler Erholung. Kein weiterer Qualitätsreiz und keine Nachholkilometer.
+- KW 41 bisher: 17,09 km in zwei Läufen und 33,97 km Rad in 60 min. Kraft ist nicht dokumentiert. KW 42 beginnt mit 25 min locker; 2 × 6 min Schwelle am 16.10. bleiben nur bei normaler Erholung vorgesehen. Die nächsten geplanten 400er am 23.10. bleiben bewusst bei 88–90 s (3:40–3:45 min/km).
+
+## 10.10.2026 – Zieltermine und vollständige Saisonplanung
+
+### Athletenangabe
+
+- 5-km-Wettkampf am 22.06.2027 mit Ziel unter 17:00 min.
+- Davor ein beliebiger geeigneter 10-km-Lauf mit Ziel unter 38:00 min.
+- Gewünscht ist eine vollständige, individuell ausgearbeitete Wochenplanung, deren einzelne Wochen im Dashboard auswählbar sind.
+
+### Coaching-Ableitung
+
+- April 2027 passt zwischen Winteraufbau und dem anschließenden 5-km-Block. Als verschiebbarer Planungstermin wird der 18.04.2027 genutzt; es ist keine Veranstaltung ausgewählt oder gebucht.
+- 38 konkrete Wochen sind bis einschließlich 27.06.2027 hinterlegt. Entlastungswochen, 10-km-Test, Erholung, 5-km-Spezifik und Taper sind berücksichtigt; spätere Temposteigerungen haben Voraussetzungen und Ersatzvorgaben.
+- Der 10-km-Test ersetzt den alten 5-km-Frühjahrscheck. Unter 38 min allein bestätigt keine Sub-17-Form. Die Quellen und Grenzen der Monatswahl stehen in `plans/10km_test_evidenz_2027.md`.
+- Die Zielangabe ist ein Planungsupdate. Anschließend wurden die Aktivitäten vom 08., 09. und 10.10. nachgereicht; sie sind oben getrennt ausgewertet und in die unmittelbar folgende Planung eingearbeitet.
+
 ## Rückblick: Wochenfazit KW 35
 
 - 30,83 km Laufen in drei Einheiten sowie 64,50 km Rad in zwei Einheiten

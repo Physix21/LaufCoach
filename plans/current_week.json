@@ -2,10 +2,13 @@
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
   "phase": "Phase 2 – Aerobe Basis und Schwelle",
-  "focus": "Drei verträgliche Läufe anstreben; nach schneller Schlusswiederholung am 04.10. Qualität kontrolliert und Umfang maßvoll",
+  "focus": "Nach zügigem Lauf und zwei intensiven Tagen am 09./10.10. Erholung priorisieren; am 11.10. Ruhetag, höchstens optional 20 min sehr locker",
   "planned_sessions": [
     {
       "id": "2026-W41-run-easy",
+      "status": "completed",
+      "completed_activity_id": "local-332b56b2538fd5fa",
+      "completion_note": "Laufplatz am 08.10. belegt: 9,00 km in 43:19 min bei 4:49 min/km. Länger und schneller als geplant; moderat statt locker.",
       "type": "run",
       "title": "30 min locker",
       "priority": 1,
@@ -42,6 +45,9 @@
     },
     {
       "id": "2026-W41-run-threshold",
+      "status": "completed",
+      "completed_activity_id": "local-7ed4eb324c8d1bd3",
+      "completion_note": "Qualitätsplatz am 10.10. durch 8 × 400 m belegt; die geplante Schwelle wurde nicht ausgeführt. Die zusätzliche schwellennahe Radfahrt am 09.10. zählt separat zur Belastung.",
       "type": "run",
       "title": "2 × 6 min kontrollierte Schwelle",
       "priority": 3,
@@ -61,21 +67,22 @@
     {
       "id": "2026-W41-run-long",
       "type": "run",
-      "title": "45 min locker",
+      "title": "Ruhetag bevorzugt · optional 20 min sehr locker",
+      "status": "optional",
       "priority": 4,
       "scheduled_date": "2026-10-11",
       "target_intensity": "LIT",
-      "target_duration_min": 45,
-      "target_distance_km": 8,
-      "warmup": "10 min sehr ruhig beginnen (Teil der 45 min)",
-      "main_set": "30 min gleichmäßig locker ohne Endbeschleunigung",
+      "target_duration_min": 20,
+      "target_distance_km": 3.3,
+      "warmup": "5 min sehr ruhig beginnen, nur wenn der optionale Lauf gewählt wird",
+      "main_set": "10 min sehr locker; keine Steigerungen und keine Endbeschleunigung",
       "recovery": "Keine Pausen geplant",
-      "cooldown": "5 min locker beenden (gesamt 45 min)",
-      "target_pace": "5:15–5:50 min/km",
-      "rpe_target": "3–4/10",
-      "description": "Dritter Lauf als ruhiger Umfangsreiz; keine Kompensation des ausgefallenen langen Laufs aus KW 40.",
-      "alternatives": "Statt dieses Laufs 60–75 min Rad locker bei ca. 150–180 W; ersetzt den Lauf."
+      "cooldown": "5 min sehr locker beenden (gesamt 20 min)",
+      "target_pace": "5:40–6:10 min/km oder langsamer; Erholung hat Vorrang",
+      "rpe_target": "2–3/10",
+      "description": "Hauptvorgabe ist ein Ruhetag nach Radbelastung am 09.10. und 400ern am 10.10. Nur bei normaler Erholung optional kurz laufen; kein dritter Lauf als Pflicht.",
+      "alternatives": "Bevorzugt Ruhetag. Falls aktive Erholung gewünscht und gut vertragen: höchstens 25 min Rad sehr locker bei 120–150 W statt des optionalen Laufs."
     }
   ],
-  "next_milestone": "5-km-Formcheck im März oder Anfang April 2027"
+  "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04."
 }

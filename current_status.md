@@ -1,10 +1,11 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 10.10.2026 (Planungsstand; letzte Aktivität unverändert: 04.10.2026)
+**Stand:** 10.10.2026 (Planung und Aktivitäten bis einschließlich 10.10.2026)
 
 ## Ziel und Phase
 
-- Hauptziel: 5 km Straße unter 17:00 min im Juni 2027 (3:24 min/km)
+- Hauptziel: 5 km Straße unter 17:00 min am 22.06.2027 (Ø unter 3:24 min/km)
+- Neues Zwischenziel laut Athlet: 10 km unter 38:00 min vor dem Hauptziel. Empfohlen: April 2027; 18.04.2027 ist ein verschiebbarer Planungstermin ohne festgelegte Veranstaltung.
 - Letzter Wettkampf: Halbmarathon am 06.09.2026 in 1:30:50 h; kontrollierter Nebenwettkampf ohne spezifischen Halbmarathon-Aufbau
 - Aktuelle Phase: Phase 2 – aerobe Basis und Schwelle
 - Geplante Struktur: 3 Läufe und 1 Krafttraining pro Woche; Rad nur als Alternative zu einer Laufeinheit
@@ -28,7 +29,16 @@
 
 Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kein Ersatz für den aktuellen 5-km-Anker oder die noch aufzubauende Langzeitausdauer.
 
-## Letzte dokumentierte Woche
+## Laufende Woche KW 41
+
+- Bisher 17,09 km in zwei Läufen sowie 33,97 km Rad in 60 min. Krafttraining ist nicht dokumentiert.
+- 08.10.: 9,00 km in 43:19 min bei 4:49 min/km, Ø 144 bpm, maximal 156 bpm. Gleichmäßig, aber länger und schneller als die lockere Vorgabe; als moderat eingeordnet.
+- 09.10.: 60 min Rad mit 3 × 5 min bei Ø 273 W, insgesamt Ø 216 W und NP 226 W. Schwellennahe Belastung (rund 94–98 % der hinterlegten FTP); konservativ als harter Ausdauerreiz gezählt. Herzfrequenz fehlt.
+- 10.10.: 8 × 400 m innerhalb von 8,09 km. Erste sieben Ø 84,1 s (ca. 3:30 min/km), letzte 74,2 s (ca. 3:06 min/km); maximal 178 bpm. Schnelligkeitsreserve, aber deutlich beschleunigter Abschluss und kein neuer 5-km-Leistungsanker.
+- Zwei intensive Ausdauertage direkt hintereinander. Am 11.10. ist Erholung vorrangig, höchstens 20 min sehr locker optional. KW 42 beginnt mit 25 min locker; Schwelle nur bei normaler Erholung.
+- RPE, Gefühl und Beschwerden nicht angegeben; keine Annahme zur Beschwerdefreiheit. Bodenkontaktbalance fehlt in beiden Laufexporten.
+
+## Letzte abgeschlossene Woche
 
 - KW 40: 16,35 km Laufen in zwei Einheiten und 28,78 km Rad in 54:04 min; Krafttraining und ein dritter Lauf sind nicht dokumentiert
 - 02.10.: 8,05 km locker in 42:55 min (5:20 min/km), Ø 129 bpm, maximal 143 bpm; gleichmäßige 2-km-Runden
@@ -53,10 +63,15 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Nächster Coaching-Fokus
 
-- KW 41 (05.–11.10.) und KW 42 (12.–18.10.) liegen als konkrete Dashboard-Pläne vor: jeweils 30 min locker, dosiertes Krafttraining, 2 × 6 min Schwelle innerhalb von 45 min und 45 min locker. Die Laufteilzeiten sind inklusive Ein- und Auslaufen präzisiert; Kraft ist mit ca. 50 min einschließlich Pausen angesetzt.
-- KW 42 ist vorläufig und wiederholt die Laufbelastung aus KW 41 ohne Steigerung. Zu KW 41 sind noch keine Aktivitäten erfasst; die Durchführung wird nicht unterstellt. Nach deren Auswertung den Folgeplan prüfen und bei hoher Belastung den Schwellenlauf durch 30 min locker ersetzen.
+- Vollständige Sollplanung für 38 Kalenderwochen bis 27.06.2027 in den JSON-Plänen und `plans/gesamtplan_2026_2027.md`; alle Wochen sind im Dashboard auswählbar. Die nachgereichten Aktivitäten vom 08.–10.10. sind berücksichtigt.
+- Nächste 400er: 23.10.2026, 6 × 400 m in 88–90 s (3:40–3:45 min/km), jeweils 90 s Trabpause; danach regelmäßiger Wechsel mit Schwelle, längeren Intervallen und dosierten Hügelreizen.
+- April-Test mit ruhiger Folgewoche; ab 26.04. spezifischer 5-km-Block, ab 14.06. Entlastung für den festen Wettkampftermin 22.06. Die schnelleren Tempostufen gelten nur bei den an jeder Einheit genannten Voraussetzungen.
+- Sub 38 über 10 km belegt noch keine Sub-17-Form. Testauswertung und spätere spezifische Einheiten entscheiden über die tatsächlichen Trainings- und Wettkampfpaces.
 
-- KW 41 mit einem lockeren Lauf beginnen. Ein kontrollierter Schwellenlauf folgt mit Abstand zum harten Lauf vom 04.10.; keine ausgefallenen Kilometer nachholen.
+- KW 41: Planabweichungen sichtbar den Laufplätzen zugeordnet; Schwelle durch die tatsächlich gelaufenen 400er ersetzt, längerer Sonntagslauf gestrichen zugunsten Erholung.
+- KW 42: 25 min locker, dosiertes Krafttraining, 2 × 6 min Schwelle innerhalb von 45 min nur bei normaler Erholung, Sonntag 45 min locker. Bei anhaltender Ermüdung Schwelle durch 30 min locker ersetzen. Die Durchführung zukünftiger Einheiten wird nicht unterstellt.
+
+- Nach den intensiven Tagen 09./10.10. locker beginnen; keine ausgefallenen Kilometer nachholen.
 - Drei verträgliche Läufe anstreben, dabei nur die lockeren Minuten maßvoll ergänzen. Bei nicht dokumentierter Erholung nicht gleichzeitig Umfang und Tempo verschärfen.
 - Schwelle vorerst bei 3:58–4:05 min/km mit vollständigem Ein- und Auslaufen; Wiederholungen gleichmäßig statt mit schneller Schlusswiederholung.
 - Rad bleibt eine Ersatzoption für eine konkrete Laufeinheit. Ein zusätzliches Rad-HIIT würde als harter Ausdauerreiz zählen.

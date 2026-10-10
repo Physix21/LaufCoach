@@ -1,6 +1,6 @@
 # Wissenschaftliche Grundlagen für das 5-km-Training
 
-**Recherchestand:** 05.07.2026
+**Recherchestand:** 05.07.2026; ergänzt am 10.10.2026 um [Primärquellen zur Zwei-Ziele-Planung](plans/10km_test_evidenz_2027.md)
 **Geltungsbereich:** erwachsener, gesunder Läufer mit Ziel sub 17:00 min im Juni 2027 und dem in `athlete_profile.md` beschriebenen Trainingsrahmen
 
 Dieses Dokument ist die dauerhafte Evidenzbasis für Trainingsentscheidungen im Repository. Es ersetzt weder individuelle Diagnostik noch medizinische Beratung. Konkrete Belastungen werden immer mit dem Trainingsverlauf, den Messdaten und freiwillig berichteten Beschwerden abgeglichen.
@@ -115,7 +115,7 @@ Der bestehende Jahresplan ist grundsätzlich evidenzkompatibel, wenn folgende Le
 - Spätestens mit stabilen drei Läufen pro Woche wechseln sich Schwelle, längere VO2max-Intervalle und kurze Wiederholungen blockweise ab.
 - Das Rad-HIIT bleibt bei insgesamt höchstens zwei harten Ausdauerreizen pro Woche.
 - Ab Februar 2027 steigt die Spezifität; Zielpace-Anteile werden erst bei ausreichender aktueller Leistungsfähigkeit verlängert.
-- Ein 5-km-Formcheck im März oder April 2027 kalibriert die anschließenden Paces und die Realisierbarkeit des Juni-Ziels.
+- Nach Zieländerung vom 10.10.2026 kalibriert ein 10-km-Test im April 2027 die anschließenden Paces. Ziel: unter 38:00 min, Planungstermin 18.04.2027; Hauptziel jetzt fest am 22.06.2027. Ein erfülltes sub-38-Ziel ist kein Nachweis für sub 17 über 5 km; spezifische Trainingsleistungen müssen zusätzlich berücksichtigt werden.
 
 ## Grenzen und Aktualisierung
 
