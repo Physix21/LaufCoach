@@ -1039,3 +1039,43 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Ein klarer harter Ausdauerreiz: 3 × 7 min kontrollierte Schwelle am 27.08.
 - Der Laufumfang wurde nach der Belastungsspitze der KW 34 reduziert und die Drei-Läufe-Struktur beibehalten.
 - Wegen des angekündigten Halbmarathons am 06.09.2026 wird KW 36 als kurze Wettkampf- und Entlastungswoche geplant. Die zuvor vorgesehenen 4 × 1000 m und der 60-min-Lauf entfallen.
+
+## 12.10.2026 – Langer lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/2026-10-12_run_activity_24699800418.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 10,60 km in 55:21 min Timerzeit; 54:45 min in Bewegung. Ø 5:13 min/km beziehungsweise 5:09 min/km in Bewegung.
+- Herzfrequenz: Ø 127 bpm, maximal 151 bpm; 55 m Anstieg.
+- Zehn volle Kilometerrunden in 6:15 / 5:14 / 4:45 / 5:06 / 5:17 / 5:13 / 5:10 / 5:08 / 5:00 / 5:07 min; Rest 0,60 km in 3:05 min. Die erste Runde enthält rund 33 s Differenz zwischen Timer- und Bewegungszeit.
+- RPE, Gefühl und Beschwerden nicht angegeben; Leistungswerte fehlen im Export.
+
+### Coaching-Einschätzung
+
+- Niedriger Durchschnittspuls und überwiegend lockere Kilometer sprechen für einen aeroben Lauf. Die ungleichmäßigen ersten Kilometer und die Höhenmeter begrenzen eine Aussage über Herzfrequenzdrift.
+- Mit 55 min und 10,60 km war der Lauf deutlich länger als der geplante kurze Wocheneinstieg und erfüllt bereits den vorgesehenen langen Lauf. Zusätzlicher langer Umfang wird in KW 42 nicht nachgeholt.
+
+## 15.10.2026 – 3 × 7 min Schwelle
+
+**Quelle:** `data/raw/garmin/csv/2026-10-15_run_activity_24731870770.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 9,92 km in 42:30 min Timerzeit; 42:24 min in Bewegung. Ø 4:17 min/km, Ø 152 bpm, maximal 172 bpm; 27 m Anstieg.
+- Einlaufen: 2,03 km in 9:36 min, danach drei Belastungsabschnitte über jeweils 7:00 min.
+- Belastungsabschnitte: 1,80 km in 7:00 min (ca. 3:53 min/km), 1,82 km in 7:00 min (ca. 3:51 min/km) und 1,78 km in 7:00 min (ca. 3:56 min/km).
+- Erholung: zweimal 3:00 min lockeres Traben über 0,58 beziehungsweise 0,59 km. Auslaufen: 1,32 km in 5:54 min.
+- RPE, Gefühl und Beschwerden nicht angegeben; Leistungswerte fehlen im Export.
+
+### Coaching-Einschätzung
+
+- Alle drei Abschnitte waren gleichmäßig, aber schneller als die geplanten 3:58–4:05 min/km. Mit 21 statt geplanten 12 Belastungsminuten war der Hauptteil zudem deutlich umfangreicher als der vorgesehene Reiz.
+- Ein- und Auslaufen waren kürzer und schneller als geplant. Die stabile Abschnittsleistung zeigt kontrollierbare Schwellenfähigkeit, ersetzt aber keinen aktuellen 5-km-Formcheck und rechtfertigt noch keine schnellere Standardvorgabe.
+- Der harte Ausdauerreiz der Woche ist erfüllt. Bis zum Wochenende folgt kein weiterer harter Reiz; am 18.10. höchstens 20 min sehr locker bei normaler Erholung, sonst Ruhetag.
+
+## Zwischenstand KW 42 nach Garmin-Abgleich am 15.10.
+
+- Dokumentiert: 20,52 km Laufen in zwei Einheiten. Kraft- oder Radtraining ist nicht dokumentiert und wird nicht unterstellt.
+- Der lange lockere Lauf und der einzige harte Ausdauerreiz der Woche sind erfüllt. Die Laufzeit beträgt bereits 97:51 min.
+- Für die Drei-Läufe-Struktur bleibt nur ein optionaler kurzer Erholungslauf. Umfang, Krafttraining oder Intensität werden nicht nachgeholt.

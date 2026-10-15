@@ -422,6 +422,24 @@
         "24603618759"
       ],
       "warnings": []
+    },
+    "2026-10-12_run_activity_24699800418.csv": {
+      "sha256": "dbfa93585e319fafc2f06d938fa751d62db20fa28b718f5758ecdc1697ef4381",
+      "status": "imported",
+      "imported_at": "2026-10-15T21:36:54+02:00",
+      "activity_ids": [
+        "24699800418"
+      ],
+      "warnings": []
+    },
+    "2026-10-15_run_activity_24731870770.csv": {
+      "sha256": "9a23c1b6532f581484ca5ada22ac742ca15a65ac8cc5a862e4c13cfdc1fdbd61",
+      "status": "imported",
+      "imported_at": "2026-10-15T21:36:54+02:00",
+      "activity_ids": [
+        "24731870770"
+      ],
+      "warnings": []
     }
   }
 }
