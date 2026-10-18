@@ -2,8 +2,8 @@
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
   "phase": "Phase 2 – Aerobe Basis und Schwelle",
-  "focus": "Langen lockeren Lauf und Schwellenreiz verarbeitet abschließen; nur noch kurze optionale Erholung, keine Nachholkilometer",
-  "planning_note": "Aktivitäten bis 15.10. berücksichtigt. Der lange Umfang wurde am 12.10. mit 55:21 min bereits übererfüllt; am 15.10. folgten 3 × 7 min Schwelle statt der geplanten 2 × 6 min. Bis Wochenende kein weiterer harter Reiz. Ein kurzer dritter Lauf ist nur bei normaler Erholung optional.",
+  "focus": "Langen lockeren Lauf und zwei harte Ausdauerreize verarbeitet abschließen; Ruhetag am 18.10., keine Nachholkilometer",
+  "planning_note": "Aktivitäten bis 17.10. berücksichtigt. Der lange Umfang wurde am 12.10. mit 55:21 min bereits übererfüllt; am 15.10. folgten 3 × 7 min Schwelle statt der geplanten 2 × 6 min. Die zusätzliche Indoor-Radfahrt am 17.10. enthielt drei FTP-nahe 5-min-Abschnitte und zählt als zweiter harter Ausdauerreiz. Deshalb am 18.10. Ruhetag statt des optionalen kurzen Laufs.",
   "planned_sessions": [
     {
       "id": "2026-W42-run-long",
@@ -67,10 +67,10 @@
     },
     {
       "id": "2026-W42-run-easy",
-      "status": "optional",
-      "condition": "Nur bei normaler Erholung nach 3 × 7 min Schwelle und ohne Beschwerden; sonst Ruhetag.",
+      "status": "cancelled",
+      "condition": "Entfällt nach dem zusätzlichen harten Radreiz am 17.10.; Ruhetag.",
       "type": "run",
-      "title": "Optional 20 min sehr locker",
+      "title": "Entfällt · Ruhetag nach Rad-Schwelle",
       "priority": 4,
       "scheduled_date": "2026-10-18",
       "target_intensity": "LIT",
@@ -82,8 +82,8 @@
       "cooldown": "5 min sehr locker beenden (gesamt 20 min)",
       "target_pace": "5:40–6:10 min/km oder langsamer; Erholung hat Vorrang",
       "rpe_target": "2–3/10",
-      "description": "Kurzer dritter Lauf nur zur behutsamen Stabilisierung der Häufigkeit. Der Wochenumfang wird nicht nachgeholt oder erweitert.",
-      "alternatives": "Bevorzugt Ruhetag. Falls aktive Erholung gewünscht und gut vertragen: höchstens 25 min Rad sehr locker bei 120–150 W statt des optionalen Laufs."
+      "description": "Der zuvor optionale dritte Lauf entfällt nach der Indoor-Radfahrt am 17.10. Der Wochenumfang wird nicht nachgeholt oder erweitert.",
+      "alternatives": "Ruhetag; keine zusätzliche Rad- oder Laufeinheit."
     }
   ],
   "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04.",

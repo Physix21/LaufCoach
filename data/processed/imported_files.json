@@ -440,6 +440,15 @@
         "24731870770"
       ],
       "warnings": []
+    },
+    "2026-10-17_bike_activity_24754566581.csv": {
+      "sha256": "905c9c94eb598ee235f9ffdcc6178ee6beed8bd7cb05406684e145cd87578a06",
+      "status": "imported",
+      "imported_at": "2026-10-18T22:02:09+02:00",
+      "activity_ids": [
+        "24754566581"
+      ],
+      "warnings": []
     }
   }
 }

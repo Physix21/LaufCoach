@@ -27,6 +27,7 @@ function nearTermWeeks(weeks, today) {
 function sessionStatus(session, today) {
   if (session.display_status === 'erledigt') return session.matched_activity_id ? 'Aktivität zugeordnet' : 'Erledigt';
   if (session.display_status === 'optional') return 'Optional';
+  if (session.display_status === 'entfällt') return 'Entfällt';
   if (session.scheduled_date < today) return session.type === 'strength' ? 'Status nicht erfasst' : 'Nicht dokumentiert';
   return session.scheduled_date === today ? 'Heute geplant' : 'Geplant';
 }

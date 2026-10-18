@@ -1079,3 +1079,26 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Dokumentiert: 20,52 km Laufen in zwei Einheiten. Kraft- oder Radtraining ist nicht dokumentiert und wird nicht unterstellt.
 - Der lange lockere Lauf und der einzige harte Ausdauerreiz der Woche sind erfüllt. Die Laufzeit beträgt bereits 97:51 min.
 - Für die Drei-Läufe-Struktur bleibt nur ein optionaler kurzer Erholungslauf. Umfang, Krafttraining oder Intensität werden nicht nachgeholt.
+
+## 17.10.2026 – Indoor-Rad mit FTP-nahen Abschnitten
+
+**Quelle:** `data/raw/garmin/csv/2026-10-17_bike_activity_24754566581.csv`; Startdatum, Sportart und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 30,92 km in 55:00 min; Ø 33,73 km/h. Ø 214 W, Normalized Power 231 W, maximal 285 W; Ø 131 bpm, maximal 156 bpm. Ø Trittfrequenz 84 rpm, maximal 94 rpm; 0 m Anstieg.
+- Struktur in elf Runden zu je 5:00 min: 155 W; 255 W; 171 W; 255 W; 171 W; 281 W; 172 W; 281 W; 172 W; 281 W; 156 W.
+- Die fünf Belastungsabschnitte lagen bei Ø 255 / 255 / 281 / 281 / 281 W. Die fünf lockeren beziehungsweise moderaten Abschnitte dazwischen und danach lagen bei Ø 156–172 W.
+- RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Bezogen auf die hinterlegte FTP von ca. 280–290 W entsprachen 255 W etwa 88–91 % und 281 W etwa 97–100 % FTP. Die drei letzten Belastungen waren damit FTP-nah; zusammen mit 25 min strukturierter Belastung zählt die Einheit konservativ als harter Ausdauerreiz.
+- Die Fahrt folgte zwei Tage nach dem umfangreicheren und schnelleren Schwellenlauf vom 15.10. und war kein dokumentierter Ersatz für eine geplante Laufeinheit. Damit enthält KW 42 zwei harte Ausdauerreize.
+- Am 18.10. entfällt der zuvor optionale 20-min-Erholungslauf zugunsten eines Ruhetags. Für die 400er am 23.10. bleibt normale Erholung Voraussetzung; Trainingspaces und 5-km-Leistungsanker werden durch diese Radfahrt nicht verändert.
+
+## Wochenfazit KW 42
+
+- Dokumentiert: 20,52 km Laufen in zwei Einheiten mit 97:51 min Laufzeit sowie 30,92 km Indoor-Rad in 55:00 min. Krafttraining ist nicht dokumentiert.
+- Der lange lockere Lauf am 12.10. und der Schwellenlauf am 15.10. erfüllten die beiden zentralen Laufaufgaben. Die Radfahrt am 17.10. setzte einen zusätzlichen zweiten harten Ausdauerreiz der Woche.
+- Ein dritter Lauf wird nicht nachgeholt. Der 18.10. bleibt Ruhetag; KW 43 beginnt locker und die 400er bleiben an unauffällige Erholung gebunden.

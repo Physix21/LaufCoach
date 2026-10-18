@@ -72,6 +72,16 @@ class PlanHorizonTests(unittest.TestCase):
         self.assertEqual(sessions[1]["matched_activity_id"], "anonymous-1")
         self.assertEqual(unmatched, [])
 
+    def test_cancelled_session_cannot_claim_an_activity(self):
+        plan = week(date(2030, 12, 23))
+        plan["planned_sessions"][0]["status"] = "cancelled"
+        activity = {"activity_id": "anonymous-bike", "date": "2030-12-24", "sport": "bike",
+                    "session_name": "Indoor-Radfahren", "duration_min": 30}
+        sessions, unmatched = match_plan(plan, [activity])
+        self.assertEqual(sessions[0]["display_status"], "entfällt")
+        self.assertNotIn("matched_activity_id", sessions[0])
+        self.assertEqual(unmatched, [activity])
+
     def test_actual_bike_and_run_load_includes_consecutive_days(self):
         plan = week(date(2030, 12, 23))
         activities = [{"sport": "bike", "date": "2030-12-22", "session_name": "Schwelle", "duration_min": 40},

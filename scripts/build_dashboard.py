@@ -216,6 +216,9 @@ def match_plan(plan: dict[str, Any], activities: list[dict[str, Any]]) -> tuple[
     used: set[str] = {str(s["completed_activity_id"]) for s in sessions
                       if s.get("status") == "completed" and s.get("completed_activity_id")}
     for session in sessions:
+        if session.get("status") == "cancelled":
+            session["display_status"] = "entfällt"
+            continue
         # Manuell dokumentierte Aktivitäten haben keine importierte Aktivitäts-ID,
         # können aber im Plan ausdrücklich als erledigt markiert sein.
         if session.get("status") == "completed":

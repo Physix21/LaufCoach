@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T21:41:34+02:00",
-  "today": "2026-10-15",
+  "generated_at": "2026-10-18T22:02:57+02:00",
+  "today": "2026-10-18",
   "season": {
     "plan_start": "2026-10-05",
     "plan_end": "2027-06-27",
@@ -70,15 +70,15 @@
     "title": "Laufcoach Dashboard",
     "goal": "5 km sub 17 im Juni 2027",
     "phase": "Phase 2 – Aerobe Basis und Schwelle",
-    "focus": "Langen lockeren Lauf und Schwellenreiz verarbeitet abschließen; nur noch kurze optionale Erholung, keine Nachholkilometer",
+    "focus": "Langen lockeren Lauf und zwei harte Ausdauerreize verarbeitet abschließen; Ruhetag am 18.10., keine Nachholkilometer",
     "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04."
   },
   "plan": {
     "week_start": "2026-10-12",
     "week_end": "2026-10-18",
     "phase": "Phase 2 – Aerobe Basis und Schwelle",
-    "focus": "Langen lockeren Lauf und Schwellenreiz verarbeitet abschließen; nur noch kurze optionale Erholung, keine Nachholkilometer",
-    "planning_note": "Aktivitäten bis 15.10. berücksichtigt. Der lange Umfang wurde am 12.10. mit 55:21 min bereits übererfüllt; am 15.10. folgten 3 × 7 min Schwelle statt der geplanten 2 × 6 min. Bis Wochenende kein weiterer harter Reiz. Ein kurzer dritter Lauf ist nur bei normaler Erholung optional.",
+    "focus": "Langen lockeren Lauf und zwei harte Ausdauerreize verarbeitet abschließen; Ruhetag am 18.10., keine Nachholkilometer",
+    "planning_note": "Aktivitäten bis 17.10. berücksichtigt. Der lange Umfang wurde am 12.10. mit 55:21 min bereits übererfüllt; am 15.10. folgten 3 × 7 min Schwelle statt der geplanten 2 × 6 min. Die zusätzliche Indoor-Radfahrt am 17.10. enthielt drei FTP-nahe 5-min-Abschnitte und zählt als zweiter harter Ausdauerreiz. Deshalb am 18.10. Ruhetag statt des optionalen kurzen Laufs.",
     "planned_sessions": [
       {
         "id": "2026-W42-run-long",
@@ -149,10 +149,10 @@
       },
       {
         "id": "2026-W42-run-easy",
-        "status": "optional",
-        "condition": "Nur bei normaler Erholung nach 3 × 7 min Schwelle und ohne Beschwerden; sonst Ruhetag.",
+        "status": "cancelled",
+        "condition": "Entfällt nach dem zusätzlichen harten Radreiz am 17.10.; Ruhetag.",
         "type": "run",
-        "title": "Optional 20 min sehr locker",
+        "title": "Entfällt · Ruhetag nach Rad-Schwelle",
         "priority": 4,
         "scheduled_date": "2026-10-18",
         "target_intensity": "LIT",
@@ -164,9 +164,9 @@
         "cooldown": "5 min sehr locker beenden (gesamt 20 min)",
         "target_pace": "5:40–6:10 min/km oder langsamer; Erholung hat Vorrang",
         "rpe_target": "2–3/10",
-        "description": "Kurzer dritter Lauf nur zur behutsamen Stabilisierung der Häufigkeit. Der Wochenumfang wird nicht nachgeholt oder erweitert.",
-        "alternatives": "Bevorzugt Ruhetag. Falls aktive Erholung gewünscht und gut vertragen: höchstens 25 min Rad sehr locker bei 120–150 W statt des optionalen Laufs.",
-        "display_status": "optional"
+        "description": "Der zuvor optionale dritte Lauf entfällt nach der Indoor-Radfahrt am 17.10. Der Wochenumfang wird nicht nachgeholt oder erweitert.",
+        "alternatives": "Ruhetag; keine zusätzliche Rad- oder Laufeinheit.",
+        "display_status": "entfällt"
       }
     ],
     "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04.",
@@ -329,8 +329,8 @@
         "week_start": "2026-10-12",
         "week_end": "2026-10-18",
         "phase": "Phase 2 – Aerobe Basis und Schwelle",
-        "focus": "Langen lockeren Lauf und Schwellenreiz verarbeitet abschließen; nur noch kurze optionale Erholung, keine Nachholkilometer",
-        "planning_note": "Aktivitäten bis 15.10. berücksichtigt. Der lange Umfang wurde am 12.10. mit 55:21 min bereits übererfüllt; am 15.10. folgten 3 × 7 min Schwelle statt der geplanten 2 × 6 min. Bis Wochenende kein weiterer harter Reiz. Ein kurzer dritter Lauf ist nur bei normaler Erholung optional.",
+        "focus": "Langen lockeren Lauf und zwei harte Ausdauerreize verarbeitet abschließen; Ruhetag am 18.10., keine Nachholkilometer",
+        "planning_note": "Aktivitäten bis 17.10. berücksichtigt. Der lange Umfang wurde am 12.10. mit 55:21 min bereits übererfüllt; am 15.10. folgten 3 × 7 min Schwelle statt der geplanten 2 × 6 min. Die zusätzliche Indoor-Radfahrt am 17.10. enthielt drei FTP-nahe 5-min-Abschnitte und zählt als zweiter harter Ausdauerreiz. Deshalb am 18.10. Ruhetag statt des optionalen kurzen Laufs.",
         "planned_sessions": [
           {
             "id": "2026-W42-run-long",
@@ -401,10 +401,10 @@
           },
           {
             "id": "2026-W42-run-easy",
-            "status": "optional",
-            "condition": "Nur bei normaler Erholung nach 3 × 7 min Schwelle und ohne Beschwerden; sonst Ruhetag.",
+            "status": "cancelled",
+            "condition": "Entfällt nach dem zusätzlichen harten Radreiz am 17.10.; Ruhetag.",
             "type": "run",
-            "title": "Optional 20 min sehr locker",
+            "title": "Entfällt · Ruhetag nach Rad-Schwelle",
             "priority": 4,
             "scheduled_date": "2026-10-18",
             "target_intensity": "LIT",
@@ -416,9 +416,9 @@
             "cooldown": "5 min sehr locker beenden (gesamt 20 min)",
             "target_pace": "5:40–6:10 min/km oder langsamer; Erholung hat Vorrang",
             "rpe_target": "2–3/10",
-            "description": "Kurzer dritter Lauf nur zur behutsamen Stabilisierung der Häufigkeit. Der Wochenumfang wird nicht nachgeholt oder erweitert.",
-            "alternatives": "Bevorzugt Ruhetag. Falls aktive Erholung gewünscht und gut vertragen: höchstens 25 min Rad sehr locker bei 120–150 W statt des optionalen Laufs.",
-            "display_status": "optional"
+            "description": "Der zuvor optionale dritte Lauf entfällt nach der Indoor-Radfahrt am 17.10. Der Wochenumfang wird nicht nachgeholt oder erweitert.",
+            "alternatives": "Ruhetag; keine zusätzliche Rad- oder Laufeinheit.",
+            "display_status": "entfällt"
           }
         ],
         "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04.",
@@ -430,26 +430,48 @@
           "text": "Der Laufumfang ist gegenüber der Vorwoche um 20 % gestiegen."
         }
       ],
-      "unmatched_activities": [],
+      "unmatched_activities": [
+        {
+          "activity_id": "24754566581",
+          "source_file": "2026-10-17_bike_activity_24754566581.csv",
+          "date": "2026-10-17",
+          "sport": "bike",
+          "session_name": "Indoor-Radfahren",
+          "duration_min": 55.0,
+          "distance_km": 30.92,
+          "avg_pace_sec_per_km": null,
+          "avg_speed_kmh": 33.73,
+          "avg_hr": 131.0,
+          "max_hr": 156.0,
+          "avg_power": 214.0,
+          "max_power": 285.0,
+          "elevation_gain_m": 0.0,
+          "training_effect": null,
+          "rpe": null,
+          "completed": true,
+          "notes": "Coaching-Einordnung: harter Rad-Schwellenreiz mit drei FTP-nahen 5-min-Abschnitten.",
+          "intensity": "hard"
+        }
+      ],
       "week_summary": {
         "week_start": "2026-10-12",
         "week_end": "2026-10-18",
         "week_label": "KW 42",
         "run_km": 20.52,
-        "bike_hours": 0.0,
+        "bike_hours": 0.92,
         "run_sessions": 2,
-        "bike_sessions": 0,
+        "bike_sessions": 1,
         "strength_sessions": 0,
-        "hard_endurance_sessions": 1,
+        "hard_endurance_sessions": 2,
         "lit_sessions": 1,
         "moderate_sessions": 0,
-        "hard_sessions": 1,
-        "total_duration_min": 97.9
+        "hard_sessions": 2,
+        "total_duration_min": 152.9
       },
       "intensity": {
         "LIT": 1,
         "moderate": 0,
-        "hard": 1
+        "hard": 2
       }
     },
     {
@@ -460,7 +482,7 @@
         "week_end": "2026-10-25",
         "phase": "Drei Läufe stabilisieren",
         "focus": "400er wieder aufnehmen, Laufminuten stabil halten",
-        "planning_note": "Sollplan auf Basis der Daten bis 15.10.2026. Nach dem längeren lockeren Lauf am 12.10. und 3 × 7 min Schwelle am 15.10. zunächst normal erholen. Die 400er am 23.10. bleiben kontrolliert und finden nur bei unauffälliger Erholung statt; ausgefallene Einheiten nicht nachholen.",
+        "planning_note": "Sollplan auf Basis der Daten bis 17.10.2026. Nach dem längeren lockeren Lauf am 12.10., 3 × 7 min Schwelle am 15.10. und der zusätzlichen FTP-nahen Radfahrt am 17.10. zunächst vollständig erholen. Die 400er am 23.10. bleiben kontrolliert und finden nur bei unauffälliger Erholung statt; ausgefallene Einheiten nicht nachholen.",
         "provisional": true,
         "week_type": "normal",
         "planned_sessions": [
@@ -5150,6 +5172,27 @@
   },
   "recent_activities": [
     {
+      "activity_id": "24754566581",
+      "source_file": "2026-10-17_bike_activity_24754566581.csv",
+      "date": "2026-10-17",
+      "sport": "bike",
+      "session_name": "Indoor-Radfahren",
+      "duration_min": 55.0,
+      "distance_km": 30.92,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 33.73,
+      "avg_hr": 131.0,
+      "max_hr": 156.0,
+      "avg_power": 214.0,
+      "max_power": 285.0,
+      "elevation_gain_m": 0.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "Coaching-Einordnung: harter Rad-Schwellenreiz mit drei FTP-nahen 5-min-Abschnitten.",
+      "intensity": "hard"
+    },
+    {
       "activity_id": "24731870770",
       "source_file": "2026-10-15_run_activity_24731870770.csv",
       "date": "2026-10-15",
@@ -5337,30 +5380,31 @@
       "completed": true,
       "notes": "",
       "intensity": "LIT"
-    },
+    }
+  ],
+  "unmatched_activities": [
     {
-      "activity_id": "24527182828",
-      "source_file": "2026-09-28_run_activity_24527182828.csv",
-      "date": "2026-09-28",
-      "sport": "run",
-      "session_name": "Tempodauerlauf",
-      "duration_min": 41.36,
-      "distance_km": 10.06,
-      "avg_pace_sec_per_km": 246.0,
-      "avg_speed_kmh": 14.63,
-      "avg_hr": 159.0,
-      "max_hr": 173.0,
-      "avg_power": null,
-      "max_power": null,
-      "elevation_gain_m": 42.0,
+      "activity_id": "24754566581",
+      "source_file": "2026-10-17_bike_activity_24754566581.csv",
+      "date": "2026-10-17",
+      "sport": "bike",
+      "session_name": "Indoor-Radfahren",
+      "duration_min": 55.0,
+      "distance_km": 30.92,
+      "avg_pace_sec_per_km": null,
+      "avg_speed_kmh": 33.73,
+      "avg_hr": 131.0,
+      "max_hr": 156.0,
+      "avg_power": 214.0,
+      "max_power": 285.0,
+      "elevation_gain_m": 0.0,
       "training_effect": null,
       "rpe": null,
       "completed": true,
-      "notes": "",
+      "notes": "Coaching-Einordnung: harter Rad-Schwellenreiz mit drei FTP-nahen 5-min-Abschnitten.",
       "intensity": "hard"
     }
   ],
-  "unmatched_activities": [],
   "weekly_summary": [
     {
       "week_start": "2026-08-10",
@@ -5502,21 +5546,21 @@
       "week_end": "2026-10-18",
       "week_label": "KW 42",
       "run_km": 20.52,
-      "bike_hours": 0.0,
+      "bike_hours": 0.92,
       "run_sessions": 2,
-      "bike_sessions": 0,
+      "bike_sessions": 1,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
+      "hard_endurance_sessions": 2,
       "lit_sessions": 1,
       "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 97.9
+      "hard_sessions": 2,
+      "total_duration_min": 152.9
     }
   ],
   "intensity": {
     "LIT": 1,
     "moderate": 0,
-    "hard": 1
+    "hard": 2
   },
   "repetition_targets": {
     "race_target": "16:59",
@@ -5758,15 +5802,15 @@
       "week_end": "2026-10-18",
       "week_label": "KW 42",
       "run_km": 20.52,
-      "bike_hours": 0.0,
+      "bike_hours": 0.92,
       "run_sessions": 2,
-      "bike_sessions": 0,
+      "bike_sessions": 1,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
+      "hard_endurance_sessions": 2,
       "lit_sessions": 1,
       "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 97.9
+      "hard_sessions": 2,
+      "total_duration_min": 152.9
     },
     "warning_count": 1,
     "activities_total": 35
@@ -5865,7 +5909,7 @@
       "week_end": "2026-10-25",
       "phase": "Drei Läufe stabilisieren",
       "focus": "400er wieder aufnehmen, Laufminuten stabil halten",
-      "planning_note": "Sollplan auf Basis der Daten bis 15.10.2026. Nach dem längeren lockeren Lauf am 12.10. und 3 × 7 min Schwelle am 15.10. zunächst normal erholen. Die 400er am 23.10. bleiben kontrolliert und finden nur bei unauffälliger Erholung statt; ausgefallene Einheiten nicht nachholen.",
+      "planning_note": "Sollplan auf Basis der Daten bis 17.10.2026. Nach dem längeren lockeren Lauf am 12.10., 3 × 7 min Schwelle am 15.10. und der zusätzlichen FTP-nahen Radfahrt am 17.10. zunächst vollständig erholen. Die 400er am 23.10. bleiben kontrolliert und finden nur bei unauffälliger Erholung statt; ausgefallene Einheiten nicht nachholen.",
       "provisional": true,
       "week_type": "normal",
       "planned_sessions": [
