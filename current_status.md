@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 18.10.2026 (Aktivitäten bis einschließlich 17.10.2026; direkter Garmin-Abgleich erfolgreich)
+**Stand:** 22.10.2026 (Aktivitäten bis einschließlich 22.10.2026; direkter Garmin-Abgleich erfolgreich)
 
 ## Ziel und Phase
 
@@ -29,16 +29,23 @@
 
 Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kein Ersatz für den aktuellen 5-km-Anker oder die noch aufzubauende Langzeitausdauer.
 
-## Laufende Woche KW 42
+## Laufende Woche KW 43
 
-- Dokumentiert sind 20,52 km Laufen in zwei Einheiten mit 97:51 min Laufzeit sowie 30,92 km Indoor-Rad in 55:00 min. Krafttraining ist nicht dokumentiert.
-- 12.10.: 10,60 km in 55:21 min bei 5:13 min/km, Ø 127 bpm, maximal 151 bpm. Überwiegend lockerer aerober Lauf; er erfüllt bereits den langen Lauf der Woche und war länger als die geplanten 45 min.
-- 15.10.: 3 × 7 min innerhalb von 9,92 km in 42:30 min, Ø 152 bpm, maximal 172 bpm. Abschnitte ca. 3:53 / 3:51 / 3:56 min/km und damit schneller als die geplanten 3:58–4:05 min/km; außerdem 21 statt 12 geplante Belastungsminuten.
-- 17.10.: 55:00 min Indoor-Rad, 30,92 km, Ø 214 W, NP 231 W, Ø 131 bpm, maximal 156 bpm. Nach zwei 5-min-Abschnitten bei Ø 255 W folgten drei 5-min-Abschnitte bei Ø 281 W; die fünfminütigen Erholungen lagen überwiegend bei Ø 171–172 W.
-- Bezogen auf die hinterlegte FTP von ca. 280–290 W lagen die letzten drei Belastungen bei etwa 97–100 % FTP. Die Einheit zählt konservativ als zweiter harter Ausdauerreiz der Woche und war zusätzlich zum Laufplan absolviert.
-- Am 18.10. gilt deshalb Ruhetag statt des optionalen kurzen Laufs. Keine Nachholkilometer. RPE, Gefühl und Beschwerden wurden nicht angegeben und werden nicht unterstellt.
+- Dokumentiert sind 16,09 km Laufen in zwei Einheiten mit 77:46 min Timerzeit. Kraft- oder Radtraining ist nicht dokumentiert.
+- 20.10.: 8,07 km in 32:28 min bei 4:01 min/km, Ø 158 bpm, maximal 171 bpm. Acht volle Kilometer lagen gleichmäßig zwischen 3:57 und 4:04 min/km. Statt der geplanten lockeren 30 min war dies ein harter, durchgehender Tempodauerlauf.
+- 22.10.: 8,02 km in 45:18 min bei 5:39 min/km, Ø 126 bpm, maximal 140 bpm. Gleichmäßiger lockerer aerober Lauf; er erfüllt bereits den längeren Lauf der Woche.
+- Der Tempodauerlauf belegt den Qualitätsplatz der Woche. Die für 23.10. geplanten 6 × 400 m entfallen und werden nicht nachgeholt.
+- Am 25.10. sind nur 25 min sehr locker vorgesehen, um die Drei-Läufe-Struktur ohne zusätzlichen Qualitätsreiz zu stabilisieren. Bei ungewöhnlicher Müdigkeit gilt Ruhetag beziehungsweise die hinterlegte sehr lockere Radalternative.
+- RPE, Gefühl und Beschwerden wurden nicht angegeben und werden nicht unterstellt.
 
 ## Letzte abgeschlossene Woche
+
+- KW 42: 20,52 km Laufen in zwei Einheiten mit 97:51 min Laufzeit sowie 30,92 km Indoor-Rad in 55:00 min. Krafttraining ist nicht dokumentiert.
+- 12.10.: 10,60 km locker in 55:21 min bei Ø 127 bpm; 15.10.: 3 × 7 min Schwelle in ca. 3:53 / 3:51 / 3:56 min/km; 17.10.: Indoor-Rad mit insgesamt 25 min strukturierter Belastung, darunter drei 5-min-Abschnitte bei Ø 281 W.
+- Schwellenlauf und FTP-nahe Radfahrt zählen als zwei harte Ausdauerreize. Der optionale dritte Lauf am 18.10. entfiel; keine Nachholkilometer.
+- RPE, Gefühl und Beschwerden wurden nicht angegeben; daraus wird weder Beschwerdefreiheit noch eine Einschränkung abgeleitet.
+
+### Frühere Woche KW 40
 
 - KW 40 nach direktem Garmin-Abgleich: 26,41 km Laufen in drei Einheiten und 58,94 km Rad in ca. 2:46:42 h Timerzeit; Krafttraining ist nicht dokumentiert.
 - 28.09., neu ergänzt: 10,06 km Tempodauerlauf in 41:21,6 min, Ø ca. 4:07 min/km aus Distanz/Zeit, Ø 159 bpm, maximal 173 bpm. Durchgehend schwellennahe Pace, als harter Reiz eingeordnet.
@@ -58,6 +65,8 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Belastbarkeit und Einordnung
 
+- Der Tempodauerlauf am 20.10. war über acht volle Kilometer mit 3:57–4:04 min/km sehr gleichmäßig, aber für den vorgesehenen lockeren Lauf klar zu intensiv. Er zeigt gute aerobe Tempohärte, ist jedoch kein neuer 5-km-Leistungsanker.
+- Der lockere Lauf am 22.10. folgte mit 48 Stunden Abstand und blieb bei Ø 126 bpm kontrolliert. Damit sind langer lockerer Lauf und Qualitätsreiz dieser Woche bereits erfüllt; die gestrichenen 400er werden nicht ersetzt.
 - Der lockere Lauf am 12.10. zeigt über 55 min einen niedrigen Durchschnittspuls. Zusammen mit dem Schwellenlauf am 15.10. sind in KW 42 bereits 20,52 km erreicht; nach der zusätzlichen schwellenorientierten Radfahrt am 17.10. entfällt der optionale dritte Lauf.
 - Die drei siebenminütigen Schwellenabschnitte am 15.10. waren mit ca. 3:53 / 3:51 / 3:56 min/km gleichmäßig, aber schneller und umfangreicher als geplant. Das stützt die bestehende Schwellenfähigkeit, ist jedoch kein neuer 5-km-Leistungsanker.
 - Die Radfahrt am 17.10. enthielt insgesamt 25 min strukturierte Belastung bei Ø 255 beziehungsweise 281 W. Sie ist wegen der drei FTP-nahen Schlussabschnitte ein klarer Qualitätsreiz, ohne daraus einen neuen FTP-Wert abzuleiten.
@@ -70,12 +79,11 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 ## Nächster Coaching-Fokus
 
 - Vollständige Sollplanung für 38 Kalenderwochen bis 27.06.2027 in den JSON-Plänen und `plans/gesamtplan_2026_2027.md`; alle Wochen sind im Dashboard auswählbar. Die nachgereichten Aktivitäten vom 08.–10.10. sind berücksichtigt.
-- Nächste 400er: 23.10.2026, 6 × 400 m in 88–90 s (3:40–3:45 min/km), jeweils 90 s Trabpause; danach regelmäßiger Wechsel mit Schwelle, längeren Intervallen und dosierten Hügelreizen.
+- Die 400er am 23.10.2026 entfallen nach dem harten Tempodauerlauf am 20.10. und werden nicht nachgeholt. Kurze Intervalle bleiben später im Wechsel mit Schwelle, längeren Intervallen und dosierten Hügelreizen vorgesehen.
 - April-Test mit ruhiger Folgewoche; ab 26.04. spezifischer 5-km-Block, ab 14.06. Entlastung für den festen Wettkampftermin 22.06. Die schnelleren Tempostufen gelten nur bei den an jeder Einheit genannten Voraussetzungen.
 - Sub 38 über 10 km belegt noch keine Sub-17-Form. Testauswertung und spätere spezifische Einheiten entscheiden über die tatsächlichen Trainings- und Wettkampfpaces.
 
-- KW 42: Langer Lauf am 12.10., Schwellenlauf am 15.10. und zusätzlicher harter Radreiz am 17.10. sind berücksichtigt. Am 18.10. Ruhetag. Krafttraining ist nicht dokumentiert und wird nicht nachgeholt.
-- KW 43: 30 min locker, dosierte Kraft, 6 × 400 m in 88–90 s (3:40–3:45 min/km) nur bei normaler Erholung von den beiden Qualitätsreizen der Vorwoche und 45 min locker. Keine schnelle Schlusswiederholung.
+- KW 43: Tempodauerlauf am 20.10. und längerer lockerer Lauf am 22.10. sind berücksichtigt. Am 23.10. Ruhetag statt 400ern; am 25.10. höchstens 25 min sehr locker ohne Endbeschleunigung. Krafttraining ist nicht dokumentiert und wird nicht nachgeholt.
 
 - Nach den 3 × 7 min am 15.10. kam am 17.10. ungeplant ein zweiter harter Reiz hinzu. Deshalb am 18.10. vollständig erholen und keine ausgefallenen Kilometer nachholen.
 - Drei verträgliche Läufe anstreben, dabei nur die lockeren Minuten maßvoll ergänzen. Bei nicht dokumentierter Erholung nicht gleichzeitig Umfang und Tempo verschärfen.

@@ -449,6 +449,24 @@
         "24754566581"
       ],
       "warnings": []
+    },
+    "2026-10-20_run_activity_24791941751.csv": {
+      "sha256": "5f7cc5f3f93b194769a17e03bc493dd63ab2a5d28671f042acf8afbfefe14313",
+      "status": "imported",
+      "imported_at": "2026-10-22T19:34:57+02:00",
+      "activity_ids": [
+        "24791941751"
+      ],
+      "warnings": []
+    },
+    "2026-10-22_run_activity_24813543474.csv": {
+      "sha256": "ecb04f09d07fba700d1134e9f9c008607f80ad50e336fcc5178d7d1d465c9b2f",
+      "status": "imported",
+      "imported_at": "2026-10-22T19:34:57+02:00",
+      "activity_ids": [
+        "24813543474"
+      ],
+      "warnings": []
     }
   }
 }

@@ -1102,3 +1102,43 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Dokumentiert: 20,52 km Laufen in zwei Einheiten mit 97:51 min Laufzeit sowie 30,92 km Indoor-Rad in 55:00 min. Krafttraining ist nicht dokumentiert.
 - Der lange lockere Lauf am 12.10. und der Schwellenlauf am 15.10. erfüllten die beiden zentralen Laufaufgaben. Die Radfahrt am 17.10. setzte einen zusätzlichen zweiten harten Ausdauerreiz der Woche.
 - Ein dritter Lauf wird nicht nachgeholt. Der 18.10. bleibt Ruhetag; KW 43 beginnt locker und die 400er bleiben an unauffällige Erholung gebunden.
+
+## 20.10.2026 – Tempodauerlauf statt lockerem Lauf
+
+**Quelle:** `data/raw/garmin/csv/2026-10-20_run_activity_24791941751.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 8,07 km in 32:28 min Timerzeit; 32:16 min in Bewegung. Ø 4:01 min/km beziehungsweise 4:00 min/km in Bewegung.
+- Herzfrequenz: Ø 158 bpm, maximal 171 bpm; 18 m Anstieg.
+- Acht volle Kilometerrunden in 4:02 / 4:03 / 4:00 / 4:01 / 4:03 / 4:04 / 4:00 / 3:57 min; Rest 0,07 km in 19 s.
+- RPE, Gefühl und Beschwerden: nicht angegeben; Leistungswerte fehlen im Export.
+
+### Coaching-Einschätzung
+
+- Die acht Kilometer waren sehr gleichmäßig, aber deutlich schneller als die geplanten 30 min locker bei 5:15–5:50 min/km. Pace und Herzfrequenz sprechen für einen harten, durchgehenden Tempodauerlauf im Bereich der bisherigen Schwellenvorgabe, nicht für einen lockeren Lauf.
+- Mit rund 32 min kontinuierlicher Belastung war der Reiz umfangreicher als die zuletzt geplanten Schwellenintervalle. Er belegt deshalb den Qualitätsplatz der Woche; die 6 × 400 m am 23.10. entfallen und werden nicht nachgeholt.
+- Die Einheit stützt die aerobe Tempohärte, ersetzt aber keinen aktuellen 5-km-Wettkampfanker und führt nicht zu einer automatischen Verschärfung der Trainingspaces.
+
+## 22.10.2026 – Längerer lockerer Lauf
+
+**Quelle:** `data/raw/garmin/csv/2026-10-22_run_activity_24813543474.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 8,02 km in 45:18 min Timerzeit; 45:04 min in Bewegung. Ø 5:39 min/km beziehungsweise 5:37 min/km in Bewegung.
+- Herzfrequenz: Ø 126 bpm, maximal 140 bpm; 34 m Anstieg.
+- Acht volle Kilometerrunden in 5:30 / 5:36 / 5:38 / 5:42 / 5:39 / 5:44 / 5:37 / 5:48 min; Rest 0,02 km in 6 s.
+- RPE, Gefühl und Beschwerden: nicht angegeben; Leistungswerte fehlen im Export.
+
+### Coaching-Einschätzung
+
+- Gleichmäßige Pace im lockeren Zielbereich und der niedrige Durchschnittspuls sprechen für einen lockeren aeroben Lauf. Die leichte Pulsentwicklung bis Kilometer sechs bleibt bei kleinen Höhenunterschieden und ohne subjektive Angaben nur beschreibend.
+- Dauer und Distanz erfüllen den vorgesehenen längeren lockeren Lauf der Woche, drei Tage früher als geplant.
+- Für den 23.10. gilt Ruhetag statt 400ern. Am 25.10. bleiben 25 min sehr locker als kurzer dritter Lauf vorgesehen; bei ungewöhnlicher Müdigkeit ist ein Ruhetag oder sehr lockeres Radfahren die hinterlegte Alternative.
+
+## Zwischenstand KW 43 nach Garmin-Abgleich am 22.10.
+
+- Dokumentiert: 16,09 km Laufen in zwei Einheiten mit 77:46 min Timerzeit. Kraft- oder Radtraining ist nicht dokumentiert und wird nicht unterstellt.
+- Ein harter Tempodauerlauf und ein längerer lockerer Lauf sind absolviert. Zusätzliche 400er würden die beabsichtigte Belastungssteuerung verschärfen und entfallen deshalb.
+- RPE, Gefühl und Beschwerden wurden nicht angegeben und werden nicht geschätzt. Der 5-km-Leistungsanker bleibt unverändert.
