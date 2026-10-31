@@ -467,6 +467,51 @@
         "24813543474"
       ],
       "warnings": []
+    },
+    "2026-10-23_bike_activity_24826644817.csv": {
+      "sha256": "073864d0204642335ff92c3b798278fadd2fa54a17eb590bfb5afa117cf5350d",
+      "status": "imported",
+      "imported_at": "2026-10-31T12:50:06+01:00",
+      "activity_ids": [
+        "24826644817"
+      ],
+      "warnings": []
+    },
+    "2026-10-25_run_activity_24843528734.csv": {
+      "sha256": "ae72e863977d651635c30116e3a7e60d120f1c957b45eab442040b3549935d3e",
+      "status": "imported",
+      "imported_at": "2026-10-31T12:50:06+01:00",
+      "activity_ids": [
+        "24843528734"
+      ],
+      "warnings": []
+    },
+    "2026-10-27_bike_activity_24871824710.csv": {
+      "sha256": "5f18d27328f958569ae64b1e418de5aca62974ac59cee0d6b7e93f6ac9c6e9c3",
+      "status": "imported",
+      "imported_at": "2026-10-31T12:50:06+01:00",
+      "activity_ids": [
+        "24871824710"
+      ],
+      "warnings": []
+    },
+    "2026-10-30_bike_activity_24907587469.csv": {
+      "sha256": "83e547396e18aba05fc342079447a173b6187e507d8909f61a89328eefe2682f",
+      "status": "imported",
+      "imported_at": "2026-10-31T12:50:06+01:00",
+      "activity_ids": [
+        "24907587469"
+      ],
+      "warnings": []
+    },
+    "2026-10-31_run_activity_24915486320.csv": {
+      "sha256": "c144d7815a37832fac539492e23d29b2b08f6981ee60a661ab2164c3fa9d84af",
+      "status": "imported",
+      "imported_at": "2026-10-31T12:50:06+01:00",
+      "activity_ids": [
+        "24915486320"
+      ],
+      "warnings": []
     }
   }
 }

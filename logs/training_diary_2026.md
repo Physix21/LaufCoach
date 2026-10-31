@@ -1142,3 +1142,93 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Dokumentiert: 16,09 km Laufen in zwei Einheiten mit 77:46 min Timerzeit. Kraft- oder Radtraining ist nicht dokumentiert und wird nicht unterstellt.
 - Ein harter Tempodauerlauf und ein längerer lockerer Lauf sind absolviert. Zusätzliche 400er würden die beabsichtigte Belastungssteuerung verschärfen und entfallen deshalb.
 - RPE, Gefühl und Beschwerden wurden nicht angegeben und werden nicht geschätzt. Der 5-km-Leistungsanker bleibt unverändert.
+
+## 23.10.2026 – Indoor-Rad mit zwei FTP-nahen 10-min-Abschnitten
+
+**Quelle:** `data/raw/garmin/csv/2026-10-23_bike_activity_24826644817.csv`; Startdatum, Sportart und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 27,53 km in 48:10 min; Ø 34,3 km/h. Ø 223 W, Normalized Power 236 W, maximal 278 W; Ø 134 bpm, maximal 154 bpm.
+- Struktur: 10 min bei Ø 169 W, 10 min bei Ø 217 W, 10 min bei Ø 273 W, 4 min bei Ø 171 W, weitere 10 min bei Ø 273 W und 4 min bei Ø 171 W.
+- RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Die beiden 10-min-Abschnitte bei 273 W entsprechen etwa 94–98 % der hinterlegten FTP von 280–290 W. Die Fahrt zählt deshalb als harter Ausdauerreiz.
+- Die Einheit wurde am Tag der gestrichenen 400er absolviert und war keine lockere Ersatzbelastung. Zusammen mit dem Tempodauerlauf am 20.10. waren damit bereits zwei harte Reize in KW 43 erreicht.
+
+## 25.10.2026 – Längerer Lauf mit 6 × 400 m
+
+**Quelle:** `data/raw/garmin/csv/2026-10-25_run_activity_24843528734.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 12,98 km in 1:03:36,7 h Timerzeit; 1:03:21,8 h in Bewegung. Ø 4:54 min/km beziehungsweise 4:52 min/km in Bewegung; Ø 145 bpm, maximal 179 bpm; 68 m Anstieg.
+- Vor den Wiederholungen: 9,21 km. Die ersten neun vollen Kilometer lagen zwischen 4:48 und 5:45 min/km; separate ruhige Ein- und Auslaufphasen sind nicht vollständig erkennbar.
+- Sechs 400-m-Abschnitte in 89,4 / 95,1 / 93,7 / 95,2 / 92,3 / 70,5 s, entsprechend ca. 3:43 / 3:58 / 3:54 / 3:58 / 3:51 / 2:56 min/km. Dazwischen 0,16–0,19 km in etwa 57–64 s; nach der letzten Wiederholung 0,52 km locker.
+- RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Statt der geplanten 25 min sehr locker wurde ein deutlich längerer Lauf mit Intervallen absolviert. Die ersten fünf 400er waren kontrollierter als die Schlusswiederholung; 70,5 s ist ein klarer Sprintabschluss und keine gleichmäßige Fortsetzung der Serie.
+- Die Einheit zählt als dritter harter Ausdauerreiz der KW 43 nach dem Tempodauerlauf am 20.10. und der FTP-nahen Radfahrt am 23.10. Sie bestätigt Geschwindigkeitsreserve, aber keinen neuen 5-km-Leistungsanker.
+
+## Wochenfazit KW 43 nach vollständigem Garmin-Abgleich
+
+- Dokumentiert: 29,07 km Laufen in drei Einheiten mit 2:21:23 min Timerzeit sowie 27,53 km Indoor-Rad in 48:10 min. Krafttraining ist nicht dokumentiert.
+- Harte Ausdauerreize: Tempodauerlauf am 20.10., FTP-nahe Radfahrt am 23.10. und 400er am 25.10. Damit wurde die vorgesehene Begrenzung auf höchstens zwei harte Reize überschritten.
+- Der lockere Lauf am 22.10. blieb kontrolliert. Zusätzlicher Umfang oder Intensität werden nicht nachgeholt; die Folgewoche sollte der Entlastung dienen.
+
+## 27.10.2026 – Indoor-Rad mit 3 × 6 min FTP-nah
+
+**Quelle:** `data/raw/garmin/csv/2026-10-27_bike_activity_24871824710.csv`; Startdatum, Sportart und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 23,30 km in 39:56 min; Ø 35,0 km/h. Ø 235 W, Normalized Power 246 W, maximal 279 W; Ø 142 bpm, maximal 158 bpm.
+- Hauptteil: 3 × 6 min bei Ø 273 / 273 / 272 W, dazwischen jeweils 2 min bei Ø 172 W. Zuvor 3 min bei Ø 169 W und 5 min bei Ø 217 W; Abschluss 7:56 min bei Ø 235 W.
+- RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Die drei Belastungen lagen bei etwa 94–98 % der hinterlegten FTP und zählen als harter Ausdauerreiz.
+- Als Ersatz für den geplanten lockeren Lauf war die Einheit deutlich intensiver als vorgesehen. Die lockere Laufaufgabe der Entlastungswoche wurde damit nicht gleichwertig erfüllt.
+
+## 30.10.2026 – Indoor-Rad mit 12 × 1 min
+
+**Quelle:** `data/raw/garmin/csv/2026-10-30_bike_activity_24907587469.csv`; Startdatum, Sportart und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 33,08 km in 60:00 min; 59:55 min in Bewegung. Ø 206 W, Normalized Power 240 W, maximal 410 W; Ø 132 bpm, maximal 165 bpm.
+- Nach 10 min Aufbau folgten zehn 1-min-Abschnitte bei überwiegend Ø 337–339 W mit jeweils 2:45 min bei etwa Ø 172–173 W. Zwei weitere 1-min-Abschnitte lagen bei Ø 371 und 384 W. Anschließend 5 min bei Ø 137 W.
+- RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Zwölf einminütige Belastungen bei etwa 116–137 % der hinterlegten FTP sind ein klarer harter Rad-HIIT-Reiz. Die Einheit zählt nicht als lockere Radalternative.
+- Sie folgte drei Tage nach der FTP-nahen Radfahrt und lag unmittelbar vor dem Schwellenlauf. Damit waren vor dem Lauf bereits zwei harte Reize in KW 44 absolviert.
+
+## 31.10.2026 – 3 × 8 min Schwelle mit schnellem Schlussabschnitt
+
+**Quelle:** `data/raw/garmin/csv/2026-10-31_run_activity_24915486320.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 11,79 km in 52:43 min Timerzeit; 52:29 min in Bewegung. Ø 4:28 min/km beziehungsweise 4:26 min/km in Bewegung; Ø 149 bpm, maximal 175 bpm; 67 m Anstieg.
+- Drei Belastungsabschnitte über jeweils 8:00 min: ca. 2,03 km bei 3:56 min/km, 2,02 km bei 3:57 min/km und 2,17 km bei 3:41 min/km.
+- Erholung: zweimal 3:00 min lockeres Traben über jeweils 0,57 km. Vor dem ersten Abschnitt etwa 3,38 km; nach dem letzten etwa 1,04 km locker.
+- RPE, Gefühl und Beschwerden: nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Die ersten beiden Abschnitte lagen im bisherigen Schwellenbereich. Der dritte war mit etwa 3:41 min/km deutlich schneller und nicht mehr die gewünschte gleichmäßige Schwellenfortsetzung.
+- Mit 24 statt geplanten 12 Belastungsminuten war der Hauptteil doppelt so lang wie vorgesehen. Nach den harten Radfahrten am 27. und 30.10. ist dies der dritte harte Ausdauerreiz der Woche.
+- Der Lauf stützt die aerobe Tempohärte, ersetzt aber keinen aktuellen 5-km-Formcheck. Der Leistungsanker bleibt 18:49 min vom 17.06.2026.
+
+## Zwischenstand KW 44 nach Garmin-Abgleich am 31.10.
+
+- Dokumentiert: 11,79 km Laufen in 52:43 min sowie 56,38 km Indoor-Rad in 1:39:56 h. Krafttraining ist nicht dokumentiert.
+- Drei harte Ausdauerreize innerhalb von fünf Tagen überschreiten die geplante Entlastung. Der längere lockere Lauf am 01.11. entfällt vollständig; weder Laufkilometer noch Krafttraining werden nachgeholt.
+- KW 45 wird vorläufig ohne Schwellen- oder HIIT-Reiz geplant. Drei lockere Läufe sind nur bei normaler Erholung vorgesehen; RPE, Gefühl und Beschwerden werden nicht geschätzt.
