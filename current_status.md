@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 31.10.2026 (Aktivitäten bis einschließlich 31.10.2026; direkter Garmin-Abgleich erfolgreich)
+**Stand:** 08.11.2026 (Aktivitäten bis einschließlich 08.11.2026; direkter Garmin-Abgleich erfolgreich)
 
 ## Ziel und Phase
 
@@ -29,7 +29,20 @@
 
 Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kein Ersatz für den aktuellen 5-km-Anker oder die noch aufzubauende Langzeitausdauer.
 
-## Laufende Woche KW 44
+## Letzte abgeschlossene Woche KW 45
+
+- Aufgezeichnet sind 20,20 km Laufen in 1:35:37 h. Zusätzlich wurde ein nicht aufgezeichnetes Indoor-Rad-HIIT mit 4 × 4 min bei 280 W gemeldet; Gesamtdauer und Distanz fehlen.
+- 03.11.: 8,03 km in 36:35,8 min bei Ø 4:33 min/km, Ø 150 bpm und maximal 162 bpm. Der progressive Lauf war moderat bis zügig statt der geplanten reinen Erholung.
+- 08.11.: 12,17 km in 59:01,3 min mit 6 × 400 m in 92,2 / 89,6 / 90,3 / 91,3 / 89,4 / 81,2 s. Die letzte Wiederholung war deutlich schneller als die ersten fünf; die Einheit zählt als harter Reiz.
+- Das manuell gemeldete Rad-HIIT zählt bei 280 W beziehungsweise etwa 97–100 % der hinterlegten FTP als weiterer harter Reiz. Der genaue Tag und die Pausenlänge fehlen.
+- Damit liegen zwei harte Ausdauerreize vor. Krafttraining und ein dritter Lauf sind nicht dokumentiert und werden nicht unterstellt.
+
+## Nachtrag zur KW 44
+
+- Der Athlet meldete einen nicht aufgezeichneten lockeren 10-km-Lauf bei etwa 5:00 min/km nach. Der genaue Tag innerhalb der KW 44 sowie Herzfrequenz und weitere Messwerte fehlen.
+- Korrigierte Wochenbilanz: 21,79 km Laufen in etwa 1:42:43 h sowie 56,38 km aufgezeichnetes Indoor-Rad in 1:39:56 h. Die drei harten Reize der Woche bleiben unverändert.
+
+## Frühere Woche KW 44
 
 - Dokumentiert sind 11,79 km Laufen in 52:43 min sowie 56,38 km Indoor-Rad in 1:39:56 h. Krafttraining ist nicht dokumentiert.
 - 27.10.: 39:56 min Rad mit 3 × 6 min bei Ø 273 / 273 / 272 W; Ø 235 W, NP 246 W. Das ist ein harter FTP-naher Reiz statt der geplanten lockeren Laufeinheit.
@@ -38,7 +51,7 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 - Damit liegen drei harte Ausdauerreize in fünf Tagen vor. Der längere lockere Lauf am 01.11. entfällt vollständig; keine Kilometer und kein Krafttraining nachholen.
 - RPE, Gefühl und Beschwerden wurden nicht angegeben und werden nicht unterstellt.
 
-## Letzte abgeschlossene Woche
+## Frühere Woche KW 43
 
 - KW 43: 29,07 km Laufen in drei Einheiten mit 2:21:23 h Timerzeit sowie 27,53 km Indoor-Rad in 48:10 min. Krafttraining ist nicht dokumentiert.
 - Harte Reize: Tempodauerlauf am 20.10., zwei FTP-nahe 10-min-Radabschnitte am 23.10. und sechs 400er am 25.10. Die letzte Wiederholung am 25.10. war mit 70,5 s ein klarer Sprintabschluss.
@@ -65,6 +78,11 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Belastbarkeit und Einordnung
 
+- In KW 45 wurden zwei harte Ausdauerreize absolviert: das manuell gemeldete 4 × 4-min-Rad-HIIT bei 280 W und der Intervalllauf am 08.11. Die ursprünglich vorgesehene Erholungswoche wurde damit erneut intensiver als geplant.
+- Die ersten fünf 400-m-Wiederholungen am 08.11. waren mit 89,4–92,2 s weitgehend kontrolliert; der Abschluss in 81,2 s war deutlich schneller. Das zeigt kurze Geschwindigkeitsreserve, rechtfertigt aber weder einen neuen 5-km-Anker noch eine schnellere Standardvorgabe.
+- Der progressive Lauf am 03.11. lag mit Ø 4:33 min/km über der vorgesehenen lockeren Intensität, wird aber ohne klaren Schwellenabschnitt nicht als zusätzlicher harter Reiz gezählt.
+- Der nachgemeldete 10-km-Lauf der KW 44 korrigiert den zuvor als ausgefallen geführten längeren Lauf. Weil das exakte Datum fehlt, wird keine Tageszuordnung erfunden.
+
 - In KW 43 und KW 44 wurden jeweils drei harte Ausdauerreize dokumentiert. Das überschreitet die Coaching-Leitplanke und verhindert eine belastbare Beurteilung der vorgesehenen Drei-Läufe-Struktur, weil lockere Soll-Einheiten wiederholt durch intensive Rad- oder Laufeinheiten ersetzt wurden.
 - Die 3 × 8 min am 31.10. waren in den ersten beiden Abschnitten mit ca. 3:56 / 3:57 min/km kontrolliert. Der dritte Abschnitt bei ca. 3:41 min/km und die Verdopplung der geplanten Belastungszeit sind keine Grundlage für eine schnellere Standard-Schwellenpace.
 - Die Radfahrten am 27.10. und 30.10. zählen wegen 3 × 6 min bei ca. 94–98 % FTP beziehungsweise zwölf 1-min-Abschnitten deutlich oberhalb FTP als harte Reize. Sie sind keine lockeren Laufalternativen.
@@ -82,9 +100,11 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Nächster Coaching-Fokus
 
-- Am 01.11. vollständiger Ruhetag statt langem Lauf. KW 45 bleibt eine Stabilisierungswoche ohne Schwelle, Intervalle oder Rad-HIIT: 30 min locker am 03.11., optional leichtes Krafttraining am 04.11., 30 min locker am 06.11. und 40 min locker am 08.11. Nur bei normaler Erholung durchführen; nichts nachholen.
+- KW 46 bleibt ohne 400er, Schwelle oder Rad-HIIT: drei kontrollierte lockere Läufe mit 30, 30 und 40 min sowie optional leichtes Krafttraining. Der geplante Aufbau auf 8 × 400 m entfällt und wird nicht nachgeholt.
+- Lockere Läufe konsequent bei 5:15–5:50 min/km halten; die erste Einheit frühestens nach normaler Erholung vom Intervalllauf am 08.11. Radalternativen bleiben locker bei etwa 140–170 W.
+
 - Intensität klar begrenzen: Radalternativen zu lockeren Läufen bleiben bei ca. 140–170 W. FTP-nahe oder deutlich über FTP liegende Abschnitte zählen als harte Reize und ersetzen keine lockere Aufgabe.
-- Schwelle vorerst weiter bei 3:58–4:05 min/km, aber erst nach der Erholungswoche wieder einplanen. Belastungsabschnitte gleichmäßig ausführen; kein schneller Schlussabschnitt.
+- Schwelle bleibt vorerst bei 3:58–4:05 min/km, wird aber erst nach einer tatsächlich lockeren Stabilisierungswoche wieder eingeplant. Belastungsabschnitte gleichmäßig ausführen; kein schneller Schlussabschnitt.
 - Vollständige Sollplanung für 38 Kalenderwochen bis 27.06.2027 in den JSON-Plänen und `plans/gesamtplan_2026_2027.md`; alle Wochen sind im Dashboard auswählbar. Die nachgereichten Aktivitäten vom 08.–10.10. sind berücksichtigt.
 - Die 400er am 23.10.2026 entfallen nach dem harten Tempodauerlauf am 20.10. und werden nicht nachgeholt. Kurze Intervalle bleiben später im Wechsel mit Schwelle, längeren Intervallen und dosierten Hügelreizen vorgesehen.
 - April-Test mit ruhiger Folgewoche; ab 26.04. spezifischer 5-km-Block, ab 14.06. Entlastung für den festen Wettkampftermin 22.06. Die schnelleren Tempostufen gelten nur bei den an jeder Einheit genannten Voraussetzungen.

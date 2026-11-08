@@ -1232,3 +1232,71 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Dokumentiert: 11,79 km Laufen in 52:43 min sowie 56,38 km Indoor-Rad in 1:39:56 h. Krafttraining ist nicht dokumentiert.
 - Drei harte Ausdauerreize innerhalb von fünf Tagen überschreiten die geplante Entlastung. Der längere lockere Lauf am 01.11. entfällt vollständig; weder Laufkilometer noch Krafttraining werden nachgeholt.
 - KW 45 wird vorläufig ohne Schwellen- oder HIIT-Reiz geplant. Drei lockere Läufe sind nur bei normaler Erholung vorgesehen; RPE, Gefühl und Beschwerden werden nicht geschätzt.
+
+## KW 44 – nachgemeldeter lockerer 10-km-Lauf
+
+**Quelle:** Angabe des Athleten vom 08.11.2026; nicht mit Garmin aufgezeichnet.
+
+### Athletenangabe
+
+- In der Kalenderwoche 26.10.–01.11. wurden 10,00 km locker bei etwa 5:00 min/km gelaufen; daraus ergeben sich rechnerisch etwa 50:00 min.
+- Der genaue Kalendertag, Herzfrequenz, Höhenmeter und weitere Messwerte wurden nicht angegeben. RPE, Gefühl und Beschwerden wurden nicht angegeben.
+
+### Coaching-Einschätzung
+
+- Die Einheit wird als lockerer Lauf auf Wochenebene dokumentiert. Pace und Dauer stammen aus der Athletenangabe beziehungsweise der daraus transparent berechneten Dauer, nicht aus Messdaten.
+- Damit wird die frühere Annahme korrigiert, der längere Lauf am Ende der KW 44 sei vollständig entfallen. Die Wochenbilanz beträgt nun 21,79 km Laufen in etwa 1:42:43 h sowie 56,38 km aufgezeichnetes Indoor-Rad in 1:39:56 h.
+- Die drei bereits dokumentierten harten Reize der Woche bleiben unverändert. Der zusätzliche lockere Lauf erhöht den Umfang, ist aber kein weiterer harter Reiz.
+
+## 03.11.2026 – progressiver Dauerlauf
+
+**Quelle:** `data/raw/garmin/csv/2026-11-03_run_activity_24950309075.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 8,03 km in 36:35,8 min Timerzeit; 36:33,9 min in Bewegung. Ø 4:33 min/km, Ø 150 bpm, maximal 162 bpm; 18 m Anstieg.
+- Volle Kilometer in 4:43 / 4:42 / 4:34 / 4:31 / 4:27 / 4:28 / 4:26 / 4:31 min. Rest 0,03 km in 13 s.
+- RPE, Gefühl und Beschwerden wurden nicht angegeben; Leistungswerte fehlen im Export.
+
+### Coaching-Einschätzung
+
+- Der Lauf war deutlich schneller und länger als die geplanten 30 min locker. Die ersten Kilometer lagen zügig locker, die späteren überwiegend schneller als der hinterlegte Bereich von 4:35–4:55 min/km.
+- Wegen der gleichmäßigen Progression und der Herzfrequenz wird er als moderater bis zügiger Dauerlauf eingeordnet, nicht als klarer Schwellen- oder HIIT-Reiz. Er erfüllte die beabsichtigte reine Erholungsaufgabe dennoch nicht.
+- Der 5-km-Leistungsanker und die Trainingspaces bleiben unverändert.
+
+## KW 45 – manuell gemeldetes Indoor-Rad-HIIT
+
+**Quelle:** Angabe des Athleten vom 08.11.2026; nicht aufgezeichnet.
+
+### Athletenangabe
+
+- In der Kalenderwoche 02.–08.11. wurde auf dem Fahrradtrainer ein HIIT mit 4 × 4 min bei jeweils 280 W und Pausen zwischen den Belastungen absolviert.
+- Der genaue Kalendertag, die Pausenlänge, Gesamtdauer, Ein- und Ausfahren, Herzfrequenz, Trittfrequenz und Distanz wurden nicht angegeben. RPE, Gefühl und Beschwerden wurden nicht angegeben.
+
+### Coaching-Einschätzung
+
+- 280 W entsprechen etwa 97–100 % der hinterlegten FTP von 280–290 W. Die 16 Belastungsminuten zählen konservativ als harter Ausdauerreiz.
+- Die Einheit war keine lockere Radalternative des Erholungsplans. Ohne exaktes Datum wird kein Abstand zu den anderen Einheiten behauptet.
+
+## 08.11.2026 – Lauf mit 6 × 400 m
+
+**Quelle:** `data/raw/garmin/csv/2026-11-08_run_activity_25007001304.csv`; Startdatum und Titel aus Garmin-Metadaten.
+
+### Messdaten
+
+- Gesamt: 12,17 km in 59:01,3 min Timerzeit; 58:49,9 min in Bewegung. Ø 4:51 min/km beziehungsweise 4:50 min/km in Bewegung; Ø 135 bpm, maximal 173 bpm; 55 m Anstieg.
+- Vor den Intervallen: 6,59 km überwiegend locker bis zügig. Sechs 400-m-Abschnitte in 92,2 / 89,6 / 90,3 / 91,3 / 89,4 / 81,2 s, entsprechend ca. 3:51 / 3:44 / 3:46 / 3:48 / 3:44 / 3:23 min/km.
+- Zwischen den Wiederholungen jeweils etwa 1:00 min lockere Erholung über 0,15–0,16 km. Nach dem letzten Abschnitt etwa 2,38 km Auslaufen.
+- RPE, Gefühl und Beschwerden wurden nicht angegeben; Leistungswerte fehlen im Export.
+
+### Coaching-Einschätzung
+
+- Die ersten fünf Wiederholungen lagen ungefähr im kontrollierten 400-m-Bereich; die letzte war mit 81,2 s deutlich schneller und nahe der späteren Zielpace. Der Lauf zählt als klarer harter Intervallreiz.
+- Statt der geplanten 40 min locker wurden fast 59 min mit Intervallen absolviert. Zusammen mit dem manuell gemeldeten Rad-HIIT liegen in KW 45 zwei harte Ausdauerreize vor; weitere Intensität wird nicht ergänzt.
+- Der schnelle Schlussabschnitt bestätigt kurze Geschwindigkeitsreserve, ist aber kein neuer 5-km-Leistungsanker. Die 8 × 400 m der Folgewoche entfallen; die nächste Woche dient erneut der kontrollierten Stabilisierung.
+
+## Wochenfazit KW 45
+
+- Aufgezeichnet: 20,20 km Laufen in zwei Einheiten mit 1:35:37 min Timerzeit. Zusätzlich wurde ein nicht aufgezeichnetes Rad-HIIT mit 4 × 4 min bei 280 W gemeldet; dessen Gesamtdauer und Distanz fehlen.
+- Harte Reize: Rad-HIIT und 6 × 400 m am 08.11. Der Lauf am 03.11. war moderat bis zügig und nicht die geplante reine Erholung.
+- Krafttraining und ein weiterer Lauf sind nicht dokumentiert und werden nicht unterstellt. Die KW 46 wird ohne Intervalle, Schwelle oder Rad-HIIT geplant; ausgefallene Einheiten werden nicht nachgeholt.

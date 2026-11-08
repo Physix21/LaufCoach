@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T12:50:23+01:00",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-08T12:27:10+01:00",
+  "today": "2026-11-08",
   "season": {
     "plan_start": "2026-10-05",
     "plan_end": "2027-06-27",
@@ -74,54 +74,51 @@
     "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04."
   },
   "plan": {
-    "week_start": "2026-10-26",
-    "week_end": "2026-11-01",
-    "phase": "Phase 2 – Aerobe Basis und Schwelle",
-    "focus": "Drei harte Ausdauerreize verarbeiten; am 01.11. Ruhetag statt langem Lauf",
-    "planning_note": "Aktivitäten bis 31.10.2026 berücksichtigt. Die Radfahrten am 27.10. und 30.10. sowie der Schwellenlauf am 31.10. zählen jeweils als harte Ausdauerreize. Damit wurde die geplante Entlastungswoche deutlich überschritten. Der lange Lauf am 01.11. entfällt vollständig; keine Kilometer und kein Krafttraining nachholen.",
-    "provisional": false,
+    "week_start": "2026-11-02",
+    "week_end": "2026-11-08",
+    "phase": "Drei Läufe stabilisieren",
+    "focus": "Rückblick: zwei harte Reize trotz geplanter Erholungswoche",
+    "planning_note": "Abschluss nach Garmin-Abgleich bis 08.11.2026 und manueller Meldung eines Rad-HIIT. Aufgezeichnet wurden zwei Läufe; zusätzlich wurde 4 × 4 min Rad bei 280 W gemeldet. Die ursprünglich geplante reine Erholung wurde nicht eingehalten.",
+    "provisional": true,
     "week_type": "deload",
     "planned_sessions": [
       {
-        "id": "2026-10-30-run",
-        "status": "completed",
-        "completed_activity_id": "24915486320",
-        "completion_note": "Am 31.10. als 3 × 8 min absolviert: erste zwei Abschnitte etwa 3:56 und 3:57 min/km, dritter Abschnitt etwa 3:41 min/km. Gesamt 11,79 km in 52:43 min, Ø 149 bpm, maximal 175 bpm. Umfangreicher als geplant und mit deutlich zu schnellem Schlussabschnitt.",
+        "id": "2026-11-06-run",
+        "status": "cancelled",
+        "condition": "Ein weiterer Lauf ist nicht dokumentiert. Das manuell gemeldete Rad-HIIT war kein gleichwertiger lockerer Ersatz; nicht nachholen.",
         "type": "run",
-        "title": "2 × 6 min Schwelle",
+        "title": "30 min locker · Schwelle entfällt",
         "priority": 1,
-        "scheduled_date": "2026-10-30",
-        "target_intensity": "hard",
-        "target_duration_min": 40,
-        "target_distance_km": 8.0,
-        "warmup": "15 min insgesamt: 12 min locker, dann 3 × 15 s steigern mit je 45 s locker traben",
-        "main_set": "2 × 6 min kontrolliert bei 3:58–4:05 min/km",
-        "recovery": "1 × 3 min sehr locker traben zwischen den Wiederholungen; keine zusätzliche Pause nach der letzten",
-        "cooldown": "10 min locker auslaufen",
-        "target_pace": "3:58–4:05 min/km",
-        "rpe_target": "7–8/10",
-        "alternatives": "Statt des gesamten Laufs 50 min Rad: 12 min locker, 3 × 6 min bei ca. 255–270 W, dazwischen 2 × 3 min locker, 14 min ausfahren. Zählt als harter Reiz und ersetzt den Lauf.",
+        "scheduled_date": "2026-11-06",
+        "target_intensity": "LIT",
+        "target_duration_min": 30,
+        "target_distance_km": 5.5,
+        "warmup": "10 min sehr ruhig beginnen (in der Gesamtdauer enthalten)",
+        "main_set": "15 min gleichmäßig locker; keine Steigerungen oder Tempoblöcke",
+        "recovery": "Keine Pausen geplant",
+        "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
+        "target_pace": "5:20–5:55 min/km; bei Bedarf langsamer",
+        "rpe_target": "3/10",
+        "alternatives": "Statt dieses Laufs 39 min Rad locker bei ca. 140–170 W; ersetzt den Lauf vollständig. Kein HIIT.",
         "duration_components_min": {
-          "warmup": 15,
-          "main": 12,
-          "recovery": 3,
-          "cooldown": 10
+          "warmup": 10,
+          "main": 15,
+          "recovery": 0,
+          "cooldown": 5
         },
         "duration_is_estimate": false,
-        "description": "Der Lauf am 31.10. erfüllt den Qualitätsplatz. Die Indoor-Radfahrt am 30.10. mit zwölf 1-min-Belastungen bei überwiegend 337–338 W war ein zusätzlicher harter Reiz.",
-        "display_status": "erledigt",
-        "matched_activity_id": "24915486320",
-        "match_reason": "Nach Aktivitätsanalyse ausdrücklich zugeordnet"
+        "description": "Die ursprünglich geplanten 3 × 5 min Schwelle entfallen nach der hohen Intensitätsdichte der beiden Vorwochen.",
+        "display_status": "entfällt"
       },
       {
-        "id": "2026-10-27-run",
+        "id": "2026-11-03-run",
         "status": "completed",
-        "completed_activity_id": "24871824710",
-        "completion_note": "Durch Indoor-Rad ersetzt: 39:56 min, 23,30 km, Ø 235 W, NP 246 W, Ø 142 bpm. Drei 6-min-Abschnitte bei Ø 273 / 273 / 272 W; damit klar härter als die vorgesehene lockere Radalternative und als harter Reiz eingeordnet.",
+        "completed_activity_id": "24950309075",
+        "completion_note": "8,03 km in 36:35,8 min bei Ø 4:33 min/km, Ø 150 bpm und maximal 162 bpm. Progressiv und moderat bis zügig statt rein locker.",
         "type": "run",
         "title": "30 min locker",
         "priority": 2,
-        "scheduled_date": "2026-10-27",
+        "scheduled_date": "2026-11-03",
         "target_intensity": "LIT",
         "target_duration_min": 30,
         "target_distance_km": 5.5,
@@ -131,51 +128,56 @@
         "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
         "target_pace": "5:15–5:50 min/km; bei Bedarf langsamer",
         "rpe_target": "3–4/10",
-        "alternatives": "Statt dieses Laufs 39 min Rad locker bei ca. 150–180 W; ersetzt den Lauf vollständig.",
+        "alternatives": "Statt dieses Laufs 39 min Rad locker bei ca. 140–170 W; ersetzt den Lauf vollständig. Kein HIIT.",
         "duration_components_min": {
           "warmup": 10,
-          "main": 15,
-          "recovery": 0,
+          "main": 15.0,
+          "recovery": 0.0,
           "cooldown": 5
         },
-        "description": "Die absolvierte Radalternative war nicht locker und zählt als erster harter Ausdauerreiz der Woche.",
+        "description": "Sehr kontrollierter Wiedereinstieg nach drei harten Reizen in fünf Tagen; bei ungewöhnlicher Müdigkeit Ruhetag.",
         "display_status": "erledigt",
-        "matched_activity_id": "24871824710",
+        "matched_activity_id": "24950309075",
         "match_reason": "Nach Aktivitätsanalyse ausdrücklich zugeordnet"
       },
       {
-        "id": "2026-11-01-run",
-        "status": "cancelled",
-        "condition": "Entfällt nach drei harten Ausdauerreizen zwischen 27.10. und 31.10.; Ruhetag.",
+        "id": "2026-11-08-run",
+        "status": "completed",
+        "completed_activity_id": "25007001304",
+        "completion_note": "12,17 km in 59:01,3 min mit 6 × 400 m in 92,2 / 89,6 / 90,3 / 91,3 / 89,4 / 81,2 s. Klarer Intervallreiz statt lockerem Lauf.",
         "type": "run",
-        "title": "Entfällt · Ruhetag statt 40 min länger locker",
+        "title": "40 min länger locker",
         "priority": 2,
-        "scheduled_date": "2026-11-01",
+        "scheduled_date": "2026-11-08",
         "target_intensity": "LIT",
         "target_duration_min": 40,
         "target_distance_km": 7.3,
-        "warmup": "Ursprünglich 10 min sehr ruhig; Einheit entfällt vollständig",
-        "main_set": "Ursprünglich 25 min gleichmäßig locker; nicht nachholen",
-        "recovery": "Ruhetag",
-        "cooldown": "Ursprünglich 5 min sehr locker; Einheit entfällt vollständig",
-        "target_pace": "Kein Lauf; Erholung hat Vorrang",
-        "rpe_target": "Ruhetag",
-        "alternatives": "Keine Radalternative und kein Krafttraining; vollständiger Ruhetag.",
+        "warmup": "10 min sehr ruhig beginnen (in der Gesamtdauer enthalten)",
+        "main_set": "25 min gleichmäßig locker",
+        "recovery": "Keine Pausen geplant",
+        "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
+        "target_pace": "5:15–5:50 min/km; bei Bedarf langsamer",
+        "rpe_target": "3–4/10",
+        "alternatives": "Statt dieses Laufs 52 min Rad locker bei ca. 140–170 W; ersetzt den Lauf vollständig. Kein HIIT.",
         "duration_components_min": {
           "warmup": 10,
-          "main": 25,
-          "recovery": 0,
+          "main": 25.0,
+          "recovery": 0.0,
           "cooldown": 5
         },
-        "description": "Die Entlastungswoche wurde durch drei harte Reize überschritten. Der lange Lauf wird gestrichen und nicht verschoben.",
-        "display_status": "entfällt"
+        "description": "Nur locker und ohne Endbeschleunigung. Bei noch spürbarer Ermüdung auf 30 min kürzen oder auslassen.",
+        "display_status": "erledigt",
+        "matched_activity_id": "25007001304",
+        "match_reason": "Nach Aktivitätsanalyse ausdrücklich zugeordnet"
       },
       {
-        "id": "2026-10-28-strength",
+        "id": "2026-11-04-strength",
+        "status": "cancelled",
+        "condition": "Eine Durchführung ist nicht dokumentiert; nicht nachholen.",
         "type": "strength",
         "title": "Kraft erhalten – leicht",
         "priority": 3,
-        "scheduled_date": "2026-10-28",
+        "scheduled_date": "2026-11-04",
         "target_intensity": "moderate",
         "target_duration_min": 25,
         "warmup": "6 min allgemein und leichte Vorbereitungssätze (in der Gesamtdauer enthalten)",
@@ -189,10 +191,10 @@
           "main_and_recovery": 17,
           "cooldown": 2
         },
-        "setup": "Goblet Squat und rumänisches Kreuzheben: Kurzhanteln. Wadenheben: Kurzhantel, freie Hand am Rack. Rudern und Drücken: Kurzhanteln und Bank. Seitstütz: Boden.",
-        "alternatives": "Nicht nachholen. Nach den dokumentierten harten Ausdauerreizen hat Erholung Vorrang.",
-        "description": "Eine Durchführung ist nicht dokumentiert und wird nicht unterstellt.",
-        "display_status": "info"
+        "setup": "Kreuzheben/Rumänisches Kreuzheben: Langhantel, bei leichter Variante Kurzhanteln. Split Squat: hinterer Fuß auf Bank, Kurzhanteln seitlich. Goblet Squat: Kurzhantel vor Brust. Wadenheben: Kurzhantel, freie Hand am Rack. Klimmzüge: Rackstange, bei Bedarf Band. Bankdrücken: Bank im Half Rack mit Sicherheitsablagen; Kurzhanteldrücken auf Bank. Rudern: freie Hand auf Bank. Rückenstrecker: Hyperextension-Bank. Seitstütz: Boden.",
+        "alternatives": "Split Squat durch Ausfallschritte am Boden ersetzen; Klimmzüge durch Kurzhantelrudern 2 × 8 je Seite. Für Rückenstrecker: Bird Dog 2 × 6 je Seite. Last reduzieren, wenn Lauftraining beeinträchtigt wird.",
+        "description": "Nur bei normaler Erholung; sonst auslassen und nicht nachholen. Kein Muskelkater provozieren.",
+        "display_status": "entfällt"
       }
     ],
     "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04."
@@ -730,7 +732,7 @@
     },
     {
       "key": "week-2026-10-26",
-      "label": "Diese Woche",
+      "label": "KW 44",
       "plan": {
         "week_start": "2026-10-26",
         "week_end": "2026-11-01",
@@ -803,30 +805,31 @@
           },
           {
             "id": "2026-11-01-run",
-            "status": "cancelled",
-            "condition": "Entfällt nach drei harten Ausdauerreizen zwischen 27.10. und 31.10.; Ruhetag.",
+            "status": "completed",
+            "completion_note": "Vom Athleten am 08.11. nachgemeldet: 10,00 km locker bei etwa 5:00 min/km in KW 44, nicht aufgezeichnet. Exakter Tag und Herzfrequenz fehlen; rechnerische Dauer etwa 50:00 min.",
+            "condition": "Nachmeldung korrigiert die frühere Annahme eines vollständigen Ausfalls; der genaue Tag innerhalb der KW 44 bleibt offen.",
             "type": "run",
-            "title": "Entfällt · Ruhetag statt 40 min länger locker",
+            "title": "40 min länger locker",
             "priority": 2,
             "scheduled_date": "2026-11-01",
             "target_intensity": "LIT",
             "target_duration_min": 40,
             "target_distance_km": 7.3,
-            "warmup": "Ursprünglich 10 min sehr ruhig; Einheit entfällt vollständig",
-            "main_set": "Ursprünglich 25 min gleichmäßig locker; nicht nachholen",
-            "recovery": "Ruhetag",
-            "cooldown": "Ursprünglich 5 min sehr locker; Einheit entfällt vollständig",
-            "target_pace": "Kein Lauf; Erholung hat Vorrang",
-            "rpe_target": "Ruhetag",
-            "alternatives": "Keine Radalternative und kein Krafttraining; vollständiger Ruhetag.",
+            "warmup": "10 min sehr ruhig beginnen (in der Gesamtdauer enthalten)",
+            "main_set": "25 min gleichmäßig locker",
+            "recovery": "Keine Pausen geplant",
+            "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
+            "target_pace": "5:15–5:50 min/km; tatsächlich etwa 5:00 min/km laut Athletenangabe",
+            "rpe_target": "3–4/10",
+            "alternatives": "Nicht relevant; die Einheit wurde als Lauf nachgemeldet.",
             "duration_components_min": {
               "warmup": 10,
               "main": 25,
               "recovery": 0,
               "cooldown": 5
             },
-            "description": "Die Entlastungswoche wurde durch drei harte Reize überschritten. Der lange Lauf wird gestrichen und nicht verschoben.",
-            "display_status": "entfällt"
+            "description": "Manuell dokumentierte Einheit ohne Garmin-Aufzeichnung. Die drei harten Reize der Woche bleiben unverändert; der Lauf erhöht den lockeren Wochenumfang.",
+            "display_status": "erledigt"
           },
           {
             "id": "2026-10-28-strength",
@@ -911,18 +914,20 @@
     },
     {
       "key": "week-2026-11-02",
-      "label": "Nächste Woche",
+      "label": "Diese Woche",
       "plan": {
         "week_start": "2026-11-02",
         "week_end": "2026-11-08",
         "phase": "Drei Läufe stabilisieren",
-        "focus": "Nach zwei Wochen mit jeweils drei harten Reizen ausschließlich locker stabilisieren",
-        "planning_note": "Vorläufiger Erholungsplan nach Aktivitäten bis 31.10.2026. In KW 43 und KW 44 wurden jeweils drei harte Ausdauerreize dokumentiert. Deshalb entfällt die geplante Schwelle vollständig. Drei kurze bis moderate lockere Läufe nur bei normaler Erholung; keine Tempoanteile, kein Rad-HIIT und keine Nachholkilometer.",
+        "focus": "Rückblick: zwei harte Reize trotz geplanter Erholungswoche",
+        "planning_note": "Abschluss nach Garmin-Abgleich bis 08.11.2026 und manueller Meldung eines Rad-HIIT. Aufgezeichnet wurden zwei Läufe; zusätzlich wurde 4 × 4 min Rad bei 280 W gemeldet. Die ursprünglich geplante reine Erholung wurde nicht eingehalten.",
         "provisional": true,
         "week_type": "deload",
         "planned_sessions": [
           {
             "id": "2026-11-06-run",
+            "status": "cancelled",
+            "condition": "Ein weiterer Lauf ist nicht dokumentiert. Das manuell gemeldete Rad-HIIT war kein gleichwertiger lockerer Ersatz; nicht nachholen.",
             "type": "run",
             "title": "30 min locker · Schwelle entfällt",
             "priority": 1,
@@ -945,10 +950,13 @@
             },
             "duration_is_estimate": false,
             "description": "Die ursprünglich geplanten 3 × 5 min Schwelle entfallen nach der hohen Intensitätsdichte der beiden Vorwochen.",
-            "display_status": "offen"
+            "display_status": "entfällt"
           },
           {
             "id": "2026-11-03-run",
+            "status": "completed",
+            "completed_activity_id": "24950309075",
+            "completion_note": "8,03 km in 36:35,8 min bei Ø 4:33 min/km, Ø 150 bpm und maximal 162 bpm. Progressiv und moderat bis zügig statt rein locker.",
             "type": "run",
             "title": "30 min locker",
             "priority": 2,
@@ -970,10 +978,15 @@
               "cooldown": 5
             },
             "description": "Sehr kontrollierter Wiedereinstieg nach drei harten Reizen in fünf Tagen; bei ungewöhnlicher Müdigkeit Ruhetag.",
-            "display_status": "offen"
+            "display_status": "erledigt",
+            "matched_activity_id": "24950309075",
+            "match_reason": "Nach Aktivitätsanalyse ausdrücklich zugeordnet"
           },
           {
             "id": "2026-11-08-run",
+            "status": "completed",
+            "completed_activity_id": "25007001304",
+            "completion_note": "12,17 km in 59:01,3 min mit 6 × 400 m in 92,2 / 89,6 / 90,3 / 91,3 / 89,4 / 81,2 s. Klarer Intervallreiz statt lockerem Lauf.",
             "type": "run",
             "title": "40 min länger locker",
             "priority": 2,
@@ -995,10 +1008,14 @@
               "cooldown": 5
             },
             "description": "Nur locker und ohne Endbeschleunigung. Bei noch spürbarer Ermüdung auf 30 min kürzen oder auslassen.",
-            "display_status": "offen"
+            "display_status": "erledigt",
+            "matched_activity_id": "25007001304",
+            "match_reason": "Nach Aktivitätsanalyse ausdrücklich zugeordnet"
           },
           {
             "id": "2026-11-04-strength",
+            "status": "cancelled",
+            "condition": "Eine Durchführung ist nicht dokumentiert; nicht nachholen.",
             "type": "strength",
             "title": "Kraft erhalten – leicht",
             "priority": 3,
@@ -1019,135 +1036,153 @@
             "setup": "Kreuzheben/Rumänisches Kreuzheben: Langhantel, bei leichter Variante Kurzhanteln. Split Squat: hinterer Fuß auf Bank, Kurzhanteln seitlich. Goblet Squat: Kurzhantel vor Brust. Wadenheben: Kurzhantel, freie Hand am Rack. Klimmzüge: Rackstange, bei Bedarf Band. Bankdrücken: Bank im Half Rack mit Sicherheitsablagen; Kurzhanteldrücken auf Bank. Rudern: freie Hand auf Bank. Rückenstrecker: Hyperextension-Bank. Seitstütz: Boden.",
             "alternatives": "Split Squat durch Ausfallschritte am Boden ersetzen; Klimmzüge durch Kurzhantelrudern 2 × 8 je Seite. Für Rückenstrecker: Bird Dog 2 × 6 je Seite. Last reduzieren, wenn Lauftraining beeinträchtigt wird.",
             "description": "Nur bei normaler Erholung; sonst auslassen und nicht nachholen. Kein Muskelkater provozieren.",
-            "display_status": "info"
+            "display_status": "entfällt"
           }
         ],
         "next_milestone": "10-km-Test unter 38 min im April 2027; Planungstermin 18.04."
       },
       "warnings": [
         {
+          "level": "warning",
+          "text": "Der Laufumfang ist gegenüber der Vorwoche um 71 % gestiegen."
+        },
+        {
           "level": "info",
-          "text": "Geplante Prioritätseinheit noch offen: 30 min locker · Schwelle entfällt."
+          "text": "Wichtigste Prioritätseinheit noch offen: 30 min locker · Schwelle entfällt."
         }
       ],
       "unmatched_activities": [],
-      "week_summary": {},
+      "week_summary": {
+        "week_start": "2026-11-02",
+        "week_end": "2026-11-08",
+        "week_label": "KW 45",
+        "run_km": 20.2,
+        "bike_hours": 0.0,
+        "run_sessions": 2,
+        "bike_sessions": 0,
+        "strength_sessions": 0,
+        "hard_endurance_sessions": 1,
+        "lit_sessions": 0,
+        "moderate_sessions": 1,
+        "hard_sessions": 1,
+        "total_duration_min": 95.6
+      },
       "intensity": {
         "LIT": 0,
-        "moderate": 0,
-        "hard": 0
+        "moderate": 1,
+        "hard": 1
       }
     },
     {
       "key": "week-2026-11-09",
-      "label": "KW 46",
+      "label": "Nächste Woche",
       "plan": {
         "week_start": "2026-11-09",
         "week_end": "2026-11-15",
         "phase": "Drei Läufe stabilisieren",
-        "focus": "400er auf acht Wiederholungen verteilen, Pace beibehalten",
-        "planning_note": "Sollplan auf Basis der Daten bis 10.10.2026. Fortschreiten nur bei stabiler Durchführung der Vorwochen; ausgefallene Einheiten nicht nachholen.",
+        "focus": "Nach Rad-HIIT und 400ern kontrolliert locker stabilisieren",
+        "planning_note": "Angepasst nach Aktivitäten bis 08.11.2026. In KW 45 wurden zwei harte Ausdauerreize dokumentiert, obwohl eine Erholungswoche geplant war. Deshalb entfallen die 8 × 400 m vollständig. Drei lockere Läufe nur bei normaler Erholung; kein Rad-HIIT und keine Nachholkilometer.",
         "provisional": true,
-        "week_type": "normal",
+        "week_type": "deload",
         "planned_sessions": [
           {
             "id": "2026-11-13-run",
             "type": "run",
-            "title": "8 × 400 m kontrolliert",
+            "title": "30 min locker – 400er entfallen",
             "priority": 1,
             "scheduled_date": "2026-11-13",
-            "target_intensity": "hard",
-            "target_duration_min": 47.5,
-            "target_distance_km": 9.5,
-            "warmup": "15 min insgesamt: 12 min locker, dann 3 × 15 s steigern mit je 45 s locker traben",
-            "main_set": "8 × 400 m in 88–90 s je Wiederholung (3:40–3:45 min/km); gleichmäßig, keine schnelle Schlusswiederholung",
-            "recovery": "7 × 1.5 min sehr locker traben zwischen den Wiederholungen; keine zusätzliche Pause nach der letzten",
-            "cooldown": "10 min locker auslaufen",
-            "target_pace": "3:40–3:45 min/km",
-            "rpe_target": "7–8/10",
-            "alternatives": "Statt des gesamten Laufs 50 min Rad: 12 min locker, 3 × 6 min bei ca. 255–270 W, dazwischen 2 × 3 min locker, 14 min ausfahren. Zählt als harter Reiz und ersetzt den Lauf; bei Ermüdung alle 50 min locker bei 150–180 W.",
+            "target_intensity": "LIT",
+            "target_duration_min": 30,
+            "target_distance_km": 5.5,
+            "warmup": "10 min sehr ruhig beginnen (in der Gesamtdauer enthalten)",
+            "main_set": "15 min gleichmäßig locker; keine Steigerungen oder Tempoblöcke",
+            "recovery": "Keine Pausen geplant",
+            "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
+            "target_pace": "5:15–5:50 min/km; bei Bedarf langsamer",
+            "rpe_target": "3/10",
+            "alternatives": "Statt dieses Laufs 39 min Rad locker bei ca. 140–170 W; ersetzt den Lauf vollständig. Kein HIIT.",
             "duration_components_min": {
-              "warmup": 15,
-              "main": 12.0,
-              "recovery": 10.5,
-              "cooldown": 10
+              "warmup": 10,
+              "main": 15.0,
+              "recovery": 0.0,
+              "cooldown": 5
             },
-            "duration_is_estimate": true,
-            "description": "Einziger umfangreicher Qualitätsreiz dieser Woche. Ein- und Auslaufen vollständig; Strecke exakt messen (Stadionrunde hier ca. 360 m).",
+            "duration_is_estimate": false,
+            "description": "Die 8 × 400 m entfallen nach den zwei harten Reizen der Vorwoche vollständig und werden nicht nachgeholt.",
             "display_status": "offen"
           },
           {
             "id": "2026-11-10-run",
             "type": "run",
-            "title": "35 min locker",
+            "title": "30 min locker",
             "priority": 2,
             "scheduled_date": "2026-11-10",
             "target_intensity": "LIT",
-            "target_duration_min": 35,
-            "target_distance_km": 6.4,
+            "target_duration_min": 30,
+            "target_distance_km": 5.5,
             "warmup": "10 min sehr ruhig beginnen (in der Gesamtdauer enthalten)",
-            "main_set": "20 min gleichmäßig locker",
+            "main_set": "15 min gleichmäßig locker",
             "recovery": "Keine Pausen geplant",
             "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
             "target_pace": "5:15–5:50 min/km; bei Bedarf langsamer",
             "rpe_target": "3–4/10",
-            "alternatives": "Statt dieses Laufs 46 min Rad locker bei ca. 150–180 W; ersetzt den Lauf vollständig.",
+            "alternatives": "Statt dieses Laufs 39 min Rad locker bei ca. 140–170 W; ersetzt den Lauf vollständig. Kein HIIT.",
             "duration_components_min": {
               "warmup": 10,
-              "main": 20.0,
+              "main": 15.0,
               "recovery": 0.0,
               "cooldown": 5
             },
-            "description": "Lockere Laufminuten festigen. Das Tempo bleibt auch bei besserer Form locker.",
+            "description": "Sehr ruhiger Wiedereinstieg nach dem Intervalllauf am 08.11.; nur bei normaler Erholung.",
             "display_status": "offen"
           },
           {
             "id": "2026-11-15-run",
             "type": "run",
-            "title": "50 min länger locker",
+            "title": "40 min länger locker",
             "priority": 2,
             "scheduled_date": "2026-11-15",
             "target_intensity": "LIT",
-            "target_duration_min": 50,
-            "target_distance_km": 9.1,
+            "target_duration_min": 40,
+            "target_distance_km": 7.3,
             "warmup": "10 min sehr ruhig beginnen (in der Gesamtdauer enthalten)",
-            "main_set": "35 min gleichmäßig locker",
+            "main_set": "25 min gleichmäßig locker",
             "recovery": "Keine Pausen geplant",
             "cooldown": "5 min sehr locker beenden (in der Gesamtdauer enthalten)",
             "target_pace": "5:15–5:50 min/km; bei Bedarf langsamer",
             "rpe_target": "3–4/10",
-            "alternatives": "Statt dieses Laufs 65 min Rad locker bei ca. 150–180 W; ersetzt den Lauf vollständig.",
+            "alternatives": "Statt dieses Laufs 52 min Rad locker bei ca. 140–170 W; ersetzt den Lauf vollständig. Kein HIIT.",
             "duration_components_min": {
               "warmup": 10,
-              "main": 35.0,
+              "main": 25.0,
               "recovery": 0.0,
               "cooldown": 5
             },
-            "description": "Lockere Laufminuten festigen. Das Tempo bleibt auch bei besserer Form locker.",
+            "description": "Ruhiger längerer Lauf ohne Endbeschleunigung; bei ungewöhnlicher Müdigkeit auf 30 min kürzen oder auslassen.",
             "display_status": "offen"
           },
           {
             "id": "2026-11-11-strength",
             "type": "strength",
-            "title": "Krafttraining B",
+            "title": "Kraft erhalten – leicht",
             "priority": 3,
             "scheduled_date": "2026-11-11",
             "target_intensity": "moderate",
-            "target_duration_min": 45,
+            "target_duration_min": 25,
             "warmup": "6 min allgemein und leichte Vorbereitungssätze (in der Gesamtdauer enthalten)",
-            "main_set": "Rumänisches Kreuzheben 2 × 5\nGoblet Squat 2 × 6\nEinbeiniges Wadenheben 2 × 10 je Seite\nKurzhantelrudern 2 × 8 je Seite\nKurzhanteldrücken 2 × 6–8\nSeitstütz 2 × 25 s je Seite",
-            "recovery": "2 min bei Grundübungen; 60–90 s bei Waden und Rumpf",
+            "main_set": "Goblet Squat 1 × 6\nRumänisches Kreuzheben mit Kurzhanteln 1 × 6\nWadenheben 1 × 10 je Seite\nKurzhantelrudern 2 × 8 je Seite\nKurzhanteldrücken 2 × 8\nSeitstütz 2 × 20 s je Seite",
+            "recovery": "60–90 s zwischen den Sätzen",
             "cooldown": "2 min locker mobilisieren",
-            "target_pace": "2–3 saubere Wiederholungen im Tank; kein Muskelversagen",
-            "rpe_target": "6–7/10",
+            "target_pace": "Sehr leicht; 4–5 Wiederholungen im Tank, kein Muskelversagen",
+            "rpe_target": "4/10",
             "duration_components_min": {
               "warmup": 6,
-              "main_and_recovery": 37,
+              "main_and_recovery": 17,
               "cooldown": 2
             },
             "setup": "Kreuzheben/Rumänisches Kreuzheben: Langhantel, bei leichter Variante Kurzhanteln. Split Squat: hinterer Fuß auf Bank, Kurzhanteln seitlich. Goblet Squat: Kurzhantel vor Brust. Wadenheben: Kurzhantel, freie Hand am Rack. Klimmzüge: Rackstange, bei Bedarf Band. Bankdrücken: Bank im Half Rack mit Sicherheitsablagen; Kurzhanteldrücken auf Bank. Rudern: freie Hand auf Bank. Rückenstrecker: Hyperextension-Bank. Seitstütz: Boden.",
             "alternatives": "Split Squat durch Ausfallschritte am Boden ersetzen; Klimmzüge durch Kurzhantelrudern 2 × 8 je Seite. Für Rückenstrecker: Bird Dog 2 × 6 je Seite. Last reduzieren, wenn Lauftraining beeinträchtigt wird.",
-            "description": "Last erst erhöhen, wenn alle Sätze sauber und mit Reserve gelingen; nicht zugleich mit einer Laufsteigerung.",
+            "description": "Nur bei normaler Erholung; sonst auslassen und nicht nachholen. Kein Muskelkater provozieren.",
             "display_status": "info"
           }
         ],
@@ -1156,7 +1191,7 @@
       "warnings": [
         {
           "level": "info",
-          "text": "Geplante Prioritätseinheit noch offen: 8 × 400 m kontrolliert."
+          "text": "Geplante Prioritätseinheit noch offen: 30 min locker – 400er entfallen."
         }
       ],
       "unmatched_activities": [],
@@ -5320,13 +5355,13 @@
       }
     }
   ],
-  "selected_plan_key": "week-2026-10-26",
+  "selected_plan_key": "week-2026-11-02",
   "next_session": {
-    "id": "2026-11-03-run",
+    "id": "2026-11-10-run",
     "type": "run",
     "title": "30 min locker",
     "priority": 2,
-    "scheduled_date": "2026-11-03",
+    "scheduled_date": "2026-11-10",
     "target_intensity": "LIT",
     "target_duration_min": 30,
     "target_distance_km": 5.5,
@@ -5343,10 +5378,52 @@
       "recovery": 0.0,
       "cooldown": 5
     },
-    "description": "Sehr kontrollierter Wiedereinstieg nach drei harten Reizen in fünf Tagen; bei ungewöhnlicher Müdigkeit Ruhetag.",
+    "description": "Sehr ruhiger Wiedereinstieg nach dem Intervalllauf am 08.11.; nur bei normaler Erholung.",
     "display_status": "offen"
   },
   "recent_activities": [
+    {
+      "activity_id": "25007001304",
+      "source_file": "2026-11-08_run_activity_25007001304.csv",
+      "date": "2026-11-08",
+      "sport": "run",
+      "session_name": "Schönfeld - 6x 400 @ kontrolliert",
+      "duration_min": 59.02,
+      "distance_km": 12.17,
+      "avg_pace_sec_per_km": 291.0,
+      "avg_speed_kmh": 12.37,
+      "avg_hr": 135.0,
+      "max_hr": 173.0,
+      "avg_power": null,
+      "max_power": null,
+      "elevation_gain_m": 55.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "Coaching-Einordnung: harter Intervallreiz mit sechs 400-m-Abschnitten und deutlich schneller Schlusswiederholung.",
+      "intensity": "hard"
+    },
+    {
+      "activity_id": "24950309075",
+      "source_file": "2026-11-03_run_activity_24950309075.csv",
+      "date": "2026-11-03",
+      "sport": "run",
+      "session_name": "Dresden Laufen",
+      "duration_min": 36.6,
+      "distance_km": 8.03,
+      "avg_pace_sec_per_km": 273.0,
+      "avg_speed_kmh": 13.19,
+      "avg_hr": 150.0,
+      "max_hr": 162.0,
+      "avg_power": null,
+      "max_power": null,
+      "elevation_gain_m": 18.0,
+      "training_effect": null,
+      "rpe": null,
+      "completed": true,
+      "notes": "Coaching-Einordnung: moderater bis zügiger progressiver Dauerlauf statt der geplanten reinen Erholung.",
+      "intensity": "moderate"
+    },
     {
       "activity_id": "24915486320",
       "source_file": "2026-10-31_run_activity_24915486320.csv",
@@ -5514,89 +5591,10 @@
       "completed": true,
       "notes": "Coaching-Einordnung: harter Rad-Schwellenreiz mit drei FTP-nahen 5-min-Abschnitten.",
       "intensity": "hard"
-    },
-    {
-      "activity_id": "24731870770",
-      "source_file": "2026-10-15_run_activity_24731870770.csv",
-      "date": "2026-10-15",
-      "sport": "run",
-      "session_name": "Dresden - Schwelle 3x7min",
-      "duration_min": 42.51,
-      "distance_km": 9.92,
-      "avg_pace_sec_per_km": 257.0,
-      "avg_speed_kmh": 14.01,
-      "avg_hr": 152.0,
-      "max_hr": 172.0,
-      "avg_power": null,
-      "max_power": null,
-      "elevation_gain_m": 27.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "hard"
-    },
-    {
-      "activity_id": "24699800418",
-      "source_file": "2026-10-12_run_activity_24699800418.csv",
-      "date": "2026-10-12",
-      "sport": "run",
-      "session_name": "Radeburg Laufen",
-      "duration_min": 55.35,
-      "distance_km": 10.6,
-      "avg_pace_sec_per_km": 313.0,
-      "avg_speed_kmh": 11.5,
-      "avg_hr": 127.0,
-      "max_hr": 151.0,
-      "avg_power": null,
-      "max_power": null,
-      "elevation_gain_m": 55.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "",
-      "intensity": "LIT"
     }
   ],
-  "unmatched_activities": [
-    {
-      "activity_id": "24907587469",
-      "source_file": "2026-10-30_bike_activity_24907587469.csv",
-      "date": "2026-10-30",
-      "sport": "bike",
-      "session_name": "Indoor-Radfahren",
-      "duration_min": 60.0,
-      "distance_km": 33.08,
-      "avg_pace_sec_per_km": null,
-      "avg_speed_kmh": 33.08,
-      "avg_hr": 132.0,
-      "max_hr": 165.0,
-      "avg_power": 206.0,
-      "max_power": 410.0,
-      "elevation_gain_m": 0.0,
-      "training_effect": null,
-      "rpe": null,
-      "completed": true,
-      "notes": "Coaching-Einordnung: harter Rad-HIIT-Reiz mit zwölf 1-min-Belastungen deutlich oberhalb FTP.",
-      "intensity": "hard"
-    }
-  ],
+  "unmatched_activities": [],
   "weekly_summary": [
-    {
-      "week_start": "2026-08-24",
-      "week_end": "2026-08-30",
-      "week_label": "KW 35",
-      "run_km": 30.83,
-      "bike_hours": 2.24,
-      "run_sessions": 3,
-      "bike_sessions": 2,
-      "strength_sessions": 0,
-      "hard_endurance_sessions": 1,
-      "lit_sessions": 4,
-      "moderate_sessions": 0,
-      "hard_sessions": 1,
-      "total_duration_min": 289.8
-    },
     {
       "week_start": "2026-08-31",
       "week_end": "2026-09-06",
@@ -5731,12 +5729,27 @@
       "moderate_sessions": 0,
       "hard_sessions": 3,
       "total_duration_min": 152.7
+    },
+    {
+      "week_start": "2026-11-02",
+      "week_end": "2026-11-08",
+      "week_label": "KW 45",
+      "run_km": 20.2,
+      "bike_hours": 0.0,
+      "run_sessions": 2,
+      "bike_sessions": 0,
+      "strength_sessions": 0,
+      "hard_endurance_sessions": 1,
+      "lit_sessions": 0,
+      "moderate_sessions": 1,
+      "hard_sessions": 1,
+      "total_duration_min": 95.6
     }
   ],
   "intensity": {
     "LIT": 0,
-    "moderate": 0,
-    "hard": 3
+    "moderate": 1,
+    "hard": 1
   },
   "repetition_targets": {
     "race_target": "16:59",
@@ -5749,18 +5762,18 @@
         "target_label": "82 s",
         "target_pace_label": "3:24 min/km",
         "marker": "8-10 x 400 m zielnah",
-        "current_seconds": 89.4,
+        "current_seconds": 89.0,
         "current_label": "89 s",
-        "gap_seconds": 7.9,
-        "gap_label": "+7.9 s",
-        "progress_percent": 91.2,
+        "gap_seconds": 7.5,
+        "gap_label": "+7.5 s",
+        "progress_percent": 91.6,
         "source": {
-          "date": "2026-10-25",
-          "activity_id": "24843528734",
-          "label": "Schönfeld Laufen",
+          "date": "2026-11-08",
+          "activity_id": "25007001304",
+          "label": "Schönfeld - 6x 400 @ kontrolliert",
           "repetitions": 6,
-          "avg_seconds": 89.4,
-          "best_seconds": 70.5
+          "avg_seconds": 89.0,
+          "best_seconds": 81.2
         }
       },
       {
@@ -5897,9 +5910,9 @@
         "date": "2026-11-13",
         "week_start": "2026-11-09",
         "week_end": "2026-11-15",
-        "title": "8 × 400 m kontrolliert",
-        "main_set": "8 × 400 m in 88–90 s je Wiederholung (3:40–3:45 min/km); gleichmäßig, keine schnelle Schlusswiederholung",
-        "target": "3:40–3:45 min/km",
+        "title": "30 min locker – 400er entfallen",
+        "main_set": "15 min gleichmäßig locker; keine Steigerungen oder Tempoblöcke",
+        "target": "5:15–5:50 min/km; bei Bedarf langsamer",
         "status": "planned",
         "distances": [
           "400"
@@ -5958,11 +5971,11 @@
   "warnings": [
     {
       "level": "warning",
-      "text": "Harte Ausdauerreize am 30.10. und 31.10. dokumentiert. Erholung priorisieren; künftig mindestens einen lockeren Tag dazwischen planen."
+      "text": "Der Laufumfang ist gegenüber der Vorwoche um 71 % gestiegen."
     },
     {
-      "level": "warning",
-      "text": "Diese Woche enthält mehr als 2 harte Ausdauerreize. Keine weitere Intensität ergänzen."
+      "level": "info",
+      "text": "Wichtigste Prioritätseinheit noch offen: 30 min locker · Schwelle entfällt."
     }
   ],
   "metrics": {
@@ -5978,22 +5991,22 @@
       "progress_percent": 0
     },
     "current_week": {
-      "week_start": "2026-10-26",
-      "week_end": "2026-11-01",
-      "week_label": "KW 44",
-      "run_km": 11.79,
-      "bike_hours": 1.67,
-      "run_sessions": 1,
-      "bike_sessions": 2,
+      "week_start": "2026-11-02",
+      "week_end": "2026-11-08",
+      "week_label": "KW 45",
+      "run_km": 20.2,
+      "bike_hours": 0.0,
+      "run_sessions": 2,
+      "bike_sessions": 0,
       "strength_sessions": 0,
-      "hard_endurance_sessions": 3,
+      "hard_endurance_sessions": 1,
       "lit_sessions": 0,
-      "moderate_sessions": 0,
-      "hard_sessions": 3,
-      "total_duration_min": 152.7
+      "moderate_sessions": 1,
+      "hard_sessions": 1,
+      "total_duration_min": 95.6
     },
-    "warning_count": 2,
-    "activities_total": 39
+    "warning_count": 1,
+    "activities_total": 41
   },
   "upcoming": [
     {

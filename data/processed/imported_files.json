@@ -512,6 +512,24 @@
         "24915486320"
       ],
       "warnings": []
+    },
+    "2026-11-03_run_activity_24950309075.csv": {
+      "sha256": "6c0250ec029abd799e2981214e038f286df77c1b0cd6c65db022a585e371fb79",
+      "status": "imported",
+      "imported_at": "2026-11-08T12:26:28+01:00",
+      "activity_ids": [
+        "24950309075"
+      ],
+      "warnings": []
+    },
+    "2026-11-08_run_activity_25007001304.csv": {
+      "sha256": "41b1005c040ec1e39352c42ea9aad9180e5fb829873011a356da9e7904501e47",
+      "status": "imported",
+      "imported_at": "2026-11-08T12:26:28+01:00",
+      "activity_ids": [
+        "25007001304"
+      ],
+      "warnings": []
     }
   }
 }
