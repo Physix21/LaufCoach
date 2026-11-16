@@ -1300,3 +1300,44 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 - Aufgezeichnet: 20,20 km Laufen in zwei Einheiten mit 1:35:37 min Timerzeit. Zusätzlich wurde ein nicht aufgezeichnetes Rad-HIIT mit 4 × 4 min bei 280 W gemeldet; dessen Gesamtdauer und Distanz fehlen.
 - Harte Reize: Rad-HIIT und 6 × 400 m am 08.11. Der Lauf am 03.11. war moderat bis zügig und nicht die geplante reine Erholung.
 - Krafttraining und ein weiterer Lauf sind nicht dokumentiert und werden nicht unterstellt. Die KW 46 wird ohne Intervalle, Schwelle oder Rad-HIIT geplant; ausgefallene Einheiten werden nicht nachgeholt.
+
+## 10.11.2026 – Indoor-Rad mit zwei Intervallleitern
+
+**Quelle:** Garmin, `2026-11-10_bike_activity_25033859089.csv`.
+
+### Messdaten
+
+- 33,42 km in 60:00 min bei Ø 211 W, NP 238 W und maximal 318 W. Herzfrequenz fehlt.
+- Zwei Leitern mit je 3:00 / 2:00 / 1:00 / 0:40 / 0:30 / 0:30 min bei Ø 309–313 W. Die Zwischenabschnitte lagen bei Ø 228–234 W. Insgesamt 15:20 min in den Belastungsabschnitten.
+
+### Coaching-Einschätzung
+
+- Klarer harter Radreiz bei etwa 107–112 % der hinterlegten FTP in den Belastungsabschnitten. Am Termin des vorgesehenen lockeren Laufs war die Belastung damit deutlich höher als bei der lockeren Radalternative.
+
+## 12.11.2026 – Indoor-Rad mit 10 × 30 s
+
+**Quelle:** Garmin, `2026-11-12_bike_activity_25057415994.csv`.
+
+### Messdaten
+
+- 16,62 km in 30:07 min Timerzeit (30:03 min in Bewegung) bei Ø 205 W, NP 223 W und maximal 336 W. Herzfrequenz fehlt.
+- Nach 5 min bei Ø 168 W und 5 min bei Ø 217 W folgten 10 × 30 s bei Ø 329–333 W, jeweils mit 90 s bei Ø 172–173 W.
+
+### Coaching-Einschätzung
+
+- Kurzer harter Radreiz mit 5 min Belastungszeit bei etwa 113–119 % der hinterlegten FTP. Der Abstand zur ersten Radeinheit beträgt zwei Kalendertage. Der für Freitag geplante lockere Lauf ist nicht dokumentiert.
+
+## 14.11.2026 – LIT-Lauf
+
+### Athletenangabe
+
+- Samstag, 14.11., 11 km bei 5:00 min/km. Die Einheit wurde manuell gemeldet. Aus Distanz und Pace ergeben sich rechnerisch etwa 55 min. Herzfrequenz und weitere Messwerte fehlen.
+
+### Coaching-Einschätzung
+
+- Als langer lockerer Lauf der KW 46 zugeordnet. Er fand einen Tag vor dem Solltermin statt, dauerte rechnerisch etwa 15 min länger und lag beim Tempo am schnellen Rand des allgemeinen LIT-Bereichs.
+
+## Wochenfazit KW 46
+
+- Dokumentiert sind 11 km Laufen in rechnerisch etwa 55 min und 50,04 km Indoor-Rad in 1:30:07 h Timerzeit. Krafttraining und weitere Läufe sind nicht dokumentiert.
+- Zwei harte Radreize und ein lockerer Lauf statt der vorgesehenen lockeren Stabilisierungswoche. Für KW 47 sind 30 / 30 / 40 min locker bei normaler Erholung vorgesehen. Die geplanten 3 × 6 min Schwelle entfallen.

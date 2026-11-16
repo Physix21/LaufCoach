@@ -530,6 +530,24 @@
         "25007001304"
       ],
       "warnings": []
+    },
+    "2026-11-10_bike_activity_25033859089.csv": {
+      "sha256": "449e0f70442d9ab2d42dd04f45318ba3f699923279003e825038ae7734d72843",
+      "status": "imported",
+      "imported_at": "2026-11-16T11:44:29+01:00",
+      "activity_ids": [
+        "25033859089"
+      ],
+      "warnings": []
+    },
+    "2026-11-12_bike_activity_25057415994.csv": {
+      "sha256": "8856a442d3d79bba9ce3ae3f3325ff300bae26b4d0c00864c274e926779f68bd",
+      "status": "imported",
+      "imported_at": "2026-11-16T11:44:29+01:00",
+      "activity_ids": [
+        "25057415994"
+      ],
+      "warnings": []
     }
   }
 }

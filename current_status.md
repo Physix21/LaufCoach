@@ -1,6 +1,6 @@
 # Aktueller Trainingsstatus
 
-**Stand:** 08.11.2026 (Aktivitäten bis einschließlich 08.11.2026; direkter Garmin-Abgleich erfolgreich)
+**Stand:** 16.11.2026 (Garmin-Abgleich am 16.11.; Aktivitäten bis zum manuell gemeldeten Lauf am 14.11.2026)
 
 ## Ziel und Phase
 
@@ -29,7 +29,14 @@
 
 Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kein Ersatz für den aktuellen 5-km-Anker oder die noch aufzubauende Langzeitausdauer.
 
-## Letzte abgeschlossene Woche KW 45
+## Letzte abgeschlossene Woche KW 46
+
+- 10.11., Garmin: 33,42 km Indoor-Rad in 60:00 min bei Ø 211 W und NP 238 W. Zwei Intervallleitern mit insgesamt 15:20 min bei Ø 309–313 W in den Belastungsabschnitten.
+- 12.11., Garmin: 16,62 km Indoor-Rad in 30:07 min bei Ø 205 W und NP 223 W. 10 × 30 s bei Ø 329–333 W. Für beide Fahrten fehlt die Herzfrequenz.
+- 14.11., Athletenangabe: 11 km LIT bei 5:00 min/km, rechnerisch etwa 55 min. Die Einheit war der längere Lauf der Woche, etwa 15 min über dem geplanten Umfang. Herzfrequenz fehlt.
+- Wochenbilanz: ein dokumentierter Lauf und zwei harte Radreize mit zusammen 50,04 km und 1:30:07 h Timerzeit. Krafttraining und weitere Läufe sind nicht dokumentiert.
+
+## Vorwoche KW 45
 
 - Aufgezeichnet sind 20,20 km Laufen in 1:35:37 h. Zusätzlich wurde ein nicht aufgezeichnetes Indoor-Rad-HIIT mit 4 × 4 min bei 280 W gemeldet; Gesamtdauer und Distanz fehlen.
 - 03.11.: 8,03 km in 36:35,8 min bei Ø 4:33 min/km, Ø 150 bpm und maximal 162 bpm. Der progressive Lauf war moderat bis zügig statt der geplanten reinen Erholung.
@@ -78,6 +85,7 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Belastbarkeit und Einordnung
 
+- In KW 46 lagen erneut zwei harte Radreize anstelle einer lockeren Stabilisierungswoche vor. Der längere Lauf liefert einen aktuellen Umfangsbezug, während die Regelmäßigkeit von drei lockeren Läufen noch offen ist.
 - In KW 45 wurden zwei harte Ausdauerreize absolviert: das manuell gemeldete 4 × 4-min-Rad-HIIT bei 280 W und der Intervalllauf am 08.11. Die ursprünglich vorgesehene Erholungswoche wurde damit erneut intensiver als geplant.
 - Die ersten fünf 400-m-Wiederholungen am 08.11. waren mit 89,4–92,2 s weitgehend kontrolliert; der Abschluss in 81,2 s war deutlich schneller. Das zeigt kurze Geschwindigkeitsreserve, rechtfertigt aber weder einen neuen 5-km-Anker noch eine schnellere Standardvorgabe.
 - Der progressive Lauf am 03.11. lag mit Ø 4:33 min/km über der vorgesehenen lockeren Intensität, wird aber ohne klaren Schwellenabschnitt nicht als zusätzlicher harter Reiz gezählt.
@@ -100,8 +108,8 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Nächster Coaching-Fokus
 
-- KW 46 bleibt ohne 400er, Schwelle oder Rad-HIIT: drei kontrollierte lockere Läufe mit 30, 30 und 40 min sowie optional leichtes Krafttraining. Der geplante Aufbau auf 8 × 400 m entfällt und wird nicht nachgeholt.
-- Lockere Läufe konsequent bei 5:15–5:50 min/km halten; die erste Einheit frühestens nach normaler Erholung vom Intervalllauf am 08.11. Radalternativen bleiben locker bei etwa 140–170 W.
+- In KW 47 ersetzen drei Läufe mit 30, 30 und 40 min bei normaler Erholung den bisherigen Umfangs- und Schwellenaufbau. Leichtes Krafttraining ist optional. Die 3 × 6 min Schwelle entfallen.
+- Lockere Läufe bei 5:15–5:50 min/km und Radalternativen bei etwa 140–170 W. KW 48 bleibt vorläufig mit demselben lockeren Umfang angesetzt.
 
 - Intensität klar begrenzen: Radalternativen zu lockeren Läufen bleiben bei ca. 140–170 W. FTP-nahe oder deutlich über FTP liegende Abschnitte zählen als harte Reize und ersetzen keine lockere Aufgabe.
 - Schwelle bleibt vorerst bei 3:58–4:05 min/km, wird aber erst nach einer tatsächlich lockeren Stabilisierungswoche wieder eingeplant. Belastungsabschnitte gleichmäßig ausführen; kein schneller Schlussabschnitt.

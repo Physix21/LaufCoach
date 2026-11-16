@@ -11,20 +11,20 @@
     "progress_percent": 0
   },
   "current_week": {
-    "week_start": "2026-11-02",
-    "week_end": "2026-11-08",
-    "week_label": "KW 45",
-    "run_km": 20.2,
+    "week_start": "2026-11-16",
+    "week_end": "2026-11-22",
+    "week_label": "KW 47",
+    "run_km": 0,
     "bike_hours": 0.0,
-    "run_sessions": 2,
+    "run_sessions": 0,
     "bike_sessions": 0,
     "strength_sessions": 0,
-    "hard_endurance_sessions": 1,
+    "hard_endurance_sessions": 0,
     "lit_sessions": 0,
-    "moderate_sessions": 1,
-    "hard_sessions": 1,
-    "total_duration_min": 95.6
+    "moderate_sessions": 0,
+    "hard_sessions": 0,
+    "total_duration_min": 0
   },
-  "warning_count": 1,
-  "activities_total": 41
+  "warning_count": 0,
+  "activities_total": 42
 }
