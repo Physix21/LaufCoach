@@ -108,11 +108,11 @@ Kurze schnelle Wiederholungen bestätigen Geschwindigkeitsreserve, sind aber kei
 
 ## Nächster Coaching-Fokus
 
-- In KW 47 ersetzen drei Läufe mit 30, 30 und 40 min bei normaler Erholung den bisherigen Umfangs- und Schwellenaufbau. Leichtes Krafttraining ist optional. Die 3 × 6 min Schwelle entfallen.
-- Lockere Läufe bei 5:15–5:50 min/km und Radalternativen bei etwa 140–170 W. KW 48 bleibt vorläufig mit demselben lockeren Umfang angesetzt.
+- In KW 47 auf Athletenwunsch eine kurze Schwelle als einziger harter Ausdauerreiz am Freitag, 20.11.: 2 × 6 min bei 4:00–4:05 min/km, 3 min Trabpause und insgesamt 40 min. Bei ungewöhnlicher Müdigkeit 30 min locker. Dienstag 30 min und Sonntag 40 min locker; leichtes Krafttraining bleibt optional.
+- Lockere Läufe bei 5:15–5:50 min/km und Radalternativen bei etwa 140–170 W. Für KW 48 sind vorläufig 30, 30 und 40 min locker vorgesehen.
 
 - Intensität klar begrenzen: Radalternativen zu lockeren Läufen bleiben bei ca. 140–170 W. FTP-nahe oder deutlich über FTP liegende Abschnitte zählen als harte Reize und ersetzen keine lockere Aufgabe.
-- Schwelle bleibt vorerst bei 3:58–4:05 min/km, wird aber erst nach einer tatsächlich lockeren Stabilisierungswoche wieder eingeplant. Belastungsabschnitte gleichmäßig ausführen; kein schneller Schlussabschnitt.
+- Die kurze Schwelle am 20.11. beginnt am ruhigen Ende der Pacevorgabe. Beide Abschnitte gleichmäßig laufen. Den weiteren Schwellenumfang nach KW 47 prüfen.
 - Vollständige Sollplanung für 38 Kalenderwochen bis 27.06.2027 in den JSON-Plänen und `plans/gesamtplan_2026_2027.md`; alle Wochen sind im Dashboard auswählbar. Die nachgereichten Aktivitäten vom 08.–10.10. sind berücksichtigt.
 - Die 400er am 23.10.2026 entfallen nach dem harten Tempodauerlauf am 20.10. und werden nicht nachgeholt. Kurze Intervalle bleiben später im Wechsel mit Schwelle, längeren Intervallen und dosierten Hügelreizen vorgesehen.
 - April-Test mit ruhiger Folgewoche; ab 26.04. spezifischer 5-km-Block, ab 14.06. Entlastung für den festen Wettkampftermin 22.06. Die schnelleren Tempostufen gelten nur bei den an jeder Einheit genannten Voraussetzungen.

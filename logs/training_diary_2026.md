@@ -1340,4 +1340,4 @@ Dieses Tagebuch enthält bestätigte Messdaten und davon getrennte Coaching-Eins
 ## Wochenfazit KW 46
 
 - Dokumentiert sind 11 km Laufen in rechnerisch etwa 55 min und 50,04 km Indoor-Rad in 1:30:07 h Timerzeit. Krafttraining und weitere Läufe sind nicht dokumentiert.
-- Zwei harte Radreize und ein lockerer Lauf statt der vorgesehenen lockeren Stabilisierungswoche. Für KW 47 sind 30 / 30 / 40 min locker bei normaler Erholung vorgesehen. Die geplanten 3 × 6 min Schwelle entfallen.
+- Zwei harte Radreize und ein lockerer Lauf statt der vorgesehenen lockeren Stabilisierungswoche. Auf Wunsch des Athleten sind für KW 47 zwei lockere Läufe und am 20.11. bei normaler Erholung 2 × 6 min kontrollierte Schwelle vorgesehen.

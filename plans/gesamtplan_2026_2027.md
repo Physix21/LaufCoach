@@ -16,7 +16,7 @@ Alle Einzelheiten einschließlich Pausen, Ein- und Auslaufen, Radalternativen un
 | 2026-10-26 · KW 44 | Erste Entlastung: weniger Laufminuten, kontrollierte Schwelle | 27.10.: 30 min locker; 30.10.: 2 × 6 min Schwelle; 01.11.: 40 min länger locker | ca. 110 min | 25 min |
 | 2026-11-02 · KW 45 | Dritten Schwellenabschnitt ergänzen, alle Abschnitte gleichmäßig | 03.11.: 35 min locker; 06.11.: 3 × 5 min Schwelle; 08.11.: 45 min länger locker | ca. 124 min | 45 min |
 | 2026-11-09 · KW 46 | Dokumentiert: zwei harte Radreize und ein längerer lockerer Lauf | 14.11.: 11 km locker bei 5:00 min/km, manuell gemeldet | ca. 55 min erfasst | 25 min geplant, Durchführung offen |
-| 2026-11-16 · KW 47 | Drei lockere Läufe stabilisieren | 17.11.: 30 min locker, 20.11.: 30 min locker, 22.11.: 40 min länger locker | 100 min bei normaler Erholung | 25 min leicht, optional |
+| 2026-11-16 · KW 47 | Zwei lockere Läufe und eine kurze kontrollierte Schwelle | 17.11.: 30 min locker, 20.11.: 2 × 6 min Schwelle in 40 min gesamt, 22.11.: 40 min länger locker | 110 min bei normaler Erholung | 25 min leicht, optional |
 | 2026-11-23 · KW 48 | Lockeren Umfang vorläufig wiederholen | 24.11.: 30 min locker, 27.11.: 30 min locker, 29.11.: 40 min länger locker | 100 min bei normaler Erholung | 25 min leicht, optional |
 | 2026-11-30 · KW 49 | Kurze Hügelreize für Kraft und Technik, keine Sprints | 01.12.: 40 min locker + 4 Steigerungen; 04.12.: 8 × 30 s Hügel; 06.12.: 55 min länger locker | ca. 134 min | 45 min |
 | 2026-12-07 · KW 50 | 21 min kontrollierte Schwelle, lockeren Umfang halten | 08.12.: 40 min locker + 4 Steigerungen; 11.12.: 3 × 7 min Schwelle; 13.12.: 55 min länger locker | ca. 145 min | 45 min |
